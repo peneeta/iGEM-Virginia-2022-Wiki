@@ -1,4 +1,4 @@
-# iGEM TeamName Wiki
+# Team Virginia 2022 Wiki
 
 This repository **MUST** contain all coding assets to generate your team's wiki (HTML, CSS, JavaScript, TypeScript, Python, etc).
 
@@ -53,7 +53,7 @@ To work locally with this project, you'll have to follow the steps below:
 
 #### Install
 ```bash
-git clone https://gitlab.igem.org/templates/wiki-frozen-flask
+git clone https://gitlab.igem.org/2022/virginia
 cd example
 python3 -m venv venv
 . venv/bin/activate
