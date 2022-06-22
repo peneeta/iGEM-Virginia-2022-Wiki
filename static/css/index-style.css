@@ -9,12 +9,13 @@ hr.solid {
     font-style: normal;
     font-weight: 400;
     font-size: 70px;
-    margin-bottom: 10px;
+    padding: 0.9% 60% 0.9% 0%;
   }
   
   .subtitle{
     font-family: 'Raleway';
     font-size: 18px;
+    padding: 0.9% 50% 0.9% 0%;
   
   }
   
@@ -24,30 +25,27 @@ hr.solid {
       font-style: normal;
       font-weight: 400;
       color:rgb(24, 24, 24);
+      padding: 0.9% 50% 0.9% 0%;
   }
   
   
-  /* change this background to a picture or color or sum */
   .header-background{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-      background: rgb(223,230,245);
-  background: linear-gradient(180deg, rgb(180, 198, 238) 0%, rgb(246, 246, 246) 25%, rgba(255,255,255,1) 100%);
-  }
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(180, 198, 238) 0%, rgb(246, 246, 246) 25%, rgba(255,255,255,1) 100%);
+}
   
   
   /* Scroll Section Formatting for Site */
-  
+
   .container #sec-one{
       width: 100%;
       padding-top: 100px;
       padding-bottom: 50px;
-  
-  
   }
   
   #sec-two{

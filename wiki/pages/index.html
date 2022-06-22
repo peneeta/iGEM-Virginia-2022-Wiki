@@ -2,27 +2,25 @@
 
 
 {% block extraStyles %}
-<link href="{{ url_for('static', filename = '/css/index-style.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'css/index-style.css') }}" rel="stylesheet">
 
-<link href="{{ url_for('static', filename = '/css/index-card-style.css') }}" rel="stylesheet">
-
+<link href="{{ url_for('static', filename = 'css/index-card-style.css') }}" rel="stylesheet">
 {% endblock %}
+
 {% block title %}Home{% endblock %}
 
 
-
 {% block page_content %}
-<div class="header-background" id="grad">
-  <div class="container">
-    <h1 class="main-title">AtheroSHuffle</h1>
+  <div class="header-background">
+    <div class="container">
+      <h1 class="main-title">AtheroSHuffle</h1>
     <h2 class="sec-title">A lateral flow test strip for proactive atherosclerosis detection.</h2>
 
     <hr class="solid">
     
     <h3 class="subtitle">Our project is focused on designing a method to detect atherosclerosis using a genetically modified strain of <span class="italic">E. coli</span> called SHuffle. Learn more about our project by watching our promo video or scrolling below!</h3>
-  </div>
-  
-    
+
+    </div>
     
 
 </div>
