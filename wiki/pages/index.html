@@ -1,58 +1,183 @@
 {% extends "layout.html" %}
 
+
+{% block extraStyles %}
+<link href="{{ url_for('static', filename = '/css/index-style.css') }}" rel="stylesheet">
+
+<link href="{{ url_for('static', filename = '/css/index-card-style.css') }}" rel="stylesheet">
+
+{% endblock %}
 {% block title %}Home{% endblock %}
-{% block lead %}<b>Welcome to iGEM 2022!</b> Your team has been approved and you are ready to start the iGEM season!{% endblock %}
+
+
 
 {% block page_content %}
+<div class="header-background" id="grad">
+  <div class="container">
+    <h1 class="main-title">AtheroSHuffle</h1>
+    <h2 class="sec-title">A lateral flow test strip for proactive atherosclerosis detection.</h2>
 
-<div class="row">
-  <div class="col">
-    <h2>Before you start</h2>
-    <hr>
-    <p>Please read the following pages:</p>
-    <ul>
-      <li><a href="https://competition.igem.org/">The Competition Page</a></li>
-      <li><a href="https://competition.igem.org/deliverables/team-wiki">Wiki Requirements page</a></li>
-    </ul>
+    <hr class="solid">
+    
+    <h3 class="subtitle">Our project is focused on designing a method to detect atherosclerosis using a genetically modified strain of <span class="italic">E. coli</span> called SHuffle. Learn more about our project by watching our promo video or scrolling below!</h3>
   </div>
+  
+    
+    
+
 </div>
-<div class="row mt-4">
-  <div class="col">
-    <h2>Styling your wiki</h2>
-    <hr>
-    <p>You may style this page as you like or you can simply leave the style as it is. You can easily keep the styling and edit the content of these default wiki pages with your project information and completely fulfill the requirement to document your project.</p>
-    <p>While you may not win Best Wiki with this styling, your team is still eligible for all other awards. This default wiki meets the requirements, it improves navigability and ease of use for visitors, and you should not feel it is necessary to style beyond what has been provided.</p>
-  </div>
+
+<div class="container" id="sec-one">
+  <h2 class="index-title">A Worldwide Health Crisis</h2>
+  <p class="index-text">
+      Heart disease is the leading cause of death in the United States and around the world. Each year, one in four Americans die of various cardiovascular complications. [1] </p>
+
+  <p class="index-text">
+      Atherosclerosis is a form of heart disease characterized by plaque-buildup in the inner arterial wall. As buildups grow, blood flow through affected arteries is constricted. [3]  
+
+      The narrowing of blood vessels and resulting reduction of blood flow throughout the body can be fatal, leading to further cardiovascular complications including blood clots, osteoarthritis, aneurysms, stroke, and heart attack. [4]
+
+  </p>
+
+  <p>This disease progresses through multiple stages. Research suggests that the disease begins developing when people are in their 20s, but treatment does not begin until ages 50-75. [6]</p>
 </div>
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Tips</h2>
-    <hr>
-    <p>This wiki will be your team's first interaction with the rest of the world, so here are a few tips to help you get started:</p>
-    <ul>
-      <li>State your accomplishments! Tell people what you have achieved from the start.</li>
-      <li>Be clear about what you are doing and how you plan to do this.</li>
-      <li>You have a global audience! Consider the different backgrounds that your users come from.</li>
-      <li>Make sure information is easy to find; nothing should be more than 3 clicks away.</li>
-      <li>Avoid using very small fonts and low contrast colors; information should be easy to read.</li>
-      <li>Start documenting your project as early as possible; don't leave anything to the last minute before the Wiki Freeze. For a complete list of deadlines visit the iGEM 2022 calendar</li>
-      <li>Have lots of fun!</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspiration</h2>
-    <hr>
-    <p>You can also view other team wikis for inspiration! Here are some examples:</p>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:Vilnius-Lithuania">2019 Vilnius Lithuania</a></li>
-      <li><a href="https://2019.igem.org/Team:NUS_Singapore">2019 NUS Singapore</a></li>
-      <li><a href="https://2019.igem.org/Team:Lambert_GA">2019 Lambert GA</a></li>
-      <li><a href="https://2020.igem.org/Team:Waterloo">2020 Waterloo</a></li>
-      <li><a href="https://2020.igem.org/Team:TUDelft">2020 TUDelft</a></li>
-      <li><a href="https://2020.igem.org/Team:XMU-China">2020 XMU China </a></li>
-      <li><a href="https://2020.igem.org/Team:TAS_Taipei">2020 TAS Taipei </a></li>
-    </ul>
-  </div>
+
+<div class="container" id="sec-two">
+  <h2 class="index-title">Current State-of-the-Art</h2>
+
+  <p>Though atherosclerosis can be treated through a healthy diet and medication, people do not realize its development in their body until years after the buildup has begun. This makes reversal of the condition extremely difficult, if not impossible.</p>
+
+  <p>Current detection methods include electrocardiogram (EKG) data analysis, CT scans, and angiograms which can range between $270 to $4700. These methods are expensive and require a medical visit and health professionals to interpret test results.</p>
+  
+  <p>Diagnostic methods are not included in routine checkups and are not recommended until an individual shows signs of further cardiovascular complications.</p>
 </div>
+
+<div class="container" id="sec-three">
+  <h2 class="index-title">Our Solution</h2>
+  <p>To address the need for proactive atherosclerosis diagnostic testing, we designed a cost-efficient and easily-accessible lateral flow test strip that tests oxLDL levels using a genetically engineered E. coli strain, SHuffle to synthesize antibodies that bind to atherosclerosis biomarkers.</p>
+
+  <p>The E. coli SHuffle strain is unique in that it can form disulfide bonds needed for antibody synthesis.</p>
+
+</div>
+
+
+
+
+
+<div class="container" id="helpful-links">
+  <h1>Quick Links</h1> 
+</div>
+
+<!-- Hoverable Cards -->
+<section class="cards-div">
+<!-- Project Description Card -->
+<a href="/html/project-description.html" class="card">
+  <div class="card__head">
+    <div class="card__image"></div>
+  </div>
+  <div class="card__body">
+    <h2 class="card__headline">Project Description</h2>
+    <p class="card__text">A detailed description of AtheroSHUffle including design and engineering.</p>
+  </div>
+  <div class="card__foot">
+    <span class="card__link">Click to read more</span>
+  </div>
+  <div class="card__border"></div>
+</a>
+<!-- Wetlab Card -->
+<a href="/html/wetlab-design.html" class="card">
+  <div class="card__head">
+    <div class="card__image"></div>
+  </div>
+  <div class="card__body">
+    <h2 class="card__headline">Wet Lab</h2>
+    <p class="card__text">Documentation of experiments we performed in lab to engineer and validate our project.</p>
+  </div>
+  <div class="card__foot">
+    <span class="card__link">Click to read more</span>
+  </div>
+  <div class="card__border"></div>
+</a>
+<!-- Modeling Card -->
+<a href="/html/modeling-overview.html" class="card">
+  <div class="card__head">
+    <div class="card__image"></div>
+  </div>
+  <div class="card__body">
+    <h2 class="card__headline">Modeling</h2>
+    <p class="card__text">Overview of how we used protein interaction software to model binding affinity and biomarker structure.</p>
+  </div>
+  <div class="card__foot">
+    <span class="card__link" href="/html/modeling-overview.html">Click to read more</span>
+  </div>
+  <div class="card__border"></div>
+</a>
+<!-- Human Practices Card -->
+<a href="/html/ihp.html" class="card">
+  <div class="card__head">
+    <div class="card__image"></div>
+  </div>
+  <div class="card__body">
+    <h2 class="card__headline">Human Practices</h2>
+    <p class="card__text">Presenting outreach events and meetings with people outside of the project to inform design and spread information about synthetic biology. </p>
+  </div>
+  <div class="card__foot">
+    <span class="card__link">Click to read more</span>
+  </div>
+  <div class="card__border"></div>
+</a>
+
+<!-- On hover animation -->
+<script>
+  const height = (elem) => {
+    return elem.getBoundingClientRect().height
+  }
+
+  const distance = (elemA, elemB, prop) => {
+    const sizeA = elemA.getBoundingClientRect()[prop]
+    const sizeB = elemB.getBoundingClientRect()[prop]
+
+    return sizeB - sizeA
+  }
+
+  const factor = (elemA, elemB, prop) => {
+    const sizeA = elemA.getBoundingClientRect()[prop]
+    const sizeB = elemB.getBoundingClientRect()[prop]
+
+    return sizeB / sizeA
+  }
+
+  document.querySelectorAll('.card').forEach((elem) => {
+
+    const head = elem.querySelector('.card__head')
+    const image = elem.querySelector('.card__image')
+    const author = elem.querySelector('.card__author')
+    const body = elem.querySelector('.card__body')
+    const foot = elem.querySelector('.card__foot')
+
+    elem.onmouseenter = () => {
+      elem.classList.add('hover')
+
+      const imageScale = 1 + factor(head, body, 'height')
+      image.style.transform = `scale(${ imageScale })`
+
+      const bodyDistance = height(foot) * -1
+      body.style.transform = `translateY(${ bodyDistance }px)`
+
+      const authorDistance = distance(head, author, 'height')
+      author.style.transform = `translateY(${ authorDistance }px)`
+    }
+
+    elem.onmouseleave = () => {
+      elem.classList.remove('hover')
+
+      image.style.transform = `none`
+      body.style.transform = `none`
+      author.style.transform = `none`
+    }
+
+})
+</script>
+</section>
 
 {% endblock %}

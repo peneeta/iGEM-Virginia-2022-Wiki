@@ -1,94 +1,114 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
+<nav class="navbar navbar-custom fixed-top navbar-expand-lg navbar-light">
+        
+  <div class="container-fluid">
 
-    <!---- TEAM NAME ---->
-    <a class="navbar-brand" href="#">Virginia</a>
 
-    <!---- SMALL SCREEN MENU ICON ---->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Responsive Design -->
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto left-aligned">
+      
 
-        <!---- HOME ---->
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('index') }}">Home</a>
-        </li>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
 
-        <!---- TEAM ---->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='team') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Team
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='team') }}">Team</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='collaborations') }}">Collaborations</a></li>
-          </ul>
-        </li>
+                  <!-- SHuffle Logo -->
+                  <!-- <a href="../index.html" class="navbar-brand d-none d-lg-block">
+                      <img src="/images/logos/Light-AB-nobg.png" alt="logo">
+                  </a> -->
+              
 
-        <!---- PROJECT ---->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Project
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='communication') }}">Communication</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='contribution') }}">Contribution</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='description') }}">Description</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='engineering') }}">Engineering</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='experiments') }}">Experiments</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='implementation') }}">Implementation</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='partnership') }}">Partnership</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='proof-of-concept') }}">Proof of Concept</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='results') }}">Results</a></li>
-          </ul>
-        </li>
+                  <!-- Homepage -->
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="/wiki/pages/index.html">Home</a>
+                  </li>
 
-        <!---- PARTS ---->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Parts
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='part-collection') }}">Part Collection</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='parts') }}">Parts</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='improve') }}">Improve</a></li>
-          </ul>
-        </li>
+                  <!-- Team -->
+                  <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink">Team</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a href="/wiki/pages/team.html" class="dropdown-item">Members</a>
+                          <a href="/wiki/pages/attributions.html" class="dropdown-item">Attributions</a>
+                          <a href="/wiki/pages/collaborations.html" class="dropdown-item">Collaborations</a>
+                          <!-- Thinking to add a gallery section with lab photos and what not for memories  -->
+                      </div>
+                  </li>
 
-        <!---- SAFETY ---->
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('pages', page='safety') }}">Safety</a>
-        </li>
+                  <!-- Project -->
+                  <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle">Project</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a href="/wiki/pages/description.html" class="dropdown-item">Description</a>
+                          <a href="/wiki/pages/hardware.html" class="dropdown-item">Lateral Flow Assay (HARDWARE)</a>
+                          <a href="/wiki/pages/results.html" class="dropdown-item">Results</a>
+                      </div>
+                  </li>
 
-        <!---- HUMAN PRACTICES ---->
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
-        </li>
+                  <!-- Wet Lab -->
+                  <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle">Wet Lab</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a href="/wiki/pages/engineering.html" class="dropdown-item">Design MAKE THIS</a>
+                          <a href="/wiki/pages/experiments.html" class="dropdown-item">Experiments</a>
+                          <a href="/wiki/pages/engineering.html" class="dropdown-item">Engineering</a>
+                          <a href="/wiki/pages/results.html" class="dropdown-item">Results</a>
+                          <a href="/wiki/pages/notebook.html" class="dropdown-item">Lab Notebook and Logs</a>
+                      </div>
+                  </li>
+                  
+              
 
-        <!---- AWARDS ---->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Awards
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='education') }}">Education</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='entrepreneurship') }}">Entrepreneurship</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='hardware') }}">Hardware</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='measurement') }}">Measurement</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Model</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='plant') }}">Plant</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='software') }}">Software</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='sustainable') }}">Sustainable</a></li>
-          </ul>
-        </li>
+                  <!-- Modeling -->
+                  <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle">Modeling</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a href="/wiki/pages/model.html" class="dropdown-item">Overview</a>
+                          <a href="/wiki/pages/model.html" class="dropdown-item">Software idk if we need this</a>
+                      </div>
+                  </li>
 
-      </ul>
-    </div>
+                  <li class="nav-item">
+                      <a href="/wiki/pages/parts.html" class="nav-link">Parts</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle">Human<a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a href="/wiki/pages/human-practices.html" class="dropdown-item">Integrated Human</a>
+                              <a href="/wiki/pages/human-practices.html" class="dropdown-item">Podcast MAKE PAGE</a>
+                          </div>
+                  </li>
+
+                  <!-- Awards -->
+                  <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle">Awards</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a href="/wiki/pages/medal-requirements" class="dropdown-item">Medal Requirements MAKE PAGE</a>
+                          <a href="/wiki/pages/awards" class="dropdown-item">Awards MAKE PAGE</a>
+                      </div>
+                  </li>
+
+              </ul>
+
+      </div>
   </div>
 </nav>
+
+<!-- Scroll to change opacity of navbar -->
+<script>
+  window.onscroll = function() {scrollFunction()};
+  const nav = document.querySelector(".navbar");
+  function scrollFunction() {
+
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      nav.classList.add("nav-opaque");
+  } else {
+  
+      nav.classList.remove("nav-opaque");
+  }
+  }
+  </script>
+</script>
+

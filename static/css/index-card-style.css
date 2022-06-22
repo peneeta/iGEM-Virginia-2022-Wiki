@@ -1,0 +1,121 @@
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background: white;
+    color: currentColor;
+    text-decoration: none;
+    overflow: hidden;
+    transition-property: color;
+    transition-delay: 0.15s;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    scale: 0.8;
+  }
+  .card.hover {
+    color: #ffffff;
+    transition-delay: 0;
+  }
+  .card, .card__image, .card__image::after, .card__author, .card__body, .card__foot, .card__border {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1);
+  }
+  .card__head {
+    position: relative;
+    padding-top: 70%;
+  }
+  
+  .card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/images/placeholder-img.png');
+    transform-origin: top center;
+    transition-property: transform;
+    transition-delay: 0s;
+  }
+  .card__image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    background: linear-gradient(30deg, rgba(26, 42, 99, 0.85), rgba(26, 42, 99, 0.5));
+    transition-property: opacity;
+    transition-delay: 0s;
+  }
+  .card.hover .card__image {
+    transition-delay: 0;
+  }
+  .card.hover .card__image::after {
+    opacity: 1;
+    transition-delay: 0;
+  }
+  .card__body {
+    position: relative;
+    padding: 2em;
+    transition-property: transform;
+    transition-delay: 0s;
+  }
+  .card.hover .card__body {
+    transition-delay: 0;
+  }
+  .card__headline {
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 0 0.8em;
+  }
+  .card__text {
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.8;
+  }
+  .card__foot {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 2em 2em;
+    opacity: 0;
+    transition-property: opacity;
+  }
+  .card.hover .card__foot {
+    opacity: 1;
+    transition-delay: 0.15s;
+  }
+  .card__link {
+    color: currentColor;
+    text-decoration: none;
+    border-bottom: 2px solid #b5272d;
+  }
+  .card__border {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background: #b5272d;
+    transform: scaleY(0);
+    transition-property: transform;
+  }
+  .card.hover .card__border {
+    transform: none;
+    transition-delay: 0.15s;
+  }
+  
+  
+  .cards-div{
+    display: flex;
+    flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 100px; 
+  }

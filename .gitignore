@@ -3,3 +3,4 @@ venv
 .vscode
 __pycache__
 public
+node_modules
