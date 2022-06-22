@@ -22,16 +22,16 @@
 
                   <!-- Homepage -->
                   <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="/wiki/pages/index.html">Home</a>
+                      <a class="nav-link" aria-current="page" href="{{ url_for('pages', page='index') }}">Home</a>
                   </li>
 
                   <!-- Team -->
                   <li class="nav-item dropdown">
                       <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink">Team</a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a href="/wiki/pages/team.html" class="dropdown-item">Members</a>
-                          <a href="/wiki/pages/attributions.html" class="dropdown-item">Attributions</a>
-                          <a href="/wiki/pages/collaborations.html" class="dropdown-item">Collaborations</a>
+                          <a href="{{ url_for('pages', page='team') }}" class="dropdown-item">Members</a>
+                          <a href="{{ url_for('pages', page='attributions') }}" class="dropdown-item">Attributions</a>
+                          <a href="{{ url_for('pages', page='collaborations') }}" class="dropdown-item">Collaborations</a>
                           <!-- Thinking to add a gallery section with lab photos and what not for memories  -->
                       </div>
                   </li>
@@ -40,9 +40,9 @@
                   <li class="nav-item dropdown">
                       <a href="#" class="nav-link dropdown-toggle">Project</a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a href="/wiki/pages/description.html" class="dropdown-item">Description</a>
-                          <a href="/wiki/pages/hardware.html" class="dropdown-item">Lateral Flow Assay (HARDWARE)</a>
-                          <a href="/wiki/pages/results.html" class="dropdown-item">Results</a>
+                          <a href="{{ url_for('pages', page='description') }}" class="dropdown-item">Description</a>
+                          <a href="{{ url_for('pages', page='hardware') }}" class="dropdown-item">Lateral Flow Assay (HARDWARE)</a>
+                          <a href="{{ url_for('pages', page='results') }}" class="dropdown-item">Results</a>
                       </div>
                   </li>
 
@@ -50,34 +50,34 @@
                   <li class="nav-item dropdown">
                       <a href="#" class="nav-link dropdown-toggle">Wet Lab</a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a href="/wiki/pages/engineering.html" class="dropdown-item">Design MAKE THIS</a>
-                          <a href="/wiki/pages/experiments.html" class="dropdown-item">Experiments</a>
-                          <a href="/wiki/pages/engineering.html" class="dropdown-item">Engineering</a>
-                          <a href="/wiki/pages/results.html" class="dropdown-item">Results</a>
-                          <a href="/wiki/pages/notebook.html" class="dropdown-item">Lab Notebook and Logs</a>
+                          <a href="{{ url_for('pages', page='engineering') }}" class="dropdown-item">Design MAKE THIS</a>
+                          <a href="{{ url_for('pages', page='experiments') }}" class="dropdown-item">Experiments</a>
+                          <a href="{{ url_for('pages', page='engineering') }}" class="dropdown-item">Engineering</a>
+                          <a href="{{ url_for('pages', page='results') }}" class="dropdown-item">Results</a>
+                          <a href="{{ url_for('pages', page='notebook') }}" class="dropdown-item">Lab Notebook and Logs</a>
                       </div>
                   </li>
                   
-              
-
                   <!-- Modeling -->
                   <li class="nav-item dropdown">
                       <a href="#" class="nav-link dropdown-toggle">Modeling</a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a href="/wiki/pages/model.html" class="dropdown-item">Overview</a>
-                          <a href="/wiki/pages/model.html" class="dropdown-item">Software idk if we need this</a>
+                          <a href="{{ url_for('pages', page='model') }}" class="dropdown-item">Overview</a>
+                          <a href="{{ url_for('pages', page='model') }}" class="dropdown-item">Software MAKE THIS</a>
                       </div>
                   </li>
 
+                  <!-- Parts -->
                   <li class="nav-item">
-                      <a href="/wiki/pages/parts.html" class="nav-link">Parts</a>
+                      <a href="{{ url_for('pages', page='parts') }}" class="nav-link">Parts</a>
                   </li>
 
+                  <!-- Human Practices -->
                   <li class="nav-item dropdown">
                       <a href="#" class="nav-link dropdown-toggle">Human<a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <a href="/wiki/pages/human-practices.html" class="dropdown-item">Integrated Human</a>
-                              <a href="/wiki/pages/human-practices.html" class="dropdown-item">Podcast MAKE PAGE</a>
+                              <a href="{{ url_for('pages', page='human-practices') }}" class="dropdown-item">Integrated Human</a>
+                              <a href="{{ url_for('pages', page='human-practices') }}" class="dropdown-item">Podcast MAKE PAGE</a>
                           </div>
                   </li>
 
@@ -85,8 +85,8 @@
                   <li class="nav-item dropdown">
                       <a href="#" class="nav-link dropdown-toggle">Awards</a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a href="/wiki/pages/medal-requirements" class="dropdown-item">Medal Requirements MAKE PAGE</a>
-                          <a href="/wiki/pages/awards" class="dropdown-item">Awards MAKE PAGE</a>
+                          <a href="{{ url_for('pages', page='awards') }}" class="dropdown-item">Medal Requirements MAKE PAGE</a>
+                          <a href="{{ url_for('pages', page='awards') }}" class="dropdown-item">Awards MAKE PAGE</a>
                       </div>
                   </li>
 
