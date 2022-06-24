@@ -1,9 +1,6 @@
-/* Line Separator */
-hr.solid {
-    border: 3px rgb(0, 0, 0);
-    width: 400px;
-  }
-  
+  /* Imported Fonts */
+
+
   .main-title{
     font-family: 'Raleway';
     font-style: normal;
@@ -12,16 +9,9 @@ hr.solid {
     padding: 0.9% 60% 0.9% 0%;
   }
   
-  .subtitle{
-    font-family: 'Raleway';
-    font-size: 18px;
-    padding: 0.9% 50% 0.9% 0%;
-  
-  }
-  
-  .sec-title{
+  .second-title{
       font-size: 27px;
-      font-family: 'Raleway';
+      font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
       color:rgb(24, 24, 24);
@@ -37,16 +27,18 @@ hr.solid {
     justify-content: center;
     align-items: center;
     background: #EFF4FF
+  }
   
   
   /* Scroll Section Formatting for Site */
 
-  .container #sec-one{
-      width: 100%;
-      padding-top: 100px;
-      padding-bottom: 50px;
+
+  #sec-one{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
-  
+
   #sec-two{
     width: 100%;
     padding-bottom: 50px;
@@ -75,5 +67,20 @@ hr.solid {
     font-size: 18px;
     text-align: center;
   }
+
+  /* Button Formatting */
+.btn.promo-button {
+  border-radius: 50px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8); 
+	-webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8); 
+	-moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8); 
+  background-color: #B3D5FC;
+  font-family: 'Open Sans';
+}  
+
+/* Logo Image Formatting */
+.logo{
+  max-height: 100px;
+}
 
   
