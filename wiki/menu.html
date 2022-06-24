@@ -1,9 +1,6 @@
-<!-- OLD NAV -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
 
-    <!---- TEAM NAME I don't envision us having a brand in navbar to keep the styling consistent---->
-    <!-- <a class="navbar-brand" href="#">AtheroSHuffle</a> -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container-fluid">
 
     <!---- SMALL SCREEN MENU ICON ---->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,8 +45,30 @@
         </li>
 
         <!-- WET-LAB -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Wet Lab
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='experiments') }}">Experiments</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='implementation') }}">Implementation</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='results') }}">Results</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
+          </ul>
+        </li>
 
         <!-- MODELING -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Modeling
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+            <li><a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Model</a></li>
+
+          </ul>
+        </li>
 
         <!---- PARTS ---->
         <li class="nav-item dropdown">
@@ -63,7 +82,7 @@
           </ul>
         </li>
 
-        <!---- SAFETY ---->
+        <!---- SAFETY do we want to put this in the navbar? ---->
         <li class="nav-item">
           <a class="nav-link" href="{{ url_for('pages', page='safety') }}">Safety</a>
         </li>
@@ -84,10 +103,7 @@
             <li><a class="dropdown-item" href="{{ url_for('pages', page='hardware') }}">Hardware</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a></li>
             <li><a class="dropdown-item" href="{{ url_for('pages', page='measurement') }}">Measurement</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='model') }}">Model</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='plant') }}">Plant</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='software') }}">Software</a></li>
-            <li><a class="dropdown-item" href="{{ url_for('pages', page='sustainable') }}">Sustainable</a></li>
+
           </ul>
         </li>
 
