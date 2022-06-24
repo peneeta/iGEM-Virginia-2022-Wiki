@@ -24,6 +24,20 @@
 <body>
   <!-- Navigation -->
   {% include 'menu.html' %}
+  <!-- Scroll to change opacity of navbar -->
+  <script>
+    window.onscroll = function() {scrollFunction()};
+    const nav = document.querySelector(".navbar");
+    function scrollFunction() {
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        nav.classList.add("nav-opaque");
+    } else {
+    
+        nav.classList.remove("nav-opaque");
+    }
+    }
+    </script>
 
   <!-- Page Content -->
   {% block page_content %}{% endblock %}
