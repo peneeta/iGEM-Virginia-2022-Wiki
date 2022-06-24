@@ -33,9 +33,6 @@
     transform: scale(1.2); 
 } */
 
-.navbar-nav{
-  align-items: center;
-}
 
 nav.navbar{
     padding-top: 20px;
@@ -54,12 +51,12 @@ nav.navbar{
    padding: 0px 10px;
   font-family: 'Raleway';
   font-style: normal;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 400;
 }
 
 .nav-opaque{
-  background-color: rgb(215, 226, 250);
+  background-color: #FFE2E2;
   transition: visibility 0s, 0.6s, opacity 0.6s linear, transform 1s;
   box-shadow: 10px 0 5px #2128327a;
 }
