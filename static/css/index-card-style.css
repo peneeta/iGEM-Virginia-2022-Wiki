@@ -34,7 +34,7 @@
     bottom: 0;
     background-size: cover;
     background-position: center;
-    background-image: url('/images/placeholder-img.png');
+    /* background-image: url('/images/placeholder-img.png'); */
     transform-origin: top center;
     transition-property: transform;
     transition-delay: 0s;
