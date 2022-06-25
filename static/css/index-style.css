@@ -73,12 +73,14 @@
 
   /* Button Formatting */
 .btn.promo-button {
+  padding: 9px 30px;
   border-radius: 50px;
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8); 
 	-webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8); 
 	-moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8); 
   background-color: #B3D5FC;
   font-family: 'Open Sans';
+  
 }  
 
 /* Logo Image Formatting */
