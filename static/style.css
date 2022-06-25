@@ -43,13 +43,6 @@ nav.navbar{
   box-shadow: 10px 0 5px #2128327a;
 }
 
-/* Spacer class so text appears under navbar */
-.spacer{
-  height: 100px;
-  width: 100%;
-}
-
-
 /* footer */
 .footer-basic {
     padding:40px 0;

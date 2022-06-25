@@ -28,6 +28,8 @@
     align-items: center;
     background: #EFF4FF
   }
+
+  /* Sections */
   
   .container-row{
     display: flex;
@@ -35,24 +37,16 @@
   }
   /* Scroll Section Formatting for Site */
 
+/* Sections */
 
-  #sec-one{
+  #fullscreen-sec{
     width: 100%;
+    height: 100vh;
     padding-top: 100px;
     padding-bottom: 50px;
   }
 
-  #sec-two{
-    width: 100%;
-    padding-bottom: 50px;
-    text-align: left;
-  }
   
-  #sec-three{
-    width: 100%;
-    padding-bottom: 50px;
-    text-align: left;
-  }
   
   .index-title {
     font-family: 'Raleway';
