@@ -1,5 +1,10 @@
   /* Imported Fonts */
 
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
   .main-title{
     font-family: 'Raleway';
@@ -14,7 +19,7 @@
       font-style: normal;
       font-weight: 400;
       color:rgb(24, 24, 24);
-      padding: 0.9% 30% 0.9% 0%;
+      /* padding: 0.9% 30% 0.9% 0%; */
   }
 
   .color-span{
@@ -25,24 +30,17 @@
   .header-background{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
     width: 100%;
     height: 100vh;
+    gap: 7rem;
     justify-content: center;
     align-items: center;
     background: #EFF4FF;
     overflow: hidden;
   }
 
-  /* Sections */
-  
-  .container-row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
 
   /* Scroll Section Formatting for Site */
 
@@ -82,12 +80,11 @@
 	-webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8); 
 	-moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8); 
   background-color: #B3D5FC;
-  font-family: 'Open Sans';
-  
+  font-family: 'Open Sans'; 
 }  
 
 /* Logo Image Formatting */
 .logo{
-  max-height: 20vmax;
+  max-height: 300px;
 }
 
