@@ -109,6 +109,11 @@
   font-family: 'Open Sans'; 
 }  
 
+.btn.promo-button:hover{
+  background-color: #7faff3
+  
+}
+
 /* Logo Image Formatting */
 .logo{
   max-height: 300px;
