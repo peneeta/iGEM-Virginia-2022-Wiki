@@ -76,12 +76,11 @@
     text-align: right;
   }
 
-  p{
+  .index-text p{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    text-align: center;
   }
 
   /* Scroll Section Formatting for Site */
