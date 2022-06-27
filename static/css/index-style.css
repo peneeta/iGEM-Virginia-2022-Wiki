@@ -83,7 +83,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
 
+  #fs-section-two{    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #AD3B5D;
+    color: white;
   }
   
 
