@@ -102,7 +102,7 @@
   .card__link {
     color: currentColor;
     text-decoration: none;
-    border-bottom: 2px solid #b5272d;
+    border-bottom: 2px solid #4B1425;
   }
   .card__border {
     position: absolute;
@@ -110,7 +110,7 @@
     bottom: 0;
     width: 100%;
     height: 6px;
-    background: #b5272d;
+    background: #4B1425;
     transform: scaleY(0);
     transition-property: transform;
   }

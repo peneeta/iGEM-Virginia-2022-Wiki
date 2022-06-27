@@ -22,9 +22,8 @@
        url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-regular.svg') format('svg'); /* Legacy iOS */
 }
+
   *{
-    /* margin: 0;
-    padding: 0; */
     box-sizing: border-box;
   }
 
@@ -117,8 +116,17 @@
     background: #4b1425;
     color: white;
   }
-  
 
+  #fs-dark-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1C1C1C;
+    color: white;
+
+  }
 
   /* Button Formatting */
 .btn.promo-button {
