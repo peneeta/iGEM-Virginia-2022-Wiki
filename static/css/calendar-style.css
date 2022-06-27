@@ -103,6 +103,10 @@
     cursor: pointer;
 }
 
+/* Need to create a hover bar element */
+.week-selector{
+
+}
 .next-date{
     opacity: 0.5;
 }
