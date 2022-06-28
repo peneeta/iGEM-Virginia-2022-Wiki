@@ -7,6 +7,7 @@
 
 .calendar-container{
     font-size: 62.5%;
+    position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -20,21 +21,23 @@
     width: 45rem;
     height: 52rem;
     background-color: #eeeeee;
-    box-shadow: 0 .5rem;
+    /* box-shadow: 0 .5rem; */
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8); 
     scale: .5;
+    border-radius: 10px;
 }
 
 .month{
     width: 100%;
     height: 14rem;
-    background-color: #4B1425;
+    background-color: #69263b;
+    border-radius: 10px 10px 0px 0px;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
     text-align: center;
-    /* text-shadow: 0 .3rem .5rem rgba(0,0,0,0.5); */
 }
 
 .month-select{
@@ -79,7 +82,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-shadow: 0 .3rem .5rem rgba(0,0,0,0.5); */
 
 }
 
@@ -98,7 +100,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5); */
     transition: background-color 0.2s;
 }
 
@@ -110,10 +111,20 @@
 }
 
 /* Need to create a hover bar element */
-/* .week-selector{
-
-} */
+.week-selector{
+    width: 45rem;
+    position: absolute;
+    height: 4rem;
+    background-color:#f5e297;
+    border-radius: 1000px;
+    z-index: -9;
+    margin-top: -5rem;
+}
 
 .next-date{
     opacity: 0.5;
+}
+
+.prev-date{
+    opacity: 0.4;
 }
