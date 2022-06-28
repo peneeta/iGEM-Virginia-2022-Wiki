@@ -11,7 +11,7 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -21,7 +21,6 @@
     width: 45rem;
     height: 52rem;
     background-color: #eeeeee;
-    /* box-shadow: 0 .5rem; */
     box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8); 
     scale: .5;
     border-radius: 10px;
@@ -38,6 +37,10 @@
     align-items: center;
     padding: 0 2rem;
     text-align: center;
+}
+
+.active-month{
+    border-bottom: 5px solid white;
 }
 
 .month-select{
@@ -103,22 +106,16 @@
     transition: background-color 0.2s;
 }
 
-/* Change this to hover bar for each month */
-.days div:hover:not(.this-week){
-    background-color: yellow;
-    border: .2rem solid #777;
-    cursor: pointer;
-}
-
 /* Need to create a hover bar element */
 .week-selector{
-    width: 45rem;
+    width: 44rem;
     position: absolute;
     height: 4rem;
     background-color:#f5e297;
+    box-shadow: 4px 4px 0 rgba(255, 202, 45, 0.8); 
     border-radius: 1000px;
     z-index: -9;
-    margin-top: -5rem;
+    margin-bottom: 10rem;
 }
 
 .next-date{
