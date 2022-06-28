@@ -110,7 +110,7 @@
 <section class="cards-div">
 
 <!-- Project Description Card -->
-<a href="/html/project-description.html" class="card">
+<a href="{{ url_for('pages', page='description') }}" class="card">
   <div class="card__head">
     <div class="card__image"></div>
   </div>
@@ -125,7 +125,7 @@
 </a>
 
 <!-- Wetlab Card -->
-<a href="/html/wetlab-design.html" class="card">
+<a href="{{ url_for('pages', page='experiments') }}" class="card">
   <div class="card__head">
     <div class="card__image"></div>
   </div>
@@ -140,7 +140,7 @@
 </a>
 
 <!-- Modeling Card -->
-<a href="/html/modeling-overview.html" class="card">
+<a href="{{ url_for('pages', page='model') }}" class="card">
   <div class="card__head">
     <div class="card__image"></div>
   </div>
@@ -149,13 +149,13 @@
     <h4 class="card__text">Overview of how we used protein interaction software to model binding affinity and biomarker structure.</h4>
   </div>
   <div class="card__foot">
-    <span class="card__link" href="/html/modeling-overview.html">Click to read more</span>
+    <span class="card__link">Click to read more</span>
   </div>
   <div class="card__border"></div>
 </a>
 
 <!-- Human Practices Card -->
-<a href="/html/ihp.html" class="card">
+<a href="{{ url_for('pages', page='human-practices') }}" class="card">
   <div class="card__head">
     <div class="card__image"></div>
   </div>
