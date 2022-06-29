@@ -3,6 +3,7 @@
 {% block extraStyles %}
 <link href="{{ url_for('static', filename = 'css/standard-style.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename = 'css/calendar-style.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename = 'css/notebook-style.css') }}" rel="stylesheet">
 
 {% endblock %}
 
@@ -17,7 +18,35 @@
 <!-- Calendar Div FIX ARROWS-->
 <div class="calendar-container">
   
-    <p>Select a week to view a timeline of our experiments and lab notebook entries.</p>
+
+  <div class="notebook-container">
+    <p>Select a week to view a timeline of our experiments and lab notebook entries. NOTE I will write a javascript code to toggle these by week, they're kinda just here right now.</p>
+
+    <!-- THESE WRITE-UPS NEED TO BE ADDED EVENTUALLY-->
+    <div class="jun5-jun11">
+      <h2>June 5 to June 11</h2>
+
+    </div>
+
+    <div class="jun12-jun18">
+      <h2>June 12 to June 18</h2>
+
+    </div>
+
+    <div class="jun19-jun25">
+      <h2>June 19 to June 25</h2>
+
+    </div>
+
+    <div class="jun26-jul2">
+      <h2>June 26 to July 2</h2>
+      <p>[WRITE OVERVIEW OF THE WEEK HERE]</p>
+      <div class="lab-journals">
+        <p>Team lab notebooks per week will be available here, we can make a separate PDF that houses all of them.</p>
+      </div>
+    </div>
+  </div>
+    
 
   <div class="calendar">
     <div class="month">
@@ -25,7 +54,7 @@
       <div class="date">
         <h1>Lab Schedule</h1>
         <div class="month-select">
-          
+
           <!-- Change active month on click -->
           <script>
             function changeActiveMonth(m){
@@ -75,10 +104,10 @@
         <div class="prev-date">30</div>
         <div class="prev-date">31</div>
 
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
+        <div class="prev-date">1</div>
+        <div class="prev-date">2</div>
+        <div class="prev-date">3</div>
+        <div class="prev-date">4</div>
         <div>5</div>
         <div>6</div>
         <div>7</div>
