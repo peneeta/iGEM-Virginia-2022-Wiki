@@ -27,23 +27,23 @@
         <div class="month-select">
 
           <script>
+            function changeActiveMonth(m){
+              var month = document.getElementsByClassName('month-btn');
+              for (i=0; i<month.length; i++){
+                month[i].classList.remove('active-month')
+                console.log("removed class");
+              }
 
-            //HHELLPPPP
-            // let monthName = document.querySelectorAll(".btn.month-btn")
-            // monthName.forEach((month) => {
-            //   month.addEventListener("click", () => {
-            //     document.querySelector('.active-month').classList.remove('active.month')
-            //     month.classList.add('active-month')
-            //   });
-            // });
+              m.classList.add('active-month');
+            }
 
           </script>
 
-          <button type="button" class="btn month-btn active-month"><h2 style="color: white;">Jun</h2></button>
-          <button type="button" class="btn month-btn"><h2 style="color: white;">Jul</h2></button>
-          <button type="button" class="btn month-btn"><h2 style="color: white;">Aug</h2></button>
-          <button type="button" class="btn month-btn"><h2 style="color: white;">Sept</h2></button>
-          <button type="button" class="btn month-btn"><h2 style="color: white;">Oct</h2></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="btn month-btn active-month"><h2 style="color: white;">Jun</h2></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="btn month-btn"><h2 style="color: white;">Jul</h2></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="btn month-btn"><h2 style="color: white;">Aug</h2></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="btn month-btn"><h2 style="color: white;">Sept</h2></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="btn month-btn"><h2 style="color: white;">Oct</h2></button>
         </div>
       </div>
       <i class="fas fa-angle-right next"></i>
