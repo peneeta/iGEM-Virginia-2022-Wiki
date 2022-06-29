@@ -125,3 +125,7 @@
 .prev-date{
     opacity: 0.4;
 }
+
+.hidden-days{
+    display: none;
+}
