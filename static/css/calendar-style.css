@@ -6,8 +6,6 @@
 
 
 .calendar-container{
-    font-size: 62.5%;
-    position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -18,6 +16,8 @@
 
 
 .calendar{
+    font-size: 62.5%;
+    position: relative;
     width: 45rem;
     height: 52rem;
     background-color: #eeeeee;
@@ -39,7 +39,7 @@
     text-align: center;
 }
 
-.active-month{
+.btn.active-month{
     border-bottom: 5px solid white;
 }
 
