@@ -115,7 +115,7 @@ nav.navbar{
     opacity:0.9;
   }
 
-  .standard-header{
+.standard-header{
     display: flex;
     justify-content: center;
     align-items: center;
