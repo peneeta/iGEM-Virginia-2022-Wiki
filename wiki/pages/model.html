@@ -1,7 +1,6 @@
 {% extends "layout.html" %}
 
 {% block extraStyles %}
-<link href="{{ url_for('static', filename = 'css/standard-style.css') }}" rel="stylesheet">
 
 <!-- JUST IN CASE WE DO FANCY STUFF FOR FORMATTING HERE -->
 <link rel="stylesheet" href="{{ url_for('static', filename = 'css/model-style.css') }}">
@@ -23,7 +22,7 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, eos vel reiciendis perspiciatis eaque dolor totam eveniet aperiam deserunt quam omnis cumque, quaerat iste laborum ullam sit dignissimos. Tenetur, exercitationem! Add introduction here later.</p>
     
   </div>
-  
+
   <div class="pdb-struct">
     <!-- NGL Viewer Stuff -->
     <script src="{{ url_for('static', filename = 'ngl/dist/ngl.js') }}"></script>
