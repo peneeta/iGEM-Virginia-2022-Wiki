@@ -3,6 +3,8 @@
 {% block extraStyles %}
 <link href="{{ url_for('static', filename = 'css/standard-style.css') }}" rel="stylesheet">
 
+<!-- JUST IN CASE WE DO FANCY STUFF FOR FORMATTING HERE -->
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/model-style.css') }}">
 {% endblock %}
 
 {% block title %}Model{% endblock %}
@@ -14,17 +16,32 @@
   <h1> Modeling </h1>
 </div>
 
-<div class="container">
-  <!-- NGL Viewer Stuff -->
-  <script src="{{ url_for('static', filename = 'ngl/dist/ngl.js') }}"></script>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-      var stage = new NGL.Stage("viewport");
-      stage.loadFile("{{ url_for('static', filename = 'pdb/scFv-p2-8-vhvl.pdb') }}", {defaultRepresentation: true});
-      stage.setSpin(true);
-  });
-  </script>
-  <div id="viewport" style="width:400px; height:300px;"></div>
+<div class="page-container">
+  <div class="body-text-card">
+
+    <h2>Introduction</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, eos vel reiciendis perspiciatis eaque dolor totam eveniet aperiam deserunt quam omnis cumque, quaerat iste laborum ullam sit dignissimos. Tenetur, exercitationem! Add introduction here later.</p>
+    
+  </div>
+  
+  <div class="pdb-struct">
+    <!-- NGL Viewer Stuff -->
+    <script src="{{ url_for('static', filename = 'ngl/dist/ngl.js') }}"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var stage = new NGL.Stage("viewport");
+        stage.loadFile("{{ url_for('static', filename = 'pdb/scFv-p2-8-vhvl.pdb') }}", {defaultRepresentation: true});
+        stage.setSpin(true);
+    });
+    </script>
+    <div id="viewport" style="width:400px; height:300px;"></div>
+  </div>
+  
+
+  
+
 </div>
+
+
 
 {% endblock %}
