@@ -105,6 +105,7 @@
     border-radius: 1000px;
     z-index: -9;
     margin-bottom: 10rem;
+    /* Need to calculate this so that it moves up and down? */
 }
 
 .next-date{
