@@ -24,6 +24,7 @@
 <body>
   <!-- Navigation -->
   {% include 'menu.html' %}
+
   <!-- Scroll to change opacity of navbar -->
   <script>
     window.onscroll = function() {scrollFunction()};
@@ -37,7 +38,7 @@
         nav.classList.remove("nav-opaque");
     }
     }
-    </script>
+  </script>
 
   <!-- Page Content -->
   {% block page_content %}{% endblock %}
