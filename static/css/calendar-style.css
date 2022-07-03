@@ -81,7 +81,6 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: .2rem;
 }
 
 .days div{
@@ -92,20 +91,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.2s;
 }
 
 /* Need to create a hover bar element */
-.week-selector{
-    width: 44rem;
-    position: absolute;
-    height: 4rem;
+.week:hover{
+    background-color:#f5f0d09d;
+    box-shadow: 4px 4px 0 rgba(253, 241, 206, 0.8); 
+    border-radius: 1000px;
+}
+
+.week.active-week{
     background-color:#f5e297;
     box-shadow: 4px 4px 0 rgba(255, 202, 45, 0.8); 
     border-radius: 1000px;
-    z-index: -9;
-    margin-bottom: 10rem;
-    /* Need to calculate this so that it moves up and down? */
 }
 
 .next-date{
