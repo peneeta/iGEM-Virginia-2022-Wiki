@@ -22,22 +22,23 @@
     <p>Select a week to view a timeline of our experiments and lab notebook entries. These will eventually be toggled by week, they're kinda just here right now.</p>
 
     <!-- THESE WRITE-UPS NEED TO BE ADDED EVENTUALLY-->
-    <div class="jun5-jun11">
+    <div class="entry hidden" id="wk1">
       <h2>June 5 to June 11</h2>
 
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dicta exercitationem quos, natus dolor minima. Change this later.</p>
     </div>
 
-    <div class="jun12-jun18">
+    <div class="entry hidden" id="wk2">
       <h2>June 12 to June 18</h2>
 
     </div>
 
-    <div class="jun19-jun25">
+    <div class="entry hidden" id="wk3">
       <h2>June 19 to June 25</h2>
 
     </div>
 
-    <div class="jun26-jul2">
+    <div class="entry hidden" id="wk4">
       <h2>June 26 to July 2</h2>
       <p>[WRITE OVERVIEW OF THE WEEK HERE]</p>
       <div class="lab-journals">
@@ -101,11 +102,22 @@
     <script>
       function selectWeek(w){
         var week = document.getElementsByClassName('week');
+        var entries = document.getElementsByClassName('entry');
+        var entryID = w.id;
 
         for (i=0; i<week.length; i++){
           week[i].classList.remove('active-week')
         }
 
+        for(i=0; i<entries.length; i++){
+          if(entries[i].id === entryID){
+            entries[i].classList.remove('hidden')
+          }
+
+          else{
+            entries[i].classList.add('hidden')
+          }
+        }
         w.classList.add('active-week');
       }
     </script>
@@ -123,7 +135,7 @@
         <div class="prev-date">4</div>
       </div>
 
-      <div class="week" onclick="selectWeek(this)">
+      <div class="week" onclick="selectWeek(this)" id="wk1">
         <div class="days">
           <div>5</div>
           <div>6</div>
@@ -135,7 +147,7 @@
         </div>
       </div>
         
-        <div class="week" onclick="selectWeek(this)">
+        <div class="week" onclick="selectWeek(this)" id="wk2">
           <div class="days">
             <div>12</div>
             <div>13</div>
@@ -147,7 +159,7 @@
           </div>
         </div>
         
-        <div class="week" onclick="selectWeek(this)">
+        <div class="week" onclick="selectWeek(this)" id="wk3">
           <div class="days">
             <div>19</div>
             <div>20</div>
@@ -159,7 +171,7 @@
           </div>
         </div>
 
-        <div class="week" onclick="selectWeek(this)">
+        <div class="week" onclick="selectWeek(this)" id="wk4">
           <div class="days">
             <div>26</div>
             <div>27</div>
@@ -184,7 +196,7 @@
     </div>
 
     <!-- JULY -->
-    <div class="cal hidden-days" id="jul">
+    <div class="cal hidden" id="jul">
     
       <div class="days">
         <div class="prev-date">26</div>
@@ -257,7 +269,7 @@
     </div>
 
     <!-- AUGUST -->
-    <div class="cal hidden-days" id="aug">
+    <div class="cal hidden" id="aug">
 
       <div class="week" onclick="selectWeek(this)">
         <div class="days">
@@ -331,7 +343,7 @@
     </div>
 
     <!-- SEPTEMBER -->
-    <div class="cal hidden-days" id="sept">
+    <div class="cal hidden" id="sept">
       <div class="days">
         <div class="prev-date">28</div>
         <div class="prev-date">29</div>
@@ -403,7 +415,7 @@
     </div>
 
     <!-- OCTOBER -->
-    <div class="cal hidden-days" id="oct">
+    <div class="cal hidden" id="oct">
       <div class="days">
         <div class="prev-date">25</div>
         <div class="prev-date">26</div>
