@@ -60,7 +60,6 @@
       <div class="date">
         <h1>Lab Schedule</h1>
         <div class="month-select">
-
           <!-- Change active month on click -->
           <script>
             function changeActiveMonth(m){
@@ -76,10 +75,10 @@
 
               for (i=0; i<differentDays.length; i++){
                 if(differentDays[i].id === monthID){
-                  differentDays[i].classList.remove('hidden-days')
+                  differentDays[i].classList.remove('hidden')
                 }
                 else{
-                  differentDays[i].classList.add('hidden-days');
+                  differentDays[i].classList.add('hidden');
                 }
               }
                 m.classList.add('active-month');
