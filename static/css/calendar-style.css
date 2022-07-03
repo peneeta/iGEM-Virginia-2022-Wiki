@@ -32,10 +32,14 @@
     border-bottom: 5px solid white;
 }
 
+.date{
+    width: 100%;
+}
+
 .month-select{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: space-around;
     justify-content: center;
     gap: 2.5rem;
     margin-top: 2rem;
@@ -97,7 +101,7 @@
 .week:hover{
     background-color:#f5f0d09d;
     box-shadow: 4px 4px 0 rgba(253, 241, 206, 0.8); 
-    border-radius: 1000px;
+    border-radius: 100px;
 }
 
 .week.active-week{
