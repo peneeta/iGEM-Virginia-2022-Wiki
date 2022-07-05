@@ -107,6 +107,7 @@
     background-color:#d0dff59d;
     box-shadow: 4px 4px 0 rgba(0, 41, 144, 0.8); 
     border-radius: 100px;
+    transition: 0.5s;
 }
 
 .week.active-week{
