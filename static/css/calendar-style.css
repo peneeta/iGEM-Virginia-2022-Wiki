@@ -18,7 +18,7 @@
 .month{
     width: 100%;
     height: 14rem;
-    background-color: #69263b;
+    background-color: #840b32;
     border-radius: 10px 10px 0px 0px;
     color: white;
     display: flex;
@@ -99,14 +99,14 @@
 
 /* Need to create a hover bar element */
 .week:hover{
-    background-color:#f5f0d09d;
-    box-shadow: 4px 4px 0 rgba(253, 241, 206, 0.8); 
+    background-color:#d0dff59d;
+    box-shadow: 4px 4px 0 rgba(0, 41, 144, 0.8); 
     border-radius: 100px;
 }
 
 .week.active-week{
-    background-color:#f5e297;
-    box-shadow: 4px 4px 0 rgba(255, 202, 45, 0.8); 
+    background-color:#a4c4ff;
+    box-shadow: 4px 4px 0 rgba(0, 26, 153, 0.8); 
     border-radius: 1000px;
 }
 
