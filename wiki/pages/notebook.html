@@ -14,14 +14,20 @@
   <h1> Lab Notebook </h1>
 </div>
 
+<div class="body-text">
+  <h2>About</h2>
+  <p>Welcome to our lab notebook! Select a month and week on the calendar to see what we did each week in lab. We have also provided our Detailed Workflow document which includes the protocols we followed and reagents we used for each experiment. </p>
+</div>
+
 <!-- Calendar Div FIX ARROWS-->
 <div class="calendar-container">
-  
-
   <div class="notebook-container">
-    <p>Select a week to view a timeline of our experiments and lab notebook entries.</p>
 
     <!-- THESE WRITE-UPS NEED TO BE ADDED EVENTUALLY-->
+    <div class="entry">
+      <p>Select a week from the calendar to see our progress.</p>
+    </div>
+
     <div class="entry hidden" id="wk1">
       <h2>June 5 to June 11</h2>
 
@@ -47,16 +53,11 @@
       <h2>July 3 to July 9</h2>
     </div>
 
-    <div class="lab-journals">
-      <p>Team lab notebooks per week will be available here, we can make a separate PDF that houses all of them.</p>
-    </div>
-
   </div>
     
 
   <div class="calendar">
     <div class="month">
-      <i class="fas fa-angle-left prev"></i>
       <div class="date">
         <h1>Lab Schedule</h1>
         <div class="month-select">
@@ -85,14 +86,13 @@
             }
           </script>
 
-          <button type="button" onclick="changeActiveMonth(this)" class="btn month-btn active-month" id="jun"><h2 style="color: white;">Jun</h2></button>
-          <button type="button" onclick="changeActiveMonth(this)" class="jul btn month-btn" id="jul"><h2 style="color: white;">Jul</h2></button>
-          <button type="button" onclick="changeActiveMonth(this)" class="aug btn month-btn" id="aug"><h2 style="color: white;">Aug</h2></button>
-          <button type="button" onclick="changeActiveMonth(this)" class="sept btn month-btn" id="sept"><h2 style="color: white;">Sept</h2></button>
-          <button type="button" onclick="changeActiveMonth(this)" class="oct btn month-btn" id="oct"><h2 style="color: white;">Oct</h2></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="btn month-btn active-month" id="jun"><h2 style="color: white; text-align: center;">Jun</h2></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="jul btn month-btn" id="jul"><h2 style="color: white; text-align: center;">Jul</h2></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="aug btn month-btn" id="aug"><h2 style="color: white; text-align: center;">Aug</h2></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="sept btn month-btn" id="sept"><h2 style="color: white; text-align: center;">Sept</h2></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="oct btn month-btn" id="oct"><h2 style="color: white; text-align: center;">Oct</h2></button>
         </div>
       </div>
-      <i class="fas fa-angle-right next"></i>
     </div>
     <div class="weekdays">
       <div>Sun</div>

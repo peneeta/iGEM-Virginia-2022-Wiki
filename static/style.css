@@ -1,3 +1,10 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Fonts */
 
 /* raleway-regular - latin */
@@ -24,17 +31,20 @@
         url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-regular.svg') format('svg'); /* Legacy iOS */
 }
 
-/* NAVIGATION BAR STYLING */
-/* On-Hover NavBar Dropdown, fade in
-@media screen and (min-width: 992px) {
-	.navbar .dropdown-menu-end{ right:0; left: auto;  }
-	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.5s; margin-top:0;  }
-	.navbar .nav-item:hover .nav-link{ color: #fff;  }
-	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
-	.navbar .dropdown-menu.fade-up{ top:180%;  }
-	.navbar .nav-item:hover .dropdown-menu{ transition: 0.5s; opacity:1; visibility: visible; top:100%; transform: rotateX(0deg) translateY(20px); }
-}	 */
+/* open-sans ITALIC */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src:
+       url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-italic.svg') format('svg'); /* Legacy iOS */
+}
 
+
+/* NAVIGATION BAR STYLING */
 nav.navbar{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -57,7 +67,7 @@ nav.navbar{
 }
 
 .nav-opaque{
-  background-color: #FFE2E2;
+  background-color: #1d1d1dd4;
   transition: visibility 0s, 0.6s, opacity 0.6s linear, transform 1s;
   box-shadow: 10px 0 5px #2128327a;
 }
@@ -154,4 +164,16 @@ nav.navbar{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
+}
+
+h2{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+}
+
+p{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
 }
