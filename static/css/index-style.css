@@ -1,26 +1,26 @@
 /* Imported Fonts */
-/* raleway-regular - latin */
+/* Quicksand-regular - latin */
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
   src: 
-       url('https://static.igem.wiki/teams/4477/wiki/raleway-v27-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('https://static.igem.wiki/teams/4477/wiki/raleway-v27-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('https://static.igem.wiki/teams/4477/wiki/raleway-v27-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('https://static.igem.wiki/teams/4477/wiki/raleway-v27-latin-regular.svg') format('svg'); /* Legacy iOS */
+       url('https://static.igem.wiki/teams/4477/wiki/quicksand-v29-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://static.igem.wiki/teams/4477/wiki/quicksand-v29-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('https://static.igem.wiki/teams/4477/wiki/quicksand-v29-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://static.igem.wiki/teams/4477/wiki/quicksand-v29-latin-regular.svg') format('svg'); /* Legacy iOS */
 }
 
-/* raleway-bold */
+/* Quicksand-Lite */
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Quicksand';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 300;
   src:
-       url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-700.svg') format('svg'); /* Legacy iOS */
+       url('https://static.igem.wiki/teams/4477/wiki/quicksand-v29-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://static.igem.wiki/teams/4477/wiki/quicksand-v29-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('https://static.igem.wiki/teams/4477/wiki/quicksand-v29-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://static.igem.wiki/teams/4477/wiki/quicksand-v29-latin-300.svg') format('svg'); /* Legacy iOS */
 }
 
 /* open-sans-regular - latin */
@@ -60,9 +60,9 @@
 }
 
   .main-title{
-    font-family: 'Raleway';
+    font-family: 'Quicksand';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 7vw;
     color: white;
   }
@@ -81,9 +81,9 @@
   }
   
   .heading-bold-text{
-    font-family: 'Raleway';
+    font-family: 'Quicksand';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 300;
     
   }
 
@@ -100,7 +100,7 @@
     gap: 7rem;
     justify-content: center;
     align-items: center;
-    background: #1C1C1C;
+    background: #131313;
     overflow: hidden;
   }
   
@@ -119,17 +119,6 @@
   /* Scroll Section Formatting for Site */
 
 /* Sections */
-
-  #fullscreen-sec{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-
   .fs-light-section{
     width: 100%;
     height: 100vh;
@@ -156,9 +145,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1C1C1C;
+    background: #131313;
     color: white;
 
+  }
+
+  .helpful-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
   }
 
 /* Logo Image Formatting */
