@@ -190,3 +190,10 @@ p{
   font-style: normal;
   font-weight: 400;
 }
+
+.body-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
