@@ -32,6 +32,11 @@
     border-bottom: 5px solid white;
 }
 
+.btn.month-btn:hover{
+    border-bottom: 5px solid white;
+    transition: 0.4s;
+}
+
 .date{
     width: 100%;
 }
