@@ -1,3 +1,10 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Fonts */
 
 /* raleway-regular - latin */
@@ -60,7 +67,7 @@ nav.navbar{
 }
 
 .nav-opaque{
-  background-color: #FFE2E2;
+  background-color: #1d1d1dd4;
   transition: visibility 0s, 0.6s, opacity 0.6s linear, transform 1s;
   box-shadow: 10px 0 5px #2128327a;
 }
