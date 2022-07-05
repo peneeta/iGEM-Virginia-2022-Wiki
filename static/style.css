@@ -189,6 +189,7 @@ p{
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
+  font-size: 16px;
 }
 
 .body-container{
@@ -197,3 +198,4 @@ p{
   align-items: center;
   padding: 40px;
 }
+

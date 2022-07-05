@@ -1,4 +1,9 @@
 {% extends "layout.html" %}
+
+{% block extraStyles %}
+<link href="{{ url_for('static', filename = 'css/collab-style.css') }}" rel="stylesheet">
+
+{% endblock %}
   
 {% block title %}Collaborations{% endblock %}
 {% block lead %}Sharing and collaboration are core values of iGEM. We encourage you to reach out and work with other teams on difficult problems that you can more easily solve together.{% endblock %}
@@ -9,30 +14,36 @@
   <h1> Collaborations </h1>
 </div>
 
-    <h2>University of Rochester 2022</h2>
-    <hr>
-    <p> (Very rough draft of what to say.  I'll fix this up when we extablish what our collaboration with them will be or if this is just a one time meeting).  Our team met with the URoch 2022 iGEM team to share ideas and discuss potential collaborations.  URoch 2022's project involves the production of a protein that could bind to any antibody, so we discussed the common ground of working with antibodies.</p>
-    <img src = "IMG_0508.jpg" alt = "Team Photo with URoch 2022" />
-  </div>
+<div class="body-container">
+   <div class="container">
+      <div class="collab-section">
+      <h2>University of Rochester 2022</h2>
+      <hr>
+      <p> (Very rough draft of what to say.  I'll fix this up when we extablish what our collaboration with them will be or if this is just a one time meeting).  Our team met with the URoch 2022 iGEM team to share ideas and discuss potential collaborations.  URoch 2022's project involves the production of a protein that could bind to any antibody, so we discussed the common ground of working with antibodies.</p>
+      <img class="zoom-img" src = "https://static.igem.wiki/teams/4477/wiki/rochester-virginia-meeting.png" alt = "Team Photo with URoch 2022" />
+   </div>
 
-  <div>
+  <div class="collab-section">
      <h2>Vilnius 2020</h2>
     <hr>
     <p> (Very rough draft of what to say.  I'll fix this up when we extablish what our collaboration with them will be or if this is just a one time meeting).  Our team had the opportunity to meet with the iGEM Vilnius 2020 Team Captain for advice on how to design lateral flow assays and feedback on what we could be doing to better engage stakeholders with our design. </p>
-    <img src = "IMG_0509.jpg" alt = "Team Photo with Vilnius 2020 Team Captain"/>
+    <img class="zoom-img" src = "https://static.igem.wiki/teams/4477/wiki/vilnius2020-virginia-meeting.png" alt = "Team Photo with Vilnius 2020 Team Captain"/>
     </div>
 
-    <div>
+    <div class="collab-section">
        <h2>Vilnius 2022</h2>
     <hr>
     <p> (Very rough draft of what to say.  I'll fix this up when we extablish what our collaboration with them will be or if this is just a one time meeting).  Our team met with the iGEM Vilnius 2022 iGEM team to share ideas and discuss potential collaborations.  We discussed potential integrated human practice related collaborations.</p>
-    <img src = "IMG_05010.jpg" alt = "Team Photo with Vilnius 2022 Team" />
+    <img class="zoom-img" src = "https://static.igem.wiki/teams/4477/wiki/vilnius2022-virginia-meeting.png" alt = "Team Photo with Vilnius 2022 Team" />
     </div>
-    <div>
-       <h2>University of Rochester 2022</h2>
+
+    <div class="collab-section">
+       <h2>Team IISER Pune 2022</h2>
     <hr>
     <p> (Very rough draft of what to say.  I'll fix this up when we extablish what our collaboration with them will be or if this is just a one time meeting).  Our team met with the IISER 2 Pune, India iGEM team to share ideas and discuss potential collaborations.  IISER 2's team is also using Shuffle E.coli in their design and we discussed potential wetlab collaborations.</p>
-    <img src = "IMG_05011.jpg" alt = "Team Photo with IISER 2 2022 iGEM 2" />
-  
+    <img class="zoom-img" src = "https://static.igem.wiki/teams/4477/wiki/iiser-virginia-meeting.png" alt = "Team Photo with IISER 2 2022 iGEM 2" />
+    </div>
+   </div>
+</div>
 {% endblock %}
 

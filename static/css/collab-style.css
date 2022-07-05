@@ -1,0 +1,10 @@
+.collab-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.zoom-img{
+    max-width: 400px;
+    align-self: center;
+  }
