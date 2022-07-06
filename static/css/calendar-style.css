@@ -12,6 +12,7 @@
     background-color: #eeeeee;
     box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8); 
     scale: .5;
+    transform-origin: center;
     border-radius: 10px;
 }
 
