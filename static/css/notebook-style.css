@@ -7,9 +7,47 @@
     flex-wrap: nowrap;
 }
 
+.calendar{
+    -webkit-box-shadow: 0px 11px 22px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 11px 22px 0px rgba(0,0,0,0.48);
+    box-shadow: 0px 11px 22px 0px rgba(0,0,0,0.48);
+}
+
 .notebook-container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 0px 150px;
+}
+
+.entry-card{
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    width: 30rem;
+    flex-wrap: nowrap;
+    -webkit-box-shadow: 0px 11px 22px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 11px 22px 0px rgba(0,0,0,0.48);
+    box-shadow: 0px 11px 22px 0px rgba(0,0,0,0.48);
+}
+
+.entry{
+    padding: 40px;
+}
+
+.entry h2{
+    margin-bottom: 30px;
+}
+
+.nav-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px;
+}
+
+.nav-buttons button{
+
 }

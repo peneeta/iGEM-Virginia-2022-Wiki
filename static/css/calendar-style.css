@@ -10,15 +10,15 @@
     width: 45rem;
     height: 52rem;
     background-color: #eeeeee;
-    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8); 
     scale: .5;
+    transform-origin: center;
     border-radius: 10px;
 }
 
 .month{
     width: 100%;
     height: 14rem;
-    background-color: #840b32;
+    background-color: #091367;
     border-radius: 10px 10px 0px 0px;
     color: white;
     display: flex;
@@ -55,10 +55,9 @@
     cursor: pointer;
 }
 
-.month h1{
+.month h2{
     font-size: 3rem;
     font-weight: 400;
-    text-transform: uppercase;
     letter-spacing: 0.2rem;
     margin-bottom: 1rem;
 }
@@ -104,15 +103,17 @@
 
 /* Need to create a hover bar element */
 .week:hover{
-    background-color:#d0dff59d;
-    box-shadow: 4px 4px 0 rgba(0, 41, 144, 0.8); 
+    background-color:#f2a7a79d;
+    box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.5);
     border-radius: 100px;
     transition: 0.5s;
 }
 
 .week.active-week{
-    background-color:#a4c4ff;
-    box-shadow: 4px 4px 0 rgba(0, 26, 153, 0.8); 
+    background-color:#e97777;
+    box-shadow: 4px 4px 0 rgba(121, 1, 1, 0.8); 
     border-radius: 1000px;
 }
 
