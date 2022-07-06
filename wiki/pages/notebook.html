@@ -17,16 +17,33 @@
 <div class="body-container">
   <div class="container">
     <h2>About</h2>
-    <p>Welcome to our lab notebook! Select a month and week on the calendar to see what we did each week in lab. We have also provided our Detailed Workflow document which includes the protocols we followed and reagents we used for each experiment. </p>
+    <p>Welcome to our lab notebook! Select a month and week on the calendar to see what we did each week in lab. All of our protocols and reagents have been compiled into a Detailed Workflow document linked below to help other iGEM teams that want to reproduce an aspect of our project.</p>
   </div>
 </div>
 
 <!-- Calendar Div FIX ARROWS-->
 <div class="calendar-container">
   <div class="notebook-container">
+    <div class="entry-card">
+      <div class="nav-buttons">
 
-    <!-- THESE WRITE-UPS NEED TO BE ADDED EVENTUALLY-->
+        <script>
+          function toggleNext(){
+
+          }
+
+          function toggleLast(){
+
+          }
+        </script>
+
+        <button type="button" class="btn btn-dark card-btn">Previous Week</button>
+        <button type="button" class="btn btn-dark card-btn">Next Week</button>
+      </div>
+
+
     <div class="entry">
+      <h2>Our Lab by Week</h2>
       <p>Select a week from the calendar to see our progress.</p>
     </div>
 
@@ -34,7 +51,6 @@
       <h2>June 5 to June 11</h2>
 
       <p>
-        MAKE THIS INTO A LIST
         Planned protocols and researched experimental design for all the necessary experiments needed throughout the project
         <br>
         Ordered reagents, took stock of the lab to determine which enzymes and reagents we have 
@@ -85,14 +101,16 @@
     <div class="entry hidden" id="wk6">
 
     </div>
+  </div>
 
   </div>
+
     
 
   <div class="calendar">
     <div class="month">
       <div class="date">
-        <h1>Lab Schedule</h1>
+        <h2>Calendar</h2>
         <div class="month-select">
           <!-- Change active month on click -->
           <script>
@@ -119,11 +137,11 @@
             }
           </script>
 
-          <button type="button" onclick="changeActiveMonth(this)" class="btn month-btn active-month" id="jun"><h2 style="color: white; text-align: center;">Jun</h2></button>
-          <button type="button" onclick="changeActiveMonth(this)" class="jul btn month-btn" id="jul"><h2 style="color: white; text-align: center;">Jul</h2></button>
-          <button type="button" onclick="changeActiveMonth(this)" class="aug btn month-btn" id="aug"><h2 style="color: white; text-align: center;">Aug</h2></button>
-          <button type="button" onclick="changeActiveMonth(this)" class="sept btn month-btn" id="sept"><h2 style="color: white; text-align: center;">Sept</h2></button>
-          <button type="button" onclick="changeActiveMonth(this)" class="oct btn month-btn" id="oct"><h2 style="color: white; text-align: center;">Oct</h2></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="btn month-btn active-month" id="jun"><h3 style="color: white; text-align: center;">Jun</h3></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="jul btn month-btn" id="jul"><h3 style="color: white; text-align: center;">Jul</h3></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="aug btn month-btn" id="aug"><h3 style="color: white; text-align: center;">Aug</h3></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="sept btn month-btn" id="sept"><h3 style="color: white; text-align: center;">Sept</h3></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="oct btn month-btn" id="oct"><h3 style="color: white; text-align: center;">Oct</h3></button>
         </div>
       </div>
     </div>
