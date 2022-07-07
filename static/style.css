@@ -160,12 +160,6 @@ nav.navbar{
     align-items: center;
 }
 
-.page-container h2{
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 300;
-}
-
 .body-text-card{
     display: flex;
     flex-direction: column;
@@ -200,3 +194,6 @@ p{
   padding-top: 100px;
 }
 
+.pdb-struct{
+  padding: 40px;
+}

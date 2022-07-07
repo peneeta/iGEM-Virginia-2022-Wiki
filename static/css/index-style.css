@@ -77,7 +77,7 @@
   }
 
   .color-span{
-    color: #AD3B5D;
+    color: #C54C4C;
   }
   
   .heading-bold-text{
@@ -121,13 +121,16 @@
 /* Sections */
   .fs-light-section-narrow{
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background: #E9E9E9;
     overflow: hidden;
+    -webkit-box-shadow: 0px 5px 22px 10px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 5px 22px 10px rgba(0,0,0,0.38);
+    box-shadow: 0px 5px 22px 10px rgba(0,0,0,0.38);
   }
 
   .fs-light-section{
