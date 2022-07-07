@@ -179,6 +179,14 @@ h2{
   font-weight: 300;
 }
 
+h3 {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+
+}
+
 p{
   font-family: 'Open Sans';
   font-style: normal;
