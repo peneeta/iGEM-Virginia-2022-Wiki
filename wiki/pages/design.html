@@ -15,14 +15,14 @@
 
   <!-- SeqViz Stuff -->
 
-<div class="plasmidViewer" id="plasmid1">
+<div class="plasmidViewer" id="root">
     <script src="{{ url_for('static', filename = 'seqviz/seqviz.min.js') }}"></script>
 
     <script>
     window.seqviz
-        .Viewer("plasmid1", {
+        .Viewer("root", {
         name: "L09136",
-        seq: "tcgcgcgtttcggtgatgacggtgaaaacctctgacacatgca",
+        seq: "TTGACGGCTAGCTCAGTCCTAGGTACAGTGCTAGC",
         style: { height: "50vh", width: "50vw" },
         })
         .render();
@@ -30,3 +30,5 @@
 </div>
 
 {% endblock %}
+
+
