@@ -1,3 +1,14 @@
+image: node:10.15.3
+
+cache:
+  paths:
+    - static/node_modules/
+
+before_script:
+  - npm install
+
+# Everything above this line is an attempt to use npm to install
+
 image: python:3.6
 
 pages:
