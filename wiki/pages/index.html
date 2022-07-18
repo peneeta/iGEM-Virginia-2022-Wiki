@@ -13,23 +13,16 @@
 {% block page_content %}
   <div class="header-background">
       <div class="header-wrapper">
-        <h1 class="main-title">Athero<span class="color-span">SH</span>uffle</h1>
-        <p class="second-title">A lateral flow test strip for proactive atherosclerosis detection.</p>
-
+        <h1 class="main-title">Athero<span class="bold-title">SH</span>uffle</h1>
+        <p class="second-title">The first lateral flow test strip for early atherosclerosis detection.</p>
       </div>
 
   </div>
 
-  <div class="fs-light-section-narrow">
-    <div class="container">
-      <h2>A Worldwide Health Crisis</h2>
-  
-      <p> Heart disease is the <span class="bold-text">leading cause of death</span> in the United States and around the world. 
-        <br>
-
-        Each year, one in four Americans die of various cardiovascular complications. [1] <span class="bold-text">Atherosclerosis</span> is a form of heart disease characterized by plaque buildup in the inner arterial wall. It progresses through multiple stages and is often caught too late.
-        
-        Add more health facts here.</p> 
+  <div class="light-section-narrow">
+    <div class="container mission-statement">
+      <h2 class="mission-heading">Our Mission</h2>
+      <p class="mission-text mission-text-wrapper">“AtheroSHuffle represents a collaboration between science and society to proactively combat the vices of cardiovascular health.”</p>
     </div>
   </div>
 
@@ -42,176 +35,135 @@
   </div>
 
 
-  <div class="fs-blue-section-wide">
+
+  <div class="dark-section">
     <div class="container">
-      <h2>Pathogenesis</h2>
-      <p>Oxidized low density lipoprotein (OxLDL) concentration increases in the blood, contributing to plaque formation.
-
-        As plaque buildup grows, blood flow through the affected arteries is constricted. [3] Blood vessels begin to narrow and blood flow decreases throughout the body.
-        This can be fatal, leading to further cardiovascular complications including blood clots, vessel rupture, 
-        osteoarthritis, aneurysms, stroke, and heart attack. [4] 
-        
-        Research supports that atherosclerosis begins developing when people are in their 20s, but treatment does not begin until ages 50-75. [6]</p>
+      <div class="abstract">
+        <h2>Abstract</h2>
+        <p>Atherosclerosis, an inflammatory disease characterized by plaque build-up in the inner arterial walls, is a common cardiovascular disease affecting millions in America and worldwide.  However, current detection methods are costly, time-consuming, and not recommended during medical visits unless individuals show signs of further cardiovascular complications. Here, we describe a method of early atherosclerosis detection centered around the detection of oxidized low-density lipoprotein (oxLDL), a biomarker in the bloodstream whose presence is associated with early to middle stages of atherosclerosis development. This synthetic biology approach provides individuals with a quick, accessible, and proactive method to testing their likelihood of having atherosclerosis. By engineering the SHuffle E. coli strand to produce oxLDL-specific antibodies, oxLDL levels can be determined from an easy-to-read test strip containing these antibodies.  This method is projected to significantly reduce the cost of current detection methods and add a dimension to preexisting biomarker detection diagnostics.</p>
+      </div>
     </div>
-  </div>
 
-  <div class="fs-dark-section">
-    <div class="container" id="fullscreen-sec">
-      <h2>Problems with Current Treatment Methods</h2>
-
-      <p> Currently, physicians use electrocardiogram (EKG) data analysis, CT scans, and angiograms to detect plaque, which can range between $270 to $4700. These methods are expensive and require multiple visits to health professionals to interpret test results.
-
-        Diagnostic tests for cardiovascular disease are not included in routine checkups and are not recommended until an individual shows signs of further cardiovascular complications. </p>
-
+    <div class="video">
+      <p>PROMO VIDEO WILL GO HERE</p>
     </div>
+
   </div>
   
 
   <div class="fs-light-section">
     <div class="container">
-      <h2>Our Solution</h2>
+      <h2>Our Committees</h2>
+        <p> cards for wetlab, modeling, and ihp</p>
+        <!-- Hoverable Cards -->
+          <section class="cards-div">
 
-        <p> To address the need for proactive atherosclerosis testing, we created AtheroSHuffle, a  a test strip that uses antibodies synthesized by the E. coli SHuffle strain to detect OxLDL in blood samples.
-          
-        Our test strip consists of a labelled antibody, an scFv fragment, and a nanobody. The labelled antibody binds to OxLDL in a blood sample and forms a sandwich complex with the scFv antibody. The nanobody binds to the labelled antibody as a control line.</p>
-    </div>
-  </div>
+            <!-- Wetlab Card -->
+            <a href="{{ url_for('pages', page='experiments') }}" class="card">
+              <div class="card__head">
+                <div class="card__image"></div>
+              </div>
+              <div class="card__body">
+                <h3 class="card__headline">Wet Lab</h3>
+                <p>Documentation of experiments we performed in lab to engineer and validate our project.</p>
+              </div>
+              <div class="card__foot">
+                <span class="card__link">Click to read more</span>
+              </div>
+              <div class="card__border"></div>
+            </a>
+            
+            <!-- Modeling Card -->
+            <a href="{{ url_for('pages', page='model') }}" class="card">
+              <div class="card__head">
+                <div class="card__image"></div>
+              </div>
+              <div class="card__body">
+                <h3 class="card__headline">Modeling</h3>
+                <p>Learn how we used protein interaction software to model E. coli optimization and antibody binding.</p>
+              </div>
+              <div class="card__foot">
+                <span class="card__link">Click to read more</span>
+              </div>
+              <div class="card__border"></div>
+            </a>
+            
+            <!-- Human Practices Card -->
+            <a href="{{ url_for('pages', page='human-practices') }}" class="card">
+              <div class="card__head">
+                <div class="card__image"></div>
+              </div>
+              <div class="card__body">
+                <h3 class="card__headline">Human Practices</h3>
+                <p>Learn about our outreach events, and how experts in the field and other iGEM teams helped to inform our design. </p>
+              </div>
+              <div class="card__foot">
+                <span class="card__link">Click to read more</span>
+              </div>
+              <div class="card__border"></div>
+            </a>
+            
+            <!-- On hover animation -->
+            <script>
+              const height = (elem) => {
+                return elem.getBoundingClientRect().height
+              }
+            
+              const distance = (elemA, elemB, prop) => {
+                const sizeA = elemA.getBoundingClientRect()[prop]
+                const sizeB = elemB.getBoundingClientRect()[prop]
+            
+                return sizeB - sizeA
+              }
+            
+              const factor = (elemA, elemB, prop) => {
+                const sizeA = elemA.getBoundingClientRect()[prop]
+                const sizeB = elemB.getBoundingClientRect()[prop]
+            
+                return sizeB / sizeA
+              }
+            
+              document.querySelectorAll('.card').forEach((elem) => {
+            
+                const head = elem.querySelector('.card__head')
+                const image = elem.querySelector('.card__image')
+                const author = elem.querySelector('.card__author')
+                const body = elem.querySelector('.card__body')
+                const foot = elem.querySelector('.card__foot')
+            
+                elem.onmouseenter = () => {
+                  elem.classList.add('hover')
+            
+                  const imageScale = 1 + factor(head, body, 'height')
+                  image.style.transform = `scale(${ imageScale })`
+            
+                  const bodyDistance = height(foot) * -1
+                  body.style.transform = `translateY(${ bodyDistance }px)`
+            
+                  const authorDistance = distance(head, author, 'height')
+                  author.style.transform = `translateY(${ authorDistance }px)`
+                }
+            
+                elem.onmouseleave = () => {
+                  elem.classList.remove('hover')
+            
+                  image.style.transform = `none`
+                  body.style.transform = `none`
+                  author.style.transform = `none`
+                }
+            
+            })
+            </script>
+          </section>
+              </div>
+            </div>
 
 
-<div class="fs-blue-section">
-  <div class="container">
-    <h2>The Synthetic Biology Puzzle Piece</h2>
-    <p> To synthesize our antibodies, we chose to use the engineered E. coli strand SHuffle. This strand is unique because it has the ability to form disulfide bonds during protein synthesis, which are needed to stabilize antibody structure. [CITATION]
-
-      Typically, these antibodies would be produced by inoculating animals and pulling blood or spleen samples, which is harmful and invasive to the animals. By introducing our antibodies in E. coli SHuffle, they can be produced in a safe and humane manner.</p>
-  </div>
-</div>
-
-
-
-
-
-<!-- END SCROLLTHROUGH -->
-<div class="helpful-links">
-  <div class="container">
-    <h2>Check out these pages to learn more!</h2> 
-  </div>
-</div>
-
-<!-- Hoverable Cards -->
-<section class="cards-div">
-
-<!-- Project Description Card -->
-<a href="{{ url_for('pages', page='description') }}" class="card">
-  <div class="card__head">
-    <div class="card__image"></div>
-  </div>
-  <div class="card__body">
-    <h3 class="card__headline">Project Description</h2>
-    <p>Read our abstract and a detailed description of AtheroSHUffle. </p>
-  </div>
-  <div class="card__foot">
-    <span class="card__link">Click to read more</span>
-  </div>
-  <div class="card__border"></div>
-</a>
-
-<!-- Wetlab Card -->
-<a href="{{ url_for('pages', page='experiments') }}" class="card">
-  <div class="card__head">
-    <div class="card__image"></div>
-  </div>
-  <div class="card__body">
-    <h3 class="card__headline">Wet Lab</h3>
-    <p>Documentation of experiments we performed in lab to engineer and validate our project.</p>
-  </div>
-  <div class="card__foot">
-    <span class="card__link">Click to read more</span>
-  </div>
-  <div class="card__border"></div>
-</a>
-
-<!-- Modeling Card -->
-<a href="{{ url_for('pages', page='model') }}" class="card">
-  <div class="card__head">
-    <div class="card__image"></div>
-  </div>
-  <div class="card__body">
-    <h3 class="card__headline">Modeling</h3>
-    <p>Learn how we used protein interaction software to model E. coli optimization and antibody binding.</p>
-  </div>
-  <div class="card__foot">
-    <span class="card__link">Click to read more</span>
-  </div>
-  <div class="card__border"></div>
-</a>
-
-<!-- Human Practices Card -->
-<a href="{{ url_for('pages', page='human-practices') }}" class="card">
-  <div class="card__head">
-    <div class="card__image"></div>
-  </div>
-  <div class="card__body">
-    <h3 class="card__headline">Human Practices</h3>
-    <p>Learn about our outreach events, and how experts in the field and other iGEM teams helped to inform our design. </p>
-  </div>
-  <div class="card__foot">
-    <span class="card__link">Click to read more</span>
-  </div>
-  <div class="card__border"></div>
-</a>
-
-<!-- On hover animation -->
-<script>
-  const height = (elem) => {
-    return elem.getBoundingClientRect().height
-  }
-
-  const distance = (elemA, elemB, prop) => {
-    const sizeA = elemA.getBoundingClientRect()[prop]
-    const sizeB = elemB.getBoundingClientRect()[prop]
-
-    return sizeB - sizeA
-  }
-
-  const factor = (elemA, elemB, prop) => {
-    const sizeA = elemA.getBoundingClientRect()[prop]
-    const sizeB = elemB.getBoundingClientRect()[prop]
-
-    return sizeB / sizeA
-  }
-
-  document.querySelectorAll('.card').forEach((elem) => {
-
-    const head = elem.querySelector('.card__head')
-    const image = elem.querySelector('.card__image')
-    const author = elem.querySelector('.card__author')
-    const body = elem.querySelector('.card__body')
-    const foot = elem.querySelector('.card__foot')
-
-    elem.onmouseenter = () => {
-      elem.classList.add('hover')
-
-      const imageScale = 1 + factor(head, body, 'height')
-      image.style.transform = `scale(${ imageScale })`
-
-      const bodyDistance = height(foot) * -1
-      body.style.transform = `translateY(${ bodyDistance }px)`
-
-      const authorDistance = distance(head, author, 'height')
-      author.style.transform = `translateY(${ authorDistance }px)`
-    }
-
-    elem.onmouseleave = () => {
-      elem.classList.remove('hover')
-
-      image.style.transform = `none`
-      body.style.transform = `none`
-      author.style.transform = `none`
-    }
-
-})
-</script>
-</section>
+          <div class="blue-section">
+            <div class="container">
+              <h2>About Us</h2>
+              <p>We are a dedicated group of twelve students from the University of Virginia. Our team represents a wide variety of disciplines, from Math, to Engineering, to Economics. To learn more about our individual contributions to the project, visit our team members page!</p>
+            </div>
+          </div>
 
 {% endblock %}
