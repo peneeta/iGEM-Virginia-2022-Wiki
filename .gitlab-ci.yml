@@ -1,13 +1,14 @@
 .pre:
   stage: install
   image: node:17.6.0
+  script:
+  - cd static
+  - npm install
   cache:
     paths:
-        - static/node_modules/
+        - static/node_modules
 
-  script:
-    - cd static
-    - npm install
+
 
 # Everything above this line is an attempt to use npm to install
 
