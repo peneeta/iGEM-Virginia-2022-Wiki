@@ -130,10 +130,7 @@
     gap: 7rem;
     justify-content: center;
     align-items: center;
-    /* Draw up a background image later */
-    /* background-image: url(https://www.zielbio.com/wp-content/uploads/2020/11/hero-mobile-bg-1.jpg); */
-    background-repeat: no-repeat;
-    background-color: #081A3E;
+    background-color: #131313;
     overflow: hidden;
   }
   
@@ -160,6 +157,20 @@
     align-items: center;
     flex-direction: column;
     background: #E9E9E9;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 5px 22px 10px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 5px 22px 10px rgba(0,0,0,0.38);
+    box-shadow: 0px 5px 22px 10px rgba(0,0,0,0.38);
+  }
+
+  .fs-gray-section-narrow{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E8CBC5;
     overflow: hidden;
     -webkit-box-shadow: 0px 5px 22px 10px rgba(0,0,0,0.38);
     -moz-box-shadow: 0px 5px 22px 10px rgba(0,0,0,0.38);
