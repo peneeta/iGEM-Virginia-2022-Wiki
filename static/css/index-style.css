@@ -93,8 +93,8 @@
     gap: 7rem;
     justify-content: center;
     align-items: center;
-    background: #131313;
     background-image: url(https://www.zielbio.com/wp-content/uploads/2020/11/hero-mobile-bg-1.jpg);
+    background-color: #131313;
     overflow: hidden;
   }
   
