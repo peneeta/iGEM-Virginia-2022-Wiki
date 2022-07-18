@@ -71,6 +71,10 @@
        url('https://static.igem.wiki/teams/4477/wiki/open-sans-light-italic/open-sans-v29-latin-300italic.svg') format('svg'); /* Legacy iOS */
 }
 
+  .body{
+    width:100%;
+  }
+
   .main-title{
     font-family: 'Quicksand';
     font-style: normal;

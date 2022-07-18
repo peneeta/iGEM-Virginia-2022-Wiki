@@ -11,6 +11,7 @@
 
 
 {% block page_content %}
+<div class="body">
   <div class="header-background">
       <div class="header-wrapper">
         <h1 class="main-title">Athero<span class="bold-title">SH</span>uffle</h1>
@@ -47,7 +48,7 @@
       <h2>Our Committees</h2>
         <p> cards for wetlab, modeling, and ihp</p>
         <!-- Hoverable Cards -->
-          <section class="cards-div" class="cards-div-md">
+          <section class="cards-div">
 
             <!-- Wetlab Card -->
             <a href="{{ url_for('pages', page='experiments') }}" class="card">
@@ -156,5 +157,6 @@
               <p>We are a dedicated group of twelve students from the University of Virginia. Our team represents a wide variety of disciplines, from Math, to Engineering, to Economics. To learn more about our individual contributions to the project, visit our team members page!</p>
             </div>
           </div>
+</div>
 
 {% endblock %}
