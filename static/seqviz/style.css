@@ -15,7 +15,6 @@
 .la-vz-seqviz svg text {
   user-select: none;
   fill: #2a2a2a;
-  /* font-family: Roboto Mono, Monaco, monospace; */
 }
 
 .la-vz-seqviz svg text:selection {
