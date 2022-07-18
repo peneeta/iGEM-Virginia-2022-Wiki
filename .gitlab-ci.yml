@@ -1,10 +1,8 @@
-before_script:
-  image: node:17.6.0
-
+image: node:17.6.0
   cache:
     paths:
       - static/node_modules/
-
+script:
   - npm install
 
 # Everything above this line is an attempt to use npm to install
