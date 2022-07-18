@@ -15,7 +15,7 @@ image: python:3.6
 pages:
     stage: build
     script:
-    - cd
+    - cd -
     - pip install --no-cache-dir -r dependencies.txt
     - FLASK_APP=app.py flask freeze
     artifacts:
