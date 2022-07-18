@@ -1,26 +1,25 @@
-
-install-npm-packages:
+.pre:
   stage: install
   image: node:17.6.0
-    cache:
-      paths:
+  cache:
+    paths:
         - static/node_modules/
+
   script:
     - cd static
     - npm install
 
 # Everything above this line is an attempt to use npm to install
 
-build-code-job:
-  image: python:3.6
-  pages:
+image: python:3.6
+pages:
     stage: build
     script:
     - cd
     - pip install --no-cache-dir -r dependencies.txt
     - FLASK_APP=app.py flask freeze
     artifacts:
-      paths:
-      - public
+        paths:
+        - public
     only:
     - main
