@@ -1,16 +1,15 @@
-image: node:10.15.3
-
-cache:
-  paths:
-    - static/node_modules/
-
 before_script:
+  image: node:17.6.0
+
+  cache:
+    paths:
+      - static/node_modules/
+
   - npm install
 
 # Everything above this line is an attempt to use npm to install
 
 image: python:3.6
-
 pages:
   stage: build
   script:
