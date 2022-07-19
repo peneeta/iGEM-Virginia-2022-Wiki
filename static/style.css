@@ -55,6 +55,18 @@
         url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-regular.svg') format('svg'); /* Legacy iOS */
 }
 
+/* open-sans BOLD */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src:
+       url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-700.svg') format('svg'); /* Legacy iOS */
+}
+
 /* open-sans ITALIC */
 @font-face {
   font-family: 'Open Sans';
@@ -215,6 +227,15 @@ p{
   font-size: 16px;
 }
 
+.bold-text{
+  font-weight: 700;
+}
+
+.italic-text{
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+}
 .accordion-header{
   font-family: 'Open Sans';
   font-style: normal;
