@@ -1,0 +1,17 @@
+.accordion{
+    width: 90%;
+    padding-top: 20px;
+}
+
+.accordion-header{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+  }
+
+.centered-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
