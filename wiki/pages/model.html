@@ -20,7 +20,9 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, eos vel reiciendis perspiciatis eaque dolor totam eveniet aperiam deserunt quam omnis cumque, quaerat iste laborum ullam sit dignissimos. Tenetur, exercitationem! Add introduction here later.</p>
 
     <h2>Protein Modeling</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ducimus a eaque, odit illum aliquam harum magni molestiae ut atque accusamus. Itaque ab officia illo amet delectus magnam. Dolor quam neque expedita, fugiat enim quas reiciendis molestiae praesentium quaerat nulla?</p>
+    <p>The original aim for protein modeling was to model the sandwich complex between the labeled antibody and the test-line antibody, which indicates a positive test. The plan was to predict the epitopes on the biomarker OxLDL that our labeled full-length IgG antibody and single-chain variable fragments (scFv) would bind to. By knowing these epitopes, we could determine which scFv fragment out of the variety of candidates would not interfere with the binding of the labeled antibody. 
+      We began this project by first generating the structures of the three antibodies and apolipoprotein B-100 (apoB-100), which is the carrier protein on OxLDL. We successfully created Protein Data Bank (PDB) structure files for each antibody using AlphaFold. However, because of the size and complexity of apoB-100 due to the lipid composition of LDL, we were unable to model the complete structure of the biomarker. This meant we were unable to utilize docking softwares to predict the binding of the biomarker with our lateral flow assay components. 
+      However, with further reading and meeting with researchers in the field, the modeling team was able to determine the ideal sequence of the scFv. The protein models of the lateral flow assay components were ultimately utilized in determining which strain of <span class="italic-text">E. coli</span> to synthesize the scFv in. Since each of the selected scFv fragments contained disulfide bonds, the fragments must be expressed in SHuffle <span class="italic-text">E. coli</span> cells instead of another strain of <span class="italic-text">E. coli</span>. </p>
     
   </div>
 
@@ -29,7 +31,8 @@
     <script src="{{ url_for('static', filename = 'ngl/dist/ngl.js') }}"></script>
     <script>
     document.addEventListener("DOMContentLoaded", function () {
-        var stage = new NGL.Stage("viewport");
+        var stage = new NGL.Stage("viewport", { backgroundColor: "white"});
+        
         stage.loadFile("{{ url_for('static', filename = 'pdb/scFv-p2-8-vhvl.pdb') }}", {defaultRepresentation: true});
         stage.setSpin(true);
     });
