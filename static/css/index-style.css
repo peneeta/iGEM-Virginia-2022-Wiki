@@ -134,7 +134,7 @@
     gap: 7rem;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(/static/images/hero-background.svg);
+    background-image: url(https://static.igem.wiki/teams/4477/wiki/images/hero-background.svg);
     overflow: hidden;
   }
 
