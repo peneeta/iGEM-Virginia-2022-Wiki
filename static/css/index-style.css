@@ -75,7 +75,7 @@
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 300;
-    font-size: 7vw;
+    font-size: 70px;
     color: white;
   }
 
@@ -86,7 +86,7 @@
   }
   
   .second-title{
-      font-size: 1.5vw;
+      font-size: 18px;
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
@@ -129,21 +129,23 @@
     height: 102vh;
     gap: 7rem;
     justify-content: center;
-    align-items: center;
-    background-color: #081A3E;
+    align-items: flex-start;
+    background-image: url(/static/images/hero-background.svg);
     overflow: hidden;
+  }
+
+  .header-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 15vw;
   }
   
   /* Text Alignment Attributes */
   .right-align{
     text-align: right;
-  }
-
-  .index-text {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
   }
 
   /* Scroll Section Formatting for Site */

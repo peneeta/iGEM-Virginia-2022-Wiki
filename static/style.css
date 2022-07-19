@@ -215,6 +215,13 @@ p{
   font-size: 16px;
 }
 
+.accordion-header{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+}
+
 .body-container{
   display: flex;
   justify-content: center;
