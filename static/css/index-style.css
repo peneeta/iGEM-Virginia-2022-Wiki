@@ -132,6 +132,7 @@
     align-items: flex-start;
     background-image: url(https://static.igem.wiki/teams/4477/wiki/images/hero-background.svg);
     overflow: hidden;
+    background-position: center;
   }
 
   .header-wrapper{
