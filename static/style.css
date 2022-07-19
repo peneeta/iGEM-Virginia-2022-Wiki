@@ -166,7 +166,14 @@ nav.navbar{
     justify-content: center;
     align-items: center;
     height: 60vh;
-    background: #081A3E;
+}
+
+.banner-v1{
+  background-image: url(https://static.igem.wiki/teams/4477/wiki/images/banner-v1.svg);
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+
 }
 
 .standard-header h1{
