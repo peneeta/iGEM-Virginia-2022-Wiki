@@ -103,7 +103,7 @@ nav.navbar{
 }
 
 .nav-opaque{
-  background-color: #1d1d1dd4;
+  background-color: #06053fdf;
   transition: visibility 0s, 0.6s, opacity 0.6s linear, transform 1s;
   box-shadow: 10px 0 5px #2128327a;
 }
@@ -173,7 +173,6 @@ nav.navbar{
   background-size: cover;
   overflow: hidden;
   background-position: center;
-
 }
 
 .standard-header h1{
@@ -191,17 +190,12 @@ nav.navbar{
     align-items: center;
 }
 
-.body-text-card{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 64px;
+.body-section{
+  margin-bottom: 5%;
 }
 
-.body-text-card p{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
+.h2-spacer{
+  padding-top: 40px;
 }
 
 h2{
@@ -216,7 +210,6 @@ h3 {
   font-style: normal;
   font-weight: 300;
   font-size: 25px;
-
 }
 
 h4{
@@ -243,12 +236,6 @@ p{
   font-style: italic;
   font-weight: 400;
 }
-.accordion-header{
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-}
 
 .body-container{
   display: flex;
@@ -256,6 +243,10 @@ p{
   align-items: center;
   padding: 40px;
   padding-top: 100px;
+}
+
+.increased-margin{
+  padding: 120px 10% 120px 20%;
 }
 
 .pdb-struct{
