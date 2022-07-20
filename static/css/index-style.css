@@ -102,31 +102,17 @@
       color: white;
   }
 
-  .mission-statement{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-
   .mission-heading{
-    font-size: 60px;
-    padding-top: 100 px
+    font-size: 40px;
   }
 
   .mission-text{
     font-family: 'Open Sans';
     font-style: italic;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 20px;
   }
 
-  .mission-text-wrapper{
-    padding-left: 350px;
-    padding-right: 350px;
-    padding-bottom: 150 px
-  }
-  
   .header-background{
     display: flex;
     flex-direction: column;
@@ -158,28 +144,11 @@
   /* Scroll Section Formatting for Site */
 
 /* Sections */
-  .light-section-narrow{
+  .dark-section-narrow{
     width: 100%;
-    height: 55vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #E9E9E9;
-    overflow: hidden;
-    -webkit-box-shadow: 0px 5px 22px 10px rgba(0,0,0,0.38);
-    -moz-box-shadow: 0px 5px 22px 10px rgba(0,0,0,0.38);
-    box-shadow: 0px 5px 22px 10px rgba(0,0,0,0.38);
-  }
-
-  .fs-gray-section-narrow{
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #E8CBC5;
+    height: auto;
+    background: #171717;
+    color: white;
     overflow: hidden;
     -webkit-box-shadow: 0px 5px 22px 10px rgba(0,0,0,0.38);
     -moz-box-shadow: 0px 5px 22px 10px rgba(0,0,0,0.38);
@@ -195,6 +164,18 @@
     flex-direction: column;
     background: #E9E9E9;
     overflow: hidden;
+  }
+  
+  .blob-background-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    background-image: url(https://static.igem.wiki/teams/4477/wiki/images/abstract-blob-background.svg);
+    background-position: center;
+    width: 100%;
+    height: 115vh;
   }
 
   .blue-section{    
@@ -220,19 +201,6 @@
     color: white;
     overflow: hidden;
   }
-  
-
-  .dark-section{
-    width: 100%;
-    height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #1E1E1E;
-    color: white;
-    overflow: hidden;
-
-  }
 
   .helpful-links{
     display: flex;
@@ -241,18 +209,30 @@
     padding: 30px;
   }
 
-  .container{
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40 px;
+  .btn.btn-primary{
+    background-color: #6C1233;
+    color: white;
+    border-radius: 100px;
   }
-
+  
 /* Logo Image Formatting */
 .logo{
   max-height: 200px;
 }
-img{
-  width: 100%;
+
+/* Heart Woman Styling */
+.parent-img{
+  /* position: relative; */
+  top: 0;
+  left: 0;
 }
 
+.parent-img.overlay{
+  /* width: 100%; */
+  scale: 1;
+  position: relative;
+}
+.parent-img.blob-underlay{
+  height: 500px;
+  position: absolute;
+}
