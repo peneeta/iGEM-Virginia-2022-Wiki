@@ -1,6 +1,6 @@
 .accordion{
-    width: 90%;
-    padding-top: 20px;
+    width: 100%;
+    padding: max(2vh, 1rem);
 }
 
 .accordion-header{
