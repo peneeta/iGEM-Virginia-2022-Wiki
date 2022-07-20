@@ -48,9 +48,16 @@
 
  <div class= "fs-light-section align-self-center">
    <div class="container align-self-center">
-    <h2 class="mission-heading">A Worldwide Health Crisis</h2>
-    <p>Each year, <strong>877,500 lives</strong> in the United States are lost due to heart disease or stroke. Worldwide, <strong>32% of total deaths</strong> are attributed to cardiovascular disease, making up <strong>17.9 million</strong> people annually.</p>
+     <div data-aos="fade-right">
+      <h2 class="mission-heading">A Worldwide Health Crisis</h2>
+      <p>Each year, <strong>877,500 lives</strong> in the United States are lost due to heart disease or stroke. Worldwide, <strong>32% of total deaths</strong> are attributed to cardiovascular disease, making up <strong>17.9 million</strong> people annually.</p>
     </div>
+
+    <div data-aos="fade-left">
+      <h2 class="mission-heading">Economic Burden</h2>
+      <p>Current diagnostics for cardiovascular disease are costly, and with treatment the direct cost of care increases by another <strong>85%</strong>. National expenditures were at <strong>$126 billion in 2015</strong> and are expected to increase to <strong>$309 billion in 2035</strong>. 
+    </div>
+  </div>
 
 </div>
 
@@ -67,7 +74,6 @@
         </div> 
       </div>
       <div class="video">
-        <img class="img-fluid w-5 me-auto" src="https://static.igem.wiki/teams/4477/wiki/images/mangif.gif"/>
       </div>
     </div>
   </div>
@@ -77,9 +83,10 @@
     <div class="container">
       <h2>Our Committees</h2>
         <!-- Hoverable Cards -->
-          <section class="cards-div">
+          <section class="cards-div d-flex">
 
             <!-- Wetlab Card -->
+            <div class= "col">
             <a href="{{ url_for('pages', page='experiments') }}" class="card">
               <div class="card__head">
                 <div class="card__image"></div>
@@ -92,9 +99,11 @@
                 <span class="card__link">Click to read more</span>
               </div>
               <div class="card__border"></div>
+            </div>
             </a>
             
             <!-- Modeling Card -->
+            <div class="col">
             <a href="{{ url_for('pages', page='model') }}" class="card">
               <div class="card__head">
                 <div class="card__image"></div>
@@ -107,9 +116,11 @@
                 <span class="card__link">Click to read more</span>
               </div>
               <div class="card__border"></div>
+            </div>
             </a>
             
             <!-- Human Practices Card -->
+            <div class="col">
             <a href="{{ url_for('pages', page='human-practices') }}" class="card">
               <div class="card__head">
                 <div class="card__image"></div>
@@ -122,6 +133,7 @@
                 <span class="card__link">Click to read more</span>
               </div>
               <div class="card__border"></div>
+            </div>
             </a>
             
             <!-- On hover animation -->
