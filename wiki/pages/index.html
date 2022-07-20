@@ -25,7 +25,7 @@
 
   <div class="dark-section-narrow">
     <div class="container">
-      <div class="d-flex flex-row justify-content-evenly mission-statement">
+      <div class="d-flex flex-row justify-content-evenly">
 
         <!-- HeartWoman blob + image overlay -->
         <div class="container parent-img">
@@ -44,22 +44,20 @@
   </div>
 
 
-  <div class="blob-background-section">
-    <div class="container">
-      <div class="abstract">
+  <div class="blob-background-section d-flex flex-column justify-content-evenly align-items-center">
+    <div class="container d-flex flex-row align-items-center justify-content-evenly">
+      <div class="abstract d-flex flex-column mb-auto">
         <h2>Abstract</h2>
         <p>Atherosclerosis, an inflammatory disease characterized by plaque build-up in the inner arterial walls, is a common cardiovascular disease affecting millions in America and worldwide.  However, current detection methods are costly, time-consuming, and not recommended during medical visits unless individuals show signs of further cardiovascular complications. Here, we describe a method of early atherosclerosis detection centered around the detection of oxidized low-density lipoprotein (oxLDL), a biomarker in the bloodstream whose presence is associated with early to middle stages of atherosclerosis development. This synthetic biology approach provides individuals with a quick, accessible, and proactive method to testing their likelihood of having atherosclerosis. By engineering the SHuffle E. coli strand to produce oxLDL-specific antibodies, oxLDL levels can be determined from an easy-to-read test strip containing these antibodies.  This method is projected to significantly reduce the cost of current detection methods and add a dimension to preexisting biomarker detection diagnostics.</p>
 
         <div>
-          <button class="btn btn-primary" type="button">Learn more in our Project Description</button>
-        </div>
+          <button class="btn btn-primary" type="button" href="{{ url_for('pages', page='description') }}">Learn more in our Project Description</button>
+        </div> 
+      </div>
+      <div class="video">
+        <img class="img-fluid w-5 me-auto" src="https://static.igem.wiki/teams/4477/wiki/images/mangif.gif"/>
       </div>
     </div>
-
-    <div class="video">
-      <img class="img-fluid w-5" src="https://static.igem.wiki/teams/4477/wiki/images/mangif.gif"/>
-    </div>
-
   </div>
   
 
@@ -168,14 +166,16 @@
           </section>
               </div>
             </div>
+    </div>
+  </div>
 
 
-          <div class="blue-section">
-            <div class="container">
-              <h2>About Us</h2>
-              <p>We are a dedicated group of twelve students from the University of Virginia. Our team represents a wide variety of disciplines, from Math, to Engineering, to Economics. To learn more about our individual contributions to the project, visit our team members page!</p>
-            </div>
-          </div>
+  <div class="blue-section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are a dedicated group of twelve students from the University of Virginia. Our team represents a wide variety of disciplines, from Math, to Engineering, to Economics. To learn more about our individual contributions to the project, visit our team members page!</p>
+    </div>
+  </div>
 
 </body>
 
