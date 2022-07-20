@@ -1,4 +1,3 @@
-
 *{
   margin: 0;
   padding: 0;
@@ -176,7 +175,7 @@ nav.navbar{
 }
 
 .standard-header h1{
-    font-size: 50px;
+    font-size: clamp(2rem, 1rem + 5vw ,5rem);
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 300;
@@ -194,29 +193,25 @@ nav.navbar{
   margin-bottom: 5%;
 }
 
-.h2-spacer{
-  padding-top: 40px;
-}
-
 h2{
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 300;
-  font-size: 40px;
+  font-size: clamp(1.8rem, calc(0.89rem + 1.86vw), 2.22rem)
 }
 
 h3 {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 300;
-  font-size: 25px;
+  font-size: min(1rem, 3rem);
 }
 
 h4{
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: clamp(1rem, 0.5rem + 1.86vw, 1.5rem);
 
 }
 
@@ -224,7 +219,7 @@ p{
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: clamp(0.8rem, calc(0.87rem + 0.10vw), 1rem);
 }
 
 .bold-text{
