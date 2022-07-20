@@ -83,7 +83,7 @@
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 300;
-    font-size: 70px;
+    font-size: clamp(2rem, 1rem + 10vw ,5rem);
     color: white;
   }
 
@@ -94,7 +94,7 @@
   }
   
   .second-title{
-      font-size: 18px;
+      font-size: clamp(0.1rem, 3.5vw, 1.5rem);
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
