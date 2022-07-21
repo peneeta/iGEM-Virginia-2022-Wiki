@@ -182,13 +182,6 @@ nav.navbar{
     color: white;
 }
 
-
-.page-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 .body-section{
   margin-bottom: 5%;
 }
@@ -236,13 +229,12 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
-  padding-top: 100px;
+  padding-top: 10rem;
 }
 
-.increased-margin{
+/* .increased-margin{
   padding: 120px 10% 120px 20%;
-}
+} */
 
 .pdb-struct{
   padding: 40px;

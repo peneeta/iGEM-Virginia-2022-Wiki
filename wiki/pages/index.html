@@ -29,63 +29,57 @@
 
   <div class="dark-section-narrow">
     <div class="container">
-      <div class="d-flex flex-row justify-content-evenly">
+      <div class="d-flex flex-row justify-content-center flex-wrap-reverse flex-lg-nowrap">
 
-        <!-- HeartWoman blob + image overlay -->
-        <div class="col container parent-img">
-          <!-- <img class="img-fluid w-75 blob-underlay" src="https://static.igem.wiki/teams/4477/wiki/images/blob-image-background.svg"/> -->
+        <img class="img-fluid heart-woman" src="https://static.igem.wiki/teams/4477/wiki/images/heart-woman-blob.svg"/>
 
-          <img class="img-fluid w-75 overlay mb-auto" src="https://static.igem.wiki/teams/4477/wiki/images/heartwoman.png"/>
-        </div>
-        
-
-        <div class="col container d-flex flex-column justify-content-start align-self-center me-auto">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
           <h2 class="mission-heading">Our Mission</h2>
           <p class="mission-text">“AtheroSHuffle represents a collaboration between science and society to proactively combat the vices of cardiovascular health.”</p>
         </div>
-          <div class="col">
-    <img class="img-fluid w-5 me-auto" src="https://static.igem.wiki/teams/4477/wiki/images/mangif.gif"/>
-        </div>
+    <!-- peneeta - I'm going to format the first image and then figure out how to add this one afterwards, putting it as a place holder for project video -->
+    <!-- <img class="img-fluid w-5 me-auto" src="https://static.igem.wiki/teams/4477/wiki/images/mangif.gif"/> -->
+
       </div>
     </div>
   </div>
 
- <div class= "fs-light-section align-self-center">
-   <div class="container align-self-center">
-     <div data-aos="fade-right">
-      <h2 class="mission-heading">A Worldwide Health Crisis</h2>
-      <p>Each year, <strong>877,500 lives</strong> in the United States are lost due to heart disease or stroke. Worldwide, <strong>32% of total deaths</strong> are attributed to cardiovascular disease, making up <strong>17.9 million</strong> people annually.</p>
-    </div>
-
-    <div data-aos="fade-left">
-      <h2 class="mission-heading">Economic Burden</h2>
-      <p>Current diagnostics for cardiovascular disease are costly, and with treatment the direct cost of care increases by another <strong>85%</strong>. National expenditures were at <strong>$126 billion in 2015</strong> and are expected to increase to <strong>$309 billion in 2035</strong>. 
-    </div>
-  </div>
-
-</div>
-
-
 
   <div class="blob-background-section d-flex flex-column justify-content-evenly align-items-center">
-    <div class="container d-flex flex-row align-items-center justify-content-evenly">
-      <div class="abstract d-flex flex-column mb-auto">
+    <div class="container abstract d-flex flex-row align-items-center justify-content-center flex-wrap flex-lg-nowrap">
+      <div class="d-flex flex-column">
         <h2>Abstract</h2>
-        <p>Atherosclerosis, an inflammatory disease characterized by plaque build-up in the inner arterial walls, is a common cardiovascular disease affecting millions in America and worldwide.  However, current detection methods are costly, time-consuming, and not recommended during medical visits unless individuals show signs of further cardiovascular complications. Here, we describe a method of early atherosclerosis detection centered around the detection of oxidized low-density lipoprotein (oxLDL), a biomarker in the bloodstream whose presence is associated with early to middle stages of atherosclerosis development. This synthetic biology approach provides individuals with a quick, accessible, and proactive method to testing their likelihood of having atherosclerosis. By engineering the SHuffle E. coli strand to produce oxLDL-specific antibodies, oxLDL levels can be determined from an easy-to-read test strip containing these antibodies.  This method is projected to significantly reduce the cost of current detection methods and add a dimension to preexisting biomarker detection diagnostics.</p>
+        <p><span class="bold-text">Atherosclerosis</span>, an inflammatory disease characterized by <span class="bold-text">plaque build-up in the inner arterial walls,</span> is a common cardiovascular disease affecting millions in America and worldwide.  However, current detection methods are <span class="bold-text">costly, time-consuming, and not recommended during medical visits</span> unless individuals show signs of further cardiovascular complications. Here, we describe a method of early atherosclerosis detection centered around the <span class="bold-text">detection of oxidized low-density lipoprotein (oxLDL)</span>, a biomarker in the bloodstream whose presence is associated with early to middle stages of atherosclerosis development. This synthetic biology approach provides individuals with a <span class="bold-text">quick, accessible, and proactive method</span> to testing their likelihood of having atherosclerosis. By engineering the SHuffle E. coli strand to produce oxLDL-specific antibodies, oxLDL levels can be determined from an <span class="bold-text">easy-to-read test strip</span> containing these antibodies.  This method is projected to <span class="bold-text">significantly reduce the cost</span> of current detection methods and add a dimension to preexisting biomarker detection diagnostics.</p>
 
         <div>
           <button class="btn btn-primary" type="button" href="{{ url_for('pages', page='description') }}">Learn more in our Project Description</button>
         </div> 
       </div>
       <div class="video">
+        <img class="img-fluid w-5 man-gif" src="https://static.igem.wiki/teams/4477/wiki/images/mangif.gif"/>
       </div>
     </div>
+  </div>
+
+  <div class= "fs-light-section d-flex flex-row">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+      <div data-aos="fade-right">
+       <h2>Cardiovascular Disease by the Numbers</h2>
+       <p>Each year, <strong>877,500 lives</strong> in the United States are lost due to heart disease or stroke. Worldwide, <strong>32% of total deaths</strong> are attributed to cardiovascular disease, making up <strong>17.9 million</strong> people annually.</p>
+     </div>
+ 
+     <div data-aos="fade-left">
+       <h2>Economic Burden</h2>
+       <p>Current diagnostics for cardiovascular disease are costly, and with treatment the direct cost of care increases by another <strong>85%</strong>. National expenditures were at <strong>$126 billion in 2015</strong> and are expected to increase to <strong>$309 billion in 2035</strong>. 
+     </div>
+   </div>
   </div>
   
 
   <div class="fs-light-section">
     <div class="container">
-      <h2>Our Committees</h2>
+      <h2>How We're Making a Difference</h2>
+      <p>Keeping these statistics and the millions of cardiovascular disease patients in mind, we organized ourselves into three committees to develop new technology and spread awareness simultaneously. </p>
         <!-- Hoverable Cards -->
           <section class="cards-div">
 
@@ -196,7 +190,7 @@
   </div>
 
 
-  <div class="blue-section">
+  <div class="blob-bottom-page d-flex align-items-center">
     <div class="container">
       <h2>About Us</h2>
       <p>We are a dedicated group of twelve students from the University of Virginia. Our team represents a wide variety of disciplines, from Math, to Engineering, to Economics. To learn more about our individual contributions to the project, visit our team members page!</p>
