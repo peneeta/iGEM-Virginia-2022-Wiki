@@ -83,7 +83,7 @@
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 300;
-    font-size: clamp(2rem, 1rem + 10vw ,3.4rem);
+    font-size: clamp(0.5rem, 0.5rem + 10vw ,3.4rem);
     color: white;
   }
 
@@ -103,7 +103,10 @@
   }
 
   .mission-heading{
-    font-size: max(1.2rem, 3vw);
+    font-size: max(1.6rem, 3vw);
+    padding-top: min(2rem, 5vh);
+    padding-bottom: min(10rem, 2vh);
+    letter-spacing: 0.17rem;
   }
 
   .mission-text{
@@ -111,6 +114,9 @@
     font-style: italic;
     font-weight: 300;
     font-size: max(0.8rem, 1vw);
+    padding-inline: 10vw;
+    text-align: center;
+    letter-spacing: 0.02rem;
   }
 
   .header-background{
@@ -175,9 +181,20 @@
     height: auto;
   }
 
-  .abstract{
-    padding: 40vh 0vh;
+  .blob-bottom-page{
+    color: white;
+    background-image: url(https://static.igem.wiki/teams/4477/wiki/images/blob-bottom-page.svg);
+    width: 100%;
+    background-position-x: center;
+    background-position-y: 50%;
+    height: max(10rem, 60vh);
   }
+
+  .abstract{
+    padding: max(3rem, 16vh);
+  }
+
+
 
 
   .blue-section{    
@@ -231,13 +248,10 @@
 }
 
 /* Heart Woman Styling */
-
-.parent-img.overlay{
-  /* width: 100%; */
-  scale: 1;
-  position: relative;
+.heart-woman{
+  width: min(60vw, 28rem);
 }
-.parent-img.blob-underlay{
-  height: 500px;
-  position: absolute;
+
+.man-gif{
+  width: 300rem;
 }
