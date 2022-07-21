@@ -195,8 +195,9 @@
     padding: max(3rem, 16vh);
   }
 
-
-
+  .abstract p{
+    line-height: 1.6rem;
+  }
 
   .blue-section{    
     width: 100%;
