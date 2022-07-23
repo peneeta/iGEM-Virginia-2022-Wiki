@@ -14,13 +14,13 @@
 </div>
 
 <div class="page-container">
-  <div class="container d-flex flex-column">
+  <div class="container d-flex flex-column inline-margin">
+    <div class="section section-top">
+      <h2>Solving Problems with Precision</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, eos vel reiciendis perspiciatis eaque dolor totam eveniet aperiam deserunt quam omnis cumque, quaerat iste laborum ullam sit dignissimos. Tenetur, exercitationem! Add introduction here later.</p>
+    </div>
 
-    <h2>Solving Problems with Precision</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, eos vel reiciendis perspiciatis eaque dolor totam eveniet aperiam deserunt quam omnis cumque, quaerat iste laborum ullam sit dignissimos. Tenetur, exercitationem! Add introduction here later.</p>
-
-    <div class="container d-flex flex-row">
-      <div>
+    <div class="section">
       <h2>Protein Modeling</h2>
       <p>The original aim for protein modeling was to model the <span class="bold-text">sandwich complex</span> between the labeled antibody and the test-line antibody, which indicates a positive test. The plan was to predict the epitopes on the biomarker OxLDL that our labeled full-length IgG antibody and single-chain variable fragments (scFv) would bind to. By knowing these epitopes, we could determine which scFv fragment out of the variety of candidates would not interfere with the binding of the labeled antibody.</p> 
 
@@ -29,22 +29,34 @@
       <p>However, with further reading and meeting with researchers in the field, the modeling team was able to determine an ideal sequence for our scFv. The protein models of the lateral flow assay components were ultimately utilized in determining which strain of <span class="italic-text">E. coli</span> to synthesize the scFv in. Since each of the selected scFv fragments contained disulfide bonds, the fragments must be expressed in SHuffle <span class="italic-text">E. coli</span> cells instead of another strain of <span class="italic-text">E. coli.</span></p>
 
 
+
       <!-- Protein File -->
       <div class="pdb-struct">
-        <h3>IK-17 scFv Fragment Generated from AlphaFold</h3>
-        <!-- NGL Viewer Stuff -->
-        <script src="{{ url_for('static', filename = 'ngl/dist/ngl.js') }}"></script>
-        <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var stage = new NGL.Stage("viewport", { backgroundColor: "white"});
-            
-            stage.loadFile("{{ url_for('static', filename = 'pdb/scFv-p2-8-vhvl.pdb') }}", {defaultRepresentation: true});
-            stage.setSpin(true);
-        });
-        </script>
-        <div id="viewport" style="width:400px; height:300px;"></div>
+        <div class="ik17">
+          <h3>IK-17 scFv Fragment Generated from AlphaFold</h3>
+
+          <!-- NGL Viewer Stuff -->
+          <script src="{{ url_for('static', filename = 'ngl/dist/ngl.js') }}"></script>
+
+          <script>
+          document.addEventListener("DOMContentLoaded", function () {
+              var stage = new NGL.Stage("viewport", { backgroundColor: "white"});
+              
+              stage.loadFile("{{ url_for('static', filename = 'pdb/scFv-p2-8-vhvl.pdb') }}", {defaultRepresentation: true});
+              stage.setSpin(true);
+          });
+          </script>
+
+          <script>
+
+          </script>
+          <div id="viewport" style="width:400px; height:300px;"></div>
+        </div>
       </div>
-    </div> 
+
+      <div class="pdb-struct">
+      </div>
+    </div>
   </div>
 </div>
 
