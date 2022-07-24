@@ -16,32 +16,20 @@
 <body>
   <!-- Initialize Data AOS -->
   <script>
-    AOS.init();
+    AOS.init({
+      once: true
+    });
   </script>
 
-  <!-- <script>
-    const nav = document.querySelector(".navbar");
-    nav.classList.add('data-aos="fade-down"', 'data-aos-duration="2000"', 'data-aos-delay="3000"');
-  </script> -->
-
-
+  <!-- Hero Section -->
   <div class="header-background d-flex flex-column align-items-start justify-content-center flex-wrap">
-      <!-- <div class="blob-anim-top" id="hero-blob-1"></div>
-      <script>
-        var animation=bodymovin.loadAnimation({
-          container: document.getElementById('hero-blob-1'),
-          renderer: 'svg',
-          loop: true,
-          autoplay: true,
-          path: "{{ url_for('static', filename = 'graphics/heroBlob1.json') }}"
-        })
-      </script> -->
 
       <div class="header-wrapper">
         <h1 class="main-title" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-in-out-sine">Athero<span class="bold-title">SH</span>uffle</h1>
         <p class="second-title" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-in-out-sine" data-aos-delay="2000">The first lateral flow test strip for early atherosclerosis detection.</p>
       </div>
 
+      <!-- Wave Section Div -->
       <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
         <defs>
             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
@@ -52,7 +40,7 @@
       </svg>
   </div>
 
-
+  <!-- Mission Statement -->
   <div class="light-section-narrow">
     <div class="container">
       <div class="d-flex flex-row justify-content-center flex-wrap-reverse flex-lg-nowrap">
@@ -60,13 +48,14 @@
         <img class="img-fluid heart-woman" src="https://static.igem.wiki/teams/4477/wiki/images/heart-woman-blob.svg"/>
 
         <div class="container d-flex flex-column justify-content-center align-items-center">
-          <h2 class="mission-heading">Our Mission</h2>
-          <p class="mission-text">“AtheroSHuffle represents a collaboration between science and society to proactively combat the vices of cardiovascular health.”</p>
+          <h2 class="mission-heading" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-sine">Our Mission</h2>
+          <p class="mission-text" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-sine">“AtheroSHuffle represents a collaboration between science and society to proactively combat the vices of cardiovascular health.”</p>
         </div>
-
       </div>
     </div>
   </div>
+
+  <!-- Cardiovascular Disease by the Numbers -->
   <div class= "fs-light-section d-flex flex-row">
     <div class="container d-flex flex-column justify-content-center align-items-center">
       <div data-aos="fade-right">
@@ -81,6 +70,7 @@
    </div>
   </div>
 
+  <!-- Abstract/How we're making a difference -->
   <div class="blob-background-section d-flex flex-column justify-content-evenly align-items-center">
     <div class="container abstract d-flex flex-row align-items-center justify-content-center flex-wrap flex-lg-nowrap">
       <div class="d-flex flex-column">
@@ -99,9 +89,7 @@
     </div>
   </div>
 
-
-  
-
+  <!-- Our Committees -->
   <div class="fs-light-section">
     <div class="container">
 
