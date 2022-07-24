@@ -120,25 +120,22 @@
   }
 
   .header-background{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     width: 100%;
     height: 102vh;
     gap: 7rem;
-    justify-content: center;
-    align-items: flex-start;
     background-image: url(https://static.igem.wiki/teams/4477/wiki/images/hero-background.svg);
     overflow: hidden;
     background-position: center;
+    position: relative;
+  }
+
+.blob-anim-top{
+    align-self: start;
+    position: absolute;
+    transform: translateX(-33vw) translatey(-30vh);
   }
 
   .header-wrapper{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
     margin-left: 15vw;
   }
   
