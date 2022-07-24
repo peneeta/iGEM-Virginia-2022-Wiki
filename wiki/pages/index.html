@@ -11,14 +11,16 @@
 {% block title %}Home{% endblock %}
 
 {% block page_content %}
-<script>
-  AOS.init();
-</script>
+
 
 <body>
+  <!-- Initialize Data AOS -->
+  <script>
+    AOS.init();
+  </script>
 
   <div class="header-background d-flex flex-column align-items-start justify-content-center flex-wrap">
-      <div class="blob-anim-top" id="hero-blob-1"></div>
+      <!-- <div class="blob-anim-top" id="hero-blob-1"></div>
       <script>
         var animation=bodymovin.loadAnimation({
           container: document.getElementById('hero-blob-1'),
@@ -27,12 +29,11 @@
           autoplay: true,
           path: "{{ url_for('static', filename = 'graphics/heroBlob1.json') }}"
         })
-      </script>
+      </script> -->
 
       <div class="header-wrapper">
-        <h1 class="main-title">Athero<span class="bold-title">SH</span>uffle</h1>
-        <p class="second-title">The first lateral flow test strip for early atherosclerosis detection.</p>
-
+        <h1 class="main-title" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-in-out-sine">Athero<span class="bold-title">SH</span>uffle</h1>
+        <p class="second-title" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease-in-out-sine" data-aos-delay="2000">The first lateral flow test strip for early atherosclerosis detection.</p>
 
       </div>
   </div>
@@ -48,8 +49,6 @@
           <h2 class="mission-heading">Our Mission</h2>
           <p class="mission-text">“AtheroSHuffle represents a collaboration between science and society to proactively combat the vices of cardiovascular health.”</p>
         </div>
-    <!-- peneeta - I'm going to format the first image and then figure out how to add this one afterwards, putting it as a place holder for project video -->
-    <!-- <img class="img-fluid w-5 me-auto" src="https://static.igem.wiki/teams/4477/wiki/images/mangif.gif"/> -->
 
       </div>
     </div>
