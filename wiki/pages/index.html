@@ -10,30 +10,31 @@
 
 {% block title %}Home{% endblock %}
 
+{% block page_content %}
 <script>
   AOS.init();
 </script>
-{% block page_content %}
+
 <body>
 
-  <div class="header-background">
-      <div class="header-wrapper">
-        <h1 class="main-title">Athero<span class="bold-title">SH</span>uffle</h1>
-        <p class="second-title">The first lateral flow test strip for early atherosclerosis detection.</p>
-      </div>
-
-      <!-- THIS IS NOT RENDERING PROPERLY -->
+  <div class="header-background d-flex flex-column align-items-start justify-content-center flex-wrap">
+      <div class="blob-anim-top" id="hero-blob-1"></div>
       <script>
         var animation=bodymovin.loadAnimation({
-          container: document.getElementById('bm'),
+          container: document.getElementById('hero-blob-1'),
           renderer: 'svg',
           loop: true,
           autoplay: true,
-          path: "/graphics/blob1test.json"  
+          path: '/static/graphics/heroBlob1.json'  
         })
       </script>
 
-      <div id="bm"></div>
+      <div class="header-wrapper">
+        <h1 class="main-title">Athero<span class="bold-title">SH</span>uffle</h1>
+        <p class="second-title">The first lateral flow test strip for early atherosclerosis detection.</p>
+
+
+      </div>
   </div>
 
 
@@ -71,7 +72,9 @@
     <div class="container abstract d-flex flex-row align-items-center justify-content-center flex-wrap flex-lg-nowrap">
       <div class="d-flex flex-column">
         <h2>How We're Making a Difference</h2>
-        <p>Keeping these statistics in mind, <span class="bold-text">Atherosclerosis</span>, an inflammatory disease characterized by <span class="bold-text">plaque build-up in the inner arterial walls,</span> is a common cardiovascular disease affecting millions in America and worldwide.  However, current detection methods are <span class="bold-text">costly, time-consuming, and not recommended during medical visits</span> unless individuals show signs of further cardiovascular complications. Here, we describe a method of early atherosclerosis detection centered around the <span class="bold-text">detection of oxidized low-density lipoprotein (oxLDL)</span>, a biomarker in the bloodstream whose presence is associated with early to middle stages of atherosclerosis development. This synthetic biology approach provides individuals with a <span class="bold-text">quick, accessible, and proactive method</span> to testing their likelihood of having atherosclerosis. By engineering the SHuffle <span class="italic-text">E. coli</span> strand to produce oxLDL-specific antibodies, oxLDL levels can be determined from an <span class="bold-text">easy-to-read test strip</span> containing these antibodies.  This method is projected to <span class="bold-text">significantly reduce the cost</span> of current detection methods and add a dimension to preexisting biomarker detection diagnostics.</p>
+        <p>Our device targets <span class="bold-text">Atherosclerosis</span>, an inflammatory disease characterized by <span class="bold-text">plaque build-up in the inner arterial walls.</span> It is a common cardiovascular disease affecting millions in America and worldwide.  Current detection methods are <span class="bold-text">costly, time-consuming, and not recommended during medical visits</span> unless individuals show signs of further cardiovascular complications. 
+        <br>
+        Our focus is developing a method atherosclerosis detection centered around the <span class="bold-text">detection of oxidized low-density lipoprotein (oxLDL)</span>, a biomarker in the bloodstream whose presence is associated with early to middle stages of atherosclerosis development. This synthetic biology approach provides individuals with a <span class="bold-text">quick, accessible, and proactive method</span> to testing their likelihood of having atherosclerosis. By engineering the SHuffle <span class="italic-text">E. coli</span> strand to produce oxLDL-specific antibodies, oxLDL levels can be determined from an <span class="bold-text">easy-to-read test strip</span> containing these antibodies.  This method is projected to <span class="bold-text">significantly reduce the cost</span> of current detection methods and add a dimension to preexisting biomarker detection diagnostics.</p>
 
         <div>
           <button class="btn btn-primary" type="button" href="{{ url_for('pages', page='description') }}">Learn more in our Project Description</button>
@@ -208,6 +211,8 @@
     </div>
   </div>
 
+
+  
 </body>
 
 {% endblock %}

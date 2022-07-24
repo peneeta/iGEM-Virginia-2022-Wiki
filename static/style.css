@@ -167,11 +167,14 @@ nav.navbar{
     height: 60vh;
 }
 
+.filler-header{
+  background-color: black;
+}
+
 .banner-v1{
   background-image: url(https://static.igem.wiki/teams/4477/wiki/images/banner-v1.svg);
   background-size: cover;
   overflow: hidden;
-  background-position: center;
 }
 
 .standard-header h1{
@@ -232,9 +235,14 @@ p{
   padding-top: 10rem;
 }
 
-/* .increased-margin{
-  padding: 120px 10% 120px 20%;
-} */
+.inline-margin{
+  padding-inline: min(10vw, 4rem);
+}
+
+.section-top{
+  padding-top: max(15vh, 10rem);
+
+}
 
 .pdb-struct{
   padding: 40px;
