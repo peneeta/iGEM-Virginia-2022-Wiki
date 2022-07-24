@@ -25,7 +25,7 @@
           renderer: 'svg',
           loop: true,
           autoplay: true,
-          path: '/static/graphics/heroBlob1.json'  
+          path: "{{ url_for('static', filename = 'graphics/heroBlob1.json') }}"
         })
       </script>
 
