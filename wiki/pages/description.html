@@ -10,15 +10,19 @@
 {% endblock %}
 
 {% block page_content %}
+
+  <script src="{{ url_for('static', filename = 'particlejs/particles.min.js') }}""></script>
   <!-- Initialize Data AOS -->
   <script>
     AOS.init();
   </script>
 
-  <!-- <script>
-    const nav = document.querySelector(".navbar");
-    nav.classList.add('data-aos="fade-down"', 'data-aos-duration="2000"', 'data-aos-delay="500"');
-  </script> -->
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+  </script>
 
 <div class="standard-header banner-v1 curvy-divider">
     <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out-sine"> Project Description </h1>
@@ -68,7 +72,7 @@
               </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo">
-              <div class="accordion-body"><span class="bold-text">Arrhythmia is a condition where the heart beats at an irregular pace.</span> It affects about 5% of the American population. The causes of this disease vary, but typically include heavy smoking or alcohol use, an excess intake of caffeine or other stimulants, stress, thyroid disease, fever, and hereditary patterns. The severity of arrhythmia varies as well, with cases falling on a spectrum between completely harmless to life threatening.  Risk factors for arrhythmia include coronary artery disease, and it is highly recommended that people reduce their risk of developing arrhythmia by engaging in heart-healthy activities. (LINK TO CITE: https://www.scripps.org/sparkle-assets/documents/heart_rhythm_facts.pdf) </div>
+              <div class="accordion-body"><span class="bold-text">Arrhythmia is a condition where the heart beats at an irregular pace.</span> It affects about 5% of the American population. <a data-bs-toggle="tooltip" data-bs-placement="top" title="cite this: https://www.scripps.org/sparkle-assets/documents/heart_rhythm_facts.pdf">[1]</a> The causes of this disease vary, but typically include heavy smoking or alcohol use, an excess intake of caffeine or other stimulants, stress, thyroid disease, fever, and hereditary patterns. The severity of arrhythmia varies as well, with cases falling on a spectrum between completely harmless to life threatening.  Risk factors for arrhythmia include coronary artery disease, and it is highly recommended that people reduce their risk of developing arrhythmia by engaging in heart-healthy activities. (LINK TO CITE: https://www.scripps.org/sparkle-assets/documents/heart_rhythm_facts.pdf) </div>
             </div>
           </div>
           <div class="accordion-item">
