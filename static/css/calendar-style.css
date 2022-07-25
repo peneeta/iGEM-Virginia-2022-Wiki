@@ -10,7 +10,7 @@
     width: 45rem;
     height: 52rem;
     background-color: #eeeeee;
-    scale: .5;
+    transform: scale(.5);
     transform-origin: center;
     border-radius: 10px;
 }
