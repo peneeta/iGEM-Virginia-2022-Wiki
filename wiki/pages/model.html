@@ -83,7 +83,8 @@
       </div> -->
 
 
-      <div class="pdb-struct p2-8">
+      <!-- OLD SCFV, GET NEW ONE -->
+      <div class="pdb-struct scFv-p2-8">
         <script src="{{ url_for('static', filename = 'ngl/dist/ngl.js') }}"></script>
 
         <script>
@@ -94,14 +95,11 @@
             stage.setSpin(true);
         });
         </script>
-
-        <script>
-          var proteinModels = document.getElementByTagName('canvas');
-          proteinModels.backgroundColor = rgb(0,0,0);
-        </script>
-        <div id="viewport" style="width:400px; height:300px;"></div>
+        <!-- Initialize the Viewport -->
+        <div id="viewport" style="width:30rem; height:40rem;"></div>
       </div>
 
+      <!-- NANOBODY -->
       <div class="pdb-struct nanobody">
         <script src="{{ url_for('static', filename = 'ngl/dist/ngl.js') }}"></script>
 
@@ -113,13 +111,10 @@
             stage.setSpin(true);
         });
         </script>
-
-        <script>
-          var proteinModels = document.getElementByTagName('canvas');
-          proteinModels.backgroundColor = rgb(0,0,0);
-        </script>
+        <!-- Initialize the viewport -->
         <div id="viewport" style="width:400px; height:300px;"></div>
       </div>
+
     </div>
   </div>
 </div>
