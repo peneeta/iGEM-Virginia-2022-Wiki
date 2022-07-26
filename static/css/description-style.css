@@ -10,31 +10,8 @@
     font-size: 25px;
   }
 
-.centered-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+.accordion-button:focus {
+    border-color: rgba(0, 0, 0, 0) !important;
+    box-shadow: none !important;
 
-.curvy-divider{
-    position: relative;
-}
-.custom-shape-divider-bottom-1658517460 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1658517460 svg {
-    position: relative;
-    display: block;
-    width: calc(106% + 1.3px);
-    height: 123px;
-}
-
-.custom-shape-divider-bottom-1658517460 .shape-fill {
-    fill: #FFFFFF;
 }
