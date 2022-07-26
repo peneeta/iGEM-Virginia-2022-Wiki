@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,17 +28,18 @@
     <!-- Lottie JS -->
     <script src="{{ url_for('static', filename = 'lottie/lottie.js') }}"></script>
 
-
-
-
     {% block extraStyles %}
     {% endblock %}
 
-
-
     <title>{% block title %}{% endblock %} | Virginia - iGEM 2022</title>
-</head>
+  </head>
 <body>
+    <!-- Initialize Data AOS -->
+    <script>
+      AOS.init({
+        once: true
+      });
+    </script>
   <!-- Navigation -->
   {% include 'menu.html' %}
 
