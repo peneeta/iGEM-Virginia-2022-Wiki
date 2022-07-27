@@ -19,3 +19,8 @@
 .curvy-divider{
     position: relative;
 }
+
+.img-diagnostic-diagram{
+  max-width: 70%;
+  height: auto;
+}
