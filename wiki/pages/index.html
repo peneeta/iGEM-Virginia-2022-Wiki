@@ -42,7 +42,7 @@
     <div class="container">
       <div class="d-flex flex-row justify-content-center flex-wrap-reverse flex-lg-nowrap">
 
-        <div class="container d-flex flex-column justify-content-center align-items-center">
+        <div class="container d-flex flex-column justify-content-center align-items-center my-5 py-3  px-4">
           <h2 class="mission-heading" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-sine">Our Mission</h2>
           <p class="mission-text" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-sine">“AtheroSHuffle represents a collaboration between science and society to proactively combat the vices of cardiovascular health.”</p>
         </div>
@@ -55,6 +55,14 @@
     <div class="container d-flex flex-column justify-content-center align-items-center">
       <div data-aos="fade-right">
        <h2>Cardiovascular Disease by the Numbers</h2>
+       <p>Cardiovascular Disease (CV) is the leading cause of death worldwide. </p>
+
+       <h2 class="count">17,900,000</h2>
+       <p>Global deaths annually.</p>
+
+       <h2 class="count">877,500</h2>
+       <p>lives lost in the United States annually.</p>
+
        <p>Each year, <strong>877,500 lives</strong> in the United States are lost due to heart disease or stroke. Worldwide, <strong>32% of total deaths</strong> are attributed to cardiovascular disease, making up <strong>17.9 million</strong> people annually.</p>
      </div>
  
@@ -207,4 +215,17 @@
     </div>
   </div>
 
+
+
+  <!-- Extra Scripts -->
+  <script src="{{ url_for('static', filename = 'jquery.waypoints.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'jquery.counterup.min.js') }}"></script>
+
+  <!-- Counter Initialization -->
+  <script>
+    $('.counter').counterUp({
+      delay: 10,
+      time: 1000
+    });
+  </script>
 {% endblock %}
