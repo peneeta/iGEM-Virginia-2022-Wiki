@@ -36,7 +36,6 @@
             <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='design') }}">Design</a></li>
             <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='engineering') }}">Engineering</a></li>
             <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='partnership') }}">Partnership(?)</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='proof-of-concept') }}">Proof of Concept</a></li>
             <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='results') }}">Results</a></li>
           </ul>
         </li>
@@ -50,8 +49,9 @@
 
             <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='experiments') }}">Experiments</a></li>
             <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='implementation') }}">Implementation (?)</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='results') }}">Results</a></li>
+            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='proof-of-concept') }}">Proof of Concept</a></li>
             <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
+            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='parts') }}">Parts</a></li>
           </ul>
         </li>
 
@@ -67,34 +67,16 @@
           </ul>
         </li>
 
-        <!---- PARTS ---->
+        <!-- HUMAN PRACTICES -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Parts
+            Human Practices
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='part-collection') }}">Part Collection</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='parts') }}">Parts</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='improve') }}">Improve</a></li>
-          </ul>
-        </li>
 
-        <!---- HUMAN PRACTICES ---->
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>
-        </li>
-
-        <!---- AWARDS ---->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Awards
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='education') }}">Education</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='entrepreneurship') }}">Entrepreneurship</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='hardware') }}">Hardware</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='inclusivity') }}">Inclusivity</a></li>
-
+            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='human-practices') }}">Integrated Human Practices</a></li>
+            
+            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='education') }}">Education and Outreach</a></li>
           </ul>
         </li>
 
