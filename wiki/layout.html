@@ -48,19 +48,10 @@
   <!-- Navigation -->
   {% include 'menu.html' %}
 
-  <!-- Scroll to change opacity of navbar -->
   <script>
-    window.onscroll = function() {scrollFunction()};
-    const nav = document.querySelector(".navbar");
-    function scrollFunction() {
-
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        nav.classList.add("nav-opaque");
-    } else {
-    
-        nav.classList.remove("nav-opaque");
-    }
-    }
+    $(window).scroll(function(){
+	    $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+    });
   </script>
 
   <!-- Page Content -->

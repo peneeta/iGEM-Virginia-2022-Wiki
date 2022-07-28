@@ -71,6 +71,17 @@
        url('https://static.igem.wiki/teams/4477/wiki/open-sans-light-italic/open-sans-v29-latin-300italic.svg') format('svg'); /* Legacy iOS */
 }
 
+/* Montserrat Large Font FOR NUMBERS */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src:
+       url('https://static.igem.wiki/teams/4477/wiki/montserrat-800-bold/montserrat-v25-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://static.igem.wiki/teams/4477/wiki/montserrat-800-bold/montserrat-v25-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('https://static.igem.wiki/teams/4477/wiki/montserrat-800-bold/montserrat-v25-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://static.igem.wiki/teams/4477/wiki/montserrat-800-bold/montserrat-v25-latin-800.svg.svg') format('svg'); /* Legacy iOS */
+}
 
   .body{
     width:100%;
@@ -300,4 +311,13 @@
   0% { opacity: 0; }
   10% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(15px); opacity: 0;}
+}
+
+/* COUNTER STYLING */
+.number{
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(4rem, 4rem + 3vw, 7rem);
 }

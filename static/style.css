@@ -81,9 +81,8 @@
 
 /* NAVIGATION BAR STYLING */
 nav.navbar{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: none; 
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .navbar{
@@ -98,10 +97,10 @@ nav.navbar{
    font-family: 'Quicksand';
    font-style: normal;
    font-weight: 400;
-  font-size: 18px;
+   font-size: 18px;
 }
 
-.nav-opaque{
+.scrolled{
   background-color: #06053fdf;
   transition: visibility 0s, 0.6s, opacity 0.6s linear, transform 1s;
   box-shadow: 10px 0 5px #2128327a;
