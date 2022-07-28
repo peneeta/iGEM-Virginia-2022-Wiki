@@ -116,10 +116,13 @@
     letter-spacing: 0.02rem;
   }
 
-  .header-background{
+  .header-section{    
     width: 100%;
     height: 102vh;
     gap: 7rem;
+  }
+
+  .header-background{
     background-image: url('https://static.igem.wiki/teams/4477/wiki/images/homepage-animated.svg');
     overflow: hidden;
     background-repeat: no-repeat;
