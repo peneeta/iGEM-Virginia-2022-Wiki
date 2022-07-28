@@ -52,14 +52,12 @@
 
   <!-- Cardiovascular Disease by the Numbers -->
   <div class= "fs-light-section d-flex flex-row">
-    <div class="container d-flex flex-column justify-content-evenly align-items-center">
+    <div class="container d-flex flex-column justify-content-evenly align-items-center p4 my-4">
       <div data-aos="fade-right">
        <h2>Cardiovascular Disease by the Numbers</h2>
-       <p>Cardiovascular Disease (CV) is the leading cause of death worldwide. </p>
-       <script src="{{ url_for('static', filename = '/components/counter-script.js') }}" type="module"></script>
 
-      <div class="counter-section">
-        <div class="d-flex flex-row align-items-center justify-content-space-between" id="counter-parent">
+      <div class="counter-section d-flex flex-row align-items-center justify-content-center">
+        <div id="counter-parent">
           <div class="stat" id="myTargetElement">
             <h1 class="counter" data-value="17900000"></h1>
             <p>global deaths annually. [SOURCE?]</p>
@@ -70,10 +68,12 @@
             <p>lives lost due to CV or stroke annually in the United States. [SOURCE?]</p>
           </div>
         </div>
-    
-          <p>Worldwide, <strong>32% of total deaths</strong> are attributed to cardiovascular disease, making up <strong>17.9 million</strong> people annually.</p>
-        </div>
+
+        <script src="{{ url_for('static', filename = '/components/counter-script.js') }}" type="module"></script>
+
       </div>
+      <p>Worldwide, <strong>32% of total deaths</strong> are attributed to cardiovascular disease, making up <strong>17.9 million</strong> people annually.</p>
+    </div>
  
      <div data-aos="fade-left">
        <h2>Economic Burden</h2>

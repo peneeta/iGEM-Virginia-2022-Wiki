@@ -11,6 +11,9 @@
     <!-- fontawesome CSS -->
     <link href="{{ url_for('static', filename = 'fontawesome/all.min.css') }}" rel="stylesheet">
 
+      <!-- JQuery  -->
+  <script src="{{ url_for('static', filename = 'jquery-3.6.0.min.js') }}"></script>
+
     <!-- Bootstrap CSS -->
     <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
 
@@ -29,7 +32,7 @@
     <!-- Lottie JS -->
     <script src="{{ url_for('static', filename = 'lottie/lottie.js') }}"></script>
 
-    <script src="{{ url_for('static', filename = 'scrollreveal.js') }}" ></script>
+    <script src="{{ url_for('static', filename = 'scrollreveal.min.js') }}" ></script>
 
     {% block extraStyles %}
     {% endblock %}
