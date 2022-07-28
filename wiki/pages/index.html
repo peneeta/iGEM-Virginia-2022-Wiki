@@ -52,26 +52,28 @@
 
   <!-- Cardiovascular Disease by the Numbers -->
   <div class= "fs-light-section d-flex flex-row">
-    <div class="container d-flex flex-column justify-content-center align-items-center">
+    <div class="container d-flex flex-column justify-content-evenly align-items-center">
       <div data-aos="fade-right">
        <h2>Cardiovascular Disease by the Numbers</h2>
        <p>Cardiovascular Disease (CV) is the leading cause of death worldwide. </p>
-
-
        <script src="{{ url_for('static', filename = '/components/counter-script.js') }}" type="module"></script>
 
-       <h1 id="myTargetElement">0</h1>
-       <p>Global deaths annually.</p>
+      <div class="counter-section">
+        <div class="d-flex flex-row align-items-center justify-content-space-between" id="counter-parent">
+          <div class="stat" id="myTargetElement">
+            <h1 class="counter" data-value="17900000"></h1>
+            <p>global deaths annually. [SOURCE?]</p>
+          </div>
 
-       <h1 id="myTargetElement">0</h1>
-       <p>877,500 lives lost in the United States annually.</p>
-
-       <p>Each year, <strong>877,500 lives</strong> in the United States are lost due to heart disease or stroke. Worldwide, <strong>32% of total deaths</strong> are attributed to cardiovascular disease, making up <strong>17.9 million</strong> people annually.</p>
-
-       <script>
-        countUp.handleScroll();
-       </script>
-     </div>
+          <div class="stat" id="myTargetElement2">
+            <h1 class="counter" data-value="877500"></h1>
+            <p>lives lost due to CV or stroke annually in the United States. [SOURCE?]</p>
+          </div>
+        </div>
+    
+          <p>Worldwide, <strong>32% of total deaths</strong> are attributed to cardiovascular disease, making up <strong>17.9 million</strong> people annually.</p>
+        </div>
+      </div>
  
      <div data-aos="fade-left">
        <h2>Economic Burden</h2>
