@@ -51,34 +51,35 @@
   </div>
 
   <!-- Cardiovascular Disease by the Numbers -->
-  <div class= "fs-light-section d-flex flex-row">
-    <div class="container d-flex flex-column justify-content-evenly align-items-center p4 my-4">
-      <div data-aos="fade-right">
-       <h2>Cardiovascular Disease by the Numbers</h2>
+  <div class= "fs-light-section d-flex flex-column d-flex flex-column justify-content-evenly align-items-center">
+    <div class="wrapper px-4 py-3" data-aos="fade-up" data-aos-duration="2000">
+      <h2>Cardiovascular Disease by the Numbers</h2>
+      <p>Heart disease is the leading cause of death worldwide, making up 32% of total deaths.</p>
+    </div>
 
-      <div class="counter-section d-flex flex-row align-items-center justify-content-center">
-        <div id="counter-parent">
-          <div class="stat col" id="myTargetElement">
-            <h1 class="counter number" data-value="17900000"></h1>
-            <p>global deaths annually. [SOURCE?]</p>
-          </div>
-
-          <div class="stat col" id="myTargetElement2">
-            <h1 class="counter number" data-value="877500"></h1>
-            <p>lives lost due to CV or stroke annually in the United States. [SOURCE?]</p>
-          </div>
+    <div class="container p-4 my-4">
+      <div class="counter-section">
+      <div class=" d-flex flex-row justify-content-center align-items-center" id="counter-parent">
+        <div class="stat col" id="myTargetElement" data-aos="fade-right" data-aos-duration="1000">
+          <h1 class="counter number" data-value="17900000"></h1>
+          <p>global deaths annually. [SOURCE?]</p>
         </div>
 
-        <script src="{{ url_for('static', filename = '/components/counter-script.js') }}" type="module"></script>
-
+        <div class="stat col" id="myTargetElement2" data-aos="fade-left" data-aos-duration="1000">
+          <h1 class="counter number" data-value="877500"></h1>
+          <p>lives lost due to CV annually in the United States. [SOURCE?]</p>
+        </div>
       </div>
-      <p>Worldwide, <strong>32% of total deaths</strong> are attributed to cardiovascular disease, making up <strong>17.9 million</strong> people annually.</p>
+
+      <script src="{{ url_for('static', filename = '/components/counter-script.js') }}" type="module"></script>
     </div>
  
+    <div class="container py-3 px-4 my-4">
      <div data-aos="fade-left">
        <h2>Economic Burden</h2>
        <p>Current diagnostics for cardiovascular disease are costly, and with treatment the direct cost of care increases by another <strong>85%</strong>. National expenditures were at <strong>$126 billion in 2015</strong> and are expected to increase to <strong>$309 billion in 2035</strong>. 
      </div>
+    </div>
    </div>
   </div>
 
