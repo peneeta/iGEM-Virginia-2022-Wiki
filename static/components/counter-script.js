@@ -11,20 +11,25 @@ var counterParent =
 document.getElementById('counter-parent');
 var children = counterParent.children;
 
+
 function countStart(){
+    console.log('started');
     $('#counter-parent').addClass('active');
     for (var i = 0; i < children.length; i++){
         var item = document.getElementById(children[i].id).querySelector('.counter');
 
         var countValue = item.getAttribute('data-value');
 
-        var countUp = new CountUp(item, 0, countValue, 0, 2, options);
-        if (!countUp.error) {
-            countUp.start();
+        var countUP = new CountUp(item, 0, countValue, 0, 2, options);
+        if (!countUP.error) {
+            countUP.start();
         }
     }
 }
 
-ScrollReveal().reveal('.counter-section', {
-    beforeReveal: countStart
-})
+countStart();
+
+// ScrollReveal().reveal('.counter-section', {
+//     beforeReveal: countStart
+    
+// })
