@@ -62,9 +62,16 @@
   {% include 'footer.html' %}
 
 
+  <script>
+    $(document).ready(function() {
+        $("body").tooltip({ selector: '[data-bs-toggle=tooltip]' });
+    });
+  </script>
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+
+  
 
 </body>
 </html>

@@ -174,13 +174,8 @@
   }
 
   .fs-light-section{
-    padding-top: 5;
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     background: #E9E9E9;
     overflow: hidden;
   }
@@ -201,10 +196,6 @@
     background-position-x: center;
     background-position-y: 50%;
     height: max(10rem, 60vh);
-  }
-
-  .abstract{
-    padding: max(3rem, 16vh);
   }
 
   .abstract p{
