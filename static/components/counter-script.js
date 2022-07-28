@@ -1,11 +1,15 @@
 import { CountUp } from '../countUp.min.js';
 
 var options = {
+    duration: 4,
     useEasing: true,
+    smartEasingThreshold: 500,
     useGrouping: true,
     separator: ',',
     decimal: '.',
     enableScrollSpy: true,
+    scrollSpyDelay: 5,
+    scrollSpyOnce: true,
 };
 
 var counterParent = 
