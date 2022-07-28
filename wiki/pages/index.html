@@ -59,15 +59,22 @@
 
     <div class="container p-4 my-4">
       <div class="counter-section">
-      <div class=" d-flex flex-row justify-content-center align-items-center" id="counter-parent">
+      <div class=" d-flex flex-row justify-content-center align-items-center flex-wrap flex-lg-nowrap" id="counter-parent">
         <div class="stat col" id="myTargetElement" data-aos="fade-right" data-aos-duration="1000">
           <h1 class="counter number" data-value="17900000"></h1>
-          <p>global deaths annually. [SOURCE?]</p>
+          <p>global deaths annually 
+            <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)#:~:text=Key%20facts,to%20heart%20attack%20and%20stroke.</p>">[#]</span>
+          </p>
         </div>
 
         <div class="stat col" id="myTargetElement2" data-aos="fade-left" data-aos-duration="1000">
           <h1 class="counter number" data-value="877500"></h1>
-          <p>lives lost due to CV annually in the United States. [SOURCE?]</p>
+          <p>lives lost due to CV annually in the United States 
+            
+            <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.cdc.gov/chronicdisease/resources/publications/factsheets/heart-disease-stroke.htm</p>">[#]</span>
+          </p>
+
+           
         </div>
       </div>
 
@@ -86,24 +93,26 @@
   <!-- Abstract/How we're making a difference -->
   <div class="blob-background-section d-flex flex-column justify-content-evenly align-items-center">
     <div class="container abstract d-flex flex-row align-items-center justify-content-center flex-wrap flex-lg-nowrap">
-      <div class="d-flex flex-column">
+      <div class="d-flex flex-column p-4 my-5">
         <h2>How We're Making a Difference</h2>
         <p>Our device targets <span class="bold-text">Atherosclerosis</span>, an inflammatory disease characterized by <span class="bold-text">plaque build-up in the inner arterial walls.</span> It is a common cardiovascular disease affecting millions in America and worldwide.  Current detection methods are <span class="bold-text">costly, time-consuming, and not recommended during medical visits</span> unless individuals show signs of further cardiovascular complications. 
         <br>
         Our focus is developing a method atherosclerosis detection centered around the <span class="bold-text">detection of oxidized low-density lipoprotein (oxLDL)</span>, a biomarker in the bloodstream whose presence is associated with early to middle stages of atherosclerosis development. This synthetic biology approach provides individuals with a <span class="bold-text">quick, accessible, and proactive method</span> to testing their likelihood of having atherosclerosis. By engineering the SHuffle <span class="italic-text">E. coli</span> strand to produce oxLDL-specific antibodies, oxLDL levels can be determined from an <span class="bold-text">easy-to-read test strip</span> containing these antibodies.  This method is projected to <span class="bold-text">significantly reduce the cost</span> of current detection methods and add a dimension to preexisting biomarker detection diagnostics.</p>
 
         <div>
-          <button class="btn btn-primary" type="button" href="{{ url_for('pages', page='description') }}">Learn more in our Project Description</button>
+          <button class="btn btn-primary" type="button" href="{{ url_for('pages', page='description') }}">Read next: Project Description</button>
         </div> 
       </div>
-      <div class="video">
+
+      <!-- I need to fix this div, will put him back later -->
+      <!-- <div class="video">
         <img class="img-fluid w-5 man-gif" src="https://static.igem.wiki/teams/4477/wiki/images/mangif.gif"/>
-      </div>
+      </div> -->
     </div>
   </div>
 
   <!-- Our Committees -->
-  <div class="fs-light-section">
+  <div class="fs-light-section d-flex flex-column justify-content-center align-items-center">
     <div class="container">
 
       <h2>Our Committees</h2>

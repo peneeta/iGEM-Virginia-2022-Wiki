@@ -243,8 +243,9 @@ p{
 
 }
 
-.pdb-struct{
-  padding: 40px;
+/* TOOLTIP STYLING */
+.tooltip.show p{
+  text-align: left;
 }
 
 
