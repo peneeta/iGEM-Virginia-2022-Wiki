@@ -5,12 +5,12 @@ var options = {
     useGrouping: true,
     separator: ',',
     decimal: '.',
+    enableScrollSpy: true,
 };
 
 var counterParent = 
 document.getElementById('counter-parent');
 var children = counterParent.children;
-
 
 function countStart(){
     console.log('started');
@@ -20,16 +20,14 @@ function countStart(){
 
         var countValue = item.getAttribute('data-value');
 
-        var countUP = new CountUp(item, 0, countValue, 0, 2, options);
-        if (!countUP.error) {
-            countUP.start();
-        }
+        var countUP = new CountUp(item, countValue, options);
     }
 }
 
-countStart();
+$( document ).ready(function() {
+    console.log('ready');
+    countStart();
 
-// ScrollReveal().reveal('.counter-section', {
-//     beforeReveal: countStart
-    
-// })
+})
+
+
