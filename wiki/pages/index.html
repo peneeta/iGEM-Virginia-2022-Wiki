@@ -57,13 +57,20 @@
        <h2>Cardiovascular Disease by the Numbers</h2>
        <p>Cardiovascular Disease (CV) is the leading cause of death worldwide. </p>
 
-       <h2 class="count">17,900,000</h2>
+
+       <script src="{{ url_for('static', filename = '/components/counter-script.js') }}" type="module"></script>
+
+       <h1 id="myTargetElement">0</h1>
        <p>Global deaths annually.</p>
 
-       <h2 class="count">877,500</h2>
-       <p>lives lost in the United States annually.</p>
+       <h1 id="myTargetElement">0</h1>
+       <p>877,500 lives lost in the United States annually.</p>
 
        <p>Each year, <strong>877,500 lives</strong> in the United States are lost due to heart disease or stroke. Worldwide, <strong>32% of total deaths</strong> are attributed to cardiovascular disease, making up <strong>17.9 million</strong> people annually.</p>
+
+       <script>
+        countUp.handleScroll();
+       </script>
      </div>
  
      <div data-aos="fade-left">
@@ -217,15 +224,5 @@
 
 
 
-  <!-- Extra Scripts -->
-  <script src="{{ url_for('static', filename = 'jquery.waypoints.min.js') }}"></script>
-  <script src="{{ url_for('static', filename = 'jquery.counterup.min.js') }}"></script>
-
-  <!-- Counter Initialization -->
-  <script>
-    $('.counter').counterUp({
-      delay: 10,
-      time: 1000
-    });
-  </script>
 {% endblock %}
+

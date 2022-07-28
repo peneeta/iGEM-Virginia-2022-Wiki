@@ -71,9 +71,6 @@
        url('https://static.igem.wiki/teams/4477/wiki/open-sans-light-italic/open-sans-v29-latin-300italic.svg') format('svg'); /* Legacy iOS */
 }
 
-  .root{
-    --primary-color: 
-  }
 
   .body{
     width:100%;
@@ -94,7 +91,7 @@
   }
   
   .second-title{
-      font-size: max(0.8rem, 1.5vw);
+      font-size: clamp(0.6rem, 0.6rem + 1.5vw, 1.4rem);
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 400;
@@ -103,7 +100,7 @@
   }
 
   .mission-heading{
-    font-size: max(1.6rem, 3vw);
+    font-size: clamp(2rem, 2rem + 1.5vw, 3rem);
     padding-top: min(2rem, 5vh);
     padding-bottom: min(10rem, 2vh);
     letter-spacing: 0.17rem;
@@ -113,8 +110,8 @@
     font-family: 'Open Sans';
     font-style: italic;
     font-weight: 300;
-    font-size: max(0.8rem, 1vw);
-    padding-inline: 10vw;
+    font-size: clamp(0.8rem, 0.8rem + 1vw, 1rem);
+    padding-inline: min(10vw, 15rem);
     text-align: center;
     letter-spacing: 0.02rem;
   }
