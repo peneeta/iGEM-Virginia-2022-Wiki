@@ -52,42 +52,45 @@
 
   <!-- Cardiovascular Disease by the Numbers -->
   <div class= "fs-light-section d-flex flex-column d-flex flex-column justify-content-evenly align-items-center">
-    <div class="wrapper px-4 py-3" data-aos="fade-up" data-aos-duration="2000">
-      <h2>Cardiovascular Disease by the Numbers</h2>
-      <p>Heart disease is the leading cause of death worldwide, making up 32% of total deaths.</p>
+    <div class="stat-section">
+      <div class="wrapper px-4 py-3" data-aos="fade-up" data-aos-duration="2000">
+        <h2>Cardiovascular Disease by the Numbers</h2>
+        <p>Heart disease is the leading cause of death worldwide, making up 32% of total deaths.</p>
+      </div>
     </div>
 
     <div class="container p-4 my-4">
       <div class="counter-section">
-      <div class=" d-flex flex-row justify-content-center align-items-center flex-wrap flex-lg-nowrap" id="counter-parent">
-        <div class="stat col" id="myTargetElement" data-aos="fade-right" data-aos-duration="1000">
-          <h1 class="counter number" data-value="17900000"></h1>
-          <p>global deaths annually 
-            <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)#:~:text=Key%20facts,to%20heart%20attack%20and%20stroke.</p>">[#]</span>
-          </p>
+        <div class=" d-flex flex-row justify-content-center align-items-center flex-wrap flex-lg-nowrap" id="counter-parent">
+          <div class="stat col" id="myTargetElement" data-aos="fade-right" data-aos-duration="1000">
+            <h1 class="counter number" data-value="17900000"></h1>
+            <p>global deaths annually 
+              <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)#:~:text=Key%20facts,to%20heart%20attack%20and%20stroke.</p>">[#]</span>
+            </p>
+          </div>
+
+          <div class="stat col" id="myTargetElement2" data-aos="fade-left" data-aos-duration="1000">
+            <h1 class="counter number" data-value="877500"></h1>
+            <p>lives lost due to CV annually in the United States 
+              
+              <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.cdc.gov/chronicdisease/resources/publications/factsheets/heart-disease-stroke.htm</p>">[#]</span>
+            </p>
+          </div>
         </div>
 
-        <div class="stat col" id="myTargetElement2" data-aos="fade-left" data-aos-duration="1000">
-          <h1 class="counter number" data-value="877500"></h1>
-          <p>lives lost due to CV annually in the United States 
-            
-            <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.cdc.gov/chronicdisease/resources/publications/factsheets/heart-disease-stroke.htm</p>">[#]</span>
-          </p>
+        <script src="{{ url_for('static', filename = '/components/counter-script.js') }}" type="module"></script>
+      </div>
+    </div>
 
-           
+ 
+    <div class="container stat-section d-flex flex-row flex-wrap flex-lg-nowrap">
+      <div class="wrapper d-flex flex-column">
+        <div data-aos="fade-left">
+          <h2>Economic Burden</h2>
+          <p>Current diagnostics for cardiovascular disease are costly, and with treatment the direct cost of care increases by another <strong>85%</strong>. National expenditures were at <strong>$126 billion in 2015</strong> and are expected to increase to <strong>$309 billion in 2035</strong>. 
         </div>
       </div>
-
-      <script src="{{ url_for('static', filename = '/components/counter-script.js') }}" type="module"></script>
     </div>
- 
-    <div class="container py-3 px-4 my-4">
-     <div data-aos="fade-left">
-       <h2>Economic Burden</h2>
-       <p>Current diagnostics for cardiovascular disease are costly, and with treatment the direct cost of care increases by another <strong>85%</strong>. National expenditures were at <strong>$126 billion in 2015</strong> and are expected to increase to <strong>$309 billion in 2035</strong>. 
-     </div>
-    </div>
-   </div>
   </div>
 
   <!-- Abstract/How we're making a difference -->
@@ -100,7 +103,7 @@
         Our focus is developing a method atherosclerosis detection centered around the <span class="bold-text">detection of oxidized low-density lipoprotein (oxLDL)</span>, a biomarker in the bloodstream whose presence is associated with early to middle stages of atherosclerosis development. This synthetic biology approach provides individuals with a <span class="bold-text">quick, accessible, and proactive method</span> to testing their likelihood of having atherosclerosis. By engineering the SHuffle <span class="italic-text">E. coli</span> strand to produce oxLDL-specific antibodies, oxLDL levels can be determined from an <span class="bold-text">easy-to-read test strip</span> containing these antibodies.  This method is projected to <span class="bold-text">significantly reduce the cost</span> of current detection methods and add a dimension to preexisting biomarker detection diagnostics.</p>
 
         <div>
-          <button class="btn btn-primary" type="button" href="{{ url_for('pages', page='description') }}">Read next: Project Description</button>
+          <button class="btn btn-primary shadow-none" type="button" href="{{ url_for('pages', page='description') }}">Read next: Project Description</button>
         </div> 
       </div>
 
@@ -113,8 +116,7 @@
 
   <!-- Our Committees -->
   <div class="fs-light-section d-flex flex-column justify-content-center align-items-center">
-    <div class="container">
-
+    <div class="container my-5 py-3">
       <h2>Our Committees</h2>
       <p>Keeping these statistics and the millions of cardiovascular disease patients in mind, we organized ourselves into three committees to develop new technology and spread awareness simultaneously. </p>
         <!-- Hoverable Cards -->
