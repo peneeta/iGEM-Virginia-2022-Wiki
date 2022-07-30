@@ -91,7 +91,7 @@
         document.addEventListener("DOMContentLoaded", function () {
             var stage = new NGL.Stage("viewport", { backgroundColor: "white"});
             
-            stage.loadFile("{{ url_for('static', filename = 'pdb/scFv-p2-8-vhvl.pdb') }}", {defaultRepresentation: true});
+            stage.loadFile("{{ url_for('static', filename = 'pdb/mcpc603-scFv.pdb') }}", {defaultRepresentation: true});
             stage.setSpin(true);
         });
         </script>
