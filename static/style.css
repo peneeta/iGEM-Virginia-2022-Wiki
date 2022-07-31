@@ -244,10 +244,18 @@ p{
 }
 
 /* TOOLTIP STYLING */
-.tooltip.show p{
+.tt{
+  cursor: context-menu;
+}
+
+.tooltip-inner {
+  width: fit-content;
   text-align: left;
 }
 
+.pdb{
+  overscroll-behavior: contain;
+}
 
 /* CSS wave animation */
 .waves {
