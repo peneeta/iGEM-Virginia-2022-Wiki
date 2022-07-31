@@ -29,36 +29,67 @@
       <p>However, with further reading and meeting with researchers in the field, the modeling team was able to determine an ideal sequence for our scFv. The protein models of the lateral flow assay components were ultimately utilized in determining which strain of <span class="italic-text">E. coli</span> to synthesize the scFv in. Since each of the selected scFv fragments contained disulfide bonds, the fragments must be expressed in SHuffle <span class="italic-text">E. coli</span> cells instead of another strain of <span class="italic-text">E. coli.</span></p>
 
 
-      <!-- OLD SCFV, GET NEW ONE -->
+      <!-- MCPC603 -->
       <div class="pdb-struct mcpc603-scFv">
+        <h4>MCPC-603 scFv Ribbon and Surface Model</h4>
+        <p>This is a model generated from AlphaFold of the MCPC-603 antibody fragment. [Info about its active site, etc]</p>
         <script src="{{ url_for('static', filename = 'ngl/dist/ngl.js') }}"></script>
 
         <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var stage = new NGL.Stage("viewport", { backgroundColor: "white"});
-            
-            stage.loadFile("{{ url_for('static', filename = 'pdb/mcpc603-scFv.pdb') }}", {defaultRepresentation: true});
-            stage.setSpin(true);
+            // Create NGL Stage object
+        var stage = new NGL.Stage( "mcpc603-VP", {
+          // NEED TO CHANGE THIS LATER if we change page color
+          backgroundColor: 'white',
+        });
+
+        // Load PDB
+        stage.loadFile("{{ url_for('static', filename = 'pdb/mcpc603-scFv.pdb') }}").then(function (oMCPC) {
+          oMCPC.addRepresentation("surface", {
+              colorScheme: "bfactor",
+              contour: "true",
+              colorScale: "spectral",
+          });
+          oMCPC.addRepresentation("cartoon", {
+
+          });
+          stage.setSpin(true);
+          oMCPC.autoView();
+          
+        });
         });
         </script>
+
         <!-- Initialize the Viewport -->
-        <div id="viewport" style="width:30rem; height:40rem;"></div>
+        <div id="mcpc603-VP" style="width: 400px; height: 500px;"></div>
       </div>
 
       <!-- NANOBODY -->
       <div class="pdb-struct nanobody">
+        <h4>Nanobody</h4>
         <script src="{{ url_for('static', filename = 'ngl/dist/ngl.js') }}"></script>
 
         <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var stage = new NGL.Stage("viewport", { backgroundColor: "white"});
+            var stage = new NGL.Stage("nanobody-VP", { backgroundColor: "white"});
             
-            stage.loadFile("{{ url_for('static', filename = 'pdb/nanobody.pdb') }}", {defaultRepresentation: true});
-            stage.setSpin(true);
+            stage.loadFile("{{ url_for('static', filename = 'pdb/nanobody.pdb') }}").then(function(oNano){
+              oNano.addRepresentation("surface", {
+              colorScheme: "bfactor",
+              contour: "true",
+              colorScale: "spectral",
+          });
+          oNano.addRepresentation("cartoon", {
+
+          });
+          stage.setSpin(true);
+          oNano.autoView();
+
+        })
         });
         </script>
         <!-- Initialize the viewport -->
-        <div id="viewport" style="width:400px; height:300px;"></div>
+        <div id="nanobody-VP" style="width:400px; height:300px;"></div>
       </div>
 
     </div>
