@@ -32,46 +32,47 @@
             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
         </defs>
         <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="#e9e9e9" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#E9E9E9" />
         </g>
       </svg>
   </div>
 
   <!-- Mission Statement -->
-  <div class="light-section-narrow">
+  <div class="light-section">
     <div class="container">
       <div class="d-flex flex-row justify-content-center flex-wrap-reverse flex-lg-nowrap">
 
         <div class="container d-flex flex-column justify-content-center align-items-center my-5 py-3  px-4">
           <h2 class="mission-heading" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-sine">Our Mission</h2>
-          <p class="mission-text" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-sine">“AtheroSHuffle represents a collaboration between science and society to proactively combat the vices of cardiovascular health.”</p>
+          <p class="mission-text" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-sine">“AtheroSHuffle represents a collaboration between science and society to proactively combat the complications of cardiovascular health.”</p>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Cardiovascular Disease by the Numbers -->
-  <div class= "fs-light-section d-flex flex-column d-flex flex-column justify-content-evenly align-items-center">
-    <div class="stat-section">
+  <div class= "light-section d-flex flex-column d-flex flex-column justify-content-evenly align-items-center">
+    <div class="container stat-section p-4 my-3">
       <div class="wrapper px-4 py-3" data-aos="fade-up" data-aos-duration="2000">
-        <h2>Cardiovascular Disease by the Numbers</h2>
-        <p>Heart disease is the leading cause of death worldwide, making up 32% of total deaths.</p>
+        <h2>A Worldwide Health Crisis</h2>
+        <p>Cardiovascular disease (CVD) is the leading cause of death worldwide, making up 32% of total deaths. This umbrella term refers to several diseases including stroke, coronary heart disease, and other conditions affecting blood vessels. </p>
       </div>
     </div>
 
     <div class="container p-4 my-4">
+      <h2 class="mb-4">To put this into numbers...</h2>
       <div class="counter-section">
         <div class=" d-flex flex-row justify-content-center align-items-center flex-wrap flex-lg-nowrap" id="counter-parent">
           <div class="stat col" id="myTargetElement" data-aos="fade-right" data-aos-duration="1000">
             <h1 class="counter number" data-value="17900000"></h1>
-            <p>global deaths annually 
+            <p>global deaths attributed to CVD annually 
               <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)#:~:text=Key%20facts,to%20heart%20attack%20and%20stroke.</p>">[#]</span>
             </p>
           </div>
 
           <div class="stat col" id="myTargetElement2" data-aos="fade-left" data-aos-duration="1000">
             <h1 class="counter number" data-value="877500"></h1>
-            <p>lives lost due to CV annually in the United States 
+            <p>lives lost due to CVD annually in the United States 
               
               <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.cdc.gov/chronicdisease/resources/publications/factsheets/heart-disease-stroke.htm</p>">[#]</span>
             </p>
@@ -83,12 +84,92 @@
     </div>
 
  
-    <div class="container stat-section d-flex flex-row flex-wrap flex-lg-nowrap">
-      <div class="wrapper d-flex flex-column">
+    <div class="container stat-section d-flex flex-row flex-wrap flex-lg-nowrap align-items-center justify-content-center gap-5 py-5 my-3">
+      <div class="wrapper d-flex flex-column px-4">
         <div data-aos="fade-left">
           <h2>Economic Burden</h2>
-          <p>Current diagnostics for cardiovascular disease are costly, and with treatment the direct cost of care increases by another <strong>85%</strong>. National expenditures were at <strong>$126 billion in 2015</strong> and are expected to increase to <strong>$309 billion in 2035</strong>. 
+          <p>In addition to its health impacts, CVDs are extremely costly. Current diagnostics for cardiovascular disease are not cheap, and when bundled with treatment, the direct cost of care increases by another <strong>85 percent</strong>. National expenditures were at <strong>$126 billion in 2015</strong> and are expected to increase to <strong>$309 billion in 2035</strong>. 
         </div>
+      </div>
+
+      <div class="wrapper d-flex flex-column align-items-center justify-content-evenly">
+        <div class="wrapper graph">
+          <canvas id="myChart"></canvas>
+          <!-- ChartJS Initialization -->
+          <script src="{{ url_for('static', filename = '/chartjs/chart.min.js')}}"></script>
+          <script>
+            
+            var ctx = document.getElementById("myChart");
+            var myChart = new Chart(ctx, {
+              type: 'line',
+              data: {
+                labels: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035],
+                datasets: [{
+                  fill: false,
+                  label: 'Total Cost of CVD',
+                  data: [318.2, 332.9, 347.9, 363.6, 380.0, 397.4, 415.3, 434.4, 454.4, 475.5, 497.3, 519.3, 543.8, 568.3, 592.9, 618.0, 642.7, 667.7, 693.3, 720.0, 748.7],
+                  borderColor: '#3366CC',
+                  backgroundColor: 'rgba(51, 102, 204, 0.2)',
+                  tension: 0.4
+                }, {
+                  fill: false,
+                  label: 'Hypertension',
+                  data: [68.4, 71.5, 74.6, 77.9, 81.2, 84.7, 88.3, 92.1, 96.1, 100.2, 104.6, 109.0, 113.6, 118.3, 123.1, 128.0, 132.8, 137.7, 142.8, 148.1, 153.7],
+                  borderColor: '#DC3912',
+                  backgroundColor: 'rgba(220, 57, 18, 0.2)',
+                  tension: 0.4
+                
+                }, {
+                  fill: false,
+                  label: 'Coronary Heart Disease',
+                  data: [89.0, 93.2, 97.5, 102.0, 106.7, 111.8, 117.0, 122.6, 128.6, 134.6, 141.0, 147.4, 154.8, 162.0, 169.2, 176.6, 183.7, 191.0, 198.4, 206.2, 214.5],
+                  borderColor: '#FF9900',
+                  backgroundColor:'rgba(255, 153, 0, 0.2)',
+                  tension: 0.4
+                }, {
+                  fill: false,
+                  label: 'Stroke',
+                  data: [36.7, 38.5, 40.4, 42.4, 44.5, 46.8, 49.1, 51.7, 54.3, 57.1, 60.0, 62.9, 66.2, 69.5, 72.9, 76.3, 79.7, 83.1, 86.6, 90.3, 94.3],
+                  borderColor: '#990099',
+                  backgroundColor:'rgba(153, 0, 153, 0.2)',
+                  tension: 0.4
+                }, {
+                  fill: false,
+                  label: 'Atrial Fibrilation',
+                  data: [23.6, 24.6, 25.7, 26.9, 28.0,  29.3, 30.6, 32.0, 33.6, 35.1, 36.7, 38.3, 40.2, 42.0, 43.8, 45.6, 47.4, 49.2, 51.0, 52.9, 55.0],
+                  borderColor: '#316395',
+                  backgroundColor:'rgba(49, 99, 149, 0.2)',
+                  tension: 0.4
+                }]
+              },
+              options: {
+                responsive: true,
+                aspectRatio: 1,
+                scales: {
+                  yAxes: [{
+                    ticks: {
+                      beginAtZero: true,          
+                      stepSize: 50 // this worked as expected          
+                    }
+                  }],
+                  xAxes: [{
+                    ticks: {
+                      stepSize: 2,
+
+                    }
+                  }]
+                }
+              }
+            });
+
+          </script>
+        </div>
+
+        <p>https://www.heart.org/-/media/Files/Get-Involved/Advocacy/CVD-Predictions-Through-2035.pdf Data from table 3-7 OMG I FOUND IT FINALLY</p>
+
+        <!-- Add line graph here of increasing costs -->
+
+
       </div>
     </div>
   </div>
