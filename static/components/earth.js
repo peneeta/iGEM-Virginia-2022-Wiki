@@ -21,6 +21,6 @@
       .pointAltitude('size')
       .pointColor('color')
       .showAtmosphere(true)
-    (document.getElementById('globeViz'))
+
 
 
