@@ -11,5 +11,19 @@
     border-radius:20px;
     text-align: center;
     display: inline-block;
+    line-width: 40px;
 
+}
+
+.who-we{
+    color: white;
+    background-color: #535E84;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+.border-lft{
+    border-color: #EDB4B4;
+    border-left: 3in;
 }
