@@ -3,6 +3,12 @@
 {% block title %}Team{% endblock %}
 {% block lead %}On this page you can introduce your team members, instructors, and advisors.{% endblock %}
 
+{% block extraStyles %}
+<link href="{{ url_for('static', filename = 'css/teampage.css') }}" rel="stylesheet">
+
+{% endblock %}
+
+
 {% block page_content %}
 
 
@@ -22,10 +28,12 @@
 <div class= "body-container">
   <div class= "container">
     <div class= "body-section px-4" data-aos= "fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-      <h2>Virginia iGEM 2022</h2>
+      <h2 class="team-header-text">Virginia iGEM 2022</h2>
       <img class="team-photo"src= ""/>
-
     </div>
+    <div class="body-section"
+      <h3>Two columns</h3> 
+    </div> 
   </div>
 </div>
 
