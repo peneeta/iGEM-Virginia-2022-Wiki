@@ -14,7 +14,7 @@
 
     myGlobe
       .globeImageUrl('https://static.igem.wiki/teams/4477/wiki/images/earth-night.jpg')
-
+      .backgroundColor("rgba(0,0,0,0)")
       .pointAltitude('size')
       .pointColor('color')
       .showAtmosphere(true)
