@@ -55,6 +55,12 @@
   </div>
 
   <!-- Cardiovascular Disease by the Numbers -->
+  <div class="earth-section">
+    <div id="globeViz" data-js-globe></div>
+    <script src="{{ url_for('static', filename='components/earth.js')}}"></script>
+
+  </div>
+
   <div class= "light-section d-flex flex-column d-flex flex-column justify-content-evenly align-items-center">
     <div class="container stat-section p-4 my-3">
       <div class="wrapper px-4 py-3" data-aos="fade-up" data-aos-duration="2000">
@@ -63,10 +69,7 @@
       </div>
     </div>
 
-    <div class="container">
-      <div id="globeViz"></div>
-      <script src="{{ url_for('static', filename='components/earth.js')}}"></script>
-    </div>
+    
 
     <div class="container p-4 my-4">
       <h2 class="mb-4">To put this into numbers...</h2>

@@ -1,34 +1,26 @@
-const N_PATHS = 10;
-const MAX_POINTS_PER_LINE = 10000;
-const MAX_STEP_DEG = 1;
-const MAX_STEP_ALT = 0.015;
-const gData = [...Array(N_PATHS).keys()].map(() => {
-  let lat = (Math.random() - 0.5) * 90;
-  let lng = (Math.random() - 0.5) * 360;
-  let alt = 0;
+    // Gen random data
+    const N = 300;
+    const gData = [...Array(N).keys()].map(() => ({
+      lat: (Math.random() - 0.5) * 180,
+      lng: (Math.random() - 0.5) * 360,
+      size: Math.random() / 3,
+      color: ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)]
+    }));
 
-  return [[lat, lng, alt], ...[...Array(Math.round(Math.random() * MAX_POINTS_PER_LINE)).keys()].map(() => {
-    lat += (Math.random() * 2 - 1) * MAX_STEP_DEG;
-    lng += (Math.random() * 2 - 1) * MAX_STEP_DEG;
-    alt += (Math.random() * 2 - 1) * MAX_STEP_ALT;
-    alt = Math.max(0, alt);
+    const globeDOM = document.querySelector("[data-js-globe]");
 
-    return [lat, lng, alt];
-  })];
-});
+    const myGlobe = Globe({});
+    myGlobe(globeDOM);
+    myGlobe.controls().autoRotate = true;
+    myGlobe.controls().autoRotateSpeed = 1;
+    myGlobe.controls().enableZoom = false;
 
-const globe = Globe()
-  .globeImageUrl('https://static.igem.wiki/teams/4477/wiki/images/earth-dark.jpg')
-  .bumpImageUrl('https://static.igem.wiki/teams/4477/wiki/images/earth-topology.png')
-  .pathsData(gData)
-  .pathColor(() => ['rgba(0,0,255,0.6)', 'rgba(255,0,0,0.6)'])
-  .pathDashLength(0.01)
-  .pathDashGap(0.004)
-  .pathDashAnimateTime(100000)
-  (document.getElementById('globeViz'));
+    myGlobe
+      .globeImageUrl('https://static.igem.wiki/teams/4477/wiki/images/earth-night.jpg')
+      .pointsData(gData)
+      .pointAltitude('size')
+      .pointColor('color')
+      .showAtmosphere(true)
+    (document.getElementById('globeViz'))
 
-setTimeout(() => {
-  globe
-    .pathPointAlt(pnt => pnt[2]) // set altitude accessor
-    .pathTransitionDuration(4000)
-}, 6000);
+
