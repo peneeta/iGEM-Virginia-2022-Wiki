@@ -6,5 +6,8 @@
 
 .team-header-text{
     color: black;
-    background-color: #EDB4B4
+    background-color: #EDB4B4;
+    border-radius:25px;
+    text-align: center;
+
 }
