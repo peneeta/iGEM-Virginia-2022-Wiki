@@ -2,6 +2,9 @@
 
 
 {% block extraStyles %}
+<script src="{{ url_for('static', filename = 'planetaryjs/d3.v3.min.js')}}"></script>
+<script src="{{ url_for('static', filename = 'planetaryjs/topojson.v1.min.js')}}"></script>
+<script src="{{ url_for('static', filename = 'planetaryjs/planetaryjs.min.js')}}"></script>
 
 <link href="{{ url_for('static', filename = 'css/index-style.css') }}" rel="stylesheet">
 
@@ -44,9 +47,11 @@
     <div class="container">
       <div class="d-flex flex-row justify-content-center flex-wrap-reverse flex-lg-nowrap">
 
-        <div class="container d-flex flex-column justify-content-center align-items-center my-5 py-3  px-4">
-          <h2 class="mission-heading" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-sine">Our Mission</h2>
-          <p class="mission-text" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-sine">“AtheroSHuffle represents a collaboration between science and society to proactively combat the complications of cardiovascular health.”</p>
+        <div class="container my-5 py-3 px-4">
+          <div class="text-wrapper d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-sine">
+            <h2 class="mission-heading">Our Mission</h2>
+            <p class="mission-text">“AtheroSHuffle represents a collaboration between science and society to proactively combat the complications of cardiovascular health.”</p>
+          </div>
         </div>
       </div>
     </div>
@@ -62,23 +67,24 @@
     </div>
 
     <div class="container">
-
+      <canvas id='globe' width='400' height='400'></canvas>
+      <script src="{{ url_for('static', filename='components/earth.js')}}"></script>
     </div>
 
     <div class="container p-4 my-4">
       <h2 class="mb-4">To put this into numbers...</h2>
       <div class="counter-section">
         <div class=" d-flex flex-row justify-content-center align-items-center flex-wrap flex-lg-nowrap" id="counter-parent">
-          <div class="stat col" id="myTargetElement" data-aos="fade-right" data-aos-duration="1000">
+          <div class="stat col px-3" id="myTargetElement" data-aos="fade-right" data-aos-duration="1000">
             <h1 class="counter number" data-value="17900000"></h1>
-            <p>global deaths attributed to CVD annually 
+            <p class="px-3">global deaths attributed to CVD annually 
               <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)#:~:text=Key%20facts,to%20heart%20attack%20and%20stroke.</p>">[#]</span>
             </p>
           </div>
 
-          <div class="stat col" id="myTargetElement2" data-aos="fade-left" data-aos-duration="1000">
+          <div class="stat col px-4" id="myTargetElement2" data-aos="fade-left" data-aos-duration="1000">
             <h1 class="counter number" data-value="877500"></h1>
-            <p>lives lost due to CVD annually in the United States 
+            <p class="px-3">lives lost due to CVD annually in the United States 
               
               <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.cdc.gov/chronicdisease/resources/publications/factsheets/heart-disease-stroke.htm</p>">[#]</span>
             </p>
@@ -99,7 +105,7 @@
       </div>
 
       <div class="wrapper d-flex flex-column align-items-center justify-content-evenly">
-        <div class="wrapper graph">
+        <div class="wrapper graph" style="position: relative;">
           <canvas id="myChart"></canvas>
           <!-- ChartJS Initialization -->
           <script src="{{ url_for('static', filename = '/chartjs/chart.min.js')}}"></script>
@@ -145,7 +151,7 @@
                   data: [23.6, 24.6, 25.7, 26.9, 28.0,  29.3, 30.6, 32.0, 33.6, 35.1, 36.7, 38.3, 40.2, 42.0, 43.8, 45.6, 47.4, 49.2, 51.0, 52.9, 55.0],
                   borderColor: '#316395',
                   backgroundColor:'rgba(49, 99, 149, 0.2)',
-                  tension: 0.4
+                  tension: 0.4,
                 }]
               },
               options: {
@@ -153,7 +159,7 @@
                 aspectRatio: 1,
                 scales: {
                   y: {
-                    title:{
+                    title: {
                       display: true,
                       text: 'Cost in Billions ($USD)'
                     },
@@ -179,11 +185,9 @@
           </script>
         </div>
 
-        <p>https://www.heart.org/-/media/Files/Get-Involved/Advocacy/CVD-Predictions-Through-2035.pdf Data from table 3-7 OMG I FOUND IT FINALLY</p>
-
-        <!-- Add line graph here of increasing costs -->
-
-
+        <p class="py-4 italic-text">Projected costs of CVD from 2015 to 2035. Data obtained from Research Triangle Institute (RTI) technical report. 
+          <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Khavjou, Olga, Phelps, Diana, & Leib, Alyssa. (2016). Projections of Cardiovascular Disease Prevalence and Costs: 2015–2035. https://www.heart.org/-/media/Files/Get-Involved/Advocacy/CVD-Predictions-Through-2035.pdf</p>">[#]</span>
+        </p>
       </div>
     </div>
   </div>
