@@ -7,9 +7,6 @@
 
 {% extends "layout.html" %}
 
-{% block extraStyles %}
-<link href="{{ url_for('static', filename = 'css/description-style.css') }}" rel="stylesheet">
-
 
 <div class="standard-header banner-v1 curvy-divider">
     <h1> Team Members </h1>
@@ -22,6 +19,9 @@
         <use xlink:href="#gentle-wave" x="48" y="7" fill="#FFF" />
     </g>
   </svg>
+</div>
+
+<div class= "body-container">
 </div>
 
 {% endblock %}
