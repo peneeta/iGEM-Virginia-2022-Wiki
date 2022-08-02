@@ -176,6 +176,7 @@
 
   .earth-section{
     width: 100vw;
+    /* position: absolute; */
   }
 
   .wrapper.graph{

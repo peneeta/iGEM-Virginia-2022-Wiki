@@ -55,22 +55,24 @@
   </div>
 
   <!-- Cardiovascular Disease by the Numbers -->
-  <div class="earth-section">
-    <div id="globeViz" data-js-globe></div>
-    <script src="{{ url_for('static', filename='components/earth.js')}}"></script>
-
-  </div>
+  
 
   <div class= "light-section d-flex flex-column d-flex flex-column justify-content-evenly align-items-center">
+    <div class="earth-section">
+      <div data-js-globe></div>
+      <script src="{{ url_for('static', filename='components/earth.js')}}"></script>
+  
+    </div>
     <div class="container stat-section p-4 my-3">
       <div class="wrapper px-4 py-3" data-aos="fade-up" data-aos-duration="2000">
         <h2>A Worldwide Health Crisis</h2>
         <p>Cardiovascular disease (CVD) is the leading cause of death worldwide, making up 32% of total deaths. This umbrella term refers to several diseases including stroke, coronary heart disease, and other conditions affecting blood vessels. </p>
       </div>
     </div>
+  </div>
 
     
-
+  <div class= "light-section d-flex flex-column d-flex flex-column justify-content-evenly align-items-center">
     <div class="container p-4 my-4">
       <h2 class="mb-4">To put this into numbers...</h2>
       <div class="counter-section">
@@ -98,14 +100,14 @@
  
     <div class="container stat-section d-flex flex-row flex-wrap flex-lg-nowrap align-items-center justify-content-center gap-5 py-5 my-3">
       <div class="wrapper d-flex flex-column px-4">
-        <div data-aos="fade-left">
+        <div data-aos="fade-right" data-aos-duration="1000">
           <h2>Economic Burden</h2>
           <p>In addition to its health impacts, CVDs are extremely costly. Current diagnostics for cardiovascular disease are not cheap, and when bundled with treatment, the direct cost of care increases by another <strong>85 percent</strong>. National expenditures were at <strong>$126 billion in 2015</strong> and are expected to increase to <strong>$309 billion in 2035</strong>. 
         </div>
       </div>
 
       <div class="wrapper d-flex flex-column align-items-center justify-content-evenly">
-        <div class="wrapper graph" style="position: relative;">
+        <div class="wrapper graph" style="position: relative;" data-aos="fade-left" data-aos-duration="1000">
           <canvas id="myChart"></canvas>
           <!-- ChartJS Initialization -->
           <script src="{{ url_for('static', filename = '/chartjs/chart.min.js')}}"></script>
