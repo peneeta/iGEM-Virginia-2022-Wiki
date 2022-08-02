@@ -7,7 +7,7 @@
 
 <link href="{{ url_for('static', filename = 'css/index-card-style.css') }}" rel="stylesheet">
 
-<script src="https://uploads.igem.org/teams/4477/cdn-igem/globe-gl-min.js"></script>
+<script src="{{ url_for('static', filename = 'globe-gl.min.js') }}"></script>
 {% endblock %}
 
 {% block title %}Home{% endblock %}
@@ -64,7 +64,7 @@
     </div>
 
     <div class="container">
-      <canvas id='globe' width='400' height='400'></canvas>
+      <div id="globeViz"></div>
       <script src="{{ url_for('static', filename='components/earth.js')}}"></script>
     </div>
 
