@@ -2,6 +2,9 @@
 
 
 {% block extraStyles %}
+<script src="{{ url_for('static', filename = 'planetaryjs/d3.v3.min.js')}}"></script>
+<script src="{{ url_for('static', filename = 'planetaryjs/topojson.v1.min.js')}}"></script>
+<script src="{{ url_for('static', filename = 'planetaryjs/planetaryjs.min.js')}}"></script>
 
 <link href="{{ url_for('static', filename = 'css/index-style.css') }}" rel="stylesheet">
 
@@ -62,8 +65,8 @@
     </div>
 
     <div class="container">
-      <canvas id='basicGlobe' width='400' height='400'></canvas>
-      <script src="{{ url_for('static', filename='components/globe.js')}}"></script>
+      <canvas id='globe' width='400' height='400'></canvas>
+      <script src="{{ url_for('static', filename='components/earth.js')}}"></script>
     </div>
 
     <div class="container p-4 my-4">
@@ -157,21 +160,19 @@
                     title: {
                       display: true,
                       text: 'Cost in Billions ($USD)'
-                    }
-
-                  },
-                  yAxes: [{
+                    },
                     ticks: {
                       beginAtZero: true,          
                       stepSize: 50 // this worked as expected          
                     }
-                  }],
-                  xAxes: [{
+
+                  }, 
+                  x: {
                     ticks: {
                       stepSize: 2,
 
                     }
-                  }]
+                  }
                 }
               }
             });
