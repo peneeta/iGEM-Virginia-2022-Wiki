@@ -9,6 +9,8 @@
 <link href="{{ url_for('static', filename = 'css/index-style.css') }}" rel="stylesheet">
 
 <link href="{{ url_for('static', filename = 'css/index-card-style.css') }}" rel="stylesheet">
+
+<script src="https://uploads.igem.org/teams/4477/cdn-igem/globe-gl-min.js"></script>
 {% endblock %}
 
 {% block title %}Home{% endblock %}
@@ -165,9 +167,12 @@
                       beginAtZero: true,          
                       stepSize: 50 // this worked as expected          
                     }
-
-                  }, 
+                  },
                   x: {
+                    title: {
+                      display: true,
+                      text: 'Year'
+                    },
                     ticks: {
                       stepSize: 2,
 
