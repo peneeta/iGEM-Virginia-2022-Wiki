@@ -12,9 +12,8 @@
     border-radius:20px;
     text-align: center;
     display: inline-block;
-    padding-inline-start: 3px;
-    padding-inline-end: 3px;
-    line-width: 40px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
     align-content: center;
 
 }
@@ -22,7 +21,7 @@
 .who-we{
     color: white;
     background-color: #535E84;
-    line-height: 20px;
+    line-height: 40px;
     border-radius: 15px;
     text-align: center;
     display: inline-block;
