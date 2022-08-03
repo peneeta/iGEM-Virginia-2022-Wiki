@@ -1,7 +1,8 @@
 .team-photo{
     max-width:80%;
     height:auto;
-    border-radius: 8px; 
+    border-radius: 8px;
+    align-content: center; 
 
 }
 
@@ -11,7 +12,10 @@
     border-radius:20px;
     text-align: center;
     display: inline-block;
+    padding-inline-start: 3px;
+    padding-inline-end: 3px;
     line-width: 40px;
+    align-content: center;
 
 }
 
@@ -21,9 +25,12 @@
     border-radius: 15px;
     text-align: center;
     display: inline-block;
+    padding-inline-start: 3px;
+    padding-inline-end: 3px;
 }
 
 .border-lft{
     border-color: #EDB4B4;
     border-left: 3in;
+
 }
