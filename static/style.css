@@ -78,6 +78,17 @@
        url('https://static.igem.wiki/teams/4477/wiki/open-sans-v29-latin-italic.svg') format('svg'); /* Legacy iOS */
 }
 
+/* Montserrat SuperBold */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src:
+       url('https://static.igem.wiki/teams/4477/wiki/montserrat-800-bold/montserrat-v25-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://static.igem.wiki/teams/4477/wiki/montserrat-800-bold/montserrat-v25-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('https://static.igem.wiki/teams/4477/wiki/montserrat-800-bold/montserrat-v25-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://static.igem.wiki/teams/4477/wiki/montserrat-800-bold/montserrat-v25-latin-800.svg.svg') format('svg'); /* Legacy iOS */
+}
 
 /* NAVIGATION BAR STYLING */
 nav.navbar{
@@ -227,6 +238,16 @@ p{
   font-weight: 400;
 }
 
+.super-bold{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+}
+
+.large-font{
+font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
+
+}
 .body-container{
   display: flex;
   justify-content: center;

@@ -6,6 +6,7 @@
     myGlobe.controls().autoRotate = true;
     myGlobe.controls().autoRotateSpeed = 1;
     myGlobe.controls().enableZoom = false;
+    myGlobe.animateIn = false;
 
     window.addEventListener('resize', (event) => {
       myGlobe.width([event.target.innerWidth])
@@ -19,5 +20,15 @@
       .pointColor('color')
       .showAtmosphere(true)
 
+  window.addEventListener("scroll", function() {
+    var elementTarget = document.getElementById("earth-section");
+    if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+        myGlobe.pauseAnimation();
+    }
+
+    if( this.window.scrollY < (elementTarget.offsetTop + elementTarget.offsetHeight)){
+      myGlobe.resumeAnimation();
+    }
+  });
 
 
