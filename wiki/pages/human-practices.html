@@ -1,5 +1,11 @@
 {% extends "layout.html" %}
   
+{% block extraStyles %}
+
+<link href="{{ url_for('static', filename = 'css/ihp-style.css') }}" rel="stylesheet">
+
+{% endblock %}
+
 {% block title %}Human Practices{% endblock %}
 {% block lead %}We ask every team to think deeply and creatively about whether their project is responsible and good for the world. Consider how the world affects your work and how your work affects the world.{% endblock %}
 
@@ -17,8 +23,16 @@
       <p>The importance of human practices, general overview of how it affected our project/reflections on what we did.</p>
     </div>
 
-    <div class="section">
-      <h2>INTEGRATE will go here</h2>
+    <div class="container d-flex flex-column">
+      <div class="section">
+        <h2>Core Values</h2>
+
+        <p>Blurb about integration and its importance, transition into INTEGRATE</p>
+
+        <div class="wrapper acronym d-flex align-items-center justify-content-center">
+          <p class="super-bold large-font">I N T E G R A T E</p>
+        </div>
+      </div>
     </div>
 
     <div class="section">
