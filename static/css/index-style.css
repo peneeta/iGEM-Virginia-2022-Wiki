@@ -170,6 +170,15 @@
     overflow: hidden;
   }
 
+  .space-section{
+    background-image: url('https://static.igem.wiki/teams/4477/wiki/images/space-globe-background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    overflow: hidden;
+  }
+
   .stat-section{
     padding-top: max(20vh, 3rem);
   }
