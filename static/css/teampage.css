@@ -22,15 +22,21 @@
 .who-we{
     color: white;
     background-color: #535E84;
+    line-height: 20px;
     border-radius: 15px;
     text-align: center;
     display: inline-block;
-    padding-inline-start: 3px;
-    padding-inline-end: 3px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
 }
 
 .border-lft{
     border-color: #EDB4B4;
     border-left: 3in;
 
+}
+
+.center{
+    align-content: center;
+    text-align: center;
 }
