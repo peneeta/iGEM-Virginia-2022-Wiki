@@ -201,10 +201,11 @@
     width: 30rem; 
   }
 
-  .fs-dark-section{
+  .dark-section{
     width: 100%;
     height: auto;
     background: #121212;
+    color: white;
     overflow: hidden;
   }
   
