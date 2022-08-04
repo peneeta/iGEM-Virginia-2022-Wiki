@@ -51,17 +51,24 @@
     </div>
   </div>
 
-  <div class= "space-section d-flex flex-column d-flex flex-row flex-lg-nowrap justify-content-evenly align-items-center">
-    <div class="container stat-section p-4 my-3">
-      <div class="intro wrapper px-4" data-aos="fade-up" data-aos-duration="2000">
-        <h2>A Worldwide Health Crisis</h2>
-        <p>Cardiovascular disease (CVD) is the leading cause of death worldwide, making up 32% of total deaths. This umbrella term refers to several diseases including stroke, coronary heart disease, and other conditions affecting blood vessels. </p>
-      </div>
+  <div class= "space-section d-flex flex-column d-flex flex-row flex-lg-nowrap justify-content-evenly align-items-center curvy-divider">
+    <div class="wave-divider-top">
+      <svg width="2468" height="383" viewBox="0 0 2468 383" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2468 317.864C2358.19 272.052 2003.06 132.422 1624.86 197.037C1152.11 277.805 773.119 197.037 591.253 197.037C154.482 197.037 143.935 305.705 -0.000180006 383V6.85453e-06L2468 6.85454e-06V253.705V317.864Z" fill="#E9E9E9"/>
+      </svg>
     </div>
+    <div class="container stat-section p-4 my-3">
+      <div id="worldwide">
+        <div class="intro wrapper px-4" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out-sine">
+          <h2 class="pb-3">A Worldwide Health Crisis</h2>
+          <p>Cardiovascular disease (CVD) is the leading cause of death worldwide, making up 32% of total deaths. This umbrella term refers to several diseases including stroke, coronary heart disease, and other conditions affecting blood vessels. </p>
+        </div>
+      </div>
 
-    <div id = "earth-section" class="earth-section">
-      <div data-js-globe data-aos="fade-up" data-aos-duration="2000"></div>
-      <script src="{{ url_for('static', filename='components/earth.js')}}"></script>
+      <div id = "earth-section" class="earth-section">
+        <div data-js-globe data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out-sine"></div>
+        <script src="{{ url_for('static', filename='components/earth.js')}}"></script>
+      </div>
     </div>
 
   </div>
@@ -96,7 +103,7 @@
     <div class="container stat-section d-flex flex-row flex-wrap flex-lg-nowrap align-items-center justify-content-center gap-5 py-5 my-3">
       <div class="wrapper d-flex flex-column px-4">
         <div data-aos="fade-right" data-aos-duration="1000">
-          <h2>Economic Burden</h2>
+          <h2 class="pb-3">Economic Burden</h2>
           <p>
             In addition to its health impacts, CVDs are extremely costly. In a technical report prepared for the American Heart Association, combined costs of CVD detection tests and hospital visits are expected to reach 750 million dollars by 2035.
           </p> 
@@ -199,30 +206,33 @@
 
   <!-- Abstract/How we're making a difference -->
   <div class="blob-background-section d-flex flex-column justify-content-evenly align-items-center">
-    <div class="container abstract d-flex flex-row align-items-center justify-content-center flex-wrap flex-lg-nowrap">
+    <div class="container d-flex flex-row align-items-center justify-content-center flex-wrap flex-lg-nowrap">
       <div class="d-flex flex-column p-4 my-5">
-        <h2>How We're Making a Difference</h2>
+        <div class="wrapper">
+          <h2 class="pb-3">How We're Making a Difference</h2>
 
-        <p>
-          To combat the problem of late detection, we developed a test strip that detects early signs of heart disease. Our device targets <span class="bold-text">atherosclerosis</span>, which is characterized by <span class="bold-text">plaque build-up in the inner arterial walls.</span>
+          <p>
+            To combat the problem of late detection, we developed a test strip that detects early signs of heart disease. Our device targets <span class="bold-text">atherosclerosis</span>, which is characterized by <span class="bold-text">plaque build-up in the inner arterial walls.</span>
+          </p>
+        </div>
+        <div class="wrapper">
+          <p>
+            The strip detects oxidized LDL (OxLDL), a biomarker associated with early to middle stages of atherosclerosis development.
+            We used synthetic biology to engineer a stain of <span class="italic-text">E. coli</span> called SHuffle to produce OxLDL-specific antibodies. These antibodies, when adhered to the strip, allow OxLDL levels to be determined by the naked eye.
+          </p>
+        </div>
 
-          The strip detects Oxidized-LDL, a biomarker associated with early to middle stages of atherosclerosis development.
-
-          We used synthetic biology to engineer a bacterial SHuffle <span class="italic-text">E. coli</span> strand to produce OxLDL-specific antibodies which we adhered to the test strip. OxLDL levels can then be determined from the strip containing these antibodies.
-
-          This method is projected to <span class="bold-text">significantly reduce the cost</span> of current detection methods and add a dimension to preexisting biomarker detection diagnostics.
-
-        </p>
+        <div class="wrapper">
+          <p>
+            This method is projected to <span class="bold-text">significantly reduce the cost</span> of current detection methods and add a dimension to preexisting biomarker detection diagnostics.
+          </p>
+        
+        </div>
 
         <div>
           <button class="btn btn-primary shadow-none" type="button" href="{{ url_for('pages', page='description') }}">Read next: Project Description</button>
         </div> 
       </div>
-
-      <!-- I need to fix this div, will put him back later -->
-      <!-- <div class="video">
-        <img class="img-fluid w-5 man-gif" src="https://static.igem.wiki/teams/4477/wiki/images/mangif.gif"/>
-      </div> -->
     </div>
   </div>
 
