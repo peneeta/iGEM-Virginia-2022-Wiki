@@ -14,18 +14,6 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 
-        <!---- TEAM ---->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='team') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Team
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='team') }}">Team Members</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='collaborations') }}">Collaborations</a></li>
-          </ul>
-        </li>
-
         <!---- PROJECT ---->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -78,6 +66,18 @@
             <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='human-practices') }}">Integrated Human Practices</a></li>
             
             <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='education') }}">Education and Outreach</a></li>
+          </ul>
+        </li>
+
+        <!---- TEAM ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='team') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='team') }}">Team Members</a></li>
+            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
+            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='collaborations') }}">Collaborations</a></li>
           </ul>
         </li>
 
