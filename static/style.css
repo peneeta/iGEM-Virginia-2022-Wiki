@@ -265,6 +265,20 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   position: relative;
 }
 
+.wave-divider{
+  position: absolute;
+  bottom: -16rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-divider svg{
+  position: relative;
+  display: block;
+}
+
 .asym-curve-divider {
   position: absolute;
   bottom: 0;
