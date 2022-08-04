@@ -185,7 +185,6 @@
 
   .earth-section{
     width: 100vw;
-    transform: translateY(10vh);
   }
   @media only screen and (max-width: 600px) {
     .earth-section{

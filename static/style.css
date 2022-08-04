@@ -255,9 +255,15 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   font-size: clamp(3rem, calc(3rem+1vw), 4rem)!important;
 }
 
+.subtitle{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  font-size: clamp(1rem, calc(1rem + 0.5vw) 2rem);
+}
+
 .section-top{
   padding-top: max(15vh, 10rem);
-
 }
 
 /* SHAPE DIVIDER STYLES */
@@ -265,6 +271,7 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   position: relative;
 }
 
+/* Wave bottom divider */
 .wave-divider{
   position: absolute;
   bottom: -16rem;
@@ -275,6 +282,21 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 }
 
 .wave-divider svg{
+  position: relative;
+  display: block;
+}
+
+/* Wave top divider */
+.wave-divider-top{
+  position: absolute;
+  top: -8rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-divider-top svg{
   position: relative;
   display: block;
 }
