@@ -185,8 +185,18 @@
 
   .earth-section{
     width: 100vw;
+    transform: translateY(10vh);
+  }
+  @media only screen and (max-width: 600px) {
+    .earth-section{
+      transform: scale(0.55);
+    }
   }
 
+  .intro.wrapper{
+    padding-top: max(40vh, 10rem);
+
+  }
   .wrapper.graph{
     position: relative; 
     width: 30rem; 
@@ -217,10 +227,9 @@
     height: max(10rem, 60vh);
   }
 
-  .abstract p{
-    line-height: 1.6rem;
+  .shock-section{
+    text-align: center;
   }
-
   .blue-section{    
     width: 100%;
     height: 80vh;

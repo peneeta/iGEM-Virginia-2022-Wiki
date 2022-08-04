@@ -45,18 +45,18 @@
   </div>
 
   <div class= "space-section d-flex flex-column d-flex flex-row flex-lg-nowrap justify-content-evenly align-items-center">
-
-    <div id = "earth-section" class="earth-section px-5">
-      <div data-js-globe data-aos="fade-up" data-aos-duration="2000"></div>
-      <script src="{{ url_for('static', filename='components/earth.js')}}"></script>
-  
-    </div>
     <div class="container stat-section p-4 my-3">
-      <div class="intro wrapper px-4 py-3" data-aos="fade-up" data-aos-duration="2000">
+      <div class="intro wrapper px-4" data-aos="fade-up" data-aos-duration="2000">
         <h2>A Worldwide Health Crisis</h2>
         <p>Cardiovascular disease (CVD) is the leading cause of death worldwide, making up 32% of total deaths. This umbrella term refers to several diseases including stroke, coronary heart disease, and other conditions affecting blood vessels. </p>
       </div>
     </div>
+
+    <div id = "earth-section" class="earth-section">
+      <div data-js-globe data-aos="fade-up" data-aos-duration="2000"></div>
+      <script src="{{ url_for('static', filename='components/earth.js')}}"></script>
+    </div>
+
   </div>
 
     
@@ -90,7 +90,9 @@
       <div class="wrapper d-flex flex-column px-4">
         <div data-aos="fade-right" data-aos-duration="1000">
           <h2>Economic Burden</h2>
-          <p>In addition to its health impacts, CVDs are extremely costly. Current diagnostics for cardiovascular disease are not cheap, and when bundled with treatment, the direct cost of care increases by another <strong>85 percent</strong>. National expenditures were at <strong>$126 billion in 2015</strong> and are expected to increase to <strong>$309 billion in 2035</strong>. 
+          <p>
+            In addition to its health impacts, CVDs are extremely costly. In a technical report prepared for the American Heart Association, combined costs of CVD detection tests and hospital visits are expected to reach 750 million dollars by 2035.
+          </p> 
         </div>
       </div>
 
@@ -175,9 +177,15 @@
           </script>
         </div>
 
-        <p class="py-4 px-3 talic-text">Projected costs of CVD from 2015 to 2035. Data obtained from Research Triangle Institute (RTI) technical report. 
+        <p class="py-4 px-3 italic-text">Projected costs of CVD from 2015 to 2035. Data obtained from Research Triangle Institute (RTI) technical report. 
           <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Khavjou, Olga, Phelps, Diana, & Leib, Alyssa. (2016). Projections of Cardiovascular Disease Prevalence and Costs: 2015–2035. https://www.heart.org/-/media/Files/Get-Involved/Advocacy/CVD-Predictions-Through-2035.pdf</p>">[#]</span>
         </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="wrapper shock-section px-5 my-5 py-4 d-flex justify-content-center align-items-center">
+        <h2 class="shock-font">An estimated <span class="super-bold">80% of CVDs</span> can be prevented if they are detected earlier in life.</h2>
       </div>
     </div>
   </div>
@@ -187,9 +195,17 @@
     <div class="container abstract d-flex flex-row align-items-center justify-content-center flex-wrap flex-lg-nowrap">
       <div class="d-flex flex-column p-4 my-5">
         <h2>How We're Making a Difference</h2>
-        <p>Our device targets <span class="bold-text">Atherosclerosis</span>, an inflammatory disease characterized by <span class="bold-text">plaque build-up in the inner arterial walls.</span> It is a common cardiovascular disease affecting millions in America and worldwide.  Current detection methods are <span class="bold-text">costly, time-consuming, and not recommended during medical visits</span> unless individuals show signs of further cardiovascular complications. 
-        <br>
-        Our focus is developing a method atherosclerosis detection centered around the <span class="bold-text">detection of oxidized low-density lipoprotein (oxLDL)</span>, a biomarker in the bloodstream whose presence is associated with early to middle stages of atherosclerosis development. This synthetic biology approach provides individuals with a <span class="bold-text">quick, accessible, and proactive method</span> to testing their likelihood of having atherosclerosis. By engineering the SHuffle <span class="italic-text">E. coli</span> strand to produce oxLDL-specific antibodies, oxLDL levels can be determined from an <span class="bold-text">easy-to-read test strip</span> containing these antibodies.  This method is projected to <span class="bold-text">significantly reduce the cost</span> of current detection methods and add a dimension to preexisting biomarker detection diagnostics.</p>
+
+        <p>
+          To combat the problem of late detection, we developed a test strip that detects early signs of heart disease. Our device targets <span class="bold-text">atherosclerosis</span>, which is characterized by <span class="bold-text">plaque build-up in the inner arterial walls.</span>
+
+          The strip detects Oxidized-LDL, a biomarker associated with early to middle stages of atherosclerosis development.
+
+          We used synthetic biology to engineer a bacterial SHuffle <span class="italic-text">E. coli</span> strand to produce OxLDL-specific antibodies which we adhered to the test strip. OxLDL levels can then be determined from the strip containing these antibodies.
+
+          This method is projected to <span class="bold-text">significantly reduce the cost</span> of current detection methods and add a dimension to preexisting biomarker detection diagnostics.
+
+        </p>
 
         <div>
           <button class="btn btn-primary shadow-none" type="button" href="{{ url_for('pages', page='description') }}">Read next: Project Description</button>
