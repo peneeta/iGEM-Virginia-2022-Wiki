@@ -58,4 +58,7 @@
 
 .circle{
     border-radius: 50%;
+    max-width: 80%;
+    height: auto;
+    
 }
