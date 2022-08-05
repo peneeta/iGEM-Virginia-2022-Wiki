@@ -60,5 +60,7 @@
     border-radius: 50%;
     max-width: 80%;
     height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     
 }
