@@ -47,3 +47,17 @@
     height: auto;
     align-content: center;
 }
+
+.blue-tf-background{
+    width: 100%;
+    height: auto;
+    background: #535E84;
+    color: white;
+    overflow: hidden;
+}
+
+.photo-circle{
+    max-width: 25%;
+    height: auto;
+    border-radius: 100%;
+}
