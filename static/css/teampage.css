@@ -31,6 +31,7 @@
 
 .border-lft{
     border-color: #EDB4B4;
+    border-style: solid;
     border-left: 3in;
     border-width: 1cm;
 
@@ -39,4 +40,10 @@
 .center{
     align-content: center;
     text-align: center;
+}
+
+.blood-cells{
+    max-width:50%;
+    height: auto;
+    align-content: center;
 }
