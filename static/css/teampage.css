@@ -57,8 +57,9 @@
 }
 
 .photo-circle{
-    max-width: 90%;
+    max-width: 80%;
     height: auto;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center;
 }
