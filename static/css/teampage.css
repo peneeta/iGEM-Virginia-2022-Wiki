@@ -56,7 +56,7 @@
     overflow: hidden;
 }
 
-.photo-circle{
+.circle{
     max-width: 80%;
     height: auto;
     border-radius: 50%;
