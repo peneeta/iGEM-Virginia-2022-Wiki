@@ -32,9 +32,8 @@
 
 .border-lft{
     border-color: #EDB4B4;
-    border-style: solid;
-    border-left: 3in;
-    border-width: 1cm;
+    border-left-width: 1cm;
+    border-left-style: solid
 
 }
 
@@ -64,5 +63,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     align-content: center;
+    border-style: outset;
+    border-width: medium;
     
 }
