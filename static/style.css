@@ -348,6 +348,15 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   top: 20vh;
 }
 
+.body-padding{
+  padding-inline: min(5vw, 14rem);
+}
+
+.text-wrapper{
+  text-align: justify;
+  word-break: keep-all;
+}
+
 @media only screen and (max-width: 600px) {
   .fixed-index{
     display: none!important;
