@@ -195,6 +195,7 @@ nav.navbar{
   overflow: hidden;
 }
 
+/* TEXT STYLING */
 .standard-header h1{
     font-size: clamp(2rem, 1rem + 5vw ,5rem);
     font-family: 'Quicksand';
@@ -340,59 +341,9 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   text-align: left;
 }
 
-.pdb{
-  overscroll-behavior: contain;
+/* HOVERING INDEX STYLING */
+.fixed-index{
+  position: sticky;
+  position: -webkit-sticky; /* for Safari */
+  top: 20vh;
 }
-
-/* CSS wave animation */
-/* .waves {
-  position: absolute;
-  width: 100%;
-  height: 15vh;
-  min-height: 40px;
-  max-height: 50px;
-  bottom: 0;
-  left: 0;
-}
-
-.parallax>use {
-  animation: move-forever 65s cubic-bezier(.55, .5, .45, .5) infinite;
-}
-
-.parallax>use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 10s;
-}
-
-.parallax>use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-
-.parallax>use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-
-.parallax>use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-
-@keyframes move-forever {
-  0% {
-      transform: translate3d(-90px, 0, 0);
-  }
-
-  100% {
-      transform: translate3d(85px, 0, 0);
-  }
-}
-
-SHRINKING FOR MOBILE
-@media (max-width: 768px) {
-  .waves {
-      height: 40px;
-      min-height: 40px;
-  }
-} */
