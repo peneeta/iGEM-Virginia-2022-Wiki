@@ -11,39 +11,57 @@
 
 {% block page_content %}
 
-  <!-- For bar graphs if we decide to add them, keep this here for now -->
-  <script src="{{ url_for('static', filename = 'particlejs/particles.min.js') }}""></script>
 
-<div class="standard-header banner-v1 curvy-divider">
-    <h1> Project Description </h1>
+  <div class="standard-header banner-v1 curvy-divider">
+      <h1> Project Description </h1>
+      <div class="asym-curve-divider">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+        </svg>
+      </div>
+  </div>
 
-    <div class="asym-curve-divider">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
-      </svg>
+<div class="d-flex flex-row">
+  <div class="fixed-index px-5 py-5 d-flex flex-column align-self-start">
+    <div class="index heading d-flex flex-row justify-content-evenly align-items-center">
+      <h3>Sections</h3>
+      <h3>References</h3>
     </div>
-</div>
 
-<div class="body-container d-flex flex-column align-items-center justify-content-center pt-5">
-  <div class="container">
-    <div class="body-section px-4 pt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-      <h2 class="pb-3 mb-3">Introduction</h2>
-      <div class="text-wrapper pb-5 mb-3">
-        <p>
-          <span class="bold-text">Cardiovascular disease (CVD)</span> is a broad category of conditions that affect the <span class="bold-text"b>structure and function</span> of the heart and its surrounding vasculature. Common cardiovascular diseases include heart disease, heart attack, stroke, heart failure, arrhythmia, and heart valve problems
+    <div class="index content">
+      <div role="button" id="introduction-desc">Introduction</div>
+      <div class="indented" role="button" id="risk-factors-desc">Behavioral Risk Factors of CVD</div>
+      <div class="indented" role="button" id="types-of-cvd-desc">Types of Cardiovascular Diseases</div>
+      <div role="button" id="atherosclerosis-desc">Atherosclerosis</div> 
+      <div class="indented" role="button" id="problems-desc">Problems with Current Diagnosis Methods</div>
+      <div role="button" id="solution-desc">Our Solution</div>
+      <div class="indented" role="button" id="lfa-desc">Lateral Flow Assay</div>
+      <div class="indented" role="button" id="inspiration-desc">Inspiration Behind our Project</div>
+    </div>
+  </div>
 
-          <span class="tt" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="<p class='italic-text'>CITE THIS https://www.heart.org/en/health-topics/consumer-healthcare/what-is-cardiovascular-disease</p>">[#]</span>.
+  <div class="body-container d-flex flex-column align-items-center justify-content-center pt-5">
+    
+    <div class="container">
+      <div class="body-section px-4 pt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+        <h2 class="pb-3 mb-3" id="introduction-desc">Introduction</h2>
+        <div class="text-wrapper pb-5 mb-3">
+          <p>
+            <span class="bold-text">Cardiovascular disease (CVD)</span> is a broad category of conditions that affect the <span class="bold-text"b>structure and function</span> of the heart and its surrounding vasculature. Common cardiovascular diseases include heart disease, heart attack, stroke, heart failure, arrhythmia, and heart valve problems
 
-          According to the Center for Disease Control and Prevention, heart disease is the <span class="bold-text">leading cause of death</span> in men, women, and people of the majority of racial and ethnic groups in the US. To put this into numbers, <span class="bold-text">one in every five deaths</span> in 2020, a year notoriously known for the COVID pandemic, was attributed to CVD 
+            <span class="tt" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="<p class='italic-text'>CITE THIS https://www.heart.org/en/health-topics/consumer-healthcare/what-is-cardiovascular-disease</p>">[#]</span>.
 
-          <span class="tt" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="<p class='italic-text'>CITE THIS https://www.cdc.gov/heartdisease/facts.htm</p>">[#]</span>.
-        </p>
+            According to the Center for Disease Control and Prevention, heart disease is the <span class="bold-text">leading cause of death</span> in men, women, and people of the majority of racial and ethnic groups in the US. To put this into numbers, <span class="bold-text">one in every five deaths</span> in 2020, a year notoriously known for the COVID pandemic, was attributed to CVD 
+
+            <span class="tt" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="<p class='italic-text'>CITE THIS https://www.cdc.gov/heartdisease/facts.htm</p>">[#]</span>.
+          </p>
+        </div>
       </div>
     </div>
 
-    <div class="body-section px-4 pb-4 mb-4">
+    <div class="container body-section px-4 pb-4 mb-4">
       <div class="header-wrapper pb-3 mb-3">
-        <h4>Behavioral Risk Factors of CVD (CITE World Health Organization 2021)</h4>
+        <h4 id="risk-factors-desc">Behavioral Risk Factors of CVD (CITE World Health Organization 2021)</h4>
       </div>
       <div class="container py-5 d-flex flex-row flex-wrap flex-lg-nowrap justify-content-center align-items-center">
         <div class="blob-graphic d-flex flex-column justify-content-center align-items-center">
@@ -76,7 +94,7 @@
       </div>
     </div>
 
-    <div class="body-section px-4 pb-5 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+    <div class="container body-section px-4 pb-5 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
       <h4 class="pb-3 mb-3">Types of Cardiovascular Diseases</h4>
       <div class="container">
         <ul>
@@ -119,7 +137,7 @@
       </div>
     </div>
     
-    <div class="body-section px-4 pb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+    <div class="container body-section px-4 pb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
       <h2 class="pb-3 mb-3">Atherosclerosis and Pathogenesis</h2>
       <p>
         Atherosclerosis is a chronic inflammatory disease of the large arteries. It is the root cause of many coronary CVDs and can lead to heart attack or stroke.
@@ -133,43 +151,31 @@
     </div>
 
 
-    <div class="body-section px-4" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+    <div class="container body-section px-4" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
       <h4 class="pb-3 mb-3">Problems with Current Diagnosis Methods</h4>
       <p>Those at risk of developing cardiovascular disease often do not have any physical symptoms, until plaque build-up is so significant that organs and tissues lack oxygen. This means that the first indicator of atherosclerosis is a heart attack or stroke. The symptom most commonly reported, or the cause for seeking medical attention, is chest pain, which can be an indicator of angina, or ischaemia [10]. Diagnostics for these symptomatic patients, however, pose problems in terms of cost and/or effectiveness, and often require numerous doctor’s visits and extensive testing before a diagnosis is provided. </p>
       <img class="diagnostic-diagram.svg d-flexalign-items-center img-diagnostic-diagram" src="https://static.igem.wiki/teams/4477/wiki/images/diagnostic-diagram.svg"/>
     </div>
 
-    <div class="body-section px-4">
+    <div class="container body-section px-4">
       <div class="wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
         <h2 class="pb-3 mb-3">Our Solution</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum aliquid ipsam? Doloremque quaerat, sint rerum sit suscipit consectetur fuga inventore eos pariatur, magnam odio iste voluptatem repellendus aspernatur commodi maiores mollitia accusantium accusamus earum aut, corrupti minus? Consectetur impedit voluptatem hic, facere iure quis quasi expedita, nulla dicta molestiae autem ex quidem consequatur! Neque non voluptates illum quam earum totam error aspernatur rerum, perspiciatis consectetur, maxime aut, eaque optio. Rerum, incidunt. Veritatis dolores velit reiciendis, deserunt animi dolorem consectetur blanditiis, voluptate aperiam sed, laborum illum ipsa molestiae asperiores nemo! Suscipit, illum amet. Error mollitia illum nam fuga, dicta et.</p>
       </div>
 
-      <div class="body-section">
+      <div class="container body-section">
         <div class="section" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
           <h4 class="pb-3 mb-3">Lateral Flow Assay</h4>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci non doloremque quidem quaerat beatae molestias at saepe. Deleniti blanditiis tempore illum voluptatum, dolore quisquam reiciendis molestias fuga, commodi assumenda odio.</p>
         </div>
       </div>
 
-    <div class="body-section" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-      <h4 class="pb-3 my-3">Inspiration Behind Our Project</h4>
-      <p> Knowing that heart disease has a large impact on such a big percentage of the human population, as well as witnessing the recent discoveries of biomarkers and the molecular components of plaque buildup, we wanted to take the initiative towards lowering the CVD rate of mortality. The first step in doing this is earlier detection. </p>
+      <div class="container body-section" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+        <h4 class="pb-3 my-3">Inspiration Behind Our Project</h4>
+        <p> Knowing that heart disease has a large impact on such a big percentage of the human population, as well as witnessing the recent discoveries of biomarkers and the molecular components of plaque buildup, we wanted to take the initiative towards lowering the CVD rate of mortality. The first step in doing this is earlier detection. </p>
+      </div>
     </div>
-
-
-    <div class="body-section" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-      <h2 class="pb-3 mb03">References</h2>
-      <p>Putting references here once we get them done</p>
-    
-    </div>
-
-
   </div>
-
-
-
-
 </div>
 
 
