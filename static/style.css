@@ -224,6 +224,14 @@ h4{
 
 }
 
+h5{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  font-size: clamp(1rem, 0.5rem + 1.86vw, 1.5rem);
+
+}
+
 p{
   font-family: 'Open Sans';
   font-style: normal;

@@ -337,3 +337,11 @@
 .stat p{
   text-align: center;
 }
+
+
+/* PANELS STYLING */
+
+.panel{
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+}
