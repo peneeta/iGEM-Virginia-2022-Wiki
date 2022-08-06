@@ -5,8 +5,6 @@
 
 <link href="{{ url_for('static', filename = 'css/index-style.css') }}" rel="stylesheet">
 
-<link href="{{ url_for('static', filename = 'css/index-card-style.css') }}" rel="stylesheet">
-
 <script src="{{ url_for('static', filename = 'globe-gl.min.js') }}"></script>
 {% endblock %}
 
@@ -241,112 +239,24 @@
     <div class="container my-5 py-3">
       <h2>Aspects of Development</h2>
       <p>Harmony between the various aspects of our project was extremely important to our design and communication.</p>
-        <!-- Hoverable Cards -->
-          <section class="cards-div">
 
-            <!-- Wetlab Card -->
-            <a href="{{ url_for('pages', page='experiments') }}" class="card">
-              <div class="card__head">
-                <div class="card__image"></div>
-              </div>
-              <div class="card__body">
-                <h3 class="card__headline">Wet Lab</h3>
-                <p>Documentation of experiments we performed in lab to engineer and validate our project.</p>
-              </div>
-              <div class="card__foot">
-                <span class="card__link">Click to read more</span>
-              </div>
-              <div class="card__border"></div>
-            </a>
-            
-            <!-- Modeling Card -->
-          
-            <a href="{{ url_for('pages', page='model') }}" class="card">
-              <div class="card__head">
-                <div class="card__image"></div>
-              </div>
-              <div class="card__body">
-                <h3 class="card__headline">Modeling</h3>
-                <p>Learn how we used protein interaction software to model E. coli optimization and antibody binding.</p>
-              </div>
-              <div class="card__foot">
-                <span class="card__link">Click to read more</span>
-              </div>
-              <div class="card__border"></div>
-            
-            </a>
-          
-            <!-- Human Practices Card -->
-          
-            <a href="{{ url_for('pages', page='human-practices') }}" class="card">
-              <div class="card__head">
-                <div class="card__image"></div>
-              </div>
-              <div class="card__body">
-                <h3 class="card__headline">Human Practices</h3>
-                <p>Learn about our outreach events, and how experts in the field and other iGEM teams helped to inform our design. </p>
-              </div>
-              <div class="card__foot">
-                <span class="card__link">Click to read more</span>
-              </div>
-              <div class="card__border"></div>
-            
-            </a>
-            
-            <!-- On hover animation -->
-            <script>
-              const height = (elem) => {
-                return elem.getBoundingClientRect().height
-              }
-            
-              const distance = (elemA, elemB, prop) => {
-                const sizeA = elemA.getBoundingClientRect()[prop]
-                const sizeB = elemB.getBoundingClientRect()[prop]
-            
-                return sizeB - sizeA
-              }
-            
-              const factor = (elemA, elemB, prop) => {
-                const sizeA = elemA.getBoundingClientRect()[prop]
-                const sizeB = elemB.getBoundingClientRect()[prop]
-            
-                return sizeB / sizeA
-              }
-            
-              document.querySelectorAll('.card').forEach((elem) => {
-            
-                const head = elem.querySelector('.card__head')
-                const image = elem.querySelector('.card__image')
-                const author = elem.querySelector('.card__author')
-                const body = elem.querySelector('.card__body')
-                const foot = elem.querySelector('.card__foot')
-            
-                elem.onmouseenter = () => {
-                  elem.classList.add('hover')
-            
-                  const imageScale = 1 + factor(head, body, 'height')
-                  image.style.transform = `scale(${ imageScale })`
-            
-                  const bodyDistance = height(foot) * -1
-                  body.style.transform = `translateY(${ bodyDistance }px)`
-            
-                  const authorDistance = distance(head, author, 'height')
-                  author.style.transform = `translateY(${ authorDistance }px)`
-                }
-            
-                elem.onmouseleave = () => {
-                  elem.classList.remove('hover')
-            
-                  image.style.transform = `none`
-                  body.style.transform = `none`
-                  author.style.transform = `none`
-                }
-            
-            })
-            </script>
-          </section>
-              </div>
-            </div>
+      <div class="cards">
+        <div class="card wet-lab">
+          <h3>Wet Lab</h3>
+          <p>Documentation of experiments we performed in lab to engineerr and validate our project.</p>
+        </div>
+
+        <div class="card modeling">
+          <h3>Modeling</h3>
+          <p>Learn how we modeled our antibody structures and informed our test strip design.</p>
+        </div>
+
+        <div class="card ihp">
+          <h3>Human Practices</h3>
+          <p>Learn about our outreach events, and how experts in the field influenced the design of our project.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 
