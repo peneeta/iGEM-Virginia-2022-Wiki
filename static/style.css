@@ -347,3 +347,9 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   position: -webkit-sticky; /* for Safari */
   top: 20vh;
 }
+
+@media only screen and (max-width: 600px) {
+  .fixed-index{
+    display: none!important;
+  }
+}
