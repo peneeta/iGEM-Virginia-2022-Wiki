@@ -193,7 +193,7 @@
   }
 
   .intro.wrapper{
-    padding-top: max(40vh, 10rem);
+    margin-top: 30vh;
 
   }
   .wrapper.graph{
