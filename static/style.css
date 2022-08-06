@@ -5,7 +5,7 @@
 }
 
 body{
-  background-color: #EDEDED;
+  background-color: #fcfbfb;
 }
 
 /* Fonts */
@@ -318,7 +318,7 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 }
 
 .asym-curve-divider .shape-fill {
-  fill: #EDEDED;
+  fill: #fcfbfb;
 }
 
 /* TOOLTIP STYLING */
