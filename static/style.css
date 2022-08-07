@@ -348,6 +348,27 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   top: 20vh;
 }
 
+.index.heading{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.index-item{
+  padding-block: 0.25rem;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+}
+
+.index-item.indented{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  padding-left: 1rem;
+
+}
+
 .body-padding{
   padding-inline: min(5vw, 14rem);
 }
@@ -357,7 +378,7 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   word-break: keep-all;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1020px) {
   .fixed-index{
     display: none!important;
   }
