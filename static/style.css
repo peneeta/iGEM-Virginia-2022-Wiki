@@ -228,14 +228,14 @@ h3 {
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 300;
-  font-size: min(1rem, 3rem);
+  font-size: clamp(1rem, 0.5rem + 1.86vw, 1.5rem);
 }
 
 h4{
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 600;
-  font-size: clamp(1rem, 0.5rem + 1.86vw, 1.5rem);
+  font-size: clamp(1rem, 0.5rem + 1.7vw, 1.5rem);
 
 }
 
