@@ -19,110 +19,128 @@
   </div>
 </div>
 
+<div class="d-flex flex-row mx-4 body-padding">
+  <div class="fixed-index py-5 my-5 me-4 pe-5 d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+    <div class="index heading d-flex flex-row align-items-start py-4">
+      <div class="pe-3" role="button">Sections</div>
+      <div class="ps-3" role="button">References</div>
+    </div>
 
-<div class="container d-flex flex-column">
-  <div class="section section-top px-4" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-sine">
-    <div class="wrapper pb-4 mb-3">
-      <h2 class="pb-4">Solving Problems with Precision</h2>
-      <div class="text-wrapper">
-        <p>Modeling is a <span class="bold-text">vital part</span> of the design process for any project because it allows variables that cannot be feasibly tested in Wet Lab to be simulated. Project modeling is more than analyzing important variables; <span class="bold-text">it accelerates the engineering design cycle</span> and <span class="bold-text">saves resources.</span> 
-          
-
-        <br>
-        For our project, modeling has provided a <span class="bold-text">streamlined process</span> for wet lab experiments by testing variables that are in question and optimizing the conditions. We used modeling to <span class="bold-text">predict the 3D structures of antibodies</span> that we are working with, which would normally take several months to determine experimentally. We also focused on <span class="bold-text">LFA optimization</span> to predetermine which parameters would produce the best results in the lab.</p>
-      </div>
+    <div class="index content">
+      <div class="index-item active" role="button" id="introduction-desc">Solving Problems with Precision</div>
+      <div class="index-item" role="button" id="atherosclerosis-desc">Protein Modeling</div> 
+      <div class="indented index-item" role="button" id="problems-desc">MCPC-603</div>
+      <div class="indented index-item" role="button" id="lfa-desc">Nanobody</div>
     </div>
   </div>
 
-  <div class="section px-4">
-    <div class="wrapper pb-4 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-sine">
-      <h2 class="pb-4">Protein Modeling</h2>
-      <div class="text-wrapper">
-        <p>The original aim for protein modeling was to model the <span class="bold-text">sandwich complex</span> between the labeled antibody and the test-line antibody, which indicates a positive test. The plan was to predict the epitopes on the biomarker OxLDL that our labeled full-length IgG antibody and single-chain variable fragments (scFv) would bind to. By knowing these epitopes, we could determine which scFv fragment out of the variety of candidates would not interfere with the binding of the labeled antibody.</p> 
+  <div class="container d-flex flex-column">
+    <div class="section section-top px-4" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-sine">
+      <div class="wrapper pb-4 mb-3">
+        <h2 class="pb-4">Solving Problems with Precision</h2>
+        <div class="text-wrapper">
+          <p>Modeling is a <span class="bold-text">vital part</span> of the design process for any project because it allows variables that cannot be feasibly tested in Wet Lab to be simulated. Project modeling is more than analyzing important variables; <span class="bold-text">it accelerates the engineering design cycle</span> and <span class="bold-text">saves resources.</span> 
+            
 
-        <p>We first generated the structures of the three antibodies and apolipoprotein B-100 (apoB-100), which is the carrier protein on OxLDL. We successfully created Protein Data Bank (PDB) structure files for each antibody using AlphaFold. However, because of the size and complexity of apoB-100 due to the lipid composition of LDL, we were unable to model the complete structure of the biomarker. This meant we were unable to utilize docking softwares to predict the binding of the biomarker with our lateral flow assay components. </p>
-
-        <p>However, with further reading and meeting with researchers in the field, the modeling team was able to determine an ideal sequence for our scFv. The protein models of the lateral flow assay components were ultimately utilized in determining which strain of <span class="italic-text">E. coli</span> to synthesize the scFv and nanobody in. Since each of the selected scFv fragments and the nanobody contained disulfide bonds, the fragments must be expressed in SHuffle <span class="italic-text">E. coli</span> cells instead of another strain of <span class="italic-text">E. coli.</span></p>
+          <br>
+          For our project, modeling has provided a <span class="bold-text">streamlined process</span> for wet lab experiments by testing variables that are in question and optimizing the conditions. We used modeling to <span class="bold-text">predict the 3D structures of antibodies</span> that we are working with, which would normally take several months to determine experimentally. We also focused on <span class="bold-text">LFA optimization</span> to predetermine which parameters would produce the best results in the lab.</p>
+        </div>
       </div>
     </div>
 
+    <div class="section px-4">
+      <div class="wrapper pb-4 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out-sine">
+        <h2 class="pb-4">Protein Modeling</h2>
+        <div class="text-wrapper">
+          <p>The original aim for protein modeling was to model the <span class="bold-text">sandwich complex</span> between the labeled antibody and the test-line antibody, which indicates a positive test. The plan was to predict the epitopes on the biomarker OxLDL that our labeled full-length IgG antibody and single-chain variable fragments (scFv) would bind to. By knowing these epitopes, we could determine which scFv fragment out of the variety of candidates would not interfere with the binding of the labeled antibody.</p> 
 
-    <!-- MCPC603 -->
-    <div class="pdb-struct mcpc603-scFv d-flex flex-row flex-lg-nowrap flex-wrap align-items-center justify-content-evenly">
-      <div class="container">
-        <div class="wrapper">
-          <h4>MCPC-603 scFv Ribbon and Surface Model</h4>
-          <div class="text-wrapper">
-            <p>This is a model generated from AlphaFold of the MCPC-603 antibody fragment. [Info about its active site, etc]</p>
+          <p>We first generated the structures of the three antibodies and apolipoprotein B-100 (apoB-100), which is the carrier protein on OxLDL. We successfully created Protein Data Bank (PDB) structure files for each antibody using AlphaFold. However, because of the size and complexity of apoB-100 due to the lipid composition of LDL, we were unable to model the complete structure of the biomarker. This meant we were unable to utilize docking softwares to predict the binding of the biomarker with our lateral flow assay components. </p>
+
+          <p>However, with further reading and meeting with researchers in the field, the modeling team was able to determine an ideal sequence for our scFv. The protein models of the lateral flow assay components were ultimately utilized in determining which strain of <span class="italic-text">E. coli</span> to synthesize the scFv and nanobody in. Since each of the selected scFv fragments and the nanobody contained disulfide bonds, the fragments must be expressed in SHuffle <span class="italic-text">E. coli</span> cells instead of another strain of <span class="italic-text">E. coli.</span></p>
+        </div>
+      </div>
+
+
+      <!-- MCPC603 -->
+      <div class="pdb-struct mcpc603-scFv d-flex flex-row flex-lg-nowrap flex-wrap align-items-center justify-content-evenly">
+        <div class="container">
+          <div class="wrapper">
+            <h4>MCPC-603 scFv Ribbon and Surface Model</h4>
+            <div class="text-wrapper">
+              <p>This is a model generated from AlphaFold of the MCPC-603 antibody fragment. [Info about its active site, etc]</p>
+            </div>
+          </div>
+        </div>
+        <!-- HELPER SCRIPT -->
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Create NGL Stage object
+        var stage = new NGL.Stage( "mcpc603-VP", {
+          // NEED TO CHANGE THIS LATER if we change page color
+          backgroundColor: 'white',
+        });
+
+        // Load PDB
+        stage.loadFile("{{ url_for('static', filename = 'pdb/mcpc603-scFv.pdb') }}").then(function (oMCPC) {
+          oMCPC.addRepresentation("surface", {
+              colorScheme: "bfactor",
+              contour: "true",
+              colorScale: "spectral",
+          });
+          oMCPC.addRepresentation("cartoon", {
+
+          });
+          stage.setSpin(true);
+          oMCPC.autoView();
+          
+        });
+        });
+        </script>
+        <!-- Initialize the Viewport -->
+        <div class="pdb">
+          <div id="mcpc603-VP" style="width: 400px; height: 500px;"></div>
+        </div>
+      </div>
+
+      <!-- NANOBODY -->
+      <div class="pdb-struct nanobody d-flex flex-row flex-lg-nowrap flex-wrap-reverse align-items-center justify-content-center">
+        
+        
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var stage = new NGL.Stage("nanobody-VP", { backgroundColor: "white"});
+            
+            stage.loadFile("{{ url_for('static', filename = 'pdb/nanobody.pdb') }}").then(function(oNano){
+              oNano.addRepresentation("surface", {
+              colorScheme: "bfactor",
+              contour: "true",
+              colorScale: "spectral",
+          });
+          oNano.addRepresentation("cartoon", {
+
+          });
+          stage.setSpin(true);
+          oNano.autoView();
+
+        })
+        });
+        </script>
+        <!-- Initialize the viewport -->
+        <div id="nanobody-VP" style="width:400px; height:300px;"></div>
+
+        <div class="container">
+          <div class="wrapper">
+            <h4>Nanobody</h4>
           </div>
         </div>
       </div>
-      <!-- HELPER SCRIPT -->
-      <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          // Create NGL Stage object
-      var stage = new NGL.Stage( "mcpc603-VP", {
-        // NEED TO CHANGE THIS LATER if we change page color
-        backgroundColor: 'white',
-      });
 
-      // Load PDB
-      stage.loadFile("{{ url_for('static', filename = 'pdb/mcpc603-scFv.pdb') }}").then(function (oMCPC) {
-        oMCPC.addRepresentation("surface", {
-            colorScheme: "bfactor",
-            contour: "true",
-            colorScale: "spectral",
-        });
-        oMCPC.addRepresentation("cartoon", {
-
-        });
-        stage.setSpin(true);
-        oMCPC.autoView();
-        
-      });
-      });
-      </script>
-      <!-- Initialize the Viewport -->
-      <div class="pdb">
-        <div id="mcpc603-VP" style="width: 400px; height: 500px;"></div>
-      </div>
     </div>
-
-    <!-- NANOBODY -->
-    <div class="pdb-struct nanobody d-flex flex-row flex-lg-nowrap flex-wrap-reverse align-items-center justify-content-center">
-      
-      
-
-      <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          var stage = new NGL.Stage("nanobody-VP", { backgroundColor: "white"});
-          
-          stage.loadFile("{{ url_for('static', filename = 'pdb/nanobody.pdb') }}").then(function(oNano){
-            oNano.addRepresentation("surface", {
-            colorScheme: "bfactor",
-            contour: "true",
-            colorScale: "spectral",
-        });
-        oNano.addRepresentation("cartoon", {
-
-        });
-        stage.setSpin(true);
-        oNano.autoView();
-
-      })
-      });
-      </script>
-      <!-- Initialize the viewport -->
-      <div id="nanobody-VP" style="width:400px; height:300px;"></div>
-
-      <div class="container">
-        <div class="wrapper">
-          <h4>Nanobody</h4>
-        </div>
-      </div>
-    </div>
-
   </div>
+
+  <!-- EMPTY DIV FOR SPACING -->
+  <div class="spacer-div"></div>
 </div>
 
 
