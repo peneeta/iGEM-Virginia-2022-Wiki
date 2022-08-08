@@ -75,7 +75,7 @@
 }
 
 .card{
-    width: 380px;
+    width: 200px;
     perspective: 1000px;
     cursor: pointer;
 }
