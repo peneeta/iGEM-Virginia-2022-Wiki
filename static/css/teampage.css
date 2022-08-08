@@ -82,7 +82,7 @@
 
 .card-inner{
     position: relative;
-    width: 80%;
+    width: 60%;
     text-align: center;
     transform-style: preserve-3d;
     transition: transform 1s;
@@ -93,7 +93,7 @@
 }
 
 .front-face img{
-    width: 80%;
+    width: 60%;
     border-radius: 10px;
 }
 
