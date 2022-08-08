@@ -56,12 +56,64 @@
     overflow: hidden;
 }
 
-.circle{
+.card-pic{
     max-width: 80%;
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
     align-content: center;
-    border-radius: 50%
+    border-radius: 4%
     
+}
+
+.crd-container{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 380px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card-inner{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.front-face{
+    backface-visibility: hidden;
+}
+
+.front-face img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.back-face{
+    backface-visibility: hidden;
+    background: white;
+    color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: rotateY(180deg);
+    }
+
+.card:hover .card-inner{
+    transform: rotateY(-180deg);
 }
