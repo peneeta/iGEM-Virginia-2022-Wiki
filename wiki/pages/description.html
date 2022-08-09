@@ -29,23 +29,19 @@
     </div>
 
     <div class="index content">
-      <div class="index-item active" role="button" id="title0">Introduction</div>
+      <div class="index-item active" role="button" id="title0" onclick="scrollFunction1()">Introduction</div>
       <script>
-        $("#title0").click(function() {
-        $('html,body').animate({
-          scrollTop: $("#intro").position().top - 200},
-        200);
-        });
+        function scrollFunction1(){
+          document.getElementById('intro').scrollIntoView();
+          window.scrollBy(0, -(document.querySelector('navbar').offsetHeight - 200));
+        }
       </script>
       
       <div class="indented index-item" role="button" id="title1">Behavioral Risk Factors of CVD</div>
 
       <script>
-        $("#title1").click(function() {
-        $('html,body').animate({
-          scrollTop: $("#risk-factors").position().top - 200},
-        200);
-        });
+        
+
       </script>
 
       <div class="indented index-item" role="button" id="types-of-cvd-desc">Types of Cardiovascular Diseases</div>
