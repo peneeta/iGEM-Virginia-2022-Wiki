@@ -138,6 +138,9 @@ a.dropdown-item.hvr-fade {
 
 
 /* footer */
+.vgem-footer{
+  width: 100%;
+}
 .section ul{
   text-align: left;
   list-style: none;
@@ -145,7 +148,15 @@ a.dropdown-item.hvr-fade {
   padding: 0rem;
 
 }
-  
+  .bottom-footer{
+    background-image: url('https://static.igem.wiki/teams/4477/wiki/images/footer-bottom.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    color: white;
+    width: 100%;
+  }
   .bottom-footer li {
     padding:0 10px;
   }
@@ -155,6 +166,9 @@ a.dropdown-item.hvr-fade {
     text-decoration:none;
     opacity:0.8;
     font-size: small;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
   }
   
   .vgem-footer ul a:hover {
@@ -179,14 +193,17 @@ a.dropdown-item.hvr-fade {
     color:inherit;
     opacity:0.75;
   }
-  
-  .vgem-footer .social > a:hover {
-    opacity:0.9;
-  }
 
   .vgem-footer h5 {
     font-size: medium;
   }
+  
+  .license{
+    backdrop-filter: blur(10px);
+  }
+
+
+
 
   /* Headers */
 .standard-header{
