@@ -202,6 +202,12 @@ a.dropdown-item.hvr-fade {
     backdrop-filter: blur(10px);
   }
 
+  .vgem-footer img{
+    float: left;
+    width: 100px;
+    object-fit: cover;
+  }
+
 
 
 
