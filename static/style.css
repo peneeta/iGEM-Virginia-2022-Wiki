@@ -359,6 +359,8 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   position: sticky;
   position: -webkit-sticky; /* for Safari */
   top: 10vh;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
 }
 
 .spacer-div{
@@ -376,14 +378,14 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 
 .index-item{
   padding-block: 0.25rem;
+  padding-inline: 0.5rem;
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 600;
 }
 
 .index-item.active{
-  border-left: #6C1232;
-  border-left-width: 1rem;
+  border-left: 2px solid #6C1232;
 
 }
 
@@ -397,7 +399,7 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 }
 
 .body-padding{
-  padding-inline: min(5vw, 14rem);
+  padding-inline: 1vw;
 }
 
 .body-container{
