@@ -1,4 +1,4 @@
-<footer class="footer-basic">
+<footer class="vgem-footer mt-5">
   <div class="container d-flex flex-column">
     <div class="top-footer">
       <div class="wrapper">
@@ -61,14 +61,49 @@
 
         <div class="section">
           <h5>Modeling</h5>
+          <ul id="modeling-list">
+            <li>
+              <a href="{{ url_for('pages', page='model') }}"> Model</a>
+            </li>
+
+            <li>
+              <a href="{{ url_for('pages', page='supercomputing') }}"> Supercomputing</a>
+            </li>
+          </ul>
         </div>
 
         <div class="section">
           <h5>Human Practices</h5>
+          <ul id="ihp-list">
+            <li>
+              <a href="{{ url_for('pages', page='human-practices') }}">Integrated Human Practices</a>
+            </li>
+
+            <li>
+              <a href="{{ url_for('pages', page='education') }}">Education and Outreach</a>
+            </li>
+          </ul>
         </div>
 
         <div class="section">
           <h5>Team</h5>
+          <ul id="team-list">
+            <li>
+              <a href="{{ url_for('pages', page='team') }}">Team Members</a>
+            </li>
+
+            <li>
+              <a href="{{ url_for('pages', page='attributions') }}">Attributions</a>
+            </li>
+            
+            <li>
+              <a href="{{ url_for('pages', page='collaborations') }}">Collaborations</a>
+            </li>
+
+            <li>
+              <a href="{{ url_for('pages', page='contribution') }}">Our Contribution</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
