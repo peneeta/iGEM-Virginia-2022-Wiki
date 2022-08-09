@@ -112,11 +112,11 @@
             var stage = new NGL.Stage("nanobody-VP", { backgroundColor: "white"});
             
             stage.loadFile("{{ url_for('static', filename = 'pdb/nanobody.pdb') }}").then(function(oNano){
-              oNano.addRepresentation("surface", {
-              colorScheme: "bfactor",
-              contour: "true",
-              colorScale: "spectral",
-          });
+          //     oNano.addRepresentation("surface", {
+          //     colorScheme: "bfactor",
+          //     contour: "true",
+          //     colorScale: "spectral",
+          // });
           oNano.addRepresentation("cartoon", {
 
           });
