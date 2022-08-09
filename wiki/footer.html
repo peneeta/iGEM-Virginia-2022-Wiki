@@ -1,19 +1,82 @@
 <footer class="footer-basic">
-  <div class="container">
-    <!-- Either draw icons, download, or find royalty free ones to replace these! -->
-    <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>
-                        
-    <p class="lead mx-2 text-center"> CONTACT US!</p>
-      <ul class="list-inline">
-          <li class="list-inline-item">Chemistry Building (Chem 334) 409 McCormick Rd, Charlottesville, VA 22904</li>
-          <li class="list-inline-item"><a href="#">Team Email: vaigem2022@gmail.com</a></li> 
-          <li class="list-inline-item">Human Practices Lead: irp2av@virginia.edu </li>
+  <div class="container d-flex flex-column">
+    <div class="top-footer">
+      <div class="wrapper">
+        <p>
+          AtheroSHuffle
+          Virginia iGEM 2022
+        </p>
+      </div>
 
-      </ul>
+      <div class="wrapper">
+        <p>Contact Us: vaigem2022@gmail.com</p>
+      </div>
 
-      <a href="#" class="position-absolute bottom-0 end-0 p-5">
-      <i class="bi bi-arrow-up-circle h1"></i>
-      </a>
+    </div>
+
+    <div class="bottom-footer">
+      <div class="wrapper">
+        <h4>Site Links</h4>
+      </div>
+
+      <div class="d-flex flex-row align-items-start justify-content-around">
+        <div class="section">
+          <h5>Project</h5>
+          <ul id="project-list">
+            <li>
+              <a href="{{ url_for('pages', page='description') }}">Description</a>
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='design') }}">Design</a>
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='engineering') }}">Engineering</a>
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='results') }}">Results</a>
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='implementation') }}">Implementation</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h5>Wetlab</h5>
+          <ul id="wetlab-list">
+            <li>
+              <a href="{{ url_for('pages', page='experiments') }}">Experiments</a>
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='proof-of-concept') }}">Proof of Concept</a>
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='notebook') }}">Notebook</a>
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='parts') }}">Parts</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h5>Modeling</h5>
+        </div>
+
+        <div class="section">
+          <h5>Human Practices</h5>
+        </div>
+
+        <div class="section">
+          <h5>Team</h5>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    
+    
     
     
     <hr>
