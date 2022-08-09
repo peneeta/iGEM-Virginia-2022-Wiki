@@ -324,6 +324,7 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   display: block;
 }
 
+/* Asymmetrical Curve Divider */
 .asym-curve-divider {
   position: absolute;
   bottom: 0;
@@ -343,6 +344,28 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 .asym-curve-divider .shape-fill {
   fill: #fcfbfb;
 }
+
+/* ShapeDivider Generated Wave */
+.simple-wave-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.simple-wave-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 64px;
+}
+
+.simple-wave-divider .shape-fill {
+  fill: #fcfbfb;
+}
+
 
 /* TOOLTIP STYLING */
 .tt{
