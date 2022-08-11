@@ -211,6 +211,7 @@ a.dropdown-item.hvr-fade {
     float: left;
     width: 100px;
     object-fit: cover;
+    padding-inline: 1rem;
   }
 
   /* Headers */
