@@ -20,3 +20,7 @@
   max-width: 70%;
   height: auto;
 }
+
+.blob-graphic img{
+  width: clamp(200px, 20%, 300px);
+}
