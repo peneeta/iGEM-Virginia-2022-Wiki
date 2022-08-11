@@ -148,6 +148,11 @@ a.dropdown-item.hvr-fade {
   padding: 0rem;
 
 }
+
+.top-footer{
+  /* background-color: black;
+  color: white; */
+}
   .bottom-footer{
     background-image: url('https://static.igem.wiki/teams/4477/wiki/images/footer-bottom.svg');
     background-size: cover;
@@ -207,9 +212,6 @@ a.dropdown-item.hvr-fade {
     width: 100px;
     object-fit: cover;
   }
-
-
-
 
   /* Headers */
 .standard-header{
