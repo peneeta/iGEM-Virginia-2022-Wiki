@@ -6,6 +6,7 @@
 
 body{
   background-color: #fcfbfb;
+  scroll-behavior: auto;
 }
 
 /* Fonts */
@@ -136,7 +137,6 @@ a.dropdown-item.hvr-fade {
 }
 
 
-
 /* footer */
 .vgem-footer{
   width: 100%;
@@ -149,10 +149,6 @@ a.dropdown-item.hvr-fade {
 
 }
 
-.top-footer{
-  /* background-color: black;
-  color: white; */
-}
   .bottom-footer{
     background-image: url('https://static.igem.wiki/teams/4477/wiki/images/footer-bottom.svg');
     background-size: cover;
@@ -432,10 +428,20 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+
+.index-item a{
+  text-decoration:none!important;
+  color: black!important;
+  
 }
 
 .index-item.active{
   border-left: 2px solid #6C1232;
+  text-decoration:none!important;
+  color: black!important;
 
 }
 
