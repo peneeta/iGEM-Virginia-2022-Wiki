@@ -407,6 +407,7 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   top: 10vh;
   backdrop-filter: blur(10px);
   border-radius: 10px;
+  width: 30vw;
 }
 
 .spacer-div{
