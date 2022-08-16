@@ -117,3 +117,129 @@
 .card:hover .card-inner{
     transform: rotateY(-180deg);
 }
+
+.new-card{
+    position: relative;
+    background-color: #fff;
+    max-width: 350px;
+    max-height: 200px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0,0.35);
+    border-radius: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.card:hover {
+    height: 450px;
+}
+
+.pb {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translate(-50% , 0%);
+    background-image: url('https://static.igem.wiki/teams/4477/wiki/squpeneeta.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0,0.35);
+    transition: all 0.4s ease-in-out;
+}
+
+.card:hover .pb{
+    height: 250px;
+    width: 250px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 125px 0px 10px 0px;
+    transition: all 0.4s ease-in-out;
+}
+
+.card:hover .info {
+    display: flex;
+    padding: 230px 0px 10px 0px;
+}
+
+.detail {
+    position: relative;
+    display: flex;
+    opacity: 0;
+    z-index: -10;
+    justify-content: space-between;
+    padding: 10px 50px;
+    transform: translate(-20px);
+    transition-timing-function: linear;
+    transition-duration: 0s, 0.2s , 0.2s;
+    transition-property: z-index,opacity,transform;
+    transition-delay: 0.2s, 0s, 0s;
+}
+
+.colu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    opacity: 0;
+    z-index: -10px;
+    padding: 10px 50px;
+    justify-content: space-between;
+    transform: translate(-20px);
+    transition-timing-function: linear;
+    transition-duration: 0s, 0.2s , 0.2s;
+    transition-property: z-index,opacity,transform;
+    transition-delay: 0.2s, 0s, 0s;
+}
+
+.button {
+    padding: 10px 30x;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#follow {
+    background-color: #535E84;
+    border: 1px solid #535E84;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.3s linear;
+}
+
+#follow:hover {
+    background-color: #7684b5;
+
+}
+
+#linkdin {
+    background-color: transparent;
+    border: 1px solid grey;
+    color: grey;
+    font-weight: 500;
+    transition: all 0.3s linear;
+}
+
+#linkdin:hover {
+    color: #fff;
+    background-color: darkgrey;
+}
+
+.card:hover .detail ,
+.card:hover .buttons {
+    opacity: 1;
+    z-index: 0;
+    transform: translateX(0px);
+    transition-timing-function: linear;
+    transition-duration: 0s, 0.3s, 0.3s;
+    transition-property: z-index, opacity, transform;
+    transition-delay: 0s, 0.2s, 0.2s;
+}
