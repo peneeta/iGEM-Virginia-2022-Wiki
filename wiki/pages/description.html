@@ -29,30 +29,40 @@
           <div class="ps-3" role="button">References</div>
         </div>
 
-        <div class="index content d-flex flex-column">
-          <a class="index-item active" href="#head1">Heart Disease</a>
+        <div class="index content d-flex flex-column" id="scrollspy-index-list">
+          <div class="index-item active" role="button" scrollTo="#head1" onclick="scrollToSection()">Heart Disease</div>
           
-          <a class="indented index-item" href="#head2">Behavioral Risk Factors</a>
+          <div class="indented index-item" role="button" scrollTo="#head2" onclick="scrollToSection()">Behavioral Risk Factors</div>
 
-          <a class="indented index-item" href="#">[Genetic Risk Factors]</a>
+          <div class="indented index-item" role="button" scrollTo="#">[Genetic Risk Factors]</div>
 
-          <a class="index-item" href="#head3">Coronary Artery Disease</a>
+          <div class="index-item" role="button" scrollTo="#head3">Coronary Artery Disease</div>
 
-          <a class="index-item" href="#head4">Atherosclerosis</a> 
+          <div class="index-item" role="button" scrollTo="#head4">Atherosclerosis</div> 
 
-          <a class="indented index-item" href="#head5">Pathogenesis</a>
+          <div class="indented index-item" role="button" scrollTo="#head5">Pathogenesis</div>
 
-          <a class="indented index-item" href="#head6">Problems with Current Diagnosis Methods</a>
+          <div class="indented index-item" role="button" scrollTo="#head6">Problems with Current Diagnosis Methods</div>
 
-          <a class="index-item" href="#head7">Our Solution</a>
+          <div class="index-item" role="button" scrollTo="#head7">Our Solution</div>
 
-          <a class="indented index-item" href="#head8">OxLDL as a Biomarker</a>
+          <div class="indented index-item" role="button" scrollTo="#head8">OxLDL as a Biomarker</div>
 
-          <a class="indented index-item" href="#head9">Why Use Synthetic Biology?</a>
+          <div class="indented index-item" role="button" scrollTo="#head9">Why Use Synthetic Biology?</div>
 
-          <a class="indented index-item" href="#head10">Inspiration Behind our Project</a>
+          <div class="indented index-item" role="button" scrollTo="#head10">Inspiration Behind our Project</div>
       </div>
     </div>
+
+    <script>
+      function scrollToSection(){
+        let sectionID = this.getAttribute(scrollTo);
+        console.log(sectionID);
+
+
+      }
+
+    </script>
   </div>
 
   <div class="body-container d-flex flex-column align-items-center justify-content-center pt-5 mt-5">

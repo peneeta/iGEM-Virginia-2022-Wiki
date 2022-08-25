@@ -1,5 +1,4 @@
   const markerSvg = `<svg width="36px" height="36px" viewBox="-4 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <!-- Uploaded to SVGRepo https://www.svgrepo.com -->
   <title>map-marker</title>
   <desc>Created with Sketch.</desc>
   <defs></defs>
