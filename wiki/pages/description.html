@@ -30,33 +30,42 @@
         </div>
 
         <div class="index content d-flex flex-column" id="scrollspy-index-list">
-          <div class="index-item active" role="button" scrollTo="#head1" onclick="scrollToSection(this)">Heart Disease</div>
+          <div class="index-item active" role="button" scrollTo="head1" onclick="scrollToSection(this)">Heart Disease</div>
           
-          <div class="indented index-item" role="button" scrollTo="#head2" onclick="scrollToSection(this)">Behavioral Risk Factors</div>
+          <div class="indented index-item" role="button" scrollTo="head2" onclick="scrollToSection(this)">Behavioral and Genetic Risk Factors</div>
 
-          <div class="indented index-item" role="button" scrollTo="#" onclick="scrollToSection(this)">[Genetic Risk Factors]</div>
+          <div class="index-item" role="button" scrollTo="head3" onclick="scrollToSection(this)">Coronary Artery Disease</div>
 
-          <div class="index-item" role="button" scrollTo="#head3" onclick="scrollToSection(this)">Coronary Artery Disease</div>
+          <div class="index-item" role="button" scrollTo="head4" onclick="scrollToSection(this)">Atherosclerosis</div> 
 
-          <div class="index-item" role="button" scrollTo="#head4" onclick="scrollToSection(this)">Atherosclerosis</div> 
+          <div class="indented index-item" role="button" scrollTo="head5" onclick="scrollToSection(this)">Pathogenesis</div>
 
-          <div class="indented index-item" role="button" scrollTo="#head5" onclick="scrollToSection(this)">Pathogenesis</div>
+          <div class="indented index-item" role="button" scrollTo="head6" onclick="scrollToSection(this)">Problems with Current Diagnosis Methods</div>
 
-          <div class="indented index-item" role="button" scrollTo="#head6" onclick="scrollToSection(this)">Problems with Current Diagnosis Methods</div>
+          <div class="index-item" role="button" scrollTo="head7" onclick="scrollToSection(this)">Our Solution</div>
 
-          <div class="index-item" role="button" scrollTo="#head7" onclick="scrollToSection(this)">Our Solution</div>
+          <div class="indented index-item" role="button" scrollTo="head8" onclick="scrollToSection(this)">OxLDL as a Biomarker</div>
 
-          <div class="indented index-item" role="button" scrollTo="#head8" onclick="scrollToSection(this)">OxLDL as a Biomarker</div>
+          <div class="indented index-item" role="button" scrollTo="head9" onclick="scrollToSection(this)">Why Use Synthetic Biology?</div>
 
-          <div class="indented index-item" role="button" scrollTo="#head9" onclick="scrollToSection(this)">Why Use Synthetic Biology?</div>
-
-          <div class="indented index-item" role="button" scrollTo="#head10" onclick="scrollToSection(this)">Inspiration Behind our Project</div>
+          <div class="indented index-item" role="button" scrollTo="head10" onclick="scrollToSection(this)">Inspiration Behind our Project</div>
       </div>
     </div>
 
     <script>
       function scrollToSection(item){
         const target = item.getAttribute('scrollTo');
+        var selectedHeader = document.getElementById(target);
+
+        var headerOffset = 150;
+        var elementPosition = selectedHeader.getBoundingClientRect().top;
+        var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "auto"
+
+        });
 
         const elems = document.querySelectorAll(".index-item.active");
         if(elems !== null){
@@ -64,14 +73,7 @@
             elems[i].classList.remove("active");
           }
         }
-        console.log(elems);
         item.classList.add("active");
-
-
-
-
-
-
       }
 
     </script>
@@ -121,7 +123,7 @@
       </div>
     </div>
     
-    <div class="container body-section" id="atherosclerosis" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine" id="head4">
+    <div class="container body-section" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine" id="head4">
       <h2 class="pb-3 mb-3 select-header">Atherosclerosis</h2>
       <div class="text-wrapper pb-4 mb-3">
         <p>
