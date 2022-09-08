@@ -231,6 +231,10 @@ a.dropdown-item.hvr-fade {
   overflow: hidden;
 }
 
+.banner-v2{
+  
+}
+
 /* TEXT STYLING */
 .standard-header h1{
     font-size: clamp(2rem, 1rem + 5vw ,5rem);
@@ -368,7 +372,7 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   fill: #fcfbfb;
 }
 
-/* ShapeDivider Generated Wave */
+/* ShapeDivider Generated Waves */
 .simple-wave-divider {
   position: absolute;
   bottom: 0;
@@ -388,6 +392,8 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 .simple-wave-divider .shape-fill {
   fill: #fcfbfb;
 }
+
+
 
 
 /* TOOLTIP STYLING */
@@ -453,6 +459,12 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   padding-left: 1rem;
   font-size: 0.83em;
 
+}
+
+.top-select.active{
+  border-bottom: 2px solid #6C1232;
+  color: black;
+  text-decoration: none;
 }
 
 .body-padding{
