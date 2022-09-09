@@ -403,6 +403,11 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   padding-block: 2.4rem;
 }
 
+.body-section p{
+  text-align: justify;
+  word-break: keep-all;
+}
+
 .body-section h2{
   padding-bottom: 2rem;
 }
