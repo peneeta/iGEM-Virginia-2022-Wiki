@@ -380,6 +380,26 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 }
 
 /* ShapeDivider Generated Waves */
+.wave2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave2 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 78px;
+}
+
+.wave2 .shape-fill {
+  fill: #FFFFFF;
+}
 
 .simple-wave-divider {
   position: absolute;

@@ -46,51 +46,68 @@
 
         <div class="container">
             <div class="body-section">
-                <h2>Our LFA Design</h2>
+                <h2>How Our LFA is Unique</h2>
                 <p>We designed our LFA following the general pattern outlined above. First, we decided to test for the presence of oxidized low density lipoprotein (oxLDL) because oxLDL is a biomarker of atherosclerosis found in the blood (changing landscape of atherosclerosis, 2020). Then, if our test detected oxLDL, the patient would have evidence they are experiencing atherosclerosis. To detect oxLDL, we designed two primary antibodies. The labeled primary antibody bound to a protein component of oxLDL called MDA-modified apolipoprotein B (apoB-subscript MDA), while the other primary antibody immobilized at the test line bound to oxidized phospholipids within oxLDL. The fact that these two primary antibodies bound to different epitopes on oxLDL helped ensure the antibodies did not interfere with each other binding. Lastly, we designed a secondary antibody targeting the constant domain of the labeled primary antibody and used this on the control line to verify the test worked correctly.</p>
-            </div>
-        </div>
-                     
-
-        <div class="container">
-            <div class="body-section">
-                <h2>Choosing a Chassis</h2>
-                <p>
-                    Our LFA requires the production of three different antibodies/antibody fragments, and we wanted to produce these antibodies by using bacteria. Most bacteria, like E. coli, can only produce the disulfide bonds necessary for antibody production in their periplasm. However, one group of scientists developed a strain of E. coli with a more oxidizing cytoplasm that is able to form disulfide bonds, and this strain is SHuffle. All of our antibodies and antibody fragments have disulfide bonds and the number of cysteines fall within the optimal range of our choice, the B strain of E. coli SHuffle. 
-                </p>
             </div>
         </div>
 
         <div class="container">
             <div class="body-section">
                 <h2>Plasmid Design</h2>
-                <p>Overall summary of how plasmids were designed, why they were designed the way they were, parts used. How the synthesized fragments were obtained and put into backbone (simple description) why we chose two antibody fragments instead of having all of full-length them IgGs</p>
+                <p>
+                    For each antibody, we designed a composite insert. Each insert was complete with a strong T7 promoter, an E. coli codon-optimized ribosomal binding site (RBS), the antibody coding sequence, and a terminator. Between each component, we included non-illegal restriction sites for modular design. This is so that other individuals or iGEM teams can swap out parts if needed to vary the rate of transcription or coding sequence. This is also very essential in transformation. 
+                    We decided to biobrick a composite part for each antibody in order to use standard assembly. Having a single synthesized component only requires one step to assemble our plasmid. The backbone we used was pSB3K3, a low-copy number plasmid. Our goal was to synthesize functional antibodies, so we chose a low-copy plasmid to limit the metabolic burden on our cells, increasing the success of our antibodies being synthesized correctly.
+
+                </p>
             </div>
         </div>
 
+        <div class="container">
+            <div class="body-section">
+                <h2>Designing Our Antibodies</h2>
+                <h4>Labelled Anti-ApoB<sub>MDA</sub> Design</h4>
+                <p>
+                    We decided to develop a full-length IgG to use as our labeled anti-apoB(MDA) primary antibody. While antibody fragments that omit the constant domain of IgGs are simpler to produce, we chose to include the entire IgG for this antibody because the antibody needed its constant domain to bind properly to the gold nanoparticles we used to label it. 
+                    The sequence of the variable domain of this antibody was based on that of Orticumab, a human anti-apoB(MDA) antibody currently being developed. The constant domain of the antibody was identical to the constant domain of a mouse IgG1. We chose to substitute the mouse constant domain in place of the human constant domain of Orticumab because there are many secondary antibodies that bind to our chosen mouse constant domain, which made our design for the secondary antibody easier.
+                </p>
+            </div>
+        </div>
 
+        <div class="container">
+            <div class="body-section">
+                <h4>Anti-OxLDL Design</h4>
+                <p>
+                    We also designed two other primary antibodies that could be used to bind to the test line. These were inspired by anti-oxLDL antibodies we found in literature, called IK-17 and MCPC603 [CITE]. Like orticumab, IK-17 binds to the apoB protein that encircles oxLDL, but it binds to a different epitope (we used protein modeling to ensure this and verify that IK-17 and orticumab wouldn't prevent the other from binding). MCPC603, however, binds to oxidized phospholipids within the lipid core of oxLDL. One of our criteria in our literature search for these other anti-oxLDL antibodies was for them to be antibody fragments as opposed to full-length antibodies. Our rationale for this choice was that antibody fragments are smaller and contain fewer disulfide bonds, and thus more efficient for SHuffle bacteria to produce. In particular, IK-17 and MCPC603 are single chain variable fragments (scFvs), so they are only comprised of a variable light and variable heavy region. Upon advice from Dr. Leitinger (see Modeling and Attributions for more details), we decided to immobilize both these different antibodies on the test line so we'd have a higher chance of successful and specific binding to oxLDL.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="body-section">
+                <h4>Anti-IgG Design</h4>
+                <p>
+                    We designed a secondary antibody to be immobilized on the control line. This antibody was a nanobody (VHH), a variable region heavy chain only antibody naturally found in camelids. The sequence we used was encoded for an anti-mouse VHH that binds to the constant domain on mouse IgG1 antibodies. This allowed the VHH to bind to the hybrid full-length primary antibody because it recognized the mouse constant domain within it.
 
-        <!-- PUT THIS IN PARTS PAGE -->
-        <div class="container d-flex flex-column">
-            <h3>Plasmid Backbone pSB3K3 with mRFP1</h3>
+                </p>
+            </div>
+        </div>
 
-            <div id="root">
-                <script src="{{ url_for('static', filename='seqviz/seqviz.min.js') }}"></script>
-        
-                <script>
-                    var viewer = seqviz.Viewer("root", {
-                    name: "Antibody 1 Plasmid",
-                    seq: "TAAGGATGATTTCTGGAATTCGCGGCCGCTTCTAGAGCAATACGCAAACCGCCTCTCCCCGCGCGTTGGCCGATTCATTAATGCAGCTGGCACGACAGGTTTCCCGACTGGAAAGCGGGCAGTGAGCGCAACGCAATTAATGTGAGTTAGCTCACTCATTAGGCACCCCAGGCTTTACACTTTATGCTTCCGGCTCGTATGTTGTGTGGAATTGTGAGCGGATAACAATTTCACACATACTAGAGAAAGAGGAGAAATACTAGATGGCTTCCTCCGAAGACGTTATCAAAGAGTTCATGCGTTTCAAAGTTCGTATGGAAGGTTCCGTTAACGGTCACGAGTTCGAAATCGAAGGTGAAGGTGAAGGTCGTCCGTACGAAGGTACCCAGACCGCTAAACTGAAAGTTACCAAAGGTGGTCCGCTGCCGTTCGCTTGGGACATCCTGTCCCCGCAGTTCCAGTACGGTTCCAAAGCTTACGTTAAACACCCGGCTGACATCCCGGACTACCTGAAACTGTCCTTCCCGGAAGGTTTCAAATGGGAACGTGTTATGAACTTCGAAGACGGTGGTGTTGTTACCGTTACCCAGGACTCCTCCCTGCAAGACGGTGAGTTCATCTACAAAGTTAAACTGCGTGGTACCAACTTCCCGTCCGACGGTCCGGTTATGCAGAAAAAAACCATGGGTTGGGAAGCTTCCACCGAACGTATGTACCCGGAAGACGGTGCTCTGAAAGGTGAAATCAAAATGCGTCTGAAACTGAAAGACGGTGGTCACTACGACGCTGAAGTTAAAACCACCTACATGGCTAAAAAACCGGTTCAGCTGCCGGGTGCTTACAAAACCGACATCAAACTGGACATCACCTCCCACAACGAAGACTACACCATCGTTGAACAGTACGAACGTGCTGAAGGTCGTCACTCCACCGGTGCTTAATAACGCTGATAGTGCTAGTGTAGATCGCTACTAGAGCCAGGCATCAAATAAAACGAAAGGCTCAGTCGAAAGACTGGGCCTTTCGTTTTATCTGTTGTTTGTCGGTGAACGCTCTCTACTAGAGTCACACTGGCTCACCTTCGGGTGGGCCTTTCTGCGTTTATATACTAGTAGCGGCCGCTGCAGGCTTCCTCGCTCACTGACTCGCTGCGCTCGGTCGTTCGGCTGCGGCGAGCGGTATCAGCTCACTCAAAGGCGGTAATCTCGAGTCCCGTCAAGTCAGCGTAATGCTCTGCCAGTGTTACAACCAATTAACCAATTCTGATTAGAAAAACTCATCGAGCATCAAATGAAACTGCAATTTATTCATATCAGGATTATCGATACCATATTTTTGAAAAAGCCGTTTCTGTAATGAAGGAGAAAACTCACCGAGGCAGTTCCATAGGATGGCAAGATCCTGGTATCGGTCTGCGATTCCGACTCGTCCAACATCAATACAACCTATTAATTTCCCCTCGTCAAAAATAAGGTTATCAAGTGAGAAATCACCATGAGTGACGACTGAATCCGGTGAGAATGGCAAAAGCTTATGCATTTCTTTCCAGACTTGTTCAACAGGCCAGCCATTACGCTCGTCATCAAAATCACTCGCATCAACCAAACCGTTATTCATTCGTGATTGCGCCTGAGCGAGACGAAATACGCGATCGCTGTTAAAAGGACAATTACAAACAGGAATCGAATGCAACCGGCGCAGGAACACTGCCAGCGCATCAACAATATTTTCACCTGAATCAGGATATTCTTCTAATACCTGGAATGCTGTTTTCCCGGGGATCGCAGTGGTGAGTAACCATGCATCATCAGGAGTACGGATAAAATGCTTGATGGTCGGAAGAGGCATAAATTCCGTCAGCCAGTTTAGTCTGACCATCTCATCTGTAACATCATTGGCAACGCTACCTTTGCCATGTTTCAGAAACAACTCTGGCGCATCGGGCTTCCCATACAATCGATAGATTGTCGCACCTGATTGCCCGACATTATCGCGAGCCCATTTATACCCATATAAATCAGCATCCATGTTGGAATTTAATCGCGGCCTGGAGCAAGACGTTTCCCGTTGAATATGGCTCATAACACCCCTTGTATTACTGTTTATGTAAGCAGACAGTTTTATTGTTCATGATGATATATTTTTATCTTGTGCAATGTAACATCAGAGATTTTGAGACACAACGTGGCTTTGTTGAATAAATCGAACTTTTGCTGAGTTGAAGGATCAGATCACGCATCTTCCCGACAACGCAGACCGTTCCGTGGCAAAGCAAAAGTTCAAAATCACCAACTGGTCCACCTACAACAAAGCTCTCATCAACCGTGGCTCCCTCACTTTCTGGCTGGATGATGGGGCGATTCAGGCCTGGTATGAGTCAGCAACACCTTCTTCACGAGGCAGACCTCAGCGCTAGCGGAGTGTATACTGGCTTACTATGTTGGCACTGATGAGGGTGTCAGTGAAGTGCTTCATGTGGCAGGAGAAAAAAGGCTGCACCGGTGCGTCAGCAGAATATGTGATACAGGATATATTCCGCTTCCTCGCTCACTGACTCGCTACGCTCGGTCGTTCGACTGCGGCGAGCGGAAATGGCTTACGAACGGGGCGGAGATTTCCTGGAAGATGCCAGGAAGATACTTAACAGGGAAGTGAGAGGGCCGCGGCAAAGCCGTTTTTCCATAGGCTCCGCCCCCTGACAAGCATCACGAAATCTGACGCTCAAATCAGTGGTGGCGAAACCCGACAGGACTATAAAGATACCAGGCGTTTCCCCCTGGCGGCTCCCTCGTGCGCTCTCCTGTTCCTGCCTTTCGGTTTACCGGTGTCATTCCGCTGTTATGGCCGCGTTTGTCTCATTCCACGCCTGACACTCAGTTCCGGGTAGGCAGTTCGCTCCAAGCTGGACTGTATGCACGAACCCCCCGTTCAGTCCGACCGCTGCGCCTTATCCGGTAACTATCGTCTTGAGTCCAACCCGGAAAGACATGCAAAAGCACCACTGGCAGCAGCCACTGGTAATTGATTTAGAGGAGTTAGTCTTGAAGTCATGCGCCGGTTAAGGCTAAACTGAAAGGACAAGTTTTGGTGACTGCGCTCCTCCAAGCCAGTTACCTCGGTTCAAAGAGTTGGTAGCTCAGAGAACCTTCAAAAAACCGCCCTGCAAGGCGGTTTTTTCGTTTTCAGAGCAAGAGATTACGCGCAGACCAAAACGATCTCAAGAAGATCATCTTATTAAGGGGTCTGACGCTCAGTGGAACGAAAACTCACGTTAAGGGATTTTGGTCATGAGATTATCAAAAAGGATCTTCACCTAGATCCTTTTAAATTAAAAATGAAGTTTTAAATCAATCTAAAGTATATATGAGTAAACTTGGTCTGACAGTTACCAATGCTTAATCAGTGAGGCACCTATCTCAGCGATCTGTCTATTTCGTTCATCCATAGTTGCCTGACTCCCCGTCGTGTAGATAACTACGATACGGGAGGGCTTACCATCTGGCCCCAGTGCTGCAATGATACCGCGAGACCCACGCTCACCGGCTCCAGATTTATCAGCAATAAACCAGCCAGCCGGAAGGGCCGAGCGCAGAAGTGGTCCTGCAACTTTATCCGCCTCCATCCAGTCTATTCCATGGTGCCACCTGACGTCTAAGAAACCATTATTATCATGACATTAACCTATAAAAATAGGCGTATCACGAGGCAGAATTTCAGATAAAAAAAATCCTTAGCTTTCGC",
-                    style: { height: "80vh", width: "80vw" },
-        
-                    annotations:
-                        [{ start: 311, end: 988, name: "mRFP1", color: "red", direction: 1 }, // [0, 22)
-                    ],
-                    })
-                    viewer.render();
-                    viewer.renderToString();
-        
-                </script>
+        <div class="container">
+            <div class="body-section">
+                <h2>Choosing a Chassis</h2>
+                <p>
+                    An LFA requires the production of three different antibodies, which have complex structures containing disulfide bonds. Most bacteria, like E. coli, can only produce the disulfide bonds necessary for antibody production in their periplasm, because their cytoplasm is a reducing environment. This is not favorable for the formation of disulfide bonds. In order for the bonds to be formed, modification of the cytoplasm is vital for utilizing the cytoplasmic space to produce proteins. One group of scientists developed a strain of E. coli with a more oxidizing cytoplasm that is able to form disulfide bonds, and this strain is SHuffle. We determined through modeling that all of our antibodies and antibody fragments have disulfide bonds and the number of cysteines fall within the optimal range of our choice, so we chose the B-strain of E. coli SHuffle. 
+
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="body-section">
+                <h4>How SHuffle Works</h4>
+                <p>
+                    SHuffle differs from standard E. coli in that it maintains a more oxidizing cytoplasm, which allows cells to correctly form disulfide bonds in proteins, which enables researchers to overexpress correctly folded proteins. 
+                    Several major genetic modifications result in this modified cytoplasm. Two genes coding for cytoplasmic reductases, specifically thioredoxin reductase (trxB) and glutathione reductase (gor), are knocked out from the E. coli genome. While this leads to a less reducing and therefore more oxidizing cytoplasm, these two mutations on their own are lethal to the E. coli. This is due to a lack of reductases recycling other essential enzymes into their reduced state. So, another mutation called AhpC* is introduced into the genome, modifying 2-Cys alkyl hydroperoxide reductase. This mutation returns reducing power to an enzyme called glutaredoxin 1 (Grx1) and makes the previously described double knock out non-lethal to E. coli. In the oxidizing environment, thioredoxin enzymes including thioredoxin 1 (Trx1) are able to form disulfide bonds between cysteine residues of proteins. However, these thioredoxins form disulfide bonds indiscriminately between any two cysteine residues, meaning that the protein could be misfolded at this stage. So, researchers overexpress an enzyme called disulfide bond isomerase c (DsbC), which is naturally found in the periplasm of E. coli. This enzyme moves, or shuffles, mis-formed disulfide bonds to the correct conformations which finally results in correctly folded proteins in the cytoplasm.
+                </p> 
             </div>
         </div>
 
