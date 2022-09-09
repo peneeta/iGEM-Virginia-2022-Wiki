@@ -1,8 +1,16 @@
+function selectTop(item){
+    const choices = document.querySelectorAll('.top-select.active')
+    for(i=0; i<choices.length; i++){
+        choices[i].classList.remove('active');
+    }
+
+    item.classList.add('active');
+}
 function scrollToSection(item){
     const target = item.getAttribute('scrollTo');
     var selectedHeader = document.getElementById(target);
 
-    var headerOffset = 140;
+    var headerOffset = 130;
     var elementPosition = selectedHeader.getBoundingClientRect().top;
     var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -12,37 +20,36 @@ function scrollToSection(item){
 
     });
 
-    const elems = document.querySelectorAll(".index-item.active");
+    const elems = document.querySelectorAll(".index-item");
     if(elems !== null){
       for(let i=0; i<elems.length; i++){
-        elems[i].classList.remove("active");
+        elems[i].classList.remove('active')
       }
     }
-    item.classList.add("active");
+    item.classList.add('active');
   }
 
+
+
 // Scrollspy
-// Get offset positions for each header
-// if scroll position is within the div, change class to active class
-// also remove active class from other headers
-
-
 var section = document.querySelectorAll(".body-section");
-var sections = {};
-var i=0;
+let indexLinks = document.querySelectorAll(".index-item");
 
-Array.prototype.forEach.call(section, function(e){
-    sections[e.id] = e.offsetTop;
-});
+window.onscroll = () =>{
+    section.forEach(sec =>{
+        let top = window.scrollY;
+        let offset = sec.offsetTop;
+        let height = sec.offsetHeight;
+        
+        let id = sec.getAttribute('id');
 
-
-window.onscroll = function(){
-    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-    for (i in sections) {
-        if (sections[i] <= scrollPosition) {
-            document.querySelector('div[scrollTo*='  + i + ']').setAttribute('active', 'true');
+        if(top >= offset && top < offset + height - 130){
+            indexLinks.forEach(links =>{
+                links.classList.remove('active');
+                document.querySelector('div [scrollTo*=' + id + ']').classList.add('active');
+            })
         }
-      }
+    })
 };
 
 
