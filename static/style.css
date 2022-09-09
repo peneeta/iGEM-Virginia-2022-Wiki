@@ -232,6 +232,12 @@ a.dropdown-item.hvr-fade {
 }
 
 .banner-v2{
+  background-image: url('https://static.igem.wiki/teams/4477/wiki/images/blobbackgroundtype2.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -7rem;
+  overflow: hidden;
   
 }
 
@@ -374,6 +380,26 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 }
 
 /* ShapeDivider Generated Waves */
+.wave2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave2 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 78px;
+}
+
+.wave2 .shape-fill {
+  fill: #FFFFFF;
+}
 
 .simple-wave-divider {
   position: absolute;
@@ -401,6 +427,11 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 
 .body-section{
   padding-block: 2.4rem;
+}
+
+.body-section p{
+  text-align: justify;
+  word-break: keep-all;
 }
 
 .body-section h2{
