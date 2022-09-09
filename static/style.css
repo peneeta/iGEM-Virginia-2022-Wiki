@@ -352,6 +352,7 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 }
 
 /* Asymmetrical Curve Divider */
+
 .asym-curve-divider {
   position: absolute;
   bottom: 0;
@@ -373,6 +374,7 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 }
 
 /* ShapeDivider Generated Waves */
+
 .simple-wave-divider {
   position: absolute;
   bottom: 0;
@@ -403,6 +405,17 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 
 .body-section h2{
   padding-bottom: 2rem;
+}
+
+.body-section h2:after{
+  background-color:#6C1232;
+  bottom: -1rem;
+  height: 0.2rem;
+  width: 15rem;
+  position: relative;
+  content: "";
+  display: block;
+
 }
 
 .body-section h4{
@@ -458,12 +471,12 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   
 }
 
-.index-item[active = "true"]{
+.index-item.active{
   border-left: 2px solid #6C1232;
   text-decoration:none!important;
   color: black!important;
-
 }
+
 
 .index-item.indented{
   font-family: 'Quicksand';
@@ -474,9 +487,14 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 
 }
 
+.top-select{
+  text-align: center;
+  padding-inline: 1rem;
+}
+
 .top-select.active{
-  border-bottom: 2px solid #6C1232;
-  color: black;
+  background-color:rgb(165, 173, 255);
+  border-radius: 2rem;
   text-decoration: none;
 }
 
