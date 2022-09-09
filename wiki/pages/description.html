@@ -22,43 +22,42 @@
   </div>
 
 <div class="d-flex flex-row mx-4 body-padding page-content">
-  <div class="fixed-index py-5 d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-      <div class="wrapper p-4 mx-4">
+  <div class="fixed-index top-page pb-5 d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+      <div class="wrapper px-4 mx-4">
         <div class="index heading d-flex flex-row align-items-start py-4">
           <div class="pe-3 top-select active" role="button">Sections</div>
           <div class="ps-3 top-select" role="button">References</div>
         </div>
 
         <div class="index content d-flex flex-column" id="scrollspy-index-list">
-          <script src="../../static/components/scrollspyforindex.js"></script>
-          <div class="index-item active" role="button" scrollTo="head1" onclick="scrollToSection(this)">Heart Disease</div>
+          <div class="index-item" role="button" scrollTo="head1" onclick="scrollToSection(this)" active="true">Heart Disease</div>
           
-          <div class="indented index-item" role="button" scrollTo="head2" onclick="scrollToSection(this)">Behavioral and Genetic Risk Factors</div>
+          <div class="indented index-item" role="button" scrollTo="head2" onclick="scrollToSection(this)" active="">Behavioral and Genetic Risk Factors</div>
 
-          <div class="index-item" role="button" scrollTo="head3" onclick="scrollToSection(this)">Coronary Artery Disease</div>
+          <div class="index-item" role="button" scrollTo="head3" onclick="scrollToSection(this)" active="">Coronary Artery Disease</div>
 
-          <div class="index-item" role="button" scrollTo="head4" onclick="scrollToSection(this)">Atherosclerosis</div> 
+          <div class="index-item" role="button" scrollTo="head4" onclick="scrollToSection(this)" active="">Atherosclerosis</div> 
 
           <div class="indented index-item" role="button" scrollTo="head5" onclick="scrollToSection(this)">Pathogenesis</div>
 
-          <div class="indented index-item" role="button" scrollTo="head6" onclick="scrollToSection(this)">Problems with Current Diagnosis Methods</div>
+          <div class="indented index-item" role="button" scrollTo="head6" onclick="scrollToSection(this)" active="">Problems with Current Diagnosis Methods</div>
 
-          <div class="index-item" role="button" scrollTo="head7" onclick="scrollToSection(this)">Our Solution</div>
+          <div class="index-item" role="button" scrollTo="head7" onclick="scrollToSection(this)" active="">Our Solution</div>
 
-          <div class="indented index-item" role="button" scrollTo="head8" onclick="scrollToSection(this)">OxLDL as a Biomarker</div>
+          <div class="indented index-item" role="button" scrollTo="head8" onclick="scrollToSection(this)" active="">OxLDL as a Biomarker</div>
 
-          <div class="indented index-item" role="button" scrollTo="head9" onclick="scrollToSection(this)">Why Use Synthetic Biology?</div>
+          <div class="indented index-item" role="button" scrollTo="head9" onclick="scrollToSection(this)" active="">Why Use Synthetic Biology?</div>
 
-          <div class="indented index-item" role="button" scrollTo="head10" onclick="scrollToSection(this)">Inspiration Behind our Project</div>
+          <div class="indented index-item" role="button" scrollTo="head10" onclick="scrollToSection(this)" active="">Inspiration Behind our Project</div>
       </div>
     </div>
   </div>
 
-  <div class="body-container d-flex flex-column align-items-center justify-content-center pt-5 mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+  <div class="body-container d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
     <div class="container">
-      <div class="body-section">
-        <h2 class="pb-3 mb-3" id="head1">Heart Disease: A Global Killer</h2>
-        <div class="text-wrapper pb-4 mb-3">
+      <div class="body-section top-page" id="head1">
+        <h2>Heart Disease: A Global Killer</h2>
+        <div class="text-wrapper">
           <p>
             <span class="bold-text">Cardiovascular disease (CVD)</span> is a broad category of conditions that affect the <span class="bold-text">structure and function</span> of the heart and its surrounding vasculature. Common cardiovascular diseases include heart disease, heart attack, stroke, heart failure, arrhythmia, and heart valve problems<span class="tt" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title="<p class='italic-text'>CITE THIS https://www.heart.org/en/health-topics/consumer-healthcare/what-is-cardiovascular-disease</p>"><sup>#</sup></span>.
 
@@ -68,11 +67,11 @@
       </div>
     </div>
 
-    <div class="container body-section pb-4 mb-4">
-      <div class="header-wrapper pb-3 mb-3">
-        <h4 id="head2">Behavioral Risk Factors<sup>#</sup></h4>
+    <div class="container body-section" id="head2">
+      <div class="header-wrapper">
+        <h4>Behavioral Risk Factors<sup>#</sup></h4>
       </div>
-      <div class="container py-5 d-flex flex-row flex-wrap flex-lg-nowrap justify-content-center align-items-center">
+      <div class="container d-flex flex-row flex-wrap flex-lg-nowrap justify-content-center align-items-center">
         <div class="blob-graphic d-flex flex-column justify-content-center align-items-center">
           <img src="https://static.igem.wiki/teams/4477/wiki/images/poor-diet.svg" alt="unhealthy diet">
           <h3>Unhealthy Diet</h3>
@@ -90,8 +89,8 @@
       </div>
     </div>
 
-    <div class="container body-section pb-4 mb-3" id="head3">
-      <h4 class="pb-3 mb-3">Coronary Artery Disease</h4>
+    <div class="container body-section" id="head3">
+      <h4>Coronary Artery Disease</h4>
       <div class="text-wrapper">
         <p> <span class="bold-text">Coronary artery disease (CAD) occurs when the arteries cannot deliver enough oxygen-rich blood to the heart.</span> It is the most common type of heart disease, and has varying severity depending on the type. CADs begin as atherosclerosis, or cholesterol buildup in the artery walls which forms plaque. Over time, the buildup can block blood flow in the large arteries. CAD is “silent” in most cases, meaning that the first sign of illness is a heart attack or stroke. Treatment involves lifestyle changes such as managing stress, eating heart-healthy foods, and being physically active. After a cardiac event, patients are given statins to lower cholesterol or aspirin to lower the chance of a blood clot. </p>
    
@@ -99,16 +98,16 @@
     </div>
     
     <div class="container body-section" id="head4">
-      <h2 class="pb-3 mb-3">Atherosclerosis</h2>
-      <div class="text-wrapper pb-4 mb-3">
+      <h2>Atherosclerosis</h2>
+      <div class="text-wrapper">
         <p>
           Atherosclerosis is a chronic inflammatory disease of the large arteries that is the main cause of coronary artery disease complications. It is characterized by plaque buildup within the inner arterial walls. Half of all deaths in the Western hemisphere and more than 15 million deaths in the world are attributed to this disease [1, 2]. Underlying conditions such as hyperlipidemia (high lipid concentration in the blood), smoking, and diabetes cause damage to the inner arterial walls, activating the body’s inflammatory response. 
         </p> 
       </div>
 
-      <div class="wrapper" id="head5">
-        <div class="text-wrapper pb-4 mb-3">
-          <h4 class="pb-3 mb-3">Pathogenesis</h4>
+      <div class="body-section" id="head5">
+        <div class="text-wrapper">
+          <h4>Pathogenesis</h4>
           <p>
             Atherosclerotic lesions initiate with endothelial cell damage, which allows low density lipoproteins (LDL) into the intima, or the inner vessel space[3]. LDL is very prone to oxidation, and the oxidized-LDL particles (oxLDL) are toxic and cause inflammation, which activates the body’s immune response [4, 5]. 
 
@@ -123,8 +122,8 @@
 
 
     <div class="container body-section" id="head6">
-      <h4 class="pb-3 mb-3">Problems with Current Diagnosis Methods</h4>
-      <div class="text-wrapper d-flex flex-column align-items-center pb-5 mb-3">
+      <h4>Problems with Current Diagnosis Methods</h4>
+      <div class="text-wrapper d-flex flex-column align-items-center">
         <p>
           Those living with atherosclerosis often do not have any physical symptoms until the plaque build-up is so significant that organs and tissues lack oxygen. The symptom most commonly reported is angina, which is chest pain caused by ischaemia, characterized by the lack of blood supply in the heart10. Diagnostics for these symptomatic patients, however, pose problems in terms of cost and effectiveness, and often require numerous doctor’s visits and extensive testing before a diagnosis is provided.  
         </p>
@@ -132,10 +131,10 @@
       </div>
     </div>
 
-    <div class="container body-section">
-      <div class="wrapper" id="head7">
-        <h2 class="pb-3 mb-3">Our Solution</h2>
-        <div class="text-wrapper pb-4 mb-3">
+    <div class="container body-section" id="head7">
+      <div class="wrapper">
+        <h2>Our Solution</h2>
+        <div class="text-wrapper">
           <p>
             To combat these problems, we developed a lateral flow assay (LFA) to test for early atherosclerosis. An LFA is a cost-effective test constructed to produce results promptly without a doctor’s visit. Typically, LFAs are a diagnostic method for pathogens, diseases, and other lingering health problems. They detect biomarkers of diseases present in a liquid sample that is dropped on one end of the strip. The strip shows vertical lines after completion of the test, with one line indicating a negative test and two lines indicating a positive result. Getting results happens within a matter of five to thirty minutes, and LFAs can be rapidly produced for widespread accessibility.
 
@@ -145,8 +144,8 @@
       </div>
 
       <div class="body-section" id="head8">
-        <div class="wrapper pb-4 mb-3">
-          <h4 class="pb-3 mb-3">OxLDL as a Biomarker</h4>
+        <div class="wrapper">
+          <h4>OxLDL as a Biomarker</h4>
           <div class="text-wrapper">
             <p>
               Our test uses antibodies to detect OxLDL in a blood sample. OxLDL has been cited in the literature as a hallmark biomarker of early atherosclerosis. It is a lipoprotein, meaning it has a protein with a lipid shell. In order to detect this biomarker, we designed antibodies with known epitopes on both the lipid portion and protein portion of OxLDL. More about our specific design is available on our design page.
@@ -157,8 +156,8 @@
 
       <div class="body-section" id="head9">
         <div class="section">
-          <h4 class="pb-3 mb-3">Why Use Synthetic Biology?</h4>
-          <div class="text-wrapper pb-4 mb-3">
+          <h4>Why Use Synthetic Biology?</h4>
+          <div class="text-wrapper">
             <p>
               Synthetic biology plays an impertinent role in the development of our solution. Traditional antibody production requires inoculating animals with antigens through an invasive process. First, the animal is selected and bred, then antibodies are collected by isolating antibody-producing B-cells to create hybridoma cells. This process creates great pain and distress for the animal and stands in a moral gray area. It is also extremely time-consuming and costly. 
               The specially genetically-engineered strain <span class='italic-text'>E. coli</span> SHuffle circumvents these concerns. SHuffle allows antibodies to be produced in the simplest biology laboratory, completely avoiding any animal harm. It is very cost-friendly, has a shorter generation period, and easily modifiable antibody sequences.</p>
@@ -167,8 +166,8 @@
       </div>
 
       <div class="body-section" id="head10">
-        <h4 class="pb-3 my-3">Inspiration Behind Our Project</h4>
-        <div class="text-wrapper pb-5 mb-3">
+        <h4>Inspiration Behind Our Project</h4>
+        <div class="text-wrapper">
           <p> 
             Knowing that cardiovascular disease affects so many people worldwide, our team wanted to design an inexpensive screening test that would result in a more direct path to diagnosis, thus lowering the cost of testing overall, as well as lowering the mortality rate of cardiovascular disease with preventative measures. Both the lack of symptoms that are associated with plaque formation and the need for accessibility are points we focused on in the development of this lateral flow assay. 
             <br>

@@ -393,8 +393,21 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   fill: #fcfbfb;
 }
 
+.top-page{
+  padding-top: 5.5rem!important;
+}
 
+.body-section{
+  padding-block: 2.4rem;
+}
 
+.body-section h2{
+  padding-bottom: 2rem;
+}
+
+.body-section h4{
+  padding-bottom: 1rem;
+}
 
 /* TOOLTIP STYLING */
 .tt{
@@ -445,7 +458,7 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   
 }
 
-.index-item.active{
+.index-item[active = "true"]{
   border-left: 2px solid #6C1232;
   text-decoration:none!important;
   color: black!important;
