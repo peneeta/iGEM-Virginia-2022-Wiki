@@ -232,6 +232,12 @@ a.dropdown-item.hvr-fade {
 }
 
 .banner-v2{
+  background-image: url('https://static.igem.wiki/teams/4477/wiki/images/blobbackgroundtype2.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -7rem;
+  overflow: hidden;
   
 }
 
