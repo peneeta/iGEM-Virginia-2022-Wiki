@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body{
@@ -228,6 +229,7 @@ a.dropdown-item.hvr-fade {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: -7rem;
+  background-attachment: fixed;
   overflow: hidden;
 }
 
@@ -237,6 +239,7 @@ a.dropdown-item.hvr-fade {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: -7rem;
+  background-attachment: fixed;
   overflow: hidden;
   
 }
@@ -404,6 +407,7 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 .simple-wave-divider {
   position: absolute;
   bottom: 0;
+  margin-bottom: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
