@@ -208,7 +208,14 @@ a.dropdown-item.hvr-fade {
     width: 100px;
     object-fit: cover;
     padding-inline: 1rem;
+    filter: brightness(0) invert(1);
   }
+
+  .top-footer{
+    background-color:rgb(9, 9, 9);
+    color: white;
+  }
+
 
   /* Headers */
 .standard-header{
@@ -400,7 +407,27 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 }
 
 .wave2 .shape-fill {
-  fill: #FFFFFF;
+  fill: #fcfbfb;
+}
+
+.wave3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave3 svg {
+  position: relative;
+  display: block;
+  width: calc(116% + 1.3px);
+  height: 70px;
+}
+
+.wave3 {
+  fill: #fcfbfb;
 }
 
 .simple-wave-divider {
