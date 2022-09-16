@@ -1202,7 +1202,7 @@
   transition-property: color, background-color;
 }
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-  background-color: #d1204f;
+  background-color: #000000;
   color: white;
 }
 

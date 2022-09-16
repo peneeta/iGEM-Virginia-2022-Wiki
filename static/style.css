@@ -208,7 +208,14 @@ a.dropdown-item.hvr-fade {
     width: 100px;
     object-fit: cover;
     padding-inline: 1rem;
+    filter: brightness(0) invert(1);
   }
+
+  .top-footer{
+    background-color:rgb(9, 9, 9);
+    color: white;
+  }
+
 
   /* Headers */
 .standard-header{
