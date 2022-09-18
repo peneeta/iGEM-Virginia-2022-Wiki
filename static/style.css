@@ -151,11 +151,10 @@ a.dropdown-item.hvr-fade {
 
 .icon path{
   fill: white;
-  width: 10px;
 }
 
-.icon {
-  width: 30px;
+.icon  svg{
+  width: 40px;
 }
 
 .vgem-footer{
