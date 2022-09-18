@@ -138,6 +138,26 @@ a.dropdown-item.hvr-fade {
 
 
 /* footer */
+/* Vertical rule */
+.vertical-rule {
+  border-left: 1px solid rgb(255, 255, 255);
+  height: 80px;
+}
+
+.socials p{
+  margin-bottom: 0!important;
+  padding: 1rem;
+}
+
+.icon path{
+  fill: white;
+  width: 10px;
+}
+
+.icon {
+  width: 30px;
+}
+
 .vgem-footer{
   width: 100%;
 }
@@ -203,12 +223,17 @@ a.dropdown-item.hvr-fade {
     backdrop-filter: blur(10px);
   }
 
-  .vgem-footer img{
+  .logos img{
     float: left;
     width: 100px;
     object-fit: cover;
     padding-inline: 1rem;
     filter: brightness(0) invert(1);
+  }
+
+  .shuffle-logo-left{
+    width: 200px;
+    object-fit: cover;
   }
 
   .top-footer{
@@ -456,7 +481,7 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 }
 
 .body-section{
-  padding-block: 2.4rem;
+  padding-block: 1rem;
 }
 
 .body-section p{
@@ -571,6 +596,7 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   text-align: justify;
   word-break: keep-all;
 }
+
 
 @media only screen and (max-width: 1020px) {
   .fixed-index{
