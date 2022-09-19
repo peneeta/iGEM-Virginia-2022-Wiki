@@ -146,7 +146,6 @@ a.dropdown-item.hvr-fade {
 
 .socials p{
   margin-bottom: 0!important;
-  padding: 1rem;
 }
 
 .icon path{
@@ -169,7 +168,7 @@ a.dropdown-item.hvr-fade {
 }
 
   .bottom-footer{
-    background-image: url('https://static.igem.wiki/teams/4477/wiki/images/footer-bottom.svg');
+    background-color:rgb(9, 9, 9);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -236,7 +235,8 @@ a.dropdown-item.hvr-fade {
   }
 
   .top-footer{
-    background-color:rgb(9, 9, 9);
+    
+    background-image: url('https://static.igem.wiki/teams/4477/wiki/images/footer-bottom.svg');
     color: white;
   }
 
@@ -391,6 +391,21 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 }
 
 /* Asymmetrical Curve Divider */
+.footer-shape-divider{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.footer-shape-divider svg{
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 177px;
+}
 
 .asym-curve-divider {
   position: absolute;
