@@ -1,90 +1,89 @@
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{{ url_for('index') }}">
+        <img src="https://static.igem.wiki/teams/4477/wiki/images/finallogo.svg" alt="" width="80" height="auto">
+      </a>
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navigation">
-  
-    <a class="navbar-brand" href="{{ url_for('index') }}">
-      <img src="https://static.igem.wiki/teams/4477/wiki/images/finallogo.svg" alt="" width="80" height="auto">
-    </a>
+      <!---- SMALL SCREEN MENU ICON ---->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!---- SMALL SCREEN MENU ICON ---->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 
-    
+          <!---- PROJECT ---->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Project
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='description') }}">Description</a></li>
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='design') }}">Design</a></li>
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='engineering') }}">Engineering</a></li>
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='results') }}">Results</a></li>
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='implementation') }}">Implementation</a></li>
+            </ul>
+          </li>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <!-- WET-LAB -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Wet Lab
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-        <!---- PROJECT ---->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Project
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='description') }}">Description</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='design') }}">Design</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='engineering') }}">Engineering</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='results') }}">Results</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='implementation') }}">Implementation</a></li>
-          </ul>
-        </li>
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='experiments') }}">Experiments</a></li>
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='proof-of-concept') }}">Proof of Concept</a></li>
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='parts') }}">Parts</a></li>
+            </ul>
+          </li>
 
-        <!-- WET-LAB -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Wet Lab
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <!-- MODELING -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Modeling
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='experiments') }}">Experiments</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='proof-of-concept') }}">Proof of Concept</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='notebook') }}">Notebook</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='parts') }}">Parts</a></li>
-          </ul>
-        </li>
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='model') }}">Model</a></li>
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='supercomputing') }}">Supercomputing</a></li>
 
-        <!-- MODELING -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Modeling
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            </ul>
+          </li>
 
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='model') }}">Model</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='supercomputing') }}">Supercomputing</a></li>
+          <!-- HUMAN PRACTICES -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Human Practices
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-          </ul>
-        </li>
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='human-practices') }}">Integrated Human Practices</a></li>
+              
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='education') }}">Education and Outreach</a></li>
+            </ul>
+          </li>
 
-        <!-- HUMAN PRACTICES -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Human Practices
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <!---- TEAM ---->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='team') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Team
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='team') }}">Our Team</a></li>
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='collaborations') }}">Collaborations</a></li>
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='contribution') }}">Our Contribution</a></li>
+              <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='contribution') }}">Awards</a></li>
+            </ul>
+          </li>
 
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='human-practices') }}">Integrated Human Practices</a></li>
-            
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='education') }}">Education and Outreach</a></li>
-          </ul>
-        </li>
-
-        <!---- TEAM ---->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='team') }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Team
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='team') }}">Our Team</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='attributions') }}">Attributions</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='collaborations') }}">Collaborations</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='contribution') }}">Our Contribution</a></li>
-            <li><a class="dropdown-item hvr-fade" href="{{ url_for('pages', page='contribution') }}">Awards</a></li>
-          </ul>
-        </li>
-
-      </ul>
+        </ul>
+      </div>
     </div>
-
-</nav>
+  </nav>
+</div>
 
