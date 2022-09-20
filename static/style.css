@@ -400,6 +400,14 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   line-height: 0;
 }
 
+.shuffle-logo-left{
+  padding-inline: 1rem;
+}
+
+.socials{
+  padding-inline: 1rem;
+}
+
 .footer-shape-divider svg{
   position: relative;
   display: block;
