@@ -1,3 +1,31 @@
-.wrapper.acronym{
-    /* CSS GOES HERE TO STYLE */
+/* Quicksand-regular - latin */
+@font-face {
+    font-family: 'Sigmar One';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+         url('https://static.igem.wiki/teams/4477/wiki/images/sigmar-one-display/sigmar-one-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('https://static.igem.wiki/teams/4477/wiki/images/sigmar-one-display/sigmar-one-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('https://static.igem.wiki/teams/4477/wiki/images/sigmar-one-display/sigmar-one-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('https://static.igem.wiki/teams/4477/wiki/images/sigmar-one-display/sigmar-one-v16-latin-regular.svg') format('svg'); /* Legacy iOS */
+  }
+
+.acro p {
+    font-family: 'Sigmar One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(11rem, -0.875rem + 8.333vw, 12rem);
 }
+
+.acro {
+    padding-inline: 4rem;
+}
+
+.acro-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
