@@ -391,14 +391,6 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 }
 
 /* Asymmetrical Curve Divider */
-.footer-shape-divider{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
 
 .shuffle-logo-left{
   padding-inline: 1rem;
@@ -406,13 +398,6 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 
 .socials{
   padding-inline: 1rem;
-}
-
-.footer-shape-divider svg{
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 177px;
 }
 
 .asym-curve-divider {
