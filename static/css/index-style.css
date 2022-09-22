@@ -110,11 +110,19 @@
       color: white;
   }
 
+  .container.mission-statement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .mission-heading{
     font-size: clamp(2rem, 2rem + 1.5vw, 3rem);
     padding-top: min(2rem, 5vh);
     padding-bottom: min(10rem, 2vh);
     letter-spacing: 0.17rem;
+    text-align: center;
   }
 
   .mission-text{
@@ -122,9 +130,13 @@
     font-style: italic;
     font-weight: 300;
     font-size: clamp(0.8rem, 0.8rem + 1vw, 1rem);
-    padding-inline: min(10vw, 15rem);
     text-align: center;
     letter-spacing: 0.02rem;
+  }
+
+  .mission-text-wrapper{
+    padding-block: 4rem;
+    max-width: 25rem;
   }
 
   .header-section{    
@@ -345,3 +357,4 @@
   backdrop-filter: blur(20px);
   border-radius: 10px;
 }
+
