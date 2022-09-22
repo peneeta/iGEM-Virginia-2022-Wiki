@@ -21,34 +21,36 @@
     </div>
   </div>
 
-<div class="d-flex flex-row justify-content-center mx-4 body-padding">
-  <div class="fixed-index top-page pb-5 d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-    <div class="wrapper px-4 mx-4">
-      <div class="index heading d-flex flex-row align-items-start py-4">
-        <div class="top-select active" role="button" onclick="selectTop(this)">Index</div>
-        <div class="top-select" role="button" onclick="selectTop(this)">References</div>
+<div class="d-flex flex-row justify-content-center body-padding">
+  <div class="index-padding">
+    <div class="fixed-index d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+      <div class="wrapper mx-4">
+        <div class="index heading d-flex flex-row align-items-center justify-content-center py-4">
+          <div class="top-select active" role="button" onclick="selectTop(this)">Index</div>
+          <div class="top-select" role="button" onclick="selectTop(this)">References</div>
+        </div>
+
+        <div class="index content d-flex flex-column" id="scrollspy-index-list">
+          <div class="index-item active" role="button" scrollTo="head1" onclick="scrollToSection(this)">Heart Disease</div>
+          
+          <div class="indented index-item" role="button" scrollTo="head2" onclick="scrollToSection(this)">Behavioral and Genetic Risk Factors</div>
+
+          <div class="index-item" role="button" scrollTo="head3" onclick="scrollToSection(this)">Coronary Artery Disease</div>
+
+          <div class="index-item" role="button" scrollTo="head4" onclick="scrollToSection(this)">Atherosclerosis</div> 
+
+          <div class="indented index-item" role="button" scrollTo="head5" onclick="scrollToSection(this)">Pathogenesis</div>
+
+          <div class="indented index-item" role="button" scrollTo="head6" onclick="scrollToSection(this)">Problems with Current Diagnosis Methods</div>
+
+          <div class="index-item" role="button" scrollTo="head7" onclick="scrollToSection(this)">Our Solution</div>
+
+          <div class="indented index-item" role="button" scrollTo="head8" onclick="scrollToSection(this)">OxLDL as a Biomarker</div>
+
+          <div class="indented index-item" role="button" scrollTo="head9" onclick="scrollToSection(this)">Why Use Synthetic Biology?</div>
+
+          <div class="index-item" role="button" scrollTo="head10" onclick="scrollToSection(this)">Inspiration Behind our Project</div>
       </div>
-
-      <div class="index content d-flex flex-column" id="scrollspy-index-list">
-        <div class="index-item active" role="button" scrollTo="head1" onclick="scrollToSection(this)">Heart Disease</div>
-        
-        <div class="indented index-item" role="button" scrollTo="head2" onclick="scrollToSection(this)">Behavioral and Genetic Risk Factors</div>
-
-        <div class="index-item" role="button" scrollTo="head3" onclick="scrollToSection(this)">Coronary Artery Disease</div>
-
-        <div class="index-item" role="button" scrollTo="head4" onclick="scrollToSection(this)">Atherosclerosis</div> 
-
-        <div class="indented index-item" role="button" scrollTo="head5" onclick="scrollToSection(this)">Pathogenesis</div>
-
-        <div class="indented index-item" role="button" scrollTo="head6" onclick="scrollToSection(this)">Problems with Current Diagnosis Methods</div>
-
-        <div class="index-item" role="button" scrollTo="head7" onclick="scrollToSection(this)">Our Solution</div>
-
-        <div class="indented index-item" role="button" scrollTo="head8" onclick="scrollToSection(this)">OxLDL as a Biomarker</div>
-
-        <div class="indented index-item" role="button" scrollTo="head9" onclick="scrollToSection(this)">Why Use Synthetic Biology?</div>
-
-        <div class="index-item" role="button" scrollTo="head10" onclick="scrollToSection(this)">Inspiration Behind our Project</div>
     </div>
   </div>
 </div>
@@ -200,7 +202,9 @@
             </p>
           </div>
         </div>
+        <button class="custom-btn btn-6"><span>Read Next: Design</span></button>
       </div>
+
 
     </div>
     
