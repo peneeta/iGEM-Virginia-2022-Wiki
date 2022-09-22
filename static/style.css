@@ -11,6 +11,7 @@ html, body{
 
 body{
   scroll-behavior: auto;
+  background-color: #fcfbfb;
 }
 
 /* Fonts */
@@ -299,8 +300,17 @@ a.dropdown-item.hvr-fade {
   background-position-x: center;
   background-position-y: -7rem;
   background-attachment: fixed;
+  overflow: hidden;  
+}
+
+.banner-v3{
+  background-image: url('https://static.igem.wiki/teams/4477/wiki/images/banner-v3.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -7rem;
+  background-attachment: fixed;
   overflow: hidden;
-  
 }
 
 /* TEXT STYLING */
@@ -473,7 +483,7 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 }
 
 .btn-wrapper{
-  padding-bottom: 1rem;
+  padding-bottom: 3.5rem;
 }
 
 /* ShapeDivider Generated Waves */
