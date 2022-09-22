@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html, body{
+  width: auto;
+  overflow-x: hidden;
+}
+
 body{
   background-color: #fcfbfb;
   scroll-behavior: auto;
