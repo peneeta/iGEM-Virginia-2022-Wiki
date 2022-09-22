@@ -10,7 +10,7 @@ html, body{
 }
 
 body{
-  background-color: #fcfbfb;
+  background-color: #f1f4ff;
   scroll-behavior: auto;
 }
 
@@ -173,7 +173,7 @@ a.dropdown-item.hvr-fade {
 }
 
   .bottom-footer{
-    background-color:rgb(9, 9, 9);
+    background-image: url('https://static.igem.wiki/teams/4477/wiki/images/footer-bottom.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -240,8 +240,7 @@ a.dropdown-item.hvr-fade {
   }
 
   .top-footer{
-    
-    background-image: url('https://static.igem.wiki/teams/4477/wiki/images/footer-bottom.svg');
+    background-color:rgb(9, 9, 9);
     color: white;
   }
 
@@ -465,8 +464,8 @@ button {
 
 /* BUTTON 6 */
 .btn-6 {
-  background: rgb(247,150,192);
-background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 100%);
+  background: rgb(110, 0, 48);
+  color: white;
   line-height: 42px;
   padding: 0;
   border: none;
@@ -605,7 +604,7 @@ background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 
 }
 
 .simple-wave-divider .shape-fill {
-  fill: #fcfbfb;
+  fill: #f1f4ff;
 }
 
 .top-page{
@@ -729,6 +728,7 @@ background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 
 .body-container{
   padding-inline: 3rem;
   margin-block: 4rem;
+  background-color: #fcfbfb;
   box-shadow: 1px -1px 22px 1px rgb(0 0 0 / 25%);
     -webkit-box-shadow: 1px -1px 22px 1px rgb(0 0 0 / 25%);
     -moz-box-shadow: 1px -1px 22px 1px rgba(0,0,0,0.25);
@@ -742,6 +742,9 @@ background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 
 
 
 @media only screen and (max-width: 1020px) {
+  body{
+    background-color: #fcfbfb;
+  }
   .fixed-index{
     display: none!important;
   }
@@ -753,7 +756,9 @@ background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 
   .body-container{
     padding-inline: 1rem;
     box-shadow: none;
-
+  }
+  .simple-wave-divider .shape-fill{
+    fill: #fcfbfb;
   }
 
 }
