@@ -292,7 +292,7 @@ h2{
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 300;
-  font-size: clamp(1.8rem, calc(0.89rem + 1.86vw), 2.22rem)
+  font-size: clamp(1rem, calc(0.89rem + 1.86vw), 2rem);
 }
 
 h3 {
@@ -659,9 +659,6 @@ background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 
   width: min(30vw, 330px);
   padding-inline: 1rem;
   padding-bottom: 1.5rem;
-  box-shadow: 1px -1px 22px 1px rgba(0,0,0,0.25);
--webkit-box-shadow: 1px -1px 22px 1px rgba(0,0,0,0.25);
--moz-box-shadow: 1px -1px 22px 1px rgba(0,0,0,0.25);
 }
 
 .spacer-div{
@@ -731,6 +728,10 @@ background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 
 
 .body-container{
   padding-inline: 3rem;
+  margin-block: 4rem;
+  box-shadow: 1px -1px 22px 1px rgb(0 0 0 / 25%);
+    -webkit-box-shadow: 1px -1px 22px 1px rgb(0 0 0 / 25%);
+    -moz-box-shadow: 1px -1px 22px 1px rgba(0,0,0,0.25);
   
 }
 
@@ -750,7 +751,9 @@ background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 
   }
 
   .body-container{
-    padding-inline: 0rem;
+    padding-inline: 1rem;
+    box-shadow: none;
+
   }
 
 }
