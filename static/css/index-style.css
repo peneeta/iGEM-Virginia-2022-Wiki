@@ -182,12 +182,12 @@
     overflow: hidden;
   }
 
-  .space-section{
-    background-image: url('https://static.igem.wiki/teams/4477/wiki/images/space-globe-background.svg');
+  /* GLOBE GL FORMATTING, PADDING, ETC */
+  .globe-section{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    color: rgb(0, 0, 0);
     overflow: hidden;
   }
 
@@ -204,10 +204,6 @@
     }
   }
 
-  .intro.wrapper{
-    margin-top: 30vh;
-
-  }
   .wrapper.graph{
     position: relative; 
     width: 30rem; 
