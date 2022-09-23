@@ -567,10 +567,10 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 }
 
 .body-section h2:after{
-  background-color:#6C1232;
+  background-color:#761313;
   bottom: -1rem;
-  height: 0.2rem;
-  width: 15rem;
+  height: 0.3rem;
+  width: 14rem;
   position: relative;
   content: "";
   display: block;
