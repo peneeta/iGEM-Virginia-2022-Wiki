@@ -3,6 +3,11 @@
 {% block title %}Design{% endblock %}
 {% block lead %}Hardware in iGEM should make synthetic biology based on standard parts easier, faster, better, or more accessible to our community.{% endblock %}
 
+{% block extraStyles %}
+<link href="{{ url_for('static', filename = 'css/design.css') }}" rel="stylesheet">
+
+{% endblock %}
+
 {% block page_content %}
 <div class="standard-header banner-v1 curvy-divider">
     <h1> Design </h1>
@@ -65,6 +70,7 @@
         <div class="container">
             <div class="body-section">
                 <h2>Designing Our Antibodies</h2>
+                <img class="rounded" src="https://static.igem.wiki/teams/4477/wiki/labeled-abs-01-artboard-1-1.svg"/>
                 <h4>Labelled Anti-ApoB<sub>MDA</sub> Design</h4>
                 <p>
                     We decided to develop a full-length IgG to use as our labeled anti-apoB(MDA) primary antibody. While antibody fragments that omit the constant domain of IgGs are simpler to produce, we chose to include the entire IgG for this antibody because the antibody needed its constant domain to bind properly to the gold nanoparticles we used to label it. 
