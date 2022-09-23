@@ -243,3 +243,11 @@
     transition-property: z-index, opacity, transform;
     transition-delay: 0s, 0.2s, 0.2s;
 }
+
+.rounded{
+    max-width:80%;
+    height:auto;
+    border-radius: 10%;
+    align-content: center; 
+    padding: 8px;  
+}
