@@ -191,6 +191,11 @@
     overflow: hidden;
   }
 
+  .globe-section-wrapper {
+    padding-block: 3rem;
+    max-width: 40rem;
+  }
+
   .stat-section{
     padding-top: max(20vh, 3rem);
   }
