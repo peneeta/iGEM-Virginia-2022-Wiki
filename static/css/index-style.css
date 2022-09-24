@@ -200,9 +200,9 @@
     padding-top: max(20vh, 3rem);
   }
 
-  .earth-section{
+  /* .earth-section{
     width: 100vw;
-  }
+  } */
   @media only screen and (max-width: 600px) {
     .earth-section{
       transform: scale(0.55);

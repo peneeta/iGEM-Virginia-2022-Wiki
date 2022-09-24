@@ -34,6 +34,7 @@
       .htmlElement(d => {
 
         const mark = document.createElement('div');
+        console.log("created marker")
         mark.innerHTML = markerSvg;
         mark.style.color = `white`
         mark.style.width = `50px`;
