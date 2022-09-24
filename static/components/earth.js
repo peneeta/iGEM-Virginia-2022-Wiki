@@ -23,14 +23,14 @@
     });
 
     myGlobe
-      .globeImageUrl('https://static.igem.wiki/teams/4477/wiki/images/earth-night.jpg')
+      .globeImageUrl('https://static.igem.wiki/teams/4477/wiki/images/earthnight.jpg')
       .bumpImageUrl('https://static.igem.wiki/teams/4477/wiki/images/earth-topology.png')
       .backgroundColor("rgba(0,0,0,0)")
       .pointAltitude('size')
       .pointColor('color')
       .showAtmosphere(true)
       .atmosphereColor("rgba(255, 247, 175, 0.51)")
-      
+
       .htmlElement(d => {
 
         const mark = document.createElement('div');
