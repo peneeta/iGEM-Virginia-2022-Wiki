@@ -44,17 +44,17 @@
     </div>    
   </div>
 
-  <div class= "globe-section d-flex flex-column flex-lg-nowrap justify-content-evenly align-items-center curvy-divider">
+  <div class= "globe-section d-flex flex-column flex-lg-nowrap justify-content-center align-items-center curvy-divider">
     <div class="wave-divider-top">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" class="shape-fill"></path>
       </svg>
     </div>
     <div class="stat-section">
-      <div class="container">
+      <div class="container d-flex justify-content-center align-items-center">
         <div class="globe-section-wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out-sine">
           <h2 class="pb-3">A Worldwide Health Crisis</h2>
-          <h3>Cardiovascular disease (CVD) is the leading cause of death worldwide, making up 32% of total deaths. This umbrella term refers to several diseases including stroke, coronary heart disease, and other conditions affecting blood vessels. </h3>
+          <h3>Cardiovascular disease (CVD) is the leading cause of death worldwide, making up <span class="bold-text">32% of total deaths.</span> This umbrella term refers to several diseases including stroke, coronary heart disease, and other conditions affecting blood vessels. </h3>
         </div>
       </div>
 
@@ -68,34 +68,41 @@
   </div>
 
     
-  <div class= "light-section d-flex flex-column d-flex flex-column justify-content-evenly align-items-center">
-    <div class="container p-4 my-4">
-      <h2 class="mb-4">To put this into numbers...</h2>
-      <div class="counter-section">
-        <div class=" d-flex flex-row justify-content-center align-items-center flex-wrap flex-lg-nowrap" id="counter-parent">
-          <div class="stat col px-3" id="myTargetElement" data-aos="fade-right" data-aos-duration="1000">
-            <h1 class="counter number" data-value="17900000"></h1>
-            <p class="px-3">global deaths attributed to CVD annually 
-              <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)#:~:text=Key%20facts,to%20heart%20attack%20and%20stroke.</p>"><sup>#</sup></span>
-            </p>
+  <div class= "light-section d-flex flex-column d-flex flex-column justify-content-center align-items-center">
+    <div class="container">
+      <div class="counter-wrapper">
+        <h2 class="pb-4">To put this into numbers...</h2>
+        <div class="counter-section">
+          <div class="row" id="counter-parent">
+            <div class="stat col-sm d-flex flex-column align-items-center justify-content-center aos-init aos-animate" id="myTargetElement" data-aos="fade-right" data-aos-duration="1000">
+              <h1 class="counter number" data-value="17900000"></h1>
+              <div class="subtitle-wrapper">
+                <p>global deaths attributed to CVD annually 
+                  <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)#:~:text=Key%20facts,to%20heart%20attack%20and%20stroke.</p>"><sup>#</sup></span>
+                </p>
+              </div>
+            </div>
+  
+            <div class="stat col-sm d-flex flex-column align-items-center justify-content-center aos-init aos-animate" id="myTargetElement2" data-aos="fade-left" data-aos-duration="1000">
+              <h1 class="counter number" data-value="877500"></h1>
+              <div class="subtitle-wrapper">
+                <p>lives lost due to CVD annually in the United States 
+                
+                  <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.cdc.gov/chronicdisease/resources/publications/factsheets/heart-disease-stroke.htm</p>"><sup>#</sup></span>
+                </p>
+              </div>
+            </div>
           </div>
-
-          <div class="stat col px-4" id="myTargetElement2" data-aos="fade-left" data-aos-duration="1000">
-            <h1 class="counter number" data-value="877500"></h1>
-            <p class="px-3">lives lost due to CVD annually in the United States 
-              
-              <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.cdc.gov/chronicdisease/resources/publications/factsheets/heart-disease-stroke.htm</p>"><sup>#</sup></span>
-            </p>
-          </div>
+  
+          <script src="{{ url_for('static', filename = '/components/counter-script.js') }}" type="module"></script>
         </div>
-
-        <script src="{{ url_for('static', filename = '/components/counter-script.js') }}" type="module"></script>
       </div>
     </div>
+  </div>
 
- 
-    <div class="container stat-section d-flex flex-row flex-wrap flex-lg-nowrap align-items-center justify-content-center gap-5 py-5 my-3">
-      <div class="wrapper d-flex flex-column px-4">
+  <div class="light-background">
+    <div class="container stat-section d-flex flex-column align-items-center justify-content-center">
+      <div class="stat-wrapper d-flex flex-column px-4">
         <div data-aos="fade-right" data-aos-duration="1000">
           <h2 class="pb-3">Economic Burden</h2>
           <p>
@@ -185,18 +192,18 @@
           </script>
         </div>
 
-        <p class="py-4 px-3 italic-text">Projected costs of CVD from 2015 to 2035. Data obtained from Research Triangle Institute (RTI) technical report. 
-          <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Khavjou, Olga, Phelps, Diana, & Leib, Alyssa. (2016). Projections of Cardiovascular Disease Prevalence and Costs: 2015–2035. https://www.heart.org/-/media/Files/Get-Involved/Advocacy/CVD-Predictions-Through-2035.pdf</p>"><sup>#</sup></span>
-        </p>
+        <div class="graph-subtitle-wrapper">
+          <p class="italic-text">Projected costs of CVD from 2015 to 2035. Data obtained from Research Triangle Institute (RTI) technical report. 
+            <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Khavjou, Olga, Phelps, Diana, & Leib, Alyssa. (2016). Projections of Cardiovascular Disease Prevalence and Costs: 2015–2035. https://www.heart.org/-/media/Files/Get-Involved/Advocacy/CVD-Predictions-Through-2035.pdf</p>"><sup>#</sup></span>
+          </p>
+        </div>
       </div>
     </div>
-
   </div>
 
   <div class="light-background d-flex flex-column justify-content-center align-items-center">
     <div class="wrapper shock-section px-5 my-5 py-4">
-
-      <h2 class="shock-font">Despite the rising costs and rising death toll, an estimated <span class="super-bold">80% of CVDs</span> can be prevented if they are detected earlier in life <sup>#</sup>. </h2>
+      <h2 class="shock-font">Despite the rising diagnoses and death tolls, an estimated <span class="super-bold">80% of CVDs</span> can be prevented if they are detected earlier in life <sup>#</sup>. </h2>
 
     </div>
   </div>
@@ -274,10 +281,12 @@
   </div>
 
 
-  <div class="blob-bottom-page d-flex align-items-center">
+  <div class="d-flex align-items-center">
     <div class="container">
-      <h2>About Us</h2>
-      <p>We are a dedicated group of twelve students from the University of Virginia. Our team represents a wide variety of disciplines, from Math, to Engineering, to Economics. To learn more about our individual contributions to the project, visit our team members page!</p>
+      <div class="us-wrapper">
+        <h2>About Us</h2>
+        <p>We are a dedicated group of twelve students from the University of Virginia. Our team represents a wide variety of disciplines, from Math, to Engineering, to Economics. To learn more about our individual contributions to the project, visit our team members page!</p>
+      </div>
     </div>
   </div>
 

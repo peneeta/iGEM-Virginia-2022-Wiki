@@ -5,7 +5,7 @@
       lat: (Math.random() -0.5) * 180,
       lng: (Math.random() - 0.5) * 360,
       size: 7 + Math.random() * 30,
-      color: ['white'][Math.round(Math.random() * 3)]
+      color: ['black'][Math.round(Math.random() * 3)]
     }));
 
     const globeDOM = document.querySelector("[data-js-globe]");
@@ -13,7 +13,7 @@
     const myGlobe = Globe({});
     myGlobe(globeDOM);
     myGlobe.controls().autoRotate = true;
-    myGlobe.controls().autoRotateSpeed = 1;
+    myGlobe.controls().autoRotateSpeed = 0.5;
     myGlobe.controls().enableZoom = false;
 
 
@@ -29,15 +29,15 @@
       .pointAltitude('size')
       .pointColor('color')
       .showAtmosphere(true)
-      .atmosphereColor("rgba(255, 247, 175, 0.51)")
+      .atmosphereColor("rgb(77, 121, 255, 0.51)")
 
+      .htmlElementsData(gData)
       .htmlElement(d => {
 
         const mark = document.createElement('div');
-        console.log("created marker")
         mark.innerHTML = markerSvg;
-        mark.style.color = `white`
-        mark.style.width = `50px`;
+        mark.style.color = d.color
+        mark.style.width = `${d.size}px`;
         mark.style['pointerEvents'] = 'auto';
         mark.style.cursor = 'pointer';
         mark.onclick = () => console.log('clicked marker');
