@@ -238,7 +238,6 @@
   }
 
   .stat-wrapper {
-    max-width: 40rem;
     text-align: center;
     padding-bottom: 5rem;
   }
@@ -278,6 +277,12 @@
     justify-content: center;
     align-items: center;
     padding-block: 8rem;
+  }
+
+  .shock-title{
+    text-align: center;
+    font-size: large;
+
   }
 
   .wrapper.problem-statement {
@@ -323,6 +328,10 @@
 
   }
 
+  .button-wrapper{
+    padding-bottom: 6rem;
+    padding-top: 5rem;
+  }
   .us-wrapper {
     max-width: 40rem;
     padding-block: 5rem;
