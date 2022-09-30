@@ -12,16 +12,55 @@
     </svg>
   </div>
 </div>
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Silver Medal Criterion #1</h4>
-      <p>Demonstrate engineering success in a part of your project by going through at least one iteration of the engineering design cycle. This achievement should be distinct from your Contribution for Bronze.<p>
-      <p>If you plan to show engineering success by creating a new Part that has been shown to work as expected, you must document your contribution on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a> for your team to be eligible for this criteria.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2022 Medals Page</a> for more information.</p>
+
+<div class="d-flex flex-row justify-content-center body-padding">
+  <div class="index-padding">
+    <div class="fixed-index">
+      <p>Fixed index here</p>
     </div>
   </div>
+
+  <div class="body-container d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+    <div class="container">
+      <div class="body-section top-page">
+        <h2>The Engineering Design Cycle</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section">
+        <h2>Troubleshooting our Cloning Method</h2>
+        <p>
+          Since the assembly of our functional plasmids only involved inserting one gene fragment into a backbone vector, we decided to proceed with traditional cloning (TC). At first, we followed the standard TC protocol - digesting DNA fragments with restriction enzymes, separating the fragments through gel electrophoresis, and ligating the fragments extracted from the gel. However, we had multiple issues with extracting DNA from gels. In addition, we did not include the entirety of the biobrick prefix and suffix in our inserted gene of interest. This led to several issues because our vector and gene of interest were both cut with XbaI and SpeI, and the sticky ends of XbaI and SpeI have homologous regions that allow the vector to self-ligate. This severely hindered us from inserting the gene fragment into the vector. After several attempts, we were unable to obtain transformed cells with the correct plasmid.
+          <br>
+          Therefore, we decided to switch methods. First, we redesigned the gene insert to contain the full biobrick prefix and suffix. Then, we cut both the insert and vector with SpeI and EcoRI. Finally, we mixed the digested insert and backbone directly in a tube for ligation without performing gel electrophoresis. Here arises the possibility that the original gene fragment cut out from the vector will re-ligate back into the vector. However, since our undigested backbone, pSB3K3, contains a mRFP gene that will be cut out through digestion, transformed cells containing the mRFP gene instead of the insert will be red, and white colonies on the kanamycin plates should be transformed cells containing our gene of interest.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section">
+        <h2>Meeting with Researchers to Inform Design</h2>
+        <p>
+          Dr. Norbert Leitinger is a professor in the Department of Pharmacology at the University of Virginia whose research interests are in the role of lipid oxidation products in inflammation and vascular immunology in various diseases, such as fatty liver disease and atherosclerosis. Dr. Leitinger provided us with essential information about the field of atherosclerosis as a whole that caught us up to the current state of the field. He first gave us a background of some of the influential scientists in the field, specifically Dr. Joseph Witzum, who discovered the E06 antibody that most labs researching oxidized phospholipids use today. We originally were targeting the ApoB protein on the surface of the oxLDL, but Dr. Leitinger pointed out that most researchers in atherosclerosis today are targeting the oxidized phospholipids with the E06 antibody and that we should look into antibodies that also bind to these oxidized phospholipids. He offered his structures of oxLDL to us and then offered to show us his lab at a later time and introduce us to his grad student, Clint Upchurch.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section">
+        <h4>Follow-Up Meeting</h4>
+        <p>
+          After a month, we reconvened with Dr. Leitinger to discuss the recent progress we have made and put forward some queries we had at the current moment. Firstly, Dr. Leitinger reaffirmed that oxLDL serves as a promising biomarker for AS. Human clinical studies have shown that oxLDL not only correlates with AS development but also has a predictive relationship with AS. During inflammation, the human body is under systematic oxidative stress, and LDLs in the bloodstream are oxidized to oxLDLs.
+          Our test strip utilizes two antibodies that bind to different epitopes on oxLDL, specifically MDA-modified apoB and oxidized phospholipids (OxPLs), to form a sandwich complex in LFA. This confers significant advantage in the detection of oxLDL, offering both specificity and reducing the false positive rates of detecting other potential biomolecules that may have only either MDA-modified-apoB or OxPL.
+          Dr. Leitinger pointed out a potential caveat to be aware of: oxPL structure is altered when over-oxidated and certain antibodies that recognize oxPL will no longer be able to recognize over-oxidized oxPL. He also introduced the concept that the size of lesion is not necessary the most lethal factor of AS, but it is the thinness and vulnerability of the fibrous caps on the lesion that lead to plaque rupture and blockage of blood flow
+          Our team is a pioneer in developing technology that aims to detect AS in early stages, and this will help the field better understand at what time point oxLDL particles form during the progression of AS.
+          </p>
+      </div>
+    </div>
+  </div>
+    <!-- SPACING -->
+  <div class="spacer-div"></div>
 </div>
 
 {% endblock %}
