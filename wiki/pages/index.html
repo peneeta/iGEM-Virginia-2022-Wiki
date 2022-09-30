@@ -75,10 +75,10 @@
         <div class="counter-section">
           <div class="row" id="counter-parent">
             <div class="stat col-sm d-flex flex-column align-items-center justify-content-center aos-init aos-animate" id="myTargetElement" data-aos="fade-right" data-aos-duration="1000">
-              <h1 class="counter number" data-value="17900000"></h1>
+              <h1 class="counter number" data-value="1066700000"></h1>
               <div class="subtitle-wrapper">
-                <p>global deaths attributed to CVD annually 
-                  <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)#:~:text=Key%20facts,to%20heart%20attack%20and%20stroke.</p>"><sup>#</sup></span>
+                <p>individuals afffected by CVD annually 
+                  <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://pubmed.ncbi.nlm.nih.gov/32353319/</p>"><sup>1</sup></span>
                 </p>
               </div>
             </div>
@@ -88,7 +88,7 @@
               <div class="subtitle-wrapper">
                 <p>lives lost due to CVD annually in the United States 
                 
-                  <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.cdc.gov/chronicdisease/resources/publications/factsheets/heart-disease-stroke.htm</p>"><sup>#</sup></span>
+                  <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>cite this: https://www.cdc.gov/chronicdisease/resources/publications/factsheets/heart-disease-stroke.htm</p>"><sup>2</sup></span>
                 </p>
               </div>
             </div>
@@ -103,7 +103,7 @@
   <div class="light-background">
     <div class="container stat-section d-flex flex-column align-items-center justify-content-center">
       <div class="stat-wrapper d-flex flex-column px-4">
-        <div data-aos="fade-right" data-aos-duration="1000">
+        <div data-aos="fade-up" data-aos-duration="1000">
           <h2 class="pb-3">Economic Burden</h2>
           <p>
             In addition to its health impacts, CVDs are <span class="bold-text">extremely costly</span>. In a technical report prepared for the American Heart Association, combined costs of CVD detection tests and hospital visits are expected to reach <span class="bold-text">750 billion dollars</span> by 2035.
@@ -112,7 +112,7 @@
       </div>
 
       <div class="wrapper d-flex flex-column align-items-center justify-content-evenly">
-        <div class="wrapper graph" style="position: relative;" data-aos="fade-left" data-aos-duration="1000">
+        <div class="wrapper graph" style="position: relative;" data-aos="fade-up" data-aos-duration="1000">
           <canvas id="myChart"></canvas>
           <!-- ChartJS Initialization -->
           <script src="{{ url_for('static', filename = '/chartjs/chart.min.js')}}"></script>
@@ -203,40 +203,48 @@
 
   <div class="light-background d-flex flex-column justify-content-center align-items-center">
     <div class="container">
-      <div class="wrapper shock-section">
-        <h2 class="shock-font">The Problem: <br> An estimated <span class="super-bold">80% of CVDs</span> can be prevented if they are detected earlier in life <sup>#</sup>, and there is no device on the market for preventative detection. </h2>
+      <div class="shock-section">
+        <div class="wrapper problem-statement">
+          <h2>The Problem</h2>
+          <h2>An estimated <span class="super-bold">80% of CVDs</span> <br> can be prevented if they are detected earlier in life<sup>#</sup>, and there is no device on the market for preventative detection. </h2>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Abstract/How we're making a difference -->
-  <div class="dark-section d-flex flex-column justify-content-evenly align-items-center">
-    <div class="container d-flex flex-row align-items-center justify-content-center flex-wrap flex-lg-nowrap">
-      <div class="d-flex flex-column">
+  <div class="dark-section d-flex flex-row justify-content-evenly align-items-center">
+    <div class="d-flex flex-column justify-content-evenly align-items-center">
+      <div class="container">
         <div class="abstract-wrapper">
-          <h2 class="pb-3">How We're Making a Difference</h2>
+          <h2 class="pb-3">Our Solution</h2>
 
           <p>
             There is no method on the market for early detection, and late detection is extremely costly and invasive. To combat these problems, we developed AtheroSHuffle, test strip that detects early signs of heart disease. Our device targets <span class="bold-text">atherosclerosis</span>, which is characterized by <span class="bold-text">plaque build-up in the inner arterial walls.</span>
           </p>
         </div>
-        <div class="wrapper">
+      </div>
+
+      <div class="container">
+        <div class="abstract-wrapper">
           <p>
             The strip detects oxidized LDL (OxLDL), a biomarker associated with early to middle stages of atherosclerosis development.
             We used synthetic biology to engineer a stain of <span class="italic-text">E. coli</span> called SHuffle to produce OxLDL-specific antibodies. These antibodies, when adhered to the strip, allow OxLDL levels to be determined by the naked eye.
           </p>
         </div>
+      </div>
 
-        <div class="wrapper">
+      <div class="container">
+        <div class="abstract-wrapper">
           <p>
             This method is projected to <span class="bold-text">significantly reduce the cost</span> of current detection methods and add a dimension to preexisting biomarker detection diagnostics.
           </p>
         </div>
-
-        <div>
-          <button class="btn btn-primary shadow-none" type="button" href="{{ url_for('pages', page='description') }}">Read next: Project Description</button>
-        </div> 
       </div>
+
+      <div class="button-wrapper">
+        <button class="btn btn-primary shadow-none" type="button" href="{{ url_for('pages', page='description') }}">Read next: Project Description</button>
+      </div> 
     </div>
   </div>
 
@@ -281,7 +289,7 @@
   </div>
 
 
-  <div class="d-flex align-items-center">
+  <div class="about-us d-flex align-items-center">
     <div class="container">
       <div class="us-wrapper">
         <h2>About Us</h2>

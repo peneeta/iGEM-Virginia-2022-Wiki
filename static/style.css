@@ -682,6 +682,12 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   word-break: keep-all;
 }
 
+li {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(0.8rem, calc(0.87rem + 0.10vw), 1rem);
+}
 
 @media only screen and (max-width: 1020px) {
   body{

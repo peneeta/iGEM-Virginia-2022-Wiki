@@ -108,6 +108,7 @@
       font-weight: 400;
       color:rgb(24, 24, 24);
       color: white;
+      max-width: 25rem;
   }
 
   .container.mission-statement {
@@ -237,7 +238,6 @@
   }
 
   .stat-wrapper {
-    max-width: 40rem;
     text-align: center;
     padding-bottom: 5rem;
   }
@@ -270,9 +270,30 @@
     width: 100%;
   }
 
-  .shock-section{
+ .shock-section {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 8rem;
   }
+
+  .shock-title{
+    text-align: center;
+    font-size: large;
+
+  }
+
+  .wrapper.problem-statement {
+    max-width: 40rem;
+  }
+
+  .abstract-wrapper {
+    max-width: 35rem;
+    text-align: center;
+    padding-block: 4rem;
+}
 
   .blue-section{    
     width: 100%;
@@ -305,6 +326,15 @@
     box-shadow: 0px 4px 31px 0px rgba(0,0,0,0.5)!important;
     -webkit-box-shadow: 0px 4px 31px 0px rgba(0,0,0,0.5)!important; 
 
+  }
+
+  .button-wrapper{
+    padding-bottom: 6rem;
+    padding-top: 5rem;
+  }
+  .us-wrapper {
+    max-width: 40rem;
+    padding-block: 5rem;
   }
   
 /* Logo Image Formatting */
