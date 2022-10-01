@@ -635,6 +635,10 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   
 }
 
+.tab.hidden{
+  display: none!important;
+}
+
 .index-item.active{
   border-left: 2px solid #6C1232;
   text-decoration:none!important;

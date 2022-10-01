@@ -1,11 +1,28 @@
 function selectTop(item){
+  const thisID = item.id;
     const choices = document.querySelectorAll('.top-select.active')
     for(i=0; i<choices.length; i++){
         choices[i].classList.remove('active');
     }
 
     item.classList.add('active');
+
+
+    if(thisID == "toc"){
+      if(document.getElementById("index").classList.contains("hidden")){
+        document.getElementById("index").classList.remove("hidden");
+      }
+      document.getElementById("references").classList.add("hidden");
+    }
+
+    if(thisID == "refs"){
+      if(document.getElementById("references").classList.contains("hidden")){
+        document.getElementById("references").classList.remove("hidden")
+      }
+      document.getElementById("index").classList.add("hidden");
+    }
 }
+
 function scrollToSection(item){
     const target = item.getAttribute('scrollTo');
     var selectedHeader = document.getElementById(target);
