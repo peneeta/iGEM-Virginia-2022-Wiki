@@ -264,13 +264,6 @@
     overflow: hidden;
   }
 
-  .rbc-background{
-    background-image: url('https://static.igem.wiki/teams/4477/wiki/images/rbc-background.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-  }
-
  .shock-section {
     text-align: center;
     display: flex;
@@ -296,17 +289,12 @@
     padding-block: 4rem;
 }
 
-  .blue-section{    
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #081A3E;
-    color: white;
-    overflow: hidden;
-  }
+.cards-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
   .helpful-links{
     display: flex;

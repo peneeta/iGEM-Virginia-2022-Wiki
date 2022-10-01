@@ -56,10 +56,10 @@
 }
 
 .month h2{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
     letter-spacing: 0.2rem;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .month p{

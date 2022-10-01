@@ -20,13 +20,487 @@
   </div>
 </div>
 
-<div class="body-container">
+<div class="notebook-top-section">
   <div class="container">
-    <h2>About</h2>
-    <p>Here you will find all the protocols and experiments we ran over the course of our project. Below is a lab notebook organized by week, which includes labeled images of our gels and cultures. For further information about our protocols, click on <span class="bold-text">Detailed Workflow</span>. This includes every protocol and reagent we used in our study with instructions on what we did. To see our lab schedules by month, click on <span class="bold-text">Lab Calendars</span>. 
-    <br>
-    Our goal is to ensure that our experiments are reproducible by other researchers or iGEM teams, so please do not hesitate to reach out to our team if you have any questions about reagents or methods!</p>
+    <div class="about-section">
+      <div class="notebook-about-wrapper">
+        <h2>About</h2>
+        <p>Here you will find all the protocols and experiments we ran over the course of our project. Below is a lab notebook organized by week, which includes labeled images of our gels and cultures. For further information about our protocols, click on <span class="bold-text">Detailed Workflow</span>. This includes every protocol and reagent we used in our study with instructions on what we did. 
+        Select a month and week on the calendar below to view the experiments we conducted!</p>
+      </div>
+    </div>
   </div>
+</div>
+
+<!-- Interactive Calendar -->
+<div class="calendar-container">
+  <div class="calendar">
+    <div class="month">
+      <div class="date">
+        <h1>Lab Schedule</h1>
+        <div class="month-select">
+          <!-- Change active month on click -->
+          <script>
+            function changeActiveMonth(m){
+              var month = document.getElementsByClassName('month-btn');
+              var differentDays = document.getElementsByClassName('cal');
+
+              var monthID = m.id;
+              // console.log(monthID);
+
+              for (i=0; i<month.length; i++){
+                month[i].classList.remove('active-month')
+              }
+
+              for (i=0; i<differentDays.length; i++){
+                if(differentDays[i].id === monthID){
+                  differentDays[i].classList.remove('hidden')
+                }
+                else{
+                  differentDays[i].classList.add('hidden');
+                }
+              }
+                m.classList.add('active-month');
+            }
+          </script>
+
+          <button type="button" onclick="changeActiveMonth(this)" class="btn month-btn active-month" id="jun"><h2 style="color: white; text-align: center;">Jun</h2></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="jul btn month-btn" id="jul"><h2 style="color: white; text-align: center;">Jul</h2></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="aug btn month-btn" id="aug"><h2 style="color: white; text-align: center;">Aug</h2></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="sept btn month-btn" id="sept"><h2 style="color: white; text-align: center;">Sept</h2></button>
+          <button type="button" onclick="changeActiveMonth(this)" class="oct btn month-btn" id="oct"><h2 style="color: white; text-align: center;">Oct</h2></button>
+        </div>
+      </div>
+    </div>
+    <div class="weekdays">
+      <div>Sun</div>
+      <div>Mon</div>
+      <div>Tues</div>
+      <div>Wed</div>
+      <div>Thurs</div>
+      <div>Fri</div>
+      <div>Sat</div>
+    </div>
+
+    <script>
+      function selectWeek(w){
+        var week = document.getElementsByClassName('week');
+        var entries = document.getElementsByClassName('entry');
+        var entryID = w.id;
+
+        for (i=0; i<week.length; i++){
+          week[i].classList.remove('active-week')
+        }
+
+        for(i=0; i<entries.length; i++){
+          if(entries[i].id === entryID){
+            entries[i].classList.remove('hidden')
+          }
+
+          else{
+            entries[i].classList.add('hidden')
+          }
+        }
+        w.classList.add('active-week');
+      }
+    </script>
+
+    <!-- JUNE -->
+    <div class="cal" id="jun">
+
+      <div class="days">
+        <div class="prev-date">29</div>
+        <div class="prev-date">30</div>
+        <div class="prev-date">31</div>
+        <div class="prev-date">1</div>
+        <div class="prev-date">2</div>
+        <div class="prev-date">3</div>
+        <div class="prev-date">4</div>
+      </div>
+
+      <div class="week active-week" onclick="selectWeek(this)" id="wk1">
+        <div class="days">
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+        </div>
+      </div>
+        
+        <div class="week" onclick="selectWeek(this)" id="wk2">
+          <div class="days">
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+          </div>
+        </div>
+        
+        <div class="week" onclick="selectWeek(this)" id="wk3">
+          <div class="days">
+            <div>19</div>
+            <div>20</div>
+            <div>21</div>
+            <div>22</div>
+            <div>23</div>
+            <div>24</div>
+            <div>25</div>
+          </div>
+        </div>
+
+        <div class="week" onclick="selectWeek(this)" id="wk4">
+          <div class="days">
+            <div>26</div>
+            <div>27</div>
+            <div>28</div>
+            <div>29</div>
+            <div>30</div>
+            <div class="next-date">1</div>
+            <div class="next-date">2</div>
+          </div>
+        </div>
+
+        <div class="days">
+          <div class="next-date">3</div>
+          <div class="next-date">4</div>
+          <div class="next-date">5</div>
+          <div class="next-date">6</div>
+          <div class="next-date">7</div>
+          <div class="next-date">8</div>
+          <div class="next-date">9</div>
+        </div>
+      
+    </div>
+
+    <!-- JULY -->
+    <div class="cal hidden" id="jul">
+    
+      <div class="days">
+        <div class="prev-date">26</div>
+        <div class="prev-date">27</div>
+        <div class="prev-date">28</div>
+        <div class="prev-date">29</div>
+        <div class="prev-date">30</div>
+        <div>1</div>
+        <div>2</div>
+
+      </div>
+
+      <div class="week" onclick="selectWeek(this)">
+        <div class="days">
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+        </div>
+      </div>
+        
+      <div class="week" onclick="selectWeek(this)">
+        <div class="days">
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+          <div>13</div>
+          <div>14</div>
+          <div>15</div>
+          <div>16</div>
+        </div>
+      </div>
+        
+      <div class="week" onclick="selectWeek(this)">
+        <div class="days">
+          <div>17</div>
+          <div>18</div>
+          <div>19</div>
+          <div>20</div>
+          <div>21</div>
+          <div>22</div>
+          <div>23</div>
+        </div>
+      </div>
+
+      <div class="week" onclick="selectWeek(this)">
+        <div class="days">
+          <div>24</div>
+          <div>25</div>
+          <div>26</div>
+          <div>27</div>
+          <div>28</div>
+          <div>29</div>
+          <div>30</div>
+        </div>
+      </div>
+        
+      <div class="days">
+        <div>31</div>
+        <div class="next-date">1</div>
+        <div class="next-date">2</div>
+        <div class="next-date">3</div>
+        <div class="next-date">4</div>
+        <div class="next-date">5</div>
+        <div class="next-date">6</div>
+      </div>
+    </div>
+
+    <!-- AUGUST -->
+    <div class="cal hidden" id="aug">
+
+      <div class="week" onclick="selectWeek(this)">
+        <div class="days">
+          <div class="prev-date">31</div>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+        </div>
+      </div>
+
+      <div class="week" onclick="selectWeek(this)">
+        <div class="days">
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+          <div>13</div>
+        </div>
+      </div>
+
+      <div class="week" onclick="selectWeek(this)">
+        <div class="days">
+          <div>14</div>
+          <div>15</div>
+          <div>16</div>
+          <div>17</div>
+          <div>18</div>
+          <div>19</div>
+          <div>20</div>
+        </div>
+      </div>
+
+      <div class="week" onclick="selectWeek(this)">
+        <div class="days">
+          <div>21</div>
+          <div>22</div>
+          <div>23</div>
+          <div>24</div>
+          <div>25</div>
+          <div>26</div>
+          <div>27</div>
+        </div>
+      </div>
+
+      <div class="week" onclick="selectWeek(this)">
+        <div class="days">
+          <div>28</div>
+          <div>29</div>
+          <div>30</div>
+          <div>31</div>
+          <div class="next-date">1</div>
+          <div class="next-date">2</div>
+          <div class="next-date">3</div>
+        </div>
+      </div>
+
+      <div class="days">
+        <div class="next-date">4</div>
+        <div class="next-date">5</div>
+        <div class="next-date">6</div>
+        <div class="next-date">7</div>
+        <div class="next-date">8</div>
+        <div class="next-date">9</div>
+        <div class="next-date">10</div>
+      </div>
+    </div>
+
+    <!-- SEPTEMBER -->
+    <div class="cal hidden" id="sept">
+      <div class="days">
+        <div class="prev-date">28</div>
+        <div class="prev-date">29</div>
+        <div class="prev-date">30</div>
+        <div class="prev-date">31</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+
+        <div class="week" onclick="selectWeek(this)">
+          <div class="days">
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+          </div>
+        </div>
+
+        <div class="week" onclick="selectWeek(this)">
+          <div class="days">
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+          </div>
+        </div>
+
+        <div class="week" onclick="selectWeek(this)">
+          <div class="days">
+            <div>18</div>
+            <div>19</div>
+            <div>20</div>
+            <div>21</div>
+            <div>22</div>
+            <div>23</div>
+            <div>24</div>
+          </div>
+        </div>
+
+        <div class="week" onclick="selectWeek(this)">
+          <div class="days">
+            <div>25</div>
+            <div>26</div>
+            <div>27</div>
+            <div>28</div>
+            <div>29</div>
+            <div>30</div>
+            <div class="next-date">1</div>
+          </div>
+        </div>
+
+        <div class="days">
+          <div class="next-date">2</div>
+          <div class="next-date">3</div>
+          <div class="next-date">4</div>
+          <div class="next-date">5</div>
+          <div class="next-date">6</div>
+          <div class="next-date">7</div>
+          <div class="next-date">8</div>
+        </div>
+
+    </div>
+
+    <!-- OCTOBER -->
+    <div class="cal hidden" id="oct">
+      <div class="days">
+        <div class="prev-date">25</div>
+        <div class="prev-date">26</div>
+        <div class="prev-date">27</div>
+        <div class="prev-date">28</div>
+        <div class="prev-date">29</div>
+        <div class="prev-date">30</div>
+        <div>1</div>
+      </div>
+
+      <div class="week" onclick="selectWeek(this)">
+        <div class="days">
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+        </div>
+      </div>
+
+      <div class="week" onclick="selectWeek(this)">
+        <div class="days">
+          <div>9</div>
+          <div>10</div>
+          <div>11</div>
+          <div>12</div>
+          <div>13</div>
+          <div>14</div>
+          <div>15</div>
+        </div>
+      </div>
+
+      <div class="week" onclick="selectWeek(this)">
+        <div class="days">
+          <div>16</div>
+          <div>17</div>
+          <div>18</div>
+          <div>19</div>
+          <div>20</div>
+          <div>21</div>
+          <div>22</div>
+        </div>
+      </div>
+
+      <div class="week" onclick="selectWeek(this)">
+        <div class="days">
+          <div>23</div>
+          <div>24</div>
+          <div>25</div>
+          <div>26</div>
+          <div>27</div>
+          <div>28</div>
+          <div>29</div>
+        </div>
+      </div>
+        
+      <div class="days" onclick="selectWeek(this)">
+        <div>30</div>
+        <div>31</div>
+        <div class="next-date">1</div>
+        <div class="next-date">2</div>
+        <div class="next-date">3</div>
+        <div class="next-date">4</div>
+        <div class="next-date">5</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="notebook-container">
+  <div class="entry hidden">
+    <p>Select a week from the calendar to see our progress.</p>
+  </div>
+
+  <div class="entry" id="wk1">
+    <h2>June 5 to June 11</h2>
+
+    <p>Ordered reagents and took stock of the lab to determine which enzymes and reagents we have. Cultured E. coli DH5 alpha cells in preparation for creating competent cells.</p>
+  </div>
+
+  <div class="entry hidden" id="wk2">
+    <h2>June 12 to June 18</h2>
+
+  </div>
+
+  <div class="entry hidden" id="wk3">
+    <h2>June 19 to June 25</h2>
+
+  </div>
+
+  <div class="entry hidden" id="wk4">
+    <h2>June 26 to July 2</h2>
+    <p>[WRITE OVERVIEW OF THE WEEK HERE]</p>
+  </div>
+
+  <div class="entry hidden" id="wk5">
+    <h2>July 3 to July 9</h2>
+  </div>
+
 </div>
 
 

@@ -1,6 +1,23 @@
+.notebook-about-wrapper{
+    text-align: justify;
+    word-break: keep-all;
+    max-width: 40rem;
+    padding-block: 4rem;
+}
+
+.about-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .calendar-container{
     width: 100%;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .calendar{
