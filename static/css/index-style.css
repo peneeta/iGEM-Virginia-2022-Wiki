@@ -303,13 +303,13 @@
 
 .cards-section .my-card{
   position: relative;
-  max-width: 20rem;
+  max-width: 23rem;
   height: 27rem;
   box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
   border-radius: 20px;
-  margin: 4rem;            
+  margin: 3rem;            
 }
 
 .cards-section .my-card .box{
@@ -362,22 +362,23 @@
   background: #03a9f4;
   padding: 0.3rem 1.2rem;
   text-decoration: none!important;
-  margin-top: 2rem;
   border-radius: 120px;
   color: white;
   font-weight: 400;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.cards-section .my-card .box .content .card-image{
-  max-width: 10rem;
-  position: relative;
+.cards-section .my-card .box .card-image{
+  max-height: 10rem;
   z-index: -1;
+}
+
+.cards-section .my-card .box .card-text{
+  padding-block: 1rem;
 }
 
 .cards-section .my-card:hover .box .content a{
   background:#d93773;
-
 }
 
 
