@@ -240,6 +240,7 @@
   .stat-wrapper {
     text-align: center;
     padding-bottom: 5rem;
+    max-width: 40rem;
   }
 
   /* GRAPH SECTION */
@@ -398,7 +399,15 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
-  font-size: clamp(2rem, 2rem + 3vw, 7rem);
+  font-size: clamp(2rem, 2rem + 3vw, 4rem);
+}
+
+.stat{
+  padding-block: 1rem;
+}
+
+.counter-section{
+  padding-block: 2rem;
 }
 
 .stat p{
