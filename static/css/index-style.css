@@ -323,6 +323,34 @@
   text-align: center;
 }
 
+.cards-section .my-card .box .content h3{
+  font-size: 1.5em;
+  font-weight: 500;
+  color: black;
+  z-index: 1;
+  transition: 0.5s;
+
+}
+
+.cards-section .my-card .box .content p{
+  font-size: 1em;
+  font-weight: 300;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.cards-section .my-card .box .content a{
+  position: relative;
+  display: inline-block;
+  background: #03a9f4;
+  padding: 0.3rem 1.2rem;
+  text-decoration: none!important;
+  margin-top: 2rem;
+  border-radius: 120px;
+  color: white;
+
+}
+
 
   .helpful-links{
     display: flex;
