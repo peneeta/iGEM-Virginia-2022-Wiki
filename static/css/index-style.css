@@ -367,7 +367,12 @@
   color: white;
   font-weight: 400;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
 
+.cards-section .my-card .box .content .card-image{
+  max-width: 10rem;
+  position: relative;
+  z-index: -1;
 }
 
 .cards-section .my-card:hover .box .content a{
