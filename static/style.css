@@ -662,10 +662,17 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 }
 
 .top-select.active{
-  background-color:rgb(165, 173, 255);
-  border-radius: 2rem;
+  box-shadow: inset 5px 5px 5px rgba(0,0,0,0.07), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.07), -5px -5px 5px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.07), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.07), -5px -5px 5px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.07), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.07), -5px -5px 5px rgba(255, 255, 255, 0.5);
+  border-radius: 0.3rem;
   text-decoration: none;
 }
+
+.top-select{
+  padding-block: 0.3rem;
+}
+
 
 .body-padding{
   padding-inline: 3vw;
