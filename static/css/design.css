@@ -3,9 +3,9 @@
     height:auto;
     border-radius: 10%;
     align-content: center; 
-    padding: 8px;  
+    padding: 2rem;  
 }
 
 .lfasize {
-    size: 5%
+    max-width: 40rem;
 }
