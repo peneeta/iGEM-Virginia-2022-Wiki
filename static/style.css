@@ -724,7 +724,35 @@ li {
 
 }
 
-/* PARTS PAGE */
-.about-catalog {
+.gray-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.gray-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 123px;
+  transform: rotateY(180deg);
+}
+
+.gray-divider .shape-fill {
+  fill: #ECF0F3;
+}
+
+.narrow-content {
   padding-block: 3rem;
+}
+
+.body-container.wave-div.narrow {
+  margin-bottom: 11rem;
+}
+
+.gray {
+  background-color: #ecf0f3;
 }
