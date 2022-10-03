@@ -469,5 +469,53 @@
   text-align: center;
 }
 
+.solution-divider-top {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
 
+.solution-divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(111% + 1.3px);
+  height: 235px;
+}
 
+.solution-divider-top .shape-fill {
+  fill: #121212;
+}
+
+.solution-divider-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.solution-divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(111% + 1.3px);
+  height: 179px;
+}
+
+.solution-divider-bottom .shape-fill {
+  fill: #121212;
+}
+
+.committees.container {
+  margin-top: 11rem;
+  margin-bottom: 3rem;
+}
+
+.about-us {
+  margin-bottom: 6rem;
+}
