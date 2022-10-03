@@ -169,9 +169,9 @@ a.dropdown-item.hvr-fade {
   width: 100%;
 }
 
-.footer-shape-divider {
+.footer-divider {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -179,16 +179,15 @@ a.dropdown-item.hvr-fade {
   transform: rotate(180deg);
 }
 
-.footer-shape-divider svg {
+.footer-divider svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
-  height: 110px;
-  transform: rotateY(180deg);
+  width: calc(207% + 1.3px);
+  height: 150px;
 }
 
-.footer-shape-divider .shape-fill {
-  fill: #000000;
+.footer-divider .shape-fill {
+  fill: black;
 }
 
 .section ul{
