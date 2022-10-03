@@ -9,3 +9,8 @@
 .lfasize {
     max-width: 40rem;
 }
+
+.abimg {
+    max-width:50%;
+    max-height:auto;
+}
