@@ -511,6 +511,10 @@
   fill: #121212;
 }
 
+.abstract-wrapper p {
+  font-size: large;
+}
+
 .committees.container {
   margin-top: 11rem;
   margin-bottom: 3rem;
