@@ -12,15 +12,39 @@
     align-items: center;
 }
 
+.img-wrapper.test-tube {
+    padding: 3rem;
+}
+
+.notebook-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.notebook-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 123px;
+    transform: rotateY(180deg);
+}
+
+.notebook-divider .shape-fill {
+    fill: #ECF0F3;
+}
+
 .notebook-section {
     background-color: #ECF0F3;
     margin-bottom: 7rem;
 }
 
-
-.body-container.narrow {
-    max-width: 60rem;
-}
+.body-container.notebook.narrow {
+    margin-bottom: 11rem;
+  }
 
 .calendar-container{
     height: auto;

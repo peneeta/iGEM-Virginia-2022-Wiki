@@ -178,7 +178,7 @@
   .mission-section{
     width: 100%;
     height: auto;
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(18 18 18);
     color: white;
     overflow: hidden;
   }
@@ -242,6 +242,10 @@
     padding-bottom: 5rem;
     max-width: 40rem;
   }
+
+  .heart-image-stat img {
+    max-width: 10rem;
+}
 
   /* GRAPH SECTION */
   

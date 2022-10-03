@@ -418,7 +418,7 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 }
 
 .wave-divider .shape-fill {
-  fill: rgb(29, 29, 29);
+  fill: rgb(18 18 18);
 }
 
 .wave-divider-top {
@@ -440,7 +440,7 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 }
 
 .wave-divider-top .shape-fill {
-  fill: rgb(29, 29, 29);
+  fill: rgb(18 18 18);
 }
 
 /* Asymmetrical Curve Divider */
@@ -686,6 +686,10 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   
 }
 
+.body-container.narrow {
+  max-width: 60rem;
+}
+
 .text-wrapper{
   text-align: justify;
   word-break: keep-all;
@@ -718,4 +722,9 @@ li {
     fill: #fcfbfb;
   }
 
+}
+
+/* PARTS PAGE */
+.about-catalog {
+  padding-block: 3rem;
 }
