@@ -19,9 +19,9 @@
 .month{
     width: 100%;
     height: 7rem;
-    background-color: #091367;
+    background-color: #c8ceff;
     border-radius: 10px 10px 0px 0px;
-    color: white;
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,7 @@
 }
 
 .btn.active-month{
-    border-bottom: 5px solid white;
+    border-bottom: 5px solid rgb(0, 0, 0);
 }
 
 .btn.month-btn:hover{
@@ -61,9 +61,10 @@
 }
 
 .month h2{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: 0.1rem;
+    color: black!important;
 }
 
 .month p{
@@ -75,6 +76,7 @@
     height: 3rem;
     display: flex;
     align-items: center;
+    color: #323232;
 }
 
 .weekdays div{
@@ -104,20 +106,20 @@
     align-items: center;
 }
 
-/* Need to create a hover bar element */
 .week:hover{
-    background-color:#f2a7a79d;
-    box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.5);
-    -moz-box-shadow: 10px 10px 17px -6px rgba(0,0,0,0.5);
+    background-color:#ffd7d7;
     border-radius: 100px;
     transition: 0.5s;
+    box-shadow: -12px -12px 30px 5px rgba(255, 255, 255, 0.9),
+  12px 12px 30px 5px rgba(50, 58, 73, 0.2);
 }
 
 .week.active-week{
-    background-color:#e97777;
-    box-shadow: 4px 4px 0 rgba(121, 1, 1, 0.8); 
+    background-color: #ffd7d7;
     border-radius: 1000px;
+    box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+    
 }
 
 .next-date{
