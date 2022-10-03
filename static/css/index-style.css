@@ -368,7 +368,7 @@
 }
 
 .cards-section .my-card .box .card-image{
-  max-height: 10rem;
+  max-height: 9rem;
   z-index: -1;
 }
 
@@ -509,6 +509,10 @@
 
 .solution-divider-bottom .shape-fill {
   fill: #121212;
+}
+
+.abstract-wrapper p {
+  font-size: large;
 }
 
 .committees.container {
