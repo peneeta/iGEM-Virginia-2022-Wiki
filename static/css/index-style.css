@@ -283,10 +283,14 @@
     max-width: 40rem;
   }
 
+  img.artery.index {
+    max-width: 20rem;
+}
+
   .abstract-wrapper {
     max-width: 35rem;
     text-align: center;
-    padding-block: 4rem;
+    padding-top: 4rem;
 }
 
 .text-wrapper.committee-title{
