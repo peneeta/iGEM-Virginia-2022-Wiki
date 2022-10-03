@@ -176,18 +176,18 @@ a.dropdown-item.hvr-fade {
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  transform: rotate(180deg);
 }
 
 .footer-divider svg {
   position: relative;
   display: block;
-  width: calc(207% + 1.3px);
-  height: 150px;
+  width: calc(100% + 1.3px);
+  height: 52px;
+  transform: rotateY(180deg);
 }
 
 .footer-divider .shape-fill {
-  fill: black;
+  fill: #000000;
 }
 
 .section ul{
