@@ -15,7 +15,7 @@
     max-height:auto;
 }
 
-.steps-container .text-wrapper {
+.steps-container .text-wrapper-des {
     max-width: 25rem;
 }
 
@@ -37,4 +37,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-block: 3rem;
+}
+
+.subtitle-wrapper p{
+    max-width: 30rem;
+    text-align: center;
+    font-style: italic;
 }
