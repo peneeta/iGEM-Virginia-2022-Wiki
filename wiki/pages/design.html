@@ -30,27 +30,75 @@
         <div class="body-container d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
             <div class="container">
                 <div class="body-section top-page">
-                    <div class="wrapper">
-                        <h2> How does an LFA Work? </h2>
-                        <p>Lateral flow assays (LFAs) use a series of antibodies to detect whether a biomarker is present in a liquid sample.</p> 
-                        <div class="diagram">
-                            <img class ="lfasize" src="https://static.igem.wiki/teams/4477/wiki/labeled-lfa-01-artboard-1-1-2.svg" />
-                            <p>
-                                First, a sample is dropped onto the sample pad, which is designed to prepare the sample for optimum flow through the rest of the test strip. 
-                                The sample flows through to the conjugate release pad that then is absorbed by the test membrane. Antibodies suspended on the conjugate pad bind to a biomarker in the sample. 
-                                This primary antibody is labeled with nanoparticles that allow these antibodies to be detected with the naked eye.
-                                If the molecule of interest is in the sample, these labeled primary antibodies bind to the molecule and ensure it will be seen later in the test.
-                                The target molecule/labeled antibody complexes travel onto a nitrocellulose membrane, where two more antibodies are immobilized in lines.
-                                Complexes reach the test line first, where another primary antibody targeting the molecule of interest is situated.
-                                The target molecule binds this other primary antibody, and the whole complex becomes immobilized at the test line, forming a “sandwich complex”.
-                                The labeled antibodies show up as a colored line, signaling detection of the target molecule.
-                                The labeled antibody is unable to bind to the test line if the biomarker is not present in the sample.Regardless of whether the target molecule is in the sample, the labeled antibody continues down the nitrocellulose membrane and reaches the control line.
-                                Here, a secondary antibody that binds to the labeled antibody itself is immobilized.
-                                If the test is working properly, the secondary and labeled antibody will bind, causing the control line to show a colored line.
-                                The sample continues off the membrane and is absorbed by an absorbent pad, stopping the fluid flow.
-                            </p>
+                    <div class="lfa-beginning d-flex flex-column justify-content-center align-items-center">
+                        <div class="text-wrapper">
+                            <h2> How does an LFA Work? </h2>
+                            <p>Lateral flow assays (LFAs) are paper-based detection methods. Lateral flow immunoassays, a specific type of LFA, use a series of antibodies to detect whether a biomarker is present in a liquid sample. (Lateral flow assays - PMC (nih.gov))</p> 
                         </div>
+                        
+                        <img style="width: 35rem; padding-block: 2rem;" src="https://static.igem.wiki/teams/4477/wiki/images/diag-lfadiagram.svg" alt="lfa diagram">
                     </div>
+                        <div class="diagram">
+                            <div class="container">
+                                <div class="text-wrapper">
+                                    First, a sample is applied onto the sample pad, which is designed to prepare the sample for optimum flow through the rest of the test strip.
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="text-wrapper">
+                                    The sample flows through to the conjugate release pad that then is absorbed by the test membrane. Antibodies on the conjugate pad bind to the biomarker in the sample. 
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="text-wrapper indented">
+                                    <div class="wrapper">
+                                        This <span class="bold-text">primary antibody</span> is labeled with <span class="bold-text">nanoparticles</span> that allow these antibodies to be detected with the naked eye.
+                                    </div>
+                                    <img src="https://static.igem.wiki/teams/4477/wiki/images/diag-igggold.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="text-wrapper indented">
+                                    <p>If the molecule of interest, such as the biomarker, is in the sample, these labeled primary antibodies bind to the molecule and lead to the visualization of colored lines later in the test.</p>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="text-wrapper">
+                                    <p>The target molecule/labeled antibody complexes travel onto a nitrocellulose membrane, where two more antibodies are immobilized in lines.</p>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="text-wrapper">
+                                    The complexes reach the test line first, where another primary antibody targeting the molecule of interest is situated.
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="text-wrapper indented">
+                                    <p>The target molecule binds this other primary antibody, and the whole complex becomes immobilized at the test line, forming a “sandwich complex”.</p>
+                                </div>
+                            </div>
+                            <ul>
+
+                                <ul>
+                                    <li>The target molecule binds this other primary antibody, and the whole complex becomes immobilized at the test line, forming a “sandwich complex”.</li>
+                                    <li>This other primary antibody is distinct from the first primary antibody and recognizes a different epitope on the molecule of interest.</li>
+                                    <li>The labeled antibodies show up as a colored line, signaling detection of the target molecule.</li>
+                                </ul>
+                                <li>The labeled antibody is unable to bind to the test line if the biomarker is not present in the sample.</li>
+                                <li>Regardless of whether the target molecule is in the sample, the labeled antibody continues down the nitrocellulose membrane and reaches the control line.</li>
+                                <ul>
+                                    <li>Here, a secondary antibody that binds to the labeled antibody itself is immobilized. If the test is working properly, the secondary and labeled antibody will bind, causing the control line to show a colored line.</li>
+                                </ul>
+                                <li>The sample continues off the membrane and is absorbed by an absorbent pad, stopping the fluid flow.   Lateral flow assays - PMC (nih.gov)</li>
+                            </ul>
+                        </div>
+                    
                 </div>
             </div>
     
@@ -58,7 +106,10 @@
                 <div class="body-section">
                     <h2>How Our LFA is Unique</h2>
                     <div class="text-wrapper">
-                        <p>We designed our LFA following the general pattern outlined above. First, we decided to test for the presence of oxidized low density lipoprotein (oxLDL) because oxLDL is a biomarker of atherosclerosis found in the blood (changing landscape of atherosclerosis, 2020). Then, if our test detected oxLDL, the patient would have evidence they are experiencing atherosclerosis. To detect oxLDL, we designed two primary antibodies. The labeled primary antibody bound to a protein component of oxLDL called MDA-modified apolipoprotein B (apoB-subscript MDA), while the other primary antibody immobilized at the test line bound to oxidized phospholipids within oxLDL. The fact that these two primary antibodies bound to different epitopes on oxLDL helped ensure the antibodies did not interfere with each other binding. Lastly, we designed a secondary antibody targeting the constant domain of the labeled primary antibody and used this on the control line to verify the test worked correctly.</p>
+                        <p>
+                            For our LFA, we decided to test for the presence of oxidized low density lipoprotein (oxLDL) because oxLDL is a biomarker of atherosclerosis found in the blood (The changing landscape of atherosclerosis | Nature). Then, if our test detected oxLDL, the patient would have evidence they are experiencing early atherosclerosis. 
+
+                            Our strip contains one full-length antibody, an scFv fragment, and a VHH nanobody fragment Nanobody-based products as research and diagnostic tools | Elsevier Enhanced Reader, all which are produced in E. coli SHuffle. To detect oxLDL, we designed two primary antibodies. The labeled primary antibody binds to a protein component of oxLDL called MDA-modified apolipoprotein B (apoBMDA) Recombinant Human Antibodies Against Aldehyde-Modified Apolipoprotein B-100 Peptide Sequences Inhibit Atherosclerosis | Circulation (ahajournals.org), while the other primary antibody immobilized at the test line binds to oxidized phospholipids within oxLDL. The fact that these two primary antibodies bound to different epitopes helped ensure the antibodies did not interfere with the other’s binding site. Lastly, we designed a secondary antibody targeting the constant domain of the labeled primary antibody and used this on the control line to verify the test worked correctly.</p>
                     </div>
                 </div>
             </div>
@@ -132,7 +183,9 @@
                         <h2>Choosing a Chassis</h2>
                         <div class="text-wrapper">
                             <p>
-                                An LFA requires the production of three different antibodies, which have complex structures containing disulfide bonds. Most bacteria, like E. coli, can only produce the disulfide bonds necessary for antibody production in their periplasm, because their cytoplasm is a reducing environment. This is not favorable for the formation of disulfide bonds. In order for the bonds to be formed, modification of the cytoplasm is vital for utilizing the cytoplasmic space to produce proteins. One group of scientists developed a strain of E. coli with a more oxidizing cytoplasm that is able to form disulfide bonds, and this strain is SHuffle. We determined through modeling that all of our antibodies and antibody fragments have disulfide bonds and the number of cysteines fall within the optimal range of our choice, so we chose the B-strain of E. coli SHuffle. 
+                                SHuffle differs from standard E. coli in that it maintains a more oxidizing cytoplasm, which allows cells to correctly form disulfide bonds in proteins, which enables researchers to overexpress correctly folded proteins. https://microbialcellfactories.biomedcentral.com/articles/10.1186/1475-2859-11-56 
+                                <br>
+                                Several major genetic modifications result in this modified cytoplasm. Two genes coding for cytoplasmic reductases, specifically thioredoxin reductase (trxB) and glutathione reductase (gor), are knocked out from the E. coli genome. While this leads to a less reducing and therefore more oxidizing cytoplasm, these two mutations on their own are lethal to the E. coli. This is due to a lack of reductases recycling other essential enzymes into their reduced state. So, another mutation called AhpC* is introduced into the genome, modifying 2-Cys alkyl hydroperoxide reductase. This mutation returns reducing power to an enzyme called glutaredoxin 1 (Grx1) and makes the previously described double knock out non-lethal to E. coli. In the oxidizing environment, thioredoxin enzymes including thioredoxin 1 (Trx1) are able to form disulfide bonds between cysteine residues of proteins. However, these thioredoxins form disulfide bonds indiscriminately between any two cysteine residues, meaning that the protein could be misfolded at this stage. So, researchers overexpress an enzyme called disulfide bond isomerase c (DsbC), which is naturally found in the periplasm of E. coli. This enzyme moves, or shuffles, mis-formed disulfide bonds to the correct conformations which finally results in correctly folded proteins in the cytoplasm.  
             
                             </p>
                         </div>
