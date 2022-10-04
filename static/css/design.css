@@ -14,3 +14,19 @@
     max-width:50%;
     max-height:auto;
 }
+
+.steps-container .text-wrapper {
+    max-width: 25rem;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 2rem;
+}
+
+.steps-container img {
+    max-width: 15rem;
+}
