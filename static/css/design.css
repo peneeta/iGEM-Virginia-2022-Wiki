@@ -6,8 +6,8 @@
     padding: 2rem;  
 }
 
-.lfasize {
-    max-width: 40rem;
+.image-wrapper.lfa-diagram.img-fluid img {
+    max-width: 30rem;
 }
 
 .abimg {
@@ -37,11 +37,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-block: 3rem;
+    padding-inline: 3rem;
+    padding-block: 2rem;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, .2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0),
+    inset -7px -7px 20px rgba(255, 255, 255, 0),
+    0px 0px 4px rgba(255, 255, 255, 0) !important;
+    -moz-box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, .2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0),
+    inset -7px -7px 20px rgba(255, 255, 255, 0),
+    0px 0px 4px rgba(255, 255, 255, 0) !important;
+    -webkit-box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, .2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0),
+    inset -7px -7px 20px rgba(255, 255, 255, 0),
+    0px 0px 4px rgba(255, 255, 255, 0) !important;
 }
 
 .subtitle-wrapper p{
     max-width: 30rem;
     text-align: center;
     font-style: italic;
+    font-size: small;
 }

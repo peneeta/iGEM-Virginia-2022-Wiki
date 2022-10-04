@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html, body{
-  width: 100vw;
-  overflow-x: clip;
-}
 
 body{
   scroll-behavior: auto;
