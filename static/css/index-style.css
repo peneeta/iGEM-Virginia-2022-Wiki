@@ -431,7 +431,7 @@
   bottom: -60vh;
   left: 0;
   margin: auto;
-  
+  padding-block: 1rem;
   width :34px;
   height: 55px;
 }

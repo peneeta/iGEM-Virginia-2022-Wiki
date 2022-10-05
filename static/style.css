@@ -671,19 +671,28 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   padding-bottom: 5rem;
 }
 
-.body-container{
+.body-container.narrow{
   padding-inline: 3rem;
   margin-top: 5rem;
-   margin-bottom: 7rem;
+  max-width: 60rem;
+  margin-bottom: 7rem;
   background-color: #fcfbfb;
   box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
     -moz-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
-  
 }
 
-.body-container.narrow {
-  max-width: 60rem;
+.body-container{
+  padding-inline: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+  background-color: #fefefe;
+  box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+    -webkit-box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+    -moz-box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
 }
 
 .text-wrapper{
