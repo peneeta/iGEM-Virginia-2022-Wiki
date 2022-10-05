@@ -84,8 +84,11 @@
 }
 
 .card{
+    position: relative;
     max-width: 380px;
-    perspective: 1000px;
+    max-height: 190px;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0,0.15);
     cursor: pointer;
 }
 
@@ -136,7 +139,7 @@
     transition: all 0.4s ease-in-out;
 }
 
-.card:hover {
+.new-card:hover {
     height: 450px;
 }
 
@@ -156,7 +159,7 @@
     transition: all 0.4s ease-in-out;
 }
 
-.card:hover .pb{
+.new-card:hover .pb{
     height: 250px;
     width: 250px;
 }
@@ -170,7 +173,7 @@
     transition: all 0.4s ease-in-out;
 }
 
-.card:hover .info {
+.new-card:hover .info {
     display: flex;
     padding: 230px 0px 10px 0px;
 }
@@ -241,8 +244,8 @@
     background-color: darkgrey;
 }
 
-.card:hover .detail ,
-.card:hover .buttons {
+.new-card:hover .detail ,
+.new-card:hover .buttons {
     opacity: 1;
     z-index: 0;
     transform: translateX(0px);
