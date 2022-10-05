@@ -111,6 +111,14 @@
       max-width: 25rem;
   }
 
+  .subtitle-wrapper-ind{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .container.mission-statement {
     display: flex;
     flex-direction: column;
@@ -153,10 +161,6 @@
     background-size: cover;
     background-position: center;
     position: relative;
-  }
-
-  .header-wrapper{
-    margin-left: 15vw;
   }
   
   /* Text Alignment Attributes */
