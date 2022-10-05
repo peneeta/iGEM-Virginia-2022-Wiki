@@ -83,86 +83,50 @@
     background: #535E84
 }
 
+
 .card{
-    position: relative;
-    max-width: 380px;
-    max-height: 190px;
-    border-radius: 20px;
-    box-shadow: 0 35px 80px rgba(0, 0, 0,0.15);
-    cursor: pointer;
-}
-
-.card-inner{
-    position: relative;
-    max-width: 100%;
-    text-align: center;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-}
-
-.front-face{
-    backface-visibility: hidden;
-}
-
-.front-face img{
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.back-face{
-    backface-visibility: hidden;
-    background: white;
-    color: black;
-    position: absolute;
-    max-height: 100%;
-    max-width: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transform: rotateY(180deg);
-    }
-
-.card:hover .card-inner{
-    transform: rotateY(-180deg);
-}
-
-.new-card{
     position: relative;
     background-color: #fff;
     max-width: 350px;
-    max-height: 200px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0,0.35);
-    border-radius: 15px;
-    transition: all 0.4s ease-in-out;
+    max-height: 190px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0,0.15);
+    border-radius: 20px;
+    transition: 0.5s;
 }
 
-.new-card:hover {
+.card:hover {
     height: 450px;
 }
 
-.pb {
+.imgBx {
     position: absolute;
-    top: -45px;
-    left: 50%;
-    transform: translate(-50% , 0%);
-    background-image: url('https://static.igem.wiki/teams/4477/wiki/squpeneeta.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 150px;
+    left: 50%
+    top: -50px;
+    transform: translateX(-50%);
     width: 150px;
-    border-radius: 15px;
+    height: 150px;
+    background: #fff;
+    border-radius: 20px;
     box-shadow: 0 15px 50px rgba(0, 0, 0,0.35);
-    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    transition: 0.5s;
 }
-
-.new-card:hover .pb{
+.card:hover .imgBx{
     height: 250px;
     width: 250px;
 }
+
+.imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
 
 .info {
     display: flex;
