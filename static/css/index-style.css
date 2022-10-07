@@ -207,13 +207,16 @@
     padding-top: 7rem;
   }
 
-
-  .earth-section{
-    width: 100vw;
+  .earth-section {
+    box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1);
+    border-radius: 200rem;
+    width: 46rem;
+    height: 46rem;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+
   }
 
   @media only screen and (max-width: 600px) {
@@ -367,6 +370,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 5rem;
 }
 
 .cards-section .my-card{
@@ -459,6 +463,7 @@
   .us-wrapper {
     max-width: 40rem;
     padding-block: 5rem;
+    padding-right: 8rem;
   }
   
 /* Logo Image Formatting */
