@@ -73,39 +73,53 @@
   </div>
 
     
-  <div class= "light-section d-flex flex-column d-flex flex-column justify-content-center align-items-center">
+  <div class= "counter-color-sec d-flex flex-column d-flex flex-column justify-content-center align-items-center curvy-divider">
+    <div class="counter-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+      </svg>
+    </div>
+
     <div class="container">
-      <div class="counter-wrapper">
-        <h2 class="pb-4">To put this into numbers...</h2>
-        <div class="heart-image-stat">
-          <img src="https://static.igem.wiki/teams/4477/wiki/images/heart.png" alt="heart image">
+      <div class="rbc-counter-container">
+        <div class="img-wrapper rbc">
+          <img src="https://static.igem.wiki/teams/4477/wiki/images/rbcfloating.svg" alt="rbc">
         </div>
-        <div class="counter-section">
-          <div id="counter-parent">
-            <div class="stat d-flex flex-column align-items-center justify-content-center aos-init aos-animate" id="myTargetElement" data-aos="fade-right" data-aos-duration="1000">
-              <h1 class="counter number" data-value="1066700000"></h1>
-              <div class="subtitle-wrapper">
-                <p>individuals afffected by atherosclerosis annually 
-                  <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Song P, Fang Z, Wang H, Cai Y, Rahimi K, Zhu Y, et al. Global and regional prevalence, burden, and risk factors for carotid atherosclerosis: a systematic review, meta-analysis, and modelling study. Lancet Glob Health [Internet]. 2020 [cited 2022 Oct 2];8(5):e721–9. Available from: https://pubmed.ncbi.nlm.nih.gov/32353319/</p>"><sup>1</sup></span>
-                </p>
+        <div class="counter-wrapper">
+          <h2 class="pt-5">To put this into numbers...</h2>
+          <div class="counter-section">
+            <div id="counter-parent">
+              <div class="stat d-flex flex-column align-items-center justify-content-center aos-init aos-animate" id="myTargetElement" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="counter number" data-value="1066700000"></h1>
+                <div class="subtitle-wrapper">
+                  <p>individuals afffected by atherosclerosis annually 
+                    <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Song P, Fang Z, Wang H, Cai Y, Rahimi K, Zhu Y, et al. Global and regional prevalence, burden, and risk factors for carotid atherosclerosis: a systematic review, meta-analysis, and modelling study. Lancet Glob Health [Internet]. 2020 [cited 2022 Oct 2];8(5):e721–9. Available from: https://pubmed.ncbi.nlm.nih.gov/32353319/</p>"><sup>1</sup></span>
+                  </p>
+                </div>
+              </div>
+    
+              <div class="stat d-flex flex-column align-items-center justify-content-center aos-init aos-animate" id="myTargetElement2" data-aos="fade-left" data-aos-duration="1000">
+                <h1 class="counter number" data-value="17900000"></h1>
+                <div class="subtitle-wrapper">
+                  <p> global deaths attributed to CVD annually
+                  
+                    <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Cardiovascular diseases (CVDs) [Internet]. Who.int. [cited 2022 Oct 3]. Available from: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)</p>"><sup>2</sup></span>
+                  </p>
+                </div>
               </div>
             </div>
-  
-            <div class="stat d-flex flex-column align-items-center justify-content-center aos-init aos-animate" id="myTargetElement2" data-aos="fade-left" data-aos-duration="1000">
-              <h1 class="counter number" data-value="17900000"></h1>
-              <div class="subtitle-wrapper">
-                <p> global deaths attributed to CVD annually
-                
-                  <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Cardiovascular diseases (CVDs) [Internet]. Who.int. [cited 2022 Oct 3]. Available from: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)</p>"><sup>2</sup></span>
-                </p>
-              </div>
-            </div>
+    
+            <script src="{{ url_for('static', filename = '/components/counter-script.js') }}" type="module"></script>
           </div>
-  
-          <script src="{{ url_for('static', filename = '/components/counter-script.js') }}" type="module"></script>
         </div>
       </div>
     </div>
+
+    <div class="counter-div-bottom">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+      </svg>
+  </div>
   </div>
 
   <div class="light-background">
@@ -214,6 +228,9 @@
       <div class="shock-section">
         <div class="wrapper problem-statement">
           <h2>The Problem</h2>
+          <div class="heart-image-stat">
+            <img src="https://static.igem.wiki/teams/4477/wiki/images/heart.png" alt="heart image">
+          </div>
           <h2>An estimated <span class="super-bold">80% of cardiovascular diseases</span> <br> can be prevented if they are detected earlier in life<sup>#</sup>, and there is no device on the market for preventative detection.</h2>
         </div>
       </div>
@@ -321,24 +338,34 @@
         </div>
       </div>
     </div>
+    <div class="abt-us-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+  </div>
 
   </div>
 
-  <div class="about-us d-flex align-items-center justify-content-center">
-    <div class="container">
-      <div class="us-wrapper">
-        <h2>About Us</h2>
-        <p>We are a dedicated group of twelve students from the University of Virginia. Our team represents a wide variety of disciplines, from Math, to Engineering, to Economics. To learn more about our individual contributions to the project, visit our team members page!</p>
+  <div class="about-us d-flex flex-column
+  align-items-center justify-content-center curvy-divider">
+    <div style="margin-bottom: 5rem;" class="d-flex flex-row justify-content-cetner align-items-center">
+      <div class="container">
+        <div class="us-wrapper">
+          <h2>About Us</h2>
+          <p>We are a dedicated group of twelve students from the University of Virginia. Our team represents a wide variety of disciplines, from Math, to Engineering, to Economics. To learn more about our individual contributions to the project, visit our team members page!</p>
+        </div>
+      </div>
+      <div class="img-wrapper team index">
+        <img src="https://static.igem.wiki/teams/4477/wiki/images/teamyay.jpeg" alt="">
       </div>
     </div>
-  </div>
-
-
-  <div class="footer-preface curvy-divider">
-    <div class="footer-divider">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-      </svg>
+    
+    <div class="footer-preface">
+      <div class="footer-divider">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+      </div>
     </div>
   </div>
 </div>
