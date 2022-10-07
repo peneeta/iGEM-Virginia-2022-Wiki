@@ -367,6 +367,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 5rem;
 }
 
 .cards-section .my-card{
@@ -459,6 +460,7 @@
   .us-wrapper {
     max-width: 40rem;
     padding-block: 5rem;
+    padding-right: 8rem;
   }
   
 /* Logo Image Formatting */
