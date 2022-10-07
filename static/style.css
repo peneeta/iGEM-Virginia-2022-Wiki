@@ -183,7 +183,7 @@ a.dropdown-item.hvr-fade {
 }
 
 .footer-divider .shape-fill {
-  fill: #000000;
+  fill: #090909;
 }
 
 .section ul{
@@ -678,8 +678,8 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   margin-bottom: 7rem;
   background-color: #fcfbfb;
   box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
-    -webkit-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
-    -moz-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
 }
 
 .body-container{
@@ -687,12 +687,9 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   margin-top: 5rem;
   margin-bottom: 7rem;
   background-color: #fefefe;
-  box-shadow: -8px -8px 20px 0px #e2e2e299, -6px -6px 6px 0px #fff9,
-    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
-    -webkit-box-shadow: -8px -8px 20px 0px #e2e2e299, -6px -6px 6px 0px #fff9,
-    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
-    -moz-box-shadow: -8px -8px 20px 0px #e2e2e299, -6px -6px 6px 0px #fff9,
-    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+  box-shadow: -1px 4px 25px -4px rgba(0,0,0,0.5);
+  -webkit-box-shadow: -1px 4px 25px -4px rgba(0,0,0,0.5);
+  -moz-box-shadow: -1px 4px 25px -4px rgba(0,0,0,0.5);
 }
 
 .text-wrapper{
