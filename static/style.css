@@ -687,11 +687,11 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   margin-top: 5rem;
   margin-bottom: 7rem;
   background-color: #fefefe;
-  box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+  box-shadow: -8px -8px 20px 0px #e2e2e299, -6px -6px 6px 0px #fff9,
     8px 8px 20px #0001, 5px 5px 6px 0px #0001;
-    -webkit-box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+    -webkit-box-shadow: -8px -8px 20px 0px #e2e2e299, -6px -6px 6px 0px #fff9,
     8px 8px 20px #0001, 5px 5px 6px 0px #0001;
-    -moz-box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+    -moz-box-shadow: -8px -8px 20px 0px #e2e2e299, -6px -6px 6px 0px #fff9,
     8px 8px 20px #0001, 5px 5px 6px 0px #0001;
 }
 
@@ -760,4 +760,16 @@ li {
 
 .gray {
   background-color: #ecf0f3;
+}
+
+.img-wrapper.large {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: inset -10px -10px 10px #ffffff70,
+  inset 10px 10px 10px #aeaec020;
+}
+
+.img-wrapper.large img {
+  max-width: 20rem;
 }
