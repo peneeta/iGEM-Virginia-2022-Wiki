@@ -473,9 +473,18 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
 
 .read-next-button{
   border-radius: 1000px;
-  color: white;
-  background-color:#233ee5;
+  padding-inline: 3rem;
+  letter-spacing: 0.01 rem;
+  color: black;
   outline: none;
+  box-shadow: -6px -6px 14px rgb(255 255 255 / 70%), -6px -6px 10px rgb(255 255 255 / 50%), 6px 6px 8px rgb(255 255 255 / 8%), 6px 6px 10px rgb(0 0 0 / 15%)!important;
+}
+
+.read-next-button:hover{
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+              -2px -2px 4px rgba(255, 255, 255, .4),
+              2px 2px 2px rgba(255, 255, 255, .05),
+              2px 2px 4px rgba(0, 0, 0, .1)!important;
 }
 
 .btn-wrapper{
@@ -596,6 +605,13 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   width: min(30vw, 330px);
   padding-inline: 1rem;
   padding-bottom: 1.5rem;
+}
+
+.references.content .wrapper {
+  max-height: 14rem;
+  overflow-y: scroll;
+  padding-right: 2rem;
+  word-break: break-word;
 }
 
 .spacer-div{
