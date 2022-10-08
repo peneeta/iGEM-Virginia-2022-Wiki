@@ -179,7 +179,7 @@ a.dropdown-item.hvr-fade {
   display: block;
   width: calc(100% + 1.3px);
   height: 52px;
-  transform: rotateY(180deg);
+  transform: translateY(2px) rotateY(180deg);
 }
 
 .footer-divider .shape-fill {
@@ -714,6 +714,10 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   -moz-box-shadow: -1px 4px 25px -4px rgba(0,0,0,0.5);
 }
 
+.about-section .wrapper {
+  padding-block: 3rem;
+}
+
 .text-wrapper{
   text-align: justify;
   word-break: keep-all;
@@ -791,4 +795,9 @@ li {
 
 .img-wrapper.large img {
   max-width: 20rem;
+}
+
+/* WRITE THIS */
+.img-wrapper.img-frame {
+
 }
