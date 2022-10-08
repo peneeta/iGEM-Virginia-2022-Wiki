@@ -72,9 +72,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    max-width: 23rem;
+    height: 27rem;
     box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
     -moz-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
     border-radius: 20px;
+    margin: 3rem;
+}
+
+.ab-cards .inner{
+    margin: 1.5rem;
+  height: 24rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 15px;
 }

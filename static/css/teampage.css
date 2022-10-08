@@ -75,6 +75,12 @@
     background: #535E84
 }
 
+.body-section.team-pics-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .card{
     position: relative;
