@@ -24,7 +24,7 @@
           <div class="about-section d-flex flex-row justify-content-center align-items-center">
             <div class="wrapper">
               <h2>What is an LFA?</h2>
-              <p>Lateral flow assays (LFAs) are paper-based detection methods. Lateral flow immunoassays, a specific type of LFA, use a series of antibodies to detect whether a biomarker is present in a liquid sample. (Lateral flow assays - PMC (nih.gov))</p>
+              <p>Lateral flow assays (LFAs) are paper-based detection methods. Lateral flow immunoassays, a specific type of LFA, use a series of antibodies to detect whether a biomarker is present in a liquid sample.<sup>1</sup></p>
             </div>
             <div class="img-wrapper bunch-of-lfas">
               <img style="max-height: 15rem; padding: 2rem;"src="https://static.igem.wiki/teams/4477/wiki/images/lfa-group.svg" alt="lfa bunch">
@@ -42,18 +42,77 @@
 <div class="gray d-flex flex-column justify-content-center">
     <div class="d-flex flex-row justify-content-center body-padding">
         <div class="index-padding">
-            <div class="fixed-index">
-                <p>FIXED INDEX will go here once styled</p>
+            <div class="fixed-index d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+              <div class="wrapper mx-4">
+                <div class="index heading d-flex flex-row align-items-center justify-content-start py-4">
+                  <div class="top-select active" id="toc" role="button" onclick="selectTop(this)">Index</div>
+                  <div class="top-select" id="refs" role="button" onclick="selectTop(this)">References</div>
+                </div>
+        
+                <div class="tab references content d-flex flex-column hidden" id="references">
+                    <div class="wrapper">
+                        <p>
+                            1.	Koczula, K. M. & Gallotta, A. Lateral flow assays. Essays Biochem. 60, 111–120 (2016).
+                            <br>
+                            2.	Libby, P. The changing landscape of atherosclerosis. Nature 592, 524–533 (2021).
+                            <br>
+                            3.	De Meyer, T., Muyldermans, S. & Depicker, A. Nanobody-based products as research and diagnostic tools. Trends Biotechnol. 32, 263–270 (2014).
+                            <br>
+                            4.	Schiopu, A. et al. Recombinant Human Antibodies Against Aldehyde-Modified Apolipoprotein B-100 Peptide Sequences Inhibit Atherosclerosis. Circulation 110, 2047–2052 (2004).
+                            <br>
+                            5.	Gandhi, S., Banga, I., Kumar Maurya, P. & A. Eremin, S. A gold nanoparticle-single-chain fragment variable antibody as an immunoprobe for rapid detection of morphine by dipstick. RSC Adv. 8, 1511–1518 (2018).
+                            <br>
+                            6.	Robinson, M.-P. et al. Efficient expression of full-length antibodies in the cytoplasm of engineered bacteria. Nat. Commun. 6, 8072 (2015).
+                            <br>
+                            7.	Lobstein, J. et al. SHuffle, a novel Escherichia coli protein expression strain capable of correctly folding disulfide bonded proteins in its cytoplasm. Microb. Cell Factories 11, 753 (2012).
+                            <br>
+                            8.	A toolbox of anti–mouse and anti–rabbit IgG secondary nanobodies | Journal of Cell Biology | Rockefeller University Press. <a href="https://rupress.org/jcb/article/217/3/1143/39133/A-toolbox-of-anti-mouse-and-anti-rabbit-IgG">https://rupress.org/jcb/article/217/3/1143/39133/A-toolbox-of-anti-mouse-and-anti-rabbit-IgG</a>.
+                            <br>
+                            9.	Human-derived anti-oxidized LDL autoantibody blocks uptake of oxidized LDL by macrophages and localizes to atherosclerotic lesions in vivo - PubMed. <a href="https://pubmed.ncbi.nlm.nih.gov/11498462/">https://pubmed.ncbi.nlm.nih.gov/11498462/</a> .
+                            <br>
+                            10.	The Three-Dimensional Structure of a Phosphorylcholine-Binding Mouse Immunoglobulin Fab and the Nature of the Antigen Binding Site | PNAS <a href="https://www.pnas.org/doi/10.1073/pnas.71.11.4298?url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub++0pubmed">https://www.pnas.org/doi/10.1073/pnas.71.11.4298?url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub++0pubmed</a>.
+                          </p>
+                    </div>
+                </div>
+        
+                <div class="tab index" id="index">
+                  <div class="index content d-flex flex-column" id="scrollspy-index-list">
+                    <div class="index-item active" role="button" scrollTo="head1" onclick="scrollToSection(this)">How does an LFA Work?</div>
+                    
+                    <div class="index-item" role="button" scrollTo="head2" onclick="scrollToSection(this)">How Our LFA is Unique</div>
+          
+                    <div class="indented index-item" role="button" scrollTo="head3" onclick="scrollToSection(this)">What is Unique to our Design</div>
+          
+                    <div class="index-item" role="button" scrollTo="head4" onclick="scrollToSection(this)">Choosing a Chassis</div>
+          
+                    <div class="indented index-item" role="button" scrollTo="head5" onclick="scrollToSection(this)">How SHuffle Works</div>
+          
+                    <div class="index-item" role="button" scrollTo="head6" onclick="scrollToSection(this)">Plasmid Design</div>
+          
+                    <div class="index-item" role="button" scrollTo="head7" onclick="scrollToSection(this)">Designing Our Antibodies</div>
+          
+                    <div class="indented index-item" role="button" scrollTo="head8" onclick="scrollToSection(this)">Labelled Anti-ApoBMDA Design</div>
+          
+                    <div class="indented index-item" role="button" scrollTo="head9" onclick="scrollToSection(this)">Anti-OxLDL Design</div>
+
+                    <div class="indented index-item" role="button" scrollTo="head10" onclick="scrollToSection(this)">Anti-IgG Design</div>
+
+                    <div class="index-item" role="button" scrollTo="head11" onclick="scrollToSection(this)">Biosafety</div>
+
+                    <div class="index-item" role="button" scrollTo="head12" onclick="scrollToSection(this)">Hardware</div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
        
     
         <div class="body-container d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
             <div class="container">
-                <div class="body-section top-page">
+                <div class="body-section top-page" id="head1">
                     <div class="lfa-beginning">
-                        <div class="text-wrapper">
-                            <h2> How does an LFA Work? </h2>
+                        <div class="text-wrapper" >
+                            <h2> How does an LFA Work?</h2>
                         </div>
                         <div class="image-wrapper d-flex flex-column justify-content-center align-items-center lfa-diagram img-fluid">
                             <img src="https://static.igem.wiki/teams/4477/wiki/images/diag-lfadiagram.svg" alt="lfa diagram">
@@ -130,7 +189,7 @@
 
                             <div class="steps-container-thicc">
                                 <div class="text-wrapper-des">
-                                    <p>Here, a <span class="bold-text">secondary antibody</span> that binds to the labeled antibody itself is immobilized. If the test is working properly, the <span class="bold-text">secondary and labeled antibody will bind</span>, causing the control line to show a <span class="bold-text">colored line</span>. The sample continues off the membrane and is <span class="bold-text">absorbed</span> by an absorbent pad, <span class="bold-text">stopping the fluid flow</span>.   Lateral flow assays - PMC (nih.gov)</p>
+                                    <p>Here, a <span class="bold-text">secondary antibody</span> that binds to the labeled antibody itself is immobilized. If the test is working properly, the <span class="bold-text">secondary and labeled antibody will bind</span>, causing the control line to show a <span class="bold-text">colored line</span>. The sample continues off the membrane and is <span class="bold-text">absorbed</span> by an absorbent pad, <span class="bold-text">stopping the fluid flow</span>.<sup>1</sup></p>
                                 </div>
                             </div>
 
@@ -143,22 +202,31 @@
             </div>
 
             <div class="container">
-                <div class="body-section">
-                    <h2>How Our LFA is Unique</h2>
+                <div class="body-section" id="head2">
+                    <div class="text-wrapper">
+                        <h2>How Our LFA is Unique</h2>
+                    </div>
+                    
                     <div class="text-wrapper">
                         <p>
-                            For our LFA, we decided to test for the presence of oxidized low density lipoprotein (oxLDL) because oxLDL is a biomarker of atherosclerosis found in the blood (The changing landscape of atherosclerosis | Nature). Then, if our test detected oxLDL, the patient would have evidence they are experiencing early atherosclerosis. 
+                            For our LFA, we decided to test for the presence of oxidized low density lipoprotein (oxLDL) because oxLDL is a biomarker of atherosclerosis found in the blood.<sup>2</sup> Then, if our test detected oxLDL, the patient would have evidence they are experiencing early atherosclerosis. 
 
-                            Our strip contains one full-length antibody, an scFv fragment, and a VHH nanobody fragment Nanobody-based products as research and diagnostic tools | Elsevier Enhanced Reader, all which are produced in <span class="italic-text">E. coli</span> SHuffle. To detect oxLDL, we designed two primary antibodies. The labeled primary antibody binds to a protein component of oxLDL called MDA-modified apolipoprotein B (apoBMDA) Recombinant Human Antibodies Against Aldehyde-Modified Apolipoprotein B-100 Peptide Sequences Inhibit Atherosclerosis | Circulation (ahajournals.org), while the other primary antibody immobilized at the test line binds to oxidized phospholipids within oxLDL. The fact that these two primary antibodies bound to different epitopes helped ensure the antibodies did not interfere with the other’s binding site. Lastly, we designed a secondary antibody targeting the constant domain of the labeled primary antibody and used this on the control line to verify the test worked correctly.
+                            Our strip contains one full-length antibody, an scFv fragment, and a VHH nanobody fragment<sup>3</sup>, all which are produced in E. coli SHuffle. To detect oxLDL, we designed two primary antibodies. The labeled primary antibody binds to a protein component of oxLDL called MDA-modified apolipoprotein B (apoBMDA)<sup>4</sup>, while the other primary antibody immobilized at the test line is polyclonal and binds to both apoBMDA and oxidized phospholipids within oxLDL. The fact that these two primary antibodies bound to different epitopes helped ensure the antibodies did not interfere with the other’s binding site. Lastly, we designed a secondary antibody targeting the constant domain of the labeled primary antibody and used this on the control line to verify the test worked correctly.
+
                         </p>
                     </div>
+                </div>
 
-                    <h4>What is Unique to our Design</h4>
+                <div class="body-section" id="head3">
+                    <div class="text-wrapper">
+                        <h4>What is Unique to our Design</h4>
+                    </div>
+                    
                     <ul>
                         <li>Utilizes a special strain of <span class="italic-text">E. coli</span> to produce antibodies</li>
                         <li>LFA incorporates non-full length antibodies</li>
                         <ul>
-                            <li>These antibody fragments are equally capable of recognizing epitopes just as full-length antibodies are, but are less complex and easier to develop (A gold nanoparticle-single-chain fragment variable antibody as an immunoprobe for rapid detection of morphine by dipstick - RSC Advances (RSC Publishing) DOI:10.1039/C7RA12810J)</li>
+                            <li>These antibody fragments are equally capable of recognizing epitopes just as full-length antibodies are, but are less complex and easier to develop<sup>5</sup></li>
                         </ul>
                         <li>Full-length antibody is a recombinant of human and mouse genes</li>
                     </ul>
@@ -166,11 +234,14 @@
             </div>
 
             <div class="container">
-                <div class="body-section">
-                    <h2>Choosing a Chassis</h2>
+                <div class="body-section" id="head4">
+                    <div class="text-wrapper">
+                        <h2>Choosing a Chassis</h2>
+                    </div>
+                    
                     <div class="text-wrapper">
                         <p>
-                            An LFA requires the production of three different antibodies, which have complex structures containing disulfide bonds. Most bacteria, like <span class="italic-text">E. coli</span>, can only produce the disulfide bonds necessary for antibody production in their periplasm, because their cytoplasm is a reducing environment. This is not favorable for the formation of disulfide bonds. In order for the bonds to be formed, modification of the cytoplasm is vital for utilizing the cytoplasmic space to produce proteins. One group of scientists developed a strain of <span class="italic-text">E. coli</span> with an oxidizing cytoplasm that allows the formation of disulfide bonds, and this strain is SHuffle Efficient expression of full-length antibodies in the cytoplasm of engineered bacteria (nature.com). We determined through modeling that all of our antibodies and antibody fragments have disulfide bonds and the number of cysteines fall within the optimal range of our choice, so we chose the B-strain of <span class="italic-text">E. coli</span> SHuffle.  
+                            An LFA requires the production of three different antibodies, which have complex structures containing disulfide bonds. Most bacteria, like E. coli, can only produce the disulfide bonds necessary for antibody production in their periplasm, because their cytoplasm is a reducing environment. This is not favorable for the formation of disulfide bonds. In order for the bonds to be formed, modification of the cytoplasm is vital for utilizing the cytoplasmic space to produce proteins. One group of scientists developed a strain of E. coli with an oxidizing cytoplasm that allows the formation of disulfide bonds, and this strain is SHuffle.<sup>6</sup> We determined through modeling that all of our antibodies and antibody fragments have disulfide bonds and the number of cysteines fall within the optimal range of our choice, so we chose the B-strain of E. coli SHuffle.  
         
                         </p>
                     </div>
@@ -178,27 +249,32 @@
             </div>
 
             <div class="container">
-                <div class="body-section">
-                    <h4>How SHuffle Works</h4>
+                <div class="body-section" id="head5">
+                    <div class="text-wrapper">
+                        <h4>How SHuffle Works</h4>
+                    </div>
+                    
                     <div class="text-wrapper">
                         <p>
-                            SHuffle differs from standard <span class="italic-text">E. coli</span> in that it maintains a more oxidizing cytoplasm, which allows cells to correctly form disulfide bonds in proteins, which enables researchers to overexpress correctly folded proteins. (https://microbialcellfactories.biomedcentral.com/articles/10.1186/1475-2859-11-56) 
-                            Several major genetic modifications result in this modified cytoplasm. Two genes coding for cytoplasmic reductases, specifically thioredoxin reductase (trxB) and glutathione reductase (gor), are knocked out from the <span class="italic-text">E. coli</span> genome. While this leads to a less reducing and therefore more oxidizing cytoplasm, these two mutations on their own are lethal to the <span class="italic-text">E. coli</span>. This is due to a lack of reductases recycling other essential enzymes into their reduced state. So, another mutation called AhpC* is introduced into the genome, modifying 2-Cys alkyl hydroperoxide reductase. This mutation returns reducing power to an enzyme called glutaredoxin 1 (Grx1) and makes the previously described double knock out non-lethal to <span class="italic-text">E. coli</span>. In the oxidizing environment, thioredoxin enzymes including thioredoxin 1 (Trx1) are able to form disulfide bonds between cysteine residues of proteins. However, these thioredoxins form disulfide bonds indiscriminately between any two cysteine residues, meaning that the protein could be misfolded at this stage. So, researchers overexpress an enzyme called disulfide bond isomerase c (DsbC), which is naturally found in the periplasm of <span class="italic-text">E. coli</span>. This enzyme moves, or shuffles, mis-formed disulfide bonds to the correct conformations which finally results in correctly folded proteins in the cytoplasm.
+                            SHuffle differs from standard E. coli in that it maintains a more oxidizing cytoplasm, which allows cells to correctly form disulfide bonds in proteins, which enables researchers to overexpress correctly folded proteins.<sup>7</sup>
+                            Several major genetic modifications result in this modified cytoplasm. Two genes coding for cytoplasmic reductases, specifically thioredoxin reductase (trxB) and glutathione reductase (gor), are knocked out from the E. coli genome.<sup>7</sup> While this leads to a less reducing and therefore more oxidizing cytoplasm, these two mutations on their own are lethal to the E. coli. This is due to a lack of reductases recycling other essential enzymes into their reduced state. So, another mutation called AhpC* is introduced into the genome, modifying 2-Cys alkyl hydroperoxide reductase. This mutation returns reducing power to an enzyme called glutaredoxin 1 (Grx1) and makes the previously described double knock out non-lethal to E. coli. In the oxidizing environment, thioredoxin enzymes including thioredoxin 1 (Trx1) are able to form disulfide bonds between cysteine residues of proteins.<sup>7</sup> However, these thioredoxins form disulfide bonds indiscriminately between any two cysteine residues, meaning that the protein could be misfolded at this stage. So, researchers overexpress an enzyme called disulfide bond isomerase c (DsbC), which is naturally found in the periplasm of E. coli. This enzyme moves, or shuffles, mis-formed disulfide bonds to the correct conformations which finally results in correctly folded proteins in the cytoplasm.<sup>7</sup>
+
                         </p>
                     </div>
                 </div>
             </div>
 
             <div class="container">
-                <div class="body-section">
-                    <h2>Plasmid Design</h2>
+                <div class="body-section" id="head6">
+                    <div class="text-wrapper">
+                        <h2>Plasmid Design</h2>
+                    </div>
+                    
                     <div class="text-wrapper">
                         <p>
-                            For each antibody, we designed a composite insert. Each insert was complete with a strong T7 promoter, an <span class="italic-text">E. coli</span> codon-optimized ribosomal binding site (RBS), the antibody coding sequence, and a terminator. Between each component, we included non-illegal restriction sites for modular design. This is so that other individuals or iGEM teams can swap out parts if needed to vary the rate of transcription or coding sequence. This is also very essential in transformation. 
-
+                            For each antibody, we designed a composite insert. Each insert was complete with a strong T7 promoter, an E. coli codon-optimized ribosomal binding site (RBS), the antibody coding sequence, and a terminator. Between each component, we included non-illegal restriction sites for modular design. This is so that other individuals or iGEM teams can swap out parts if needed to vary the rate of transcription or coding sequence. This is also very essential in transformation. 
                             <br>
-
-                            We decided to biobrick a composite part for each antibody in order to use standard assembly. Having a single synthesized component only requires one step to assemble our plasmid. The backbone we used was pSB3K3, a low-copy number plasmid. Our goal was to synthesize functional antibodies, so we chose a low-copy plasmid to limit the metabolic burden on our cells, increasing the success of our antibodies being synthesized correctly.
+                            We decided to BioBrick a composite part for each antibody in order to use standard assembly. Having a single synthesized component only requires one step to assemble our plasmid. The backbone we used was pSB3K3, a low-copy number plasmid. Our goal was to synthesize functional antibodies, so we chose a low-copy plasmid to limit the metabolic burden on our cells, increasing the success of our antibodies being synthesized correctly.
 
                         </p>
                     </div>
@@ -207,14 +283,19 @@
         
 
             <div class="container">
-                <div class="body-section">
-                    <h2>Designing Our Antibodies</h2>
+                <div class="body-section" id="head7">
+                    <div class="text-wrapper">
+                        <h2>Designing Our Antibodies</h2>
+                    </div>
+                </div>   
 
+                <div class="body-section" id="head8">
                     <div class="text-wrapper">
                         <h4>Labelled Anti-ApoB<sub>MDA</sub> Design</h4>
                         <p>
                             We decided to develop a full-length IgG to use as our labeled anti-apoB(MDA) primary antibody. While antibody fragments that omit the constant domain of IgGs are simpler to produce, we chose to include the entire IgG for this antibody because the antibody needed its constant domain to bind properly to the gold nanoparticles we used to label it. 
-                            The sequence of the variable domain of this antibody was based on that of Orticumab, a human anti-apoB(MDA) antibody currently being developed Recombinant Human Antibodies Against Aldehyde-Modified Apolipoprotein B-100 Peptide Sequences Inhibit Atherosclerosis | Circulation (ahajournals.org. The constant domain of the antibody was identical to the constant domain of a mouse IgG1. We chose to substitute the mouse constant domain in place of the human constant domain of Orticumab because there are many secondary antibodies that bind to our chosen mouse constant domain A toolbox of anti–mouse and anti–rabbit IgG secondary nanobodies | Journal of Cell Biology | Rockefeller University Press (rupress.org) , which made our design for the secondary antibody easier.
+                            <br>
+                            The sequence of the variable domain of this antibody was based on that of Orticumab, a human anti-apoB(MDA) antibody currently being developed.<sup>4</sup> The constant domain of the antibody was identical to the constant domain of a mouse IgG1. We chose to substitute the mouse constant domain in place of the human constant domain of Orticumab because there are many secondary antibodies that bind to our chosen mouse constant domain<sup>8</sup>, which made our design for the secondary antibody easier.
                         </p>
                     </div>
 
@@ -225,13 +306,15 @@
             </div>
 
             <div class="container">
-                <div class="body-section">
-                    <h4>Anti-OxLDL Design</h4>
+                <div class="body-section" id="head9">
+                    <div class="text-wrapper">
+                        <h4>Anti-OxLDL Design</h4>
+                    </div>
+                    
 
                     <div class="text-wrapper">
                         <p>
-                            We also designed two other primary antibodies that could be used to bind to the test line. These were inspired by anti-oxLDL antibodies we found in literature, called IK-17 (Human-Derived Anti–Oxidized LDL Autoantibody Blocks
-                            Uptake of Oxidized LDL by Macrophages and Localizes to Atherosclerotic Lesions In Vivo) and MCPC603 (The Three-Dimensional Structure of a Phosphorylcholine-Binding Mouse Immunoglobulin Fab and the Nature of the Antigen Binding Site | PNAS). Like our labeled antibody, IK-17 binds to the apoB protein that encircles oxLDL, but it binds to a different epitope than our labeled antibody (we used protein modeling to ensure this and verify that IK-17 and the labeled antibody wouldn't prevent the other from binding). MCPC603, however, binds to oxidized phospholipids within the lipid core of oxLDL. One of our criteria in our literature search for these other anti-oxLDL antibodies was for them to be antibody fragments as opposed to full-length antibodies. Our rationale for this choice was that antibody fragments are smaller and contain fewer disulfide bonds, and thus more efficient for SHuffle bacteria to produce. In particular, IK-17 and MCPC603 are single chain variable fragments (scFvs), so they are only comprised of a variable light and variable heavy region. Upon advice from Dr. Leitinger (see Modeling and Attributions for more details), we decided to immobilize both these different antibodies on the test line so we'd have a higher chance of successful and specific binding to oxLDL.
+                            We also designed two other primary antibodies that could be used to bind to the test line. These were inspired by anti-oxLDL antibodies we found in literature, called IK-17<sup>9</sup> and MCPC603<sup>10</sup>. Like our labeled antibody, IK-17 binds to the apoB protein that encircles oxLDL, but it binds to a different epitope than our labeled antibody (we used protein modeling to ensure this and verify that IK-17 and the labeled antibody would not prevent the other from binding). MCPC603, however, binds to oxidized phospholipids within the lipid core of oxLDL. One of our criteria in our literature search for these other anti-oxLDL antibodies was for them to be antibody fragments as opposed to full-length antibodies. Our rationale for this choice was that antibody fragments are smaller and contain fewer disulfide bonds, and thus more efficient for SHuffle bacteria to produce. In particular, IK-17 and MCPC603 are single chain variable fragments (scFvs), so they are only composed of a variable light and variable heavy region. Upon advice from Dr. Norbert Leitinger, a professor in the University of Virginia Department of Pharmacology, (see Modeling and Attributions for more details), we decided to immobilize both these different antibodies on the test line so we would have a higher chance of successful and specific binding to oxLDL.
                         </p>
                     </div>
 
@@ -240,8 +323,9 @@
                     </div>
                 </div>
             </div>
+
             <div class="container">
-                <div class="body-section">
+                <div class="body-section" id="head10">
                     <div class="img-wrapper ab-cards">
                         <img class="abimg" src="https://static.igem.wiki/teams/4477/wiki/images/diag-vhhlab.svg"/>
                     </div>
@@ -249,14 +333,14 @@
                     <div class="text-wrapper"> 
                         <h4>Anti-IgG Design</h4>
                         <p>
-                            We designed a secondary antibody to be immobilized on the control line. This antibody was a nanobody (VHH), a variable region heavy chain only antibody naturally found in camelids. The sequence we used was encoded for an anti-mouse VHH that binds to the constant domain on mouse IgG1 antibodies. A toolbox of anti–mouse and anti–rabbit IgG secondary nanobodies | Journal of Cell Biology | Rockefeller University Press (rupress.org) This allowed the VHH to bind to the hybrid full-length primary antibody because it recognized the mouse constant domain within it.
+                            We designed a secondary antibody to be immobilized on the control line. This antibody was a nanobody (VHH), a variable region heavy chain only antibody naturally found in camelids. The sequence we used was encoded for an anti-mouse VHH that binds to the constant domain on mouse IgG1 antibodies.<sup>8</sup> This allowed the VHH to bind to the hybrid full-length primary antibody because it recognized the mouse constant domain within it.
                         </p>
                     </div>
                 </div> 
             </div>
 
             <div class="container">
-                <div class="body-section">
+                <div class="body-section" id="head11">
                     <div class="text-wrapper">
                         <h2>Biosafety</h2>
                         <p>As synthetic biologists, it is our responsibility to take in all considerations in terms of the safety of our device. We met with experts in the field of biosafety to implement their expertise into our device design.
@@ -268,7 +352,7 @@
             </div>
 
             <div class="container">
-                <div class="body-section">
+                <div class="body-section"  id="head12">
                     <div class="text-wrapper">
                         <h2>Hardware</h2>
                         <p>The hardware for our device consists of a 3D-printed plastic cassette we designed that encapsulates the LFA test strip. A lancet for finger-pricking is also attached to the cassette. The cassette allows the LFA to be held in place and users to handle the device safely. When designing the cassette, we made sure it was both safe and environmentally-friendly, taking both the consumers' health and waste disposal processes into account. Our 3D model prototype also allows for mass production of our product easily.</p>
