@@ -38,6 +38,8 @@
 }
 
 .center{
+    display: flex;
+    justify-content: center;
     align-content: center;
     text-align: center;
 }
@@ -51,8 +53,11 @@
 .cards-section-team{
     width: 100%;
     height: auto;
-    background: #535E84;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
     padding-block: 10rem;
 }
 
@@ -66,15 +71,6 @@
     
 }
 
-.crd-container{
-    max-width: 80%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #535E84
-}
-
 .body-section.team-pics-wrapper {
     display: flex;
     flex-direction: column;
@@ -82,7 +78,7 @@
     align-items: center;
 }
 
-.card{
+.my-card{
     position: relative;
     background-color: #fff;
     max-width: 23rem;
@@ -91,50 +87,6 @@
     border-radius: 20px;
     transition: 0.5s;
     padding-top: 50px;
-}
-
-.imgBx {
-    position: absolute;
-    left: 50%;
-    top: -50px;
-    transform: translateX(-50%);
-    width: 150px;
-    height: 150px;
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0,0.35);
-    overflow: hidden;
-    transition: 0.5s;
-}
-.card:hover .imgBx{
-    height: 250px;
-    width: 250px;
-}
-
-.imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-
-}
-
-
-.info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 125px 0px 10px 0px;
-    transition: all 0.4s ease-in-out;
-}
-
-.new-card:hover .info {
-    display: flex;
-    padding: 230px 0px 10px 0px;
 }
 
 .detail {
@@ -151,77 +103,73 @@
     transition-delay: 0.2s, 0s, 0s;
 }
 
-.colu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.buttons {
-    position: relative;
-    display: flex;
-    opacity: 0;
-    z-index: -10px;
-    padding: 10px 50px;
-    justify-content: space-between;
-    transform: translate(-20px);
-    transition-timing-function: linear;
-    transition-duration: 0s, 0.2s , 0.2s;
-    transition-property: z-index,opacity,transform;
-    transition-delay: 0.2s, 0s, 0s;
-}
-
 .button {
     padding: 10px 30x;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#follow {
-    background-color: #535E84;
-    border: 1px solid #535E84;
-    color: #fff;
-    font-weight: 500;
-    transition: all 0.3s linear;
+.cards-section-team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#follow:hover {
-    background-color: #7684b5;
-
+.cards-section-team .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-#linkdin {
-    background-color: transparent;
-    border: 1px solid grey;
-    color: grey;
-    font-weight: 500;
-    transition: all 0.3s linear;
+.container .mycard{
+    width: 30rem;
+    margin: 2rem;
+    box-shadow: inset 5px 5px 5px rgb(0 0 0 / 5%), inset -5px -5px 5px rgb(255 255 255 / 50%), 5px 5px 5px rgb(0 0 0 / 5%), -5px -5px 5px rgb(255 255 255 / 50%);
+    -webkit-box-shadow: inset 5px 5px 5px rgb(0 0 0 / 5%), inset -5px -5px 5px rgb(255 255 255 / 50%), 5px 5px 5px rgb(0 0 0 / 5%), -5px -5px 5px rgb(255 255 255 / 50%);
+    -moz-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#linkdin:hover {
-    color: #fff;
-    background-color: darkgrey;
+.card-container .mycard:hover{
+    box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.5),
+                inset 6px 6px 20px rgba(0,0,0,0.1);
 }
 
-.new-card:hover .detail ,
-.new-card:hover .buttons {
-    opacity: 1;
-    z-index: 0;
-    transform: translateX(0px);
-    transition-timing-function: linear;
-    transition-duration: 0s, 0.3s, 0.3s;
-    transition-property: z-index, opacity, transform;
-    transition-delay: 0s, 0.2s, 0.2s;
+.mycard .imgBx img {
+    height: 18rem;
+    width: 18rem;
+    object-fit: cover;
+    border-radius: 100rem;
+    padding: 2rem;
 }
 
-.rounded{
-    max-width:80%;
-    height:auto;
-    border-radius: 10%;
-    align-content: center; 
-    padding: 8px;  
+.mycard .imgBx {
+    box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0),
+              inset 3px 3px 5px rgba(55, 84, 170, .15),
+              inset -3px -3px 5px rgba(255, 255, 255, .5),
+              0px 0px 4px rgba(255, 255, 255, .2) !important;
+    -webkit-box-shadow:inset 0px 0px 4px rgba(255, 255, 255, 0),
+    inset 3px 3px 5px rgba(55, 84, 170, .15),
+    inset -3px -3px 5px rgba(255, 255, 255, .5),
+    0px 0px 4px rgba(255, 255, 255, .2) !important;
+    -moz-box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0),
+    inset 3px 3px 5px rgba(55, 84, 170, .15),
+    inset -3px -3px 5px rgba(255, 255, 255, .5),
+    0px 0px 4px rgba(255, 255, 255, .2) !important;
+
+    border-radius: 100rem;
+    margin: 2rem;
 }
 
-.lfasize {
-    size: 5%
+.contentBx {
+    padding: 2rem;
+}
+
+.contentBx h2{
+    text-align:center;
+    padding-bottom: 3rem;
 }
