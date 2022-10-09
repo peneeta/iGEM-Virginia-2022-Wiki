@@ -123,13 +123,13 @@
 }
 
 .container .mycard{
-    width: 30rem;
+    width: 60vw;
     margin: 2rem;
     box-shadow: inset 5px 5px 5px rgb(0 0 0 / 5%), inset -5px -5px 5px rgb(255 255 255 / 50%), 5px 5px 5px rgb(0 0 0 / 5%), -5px -5px 5px rgb(255 255 255 / 50%);
     -webkit-box-shadow: inset 5px 5px 5px rgb(0 0 0 / 5%), inset -5px -5px 5px rgb(255 255 255 / 50%), 5px 5px 5px rgb(0 0 0 / 5%), -5px -5px 5px rgb(255 255 255 / 50%);
     -moz-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05), inset -5px -5px 5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0,0,0,0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -170,6 +170,6 @@
 }
 
 .contentBx h2{
-    text-align:center;
-    padding-bottom: 3rem;
+    text-align:left;
+    padding-block: 2rem;
 }
