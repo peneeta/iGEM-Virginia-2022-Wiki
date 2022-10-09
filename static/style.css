@@ -559,6 +559,10 @@ font-size: clamp(3rem, calc(3rem + 1vw), 5rem);
   padding-top: 5.5rem!important;
 }
 
+.bottom-page {
+  padding-bottom: 4rem!important;
+}
+
 .body-section{
   padding-block: 1rem;
 }
