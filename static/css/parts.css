@@ -1,0 +1,19 @@
+.tbl-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+table{
+    max-width: 45rem;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
