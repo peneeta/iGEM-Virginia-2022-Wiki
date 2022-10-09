@@ -141,12 +141,24 @@
     font-size: clamp(0.8rem, 0.8rem + 1vw, 1rem);
     text-align: center;
     letter-spacing: 0.02rem;
+    max-width: 25rem;
   }
 
   .mission-text-wrapper{
-    padding-block: 4rem;
-    max-width: 25rem;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin-block: 4rem;
+    padding-block: 3rem;
+    padding-inline: 4rem;
+    width: 60vw;
+     box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1),
+    10px 10px 10px rgba(0, 0, 0, 0.4),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+    inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 2rem;
+}
 
   .header-section{    
     width: 100%;
@@ -549,7 +561,7 @@
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  transform: rotate(180deg);
+  transform: translatey(2px) rotate(180deg);
 }
 
 .solution-divider-top svg {
