@@ -223,7 +223,7 @@
     padding-top: 7rem;
   }
 
-  .earth-section {
+  .earth-circle {
     box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1);
     border-radius: 200rem;
     width: 46rem;
@@ -252,6 +252,7 @@
 
   .counter-color-sec{
     background-color: #ECF0F3;
+    overflow: hidden;
   }
 
 
@@ -299,17 +300,66 @@
 
 .img-wrapper.rbc {
   position: absolute;
-  animation: MoveUpDown 3s ease-out infinite;
 }
 
-@keyframes MoveUpDown {
+.img-wrapper.bc0{
+  scale:1.2;
+  animation: MoveUpDown0 17s ease-out infinite;
+  right: 6rem;
+  top: 17rem;
+}
+
+.img-wrapper.bc1 {
+  scale: 0.6;
+  top: 10rem;
+  rotate: -5deg;
+  animation: MoveUpDown1 12s ease-out infinite;
+}
+
+.img-wrapper.bc2{
+  scale: 1.4;
+  bottom: 5rem;
+  left: 4rem;
+  rotate: 6deg;
+  animation: MoveUpDown2 10s ease-out infinite;
+}
+
+.img-wrapper.bc3 {
+  scale: 0.65;
+  rotate:30deg;
+  right: 5rem;
+  top: 3rem;
+  animation: MoveUpDown2 8s ease-out infinite;
+}
+
+
+@keyframes MoveUpDown0 {
   0%, 100% {
-    top: 300px;
+    transform: translateY(10px);
   }
   50% {
-    top: 350px;
+    transform: translateY(70px);
   }
 }
+
+@keyframes MoveUpDown1 {
+  0%, 100% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(90px);
+  }
+}
+
+@keyframes MoveUpDown2 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+}
+
 
 .img-wrapper.rbc img {
   width: 10rem;
