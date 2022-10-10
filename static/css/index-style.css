@@ -176,7 +176,7 @@
   }
 
   .shock-background{
-    background-color: #c793a4;
+    background-color: #f5d4de;
   }
   
   /* Text Alignment Attributes */
@@ -382,21 +382,44 @@
     padding-top: 4rem;
     max-width: 40rem;
   }
-
-  .heart-image-stat img {
-    max-width: 20rem;
-    transform: translateX(-23px);
-  }
-  .heart-image-stat {
+  
+  .heart-image-stat{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: inset -12px -12px 30px 5px rgb(230 178 195 / 50%),
-  inset 12px 12px 30px 5px rgb(190 130 149);
+    box-shadow: inset -12px -12px 30px 5px rgb(247 237 240 / 50%), inset 12px 12px 30px 5px rgb(241 195 210);
     border-radius: 500rem;
-    width:25rem;
-    height: 25rem
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .heart-image-stat img {
+    max-width: 15rem;
+    transform: translateX(-23px);
+    animation: animateHeart 0.9s infinite;
+    transform-origin: center;
+  }
+
+  @keyframes animateHeart {
+    0% {
+      transform: scale(0.8);
+    }
+    5% {
+      transform: scale(0.9);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    15% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(0.9);
+    }
   }
 
   /* GRAPH SECTION */
@@ -463,12 +486,20 @@
     max-width: 35rem;
     text-align: center;
     padding-top: 4rem;
-}
+  }
 
 .text-wrapper.committee-title{
   padding-top: 6rem;
   text-align: center;
 }
+
+.heart-text-bottom-wrapper {
+  margin-top: 6rem;
+}
+.heart-text-top-wrapper {
+  margin-bottom: 4rem;
+}
+
 /* CARDS */
 .cards-section{
   display: flex;
