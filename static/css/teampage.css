@@ -1,5 +1,5 @@
 .team-photo{
-    max-width:50%;
+    max-width:20%;
     height:auto;
     border-radius: 10%;
     align-content: center; 
@@ -173,3 +173,18 @@
     text-align:left;
     padding-block: 2rem;
 }
+
+.dark-section{
+    width: 100%;
+    height: auto;
+    background: #121212;
+    color: white;
+    overflow: hidden;
+}
+
+.pipic{
+    height: 120%;
+    width: auto;
+    border-radius: 10px
+}
+
