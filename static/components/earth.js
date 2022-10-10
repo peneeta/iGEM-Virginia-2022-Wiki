@@ -17,8 +17,8 @@
 
     const myGlobe = Globe({});
     myGlobe(globeDOM);
-    myGlobe.controls().autoRotate = true;
-    myGlobe.controls().autoRotateSpeed = 0.5;
+    //myGlobe.controls().autoRotate = true;
+    //myGlobe.controls().autoRotateSpeed = 0.5;
     myGlobe.controls().enableZoom = false;
 
 
@@ -51,15 +51,15 @@
 
       })
 
-  window.addEventListener("scroll", function() {
-    var div = document.getElementById("earth-section");
-    if (div.scrollHeight > div.clientHeight) {
-        myGlobe.pauseAnimation();
-    }
+  // window.addEventListener("scroll", function() {
+  //   var div = document.getElementById("this-earth");
+  //   if (div.scrollHeight > div.clientHeight) {
+  //       myGlobe.pauseAnimation();
+  //   }
 
-    if(div.scrollHeight <= div.clientHeight){
-      myGlobe.resumeAnimation();
-    }
-  });
+  //   if(div.scrollHeight <= div.clientHeight){
+  //     myGlobe.resumeAnimation();
+  //   }
+  // });
 
 
