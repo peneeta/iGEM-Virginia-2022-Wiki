@@ -141,100 +141,124 @@
 
   <div class="light-background">
     <div class="container stat-section d-flex flex-column align-items-center justify-content-center">
-      <div class="stat-wrapper d-flex flex-column px-4">
-        <div data-aos="fade-up" data-aos-duration="1000">
-          <h2 class="pb-3">Economic Burden</h2>
-          <p>
-            In addition to its health impacts, heart disease is <span class="bold-text">extremely costly</span>. In a technical report prepared for the American Heart Association, combined costs of detection tests and hospital visits are expected to reach <span class="bold-text">750 billion dollars</span> by 2035.
-          </p> 
+      <div class="page stat-with-graph">
+        <div class="stat-wrapper d-flex flex-column px-4">
+          <div data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="pb-3">Economic Burden</h2>
+            <p>
+              In addition to its health impacts, heart disease is <span class="bold-text">extremely costly</span>. In a technical report prepared for the American Heart Association, combined costs of detection tests and hospital visits are expected to reach <span class="bold-text">750 billion dollars</span> by 2035.
+            </p> 
+          </div>
         </div>
-      </div>
-
-      <div class="wrapper d-flex flex-column align-items-center justify-content-evenly">
-        <div class="wrapper graph" style="position: relative;" data-aos="fade-up" data-aos-duration="1000">
-          <canvas id="myChart"></canvas>
-          <!-- ChartJS Initialization -->
-          <script src="{{ url_for('static', filename = '/chartjs/chart.min.js')}}"></script>
-          <script>
-            
-            var ctx = document.getElementById("myChart");
-            var myChart = new Chart(ctx, {
-              type: 'line',
-              data: {
-                labels: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035],
-                datasets: [{
-                  fill: false,
-                  label: 'Total Cost of CVD',
-                  data: [318.2, 332.9, 347.9, 363.6, 380.0, 397.4, 415.3, 434.4, 454.4, 475.5, 497.3, 519.3, 543.8, 568.3, 592.9, 618.0, 642.7, 667.7, 693.3, 720.0, 748.7],
-                  borderColor: '#3366CC',
-                  backgroundColor: 'rgba(51, 102, 204, 0.2)',
-                  tension: 0.4
-                }, {
-                  fill: false,
-                  label: 'Hypertension',
-                  data: [68.4, 71.5, 74.6, 77.9, 81.2, 84.7, 88.3, 92.1, 96.1, 100.2, 104.6, 109.0, 113.6, 118.3, 123.1, 128.0, 132.8, 137.7, 142.8, 148.1, 153.7],
-                  borderColor: '#DC3912',
-                  backgroundColor: 'rgba(220, 57, 18, 0.2)',
-                  tension: 0.4
-                
-                }, {
-                  fill: false,
-                  label: 'Coronary Heart Disease',
-                  data: [89.0, 93.2, 97.5, 102.0, 106.7, 111.8, 117.0, 122.6, 128.6, 134.6, 141.0, 147.4, 154.8, 162.0, 169.2, 176.6, 183.7, 191.0, 198.4, 206.2, 214.5],
-                  borderColor: '#FF9900',
-                  backgroundColor:'rgba(255, 153, 0, 0.2)',
-                  tension: 0.4
-                }, {
-                  fill: false,
-                  label: 'Stroke',
-                  data: [36.7, 38.5, 40.4, 42.4, 44.5, 46.8, 49.1, 51.7, 54.3, 57.1, 60.0, 62.9, 66.2, 69.5, 72.9, 76.3, 79.7, 83.1, 86.6, 90.3, 94.3],
-                  borderColor: '#990099',
-                  backgroundColor:'rgba(153, 0, 153, 0.2)',
-                  tension: 0.4
-                }, {
-                  fill: false,
-                  label: 'Atrial Fibrilation',
-                  data: [23.6, 24.6, 25.7, 26.9, 28.0,  29.3, 30.6, 32.0, 33.6, 35.1, 36.7, 38.3, 40.2, 42.0, 43.8, 45.6, 47.4, 49.2, 51.0, 52.9, 55.0],
-                  borderColor: '#316395',
-                  backgroundColor:'rgba(49, 99, 149, 0.2)',
-                  tension: 0.4,
-                }]
-              },
-              options: {
-                responsive: true,
-                aspectRatio: 1,
-                scales: {
-                  y: {
+  
+        <div class="wrapper d-flex flex-column align-items-center justify-content-evenly">
+          <div class="wrapper graph" style="position: relative;" data-aos="fade-up" data-aos-duration="1000">
+            <canvas id="myChart"></canvas>
+            <!-- ChartJS Initialization -->
+            <script src="{{ url_for('static', filename = '/chartjs/chart.min.js')}}"></script>
+            <script>
+              
+              var ctx = document.getElementById("myChart");
+              var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                  labels: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035],
+                  datasets: [{
+                    fill: false,
+                    label: 'Total Cost of CVD',
+                    data: [318.2, 332.9, 347.9, 363.6, 380.0, 397.4, 415.3, 434.4, 454.4, 475.5, 497.3, 519.3, 543.8, 568.3, 592.9, 618.0, 642.7, 667.7, 693.3, 720.0, 748.7],
+                    borderColor: '#3366CC',
+                    backgroundColor: 'rgba(51, 102, 204, 0.2)',
+                    tension: 0.4
+                  }, {
+                    fill: false,
+                    label: 'Hypertension',
+                    data: [68.4, 71.5, 74.6, 77.9, 81.2, 84.7, 88.3, 92.1, 96.1, 100.2, 104.6, 109.0, 113.6, 118.3, 123.1, 128.0, 132.8, 137.7, 142.8, 148.1, 153.7],
+                    borderColor: '#DC3912',
+                    backgroundColor: 'rgba(220, 57, 18, 0.2)',
+                    tension: 0.4
+                  
+                  }, {
+                    fill: false,
+                    label: 'Coronary Heart Disease',
+                    data: [89.0, 93.2, 97.5, 102.0, 106.7, 111.8, 117.0, 122.6, 128.6, 134.6, 141.0, 147.4, 154.8, 162.0, 169.2, 176.6, 183.7, 191.0, 198.4, 206.2, 214.5],
+                    borderColor: '#FF9900',
+                    backgroundColor:'rgba(255, 153, 0, 0.2)',
+                    tension: 0.4
+                  }, {
+                    fill: false,
+                    label: 'Stroke',
+                    data: [36.7, 38.5, 40.4, 42.4, 44.5, 46.8, 49.1, 51.7, 54.3, 57.1, 60.0, 62.9, 66.2, 69.5, 72.9, 76.3, 79.7, 83.1, 86.6, 90.3, 94.3],
+                    borderColor: '#990099',
+                    backgroundColor:'rgba(153, 0, 153, 0.2)',
+                    tension: 0.4
+                  }, {
+                    fill: false,
+                    label: 'Atrial Fibrilation',
+                    data: [23.6, 24.6, 25.7, 26.9, 28.0,  29.3, 30.6, 32.0, 33.6, 35.1, 36.7, 38.3, 40.2, 42.0, 43.8, 45.6, 47.4, 49.2, 51.0, 52.9, 55.0],
+                    borderColor: '#316395',
+                    backgroundColor:'rgba(49, 99, 149, 0.2)',
+                    tension: 0.4,
+                  }]
+                },
+                options: {
+                  responsive: true,
+                  aspectRatio: 1,
+                  plugins:{
                     title: {
                       display: true,
-                      text: 'Cost in Billions ($USD)'
-                    },
-                    ticks: {
-                      beginAtZero: true,          
-                      stepSize: 50 // this worked as expected          
+                      text: "Projected Costs of Common Cardiovascular Diseases",
+                      font:{
+                        size: 20,
+                        family: "Quicksand"
+                      }
                     }
                   },
-                  x: {
-                    title: {
-                      display: true,
-                      text: 'Year'
+                  scales: {
+                    y: {
+                      title: {
+                        display: true,
+                        text: 'Cost in Billions ($USD)',
+                        font: {
+                          family: "Open Sans"
+                        }
+                      },
+                      ticks: {
+                        beginAtZero: true,          
+                        stepSize: 50, // this worked as expected   
+                        font:{
+                          family: "Open Sans"
+                        }       
+                      }
                     },
-                    ticks: {
-                      stepSize: 2,
-
+                    x: {
+                      title: {
+                        display: true,
+                        text: 'Year',
+                        font:{
+                          family: "Open Sans"
+                        }
+                      },
+                      ticks: {
+                        stepSize: 2,
+                        font:{
+                          family: "Open Sans"
+                        }
+  
+                      }
                     }
                   }
                 }
-              }
-            });
-
-          </script>
-        </div>
-
-        <div class="graph-subtitle-wrapper" data-aos="fade-up" data-aos-duration="1000">
-          <p class="italic-text">Projected costs of cardiovascular diseases from 2015 to 2035. Data obtained from Research Triangle Institute (RTI) technical report. 
-            <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Khavjou, Olga, Phelps, Diana, & Leib, Alyssa. (2016). Projections of Cardiovascular Disease Prevalence and Costs: 2015–2035. https://www.heart.org/-/media/Files/Get-Involved/Advocacy/CVD-Predictions-Through-2035.pdf</p>"><sup>#</sup></span>
-          </p>
+              });
+  
+            </script>
+          </div>
+  
+          <div class="graph-subtitle-wrapper" data-aos="fade-up" data-aos-duration="1000">
+            <p class="italic-text">Projected costs of cardiovascular diseases from 2015 to 2035. Data obtained from Research Triangle Institute (RTI) technical report. 
+              <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Khavjou, Olga, Phelps, Diana, & Leib, Alyssa. (2016). Projections of Cardiovascular Disease Prevalence and Costs: 2015–2035. https://www.heart.org/-/media/Files/Get-Involved/Advocacy/CVD-Predictions-Through-2035.pdf</p>"><sup>3</sup></span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
