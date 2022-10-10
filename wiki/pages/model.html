@@ -92,7 +92,7 @@
         });
 
         // Load PDB
-        stage.loadFile("{{ url_for('static', filename = 'pdb/McPC603-scFv.pdb') }}").then(function (oMcPC603) {
+        stage.loadFile("{{ url_for('static', filename = 'pdb/mcpc603-scFv.pdb') }}").then(function (oMcPC603) {
           oMcPC603.addRepresentation("surface", {
               colorScheme: "bfactor",
               contour: "true",
