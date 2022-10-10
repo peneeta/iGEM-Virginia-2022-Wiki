@@ -11,8 +11,8 @@
     <!-- fontawesome CSS -->
     <link href="{{ url_for('static', filename = 'fontawesome/all.min.css') }}" rel="stylesheet">
 
-      <!-- JQuery  -->
-  <script src="{{ url_for('static', filename = 'jquery-3.6.0.min.js') }}"></script>
+    <!-- JQuery  -->
+    <script src="{{ url_for('static', filename = 'jquery-3.6.0.min.js') }}"></script>
 
     <!-- Bootstrap CSS -->
     <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
@@ -67,11 +67,18 @@
     });
   </script>
 
+    <!-- CAROUSEL -->
+    <script language="JavaScript" type="text/javascript">
+      $(document).ready(function(){
+        $('.carousel').carousel({
+          interval: 2000
+        })
+      });    
+    </script> 
+
   <!-- Bootstrap Bundle with Popper -->
-  <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
-
+  <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script> 
   
-
 </body>
 
 <script src="{{ url_for('static', filename = 'components/scrollspyforindex.js') }}"></script>
