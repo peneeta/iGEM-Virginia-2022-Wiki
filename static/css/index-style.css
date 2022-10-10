@@ -378,7 +378,8 @@
 
   .stat-wrapper {
     text-align: center;
-    padding-bottom: 5rem;
+    padding: 2rem;
+    padding-top: 4rem;
     max-width: 40rem;
   }
 
@@ -398,6 +399,17 @@
     text-align: center;
     padding-block: 2rem;
   }
+
+  .page.stat-with-graph {
+    box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.6),
+    -5px -5px 10px rgba(255, 255, 255, 0.5);
+    padding-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
 
   .dark-section{
     width: 100%;
