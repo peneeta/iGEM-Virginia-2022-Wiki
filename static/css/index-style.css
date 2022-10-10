@@ -790,6 +790,28 @@
   height: 113px;
 }
 
+.hidden{
+  display: none;
+}
+
 .prob-divider .shape-fill {
   fill: #FCFBFB;
+}
+
+.popUp {
+  width: 30rem;
+  position: absolute;
+  bottom: 11vw;
+  left: 28vw;
+  z-index: 1;
+  background-color: #ffffff80;
+  border-radius: 3rem;
+}
+
+.popUp .wrapper {
+  padding:2rem;
+}
+
+.popUp .wrapper h2{
+  padding-bottom: 1rem;
 }
