@@ -2,26 +2,29 @@
 
     const gData = [({
       name: "India",
-      desc: "Approximately 40% of people in the poorest quintile were diagnosed with prehypertension. This foreshadows that the next wave of cardiovascular related deaths are likely to come from impoverished populations.",
+      countryID: "india",
       lat: 20.5937,
       lng: 78.9629,
       size: 20,
       color: ['black']
     }), ({
       name: "China",
-      desc: "The highest risk of cardiovascular disease was found in north and northeast China, while the lowest was found to be in south China. Variations in this are likely due to regional, evironmental, and socioeconomic differences between these regions.",
+      countryID: "china",
       lat: 35.8617,
       lng: 104.1954,
       size: 20,
       color: ['black']
     }), ({
-      name: "Europe",
-      lat: 54.5260,
-      lng: 15.2551,
+      name: "France",
+      countryID: "france",
+      desc: "",
+      lat: 46.2276,
+      lng: 2.2137,
       size: 20,
       color: ['black']
     }), ({
       name: "United States",
+      id: "america",
       lat: 37.0902,
       lng: 360-95.7129,
       size: 20,
@@ -32,8 +35,8 @@
 
     const myGlobe = Globe({});
     myGlobe(globeDOM);
-    //myGlobe.controls().autoRotate = true;
-    //myGlobe.controls().autoRotateSpeed = 0.5;
+    myGlobe.controls().autoRotate = true;
+    myGlobe.controls().autoRotateSpeed = 0.5;
     myGlobe.controls().enableZoom = false;
 
 
@@ -60,21 +63,23 @@
         mark.style.width = `${d.size}px`;
         mark.style['pointerEvents'] = 'auto';
         mark.style.cursor = 'pointer';
-        mark.onclick = () => console.log(`${d.name}`);
+        mark.onclick = () => {
+          const popUps = document.getElementsByClassName("popUp");
+          console.log(popUps.length);
+
+          for(i=0; i<popUps.length; i++){
+            console.log(popUps[i].id);
+            if(popUps[i].id == `${d.countryID}`){
+              popUps[i].classList.remove('hidden');
+            }
+            else
+            popUps[i].classList.add('hidden');
+          }
+
+        }
         
         return mark;
 
       })
-
-  // window.addEventListener("scroll", function() {
-  //   var div = document.getElementById("this-earth");
-  //   if (div.scrollHeight > div.clientHeight) {
-  //       myGlobe.pauseAnimation();
-  //   }
-
-  //   if(div.scrollHeight <= div.clientHeight){
-  //     myGlobe.resumeAnimation();
-  //   }
-  // });
 
 
