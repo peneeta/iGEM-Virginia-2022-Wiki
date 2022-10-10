@@ -185,6 +185,13 @@
 .pipic{
     height: 120%;
     width: auto;
-    border-radius: 10px
+    border-radius: 10px;
+    align-items: center;
+}
+
+.minds-behind-pic{
+    width:20%;
+    height: auto;
+    border-radius: 10px;
 }
 
