@@ -52,7 +52,7 @@
     <div class="index content">
       <div class="index-item active" role="button" id="introduction-desc">Solving Problems with Precision</div>
       <div class="index-item" role="button" id="atherosclerosis-desc">Protein Modeling</div> 
-      <div class="indented index-item" role="button" id="problems-desc">McPC603-603</div>
+      <div class="indented index-item" role="button" id="problems-desc">McPC603</div>
       <div class="indented index-item" role="button" id="lfa-desc">Nanobody</div>
     </div>
   </div>
@@ -72,13 +72,13 @@
       </div>
 
 
-      <!-- McPC603603 -->
-      <div class="pdb-struct McPC603603-scFv d-flex flex-row flex-lg-nowrap flex-wrap align-items-center justify-content-evenly">
+      <!-- McPC603 -->
+      <div class="pdb-struct McPC603-scFv d-flex flex-row flex-lg-nowrap flex-wrap align-items-center justify-content-evenly">
         <div class="container">
           <div class="wrapper">
-            <h4>McPC603-603 scFv Ribbon and Surface Model</h4>
+            <h4>McPC603 scFv Ribbon and Surface Model</h4>
             <div class="text-wrapper">
-              <p>This is a model generated from AlphaFold of the McPC603-603 antibody fragment. [Info about its active site, etc]</p>
+              <p>This is a model generated from AlphaFold of the McPC603 antibody fragment. [Info about its active site, etc]</p>
             </div>
           </div>
         </div>
@@ -86,13 +86,13 @@
         <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Create NGL Stage object
-        var stage = new NGL.Stage( "McPC603603-VP", {
+        var stage = new NGL.Stage( "McPC603-VP", {
           // NEED TO CHANGE THIS LATER if we change page color
           backgroundColor: 'white',
         });
 
         // Load PDB
-        stage.loadFile("{{ url_for('static', filename = 'pdb/McPC603603-scFv.pdb') }}").then(function (oMcPC603) {
+        stage.loadFile("{{ url_for('static', filename = 'pdb/McPC603-scFv.pdb') }}").then(function (oMcPC603) {
           oMcPC603.addRepresentation("surface", {
               colorScheme: "bfactor",
               contour: "true",
@@ -109,7 +109,7 @@
         </script>
         <!-- Initialize the Viewport -->
         <div class="pdb">
-          <div id="McPC603603-VP" style="width: 400px; height: 500px;"></div>
+          <div id="McPC603-VP" style="width: 400px; height: 500px;"></div>
         </div>
       </div>
 
