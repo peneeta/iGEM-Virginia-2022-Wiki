@@ -52,7 +52,7 @@
     <div class="index content">
       <div class="index-item active" role="button" id="introduction-desc">Solving Problems with Precision</div>
       <div class="index-item" role="button" id="atherosclerosis-desc">Protein Modeling</div> 
-      <div class="indented index-item" role="button" id="problems-desc">MCPC-603</div>
+      <div class="indented index-item" role="button" id="problems-desc">McPC603-603</div>
       <div class="indented index-item" role="button" id="lfa-desc">Nanobody</div>
     </div>
   </div>
@@ -65,20 +65,20 @@
         <div class="text-wrapper">
           <p>The original aim for protein modeling was to model the <span class="bold-text">sandwich complex</span> between the labeled antibody and the test-line antibody, which indicates a positive test. The plan was to predict the epitopes on the biomarker OxLDL that our labeled full-length IgG antibody and single-chain variable fragments (scFv) would bind to. By knowing these epitopes, we could determine which scFv fragment out of the variety of candidates would not interfere with the binding of the labeled antibody.</p> 
 
-          <p>We first generated the structures of the three antibodies and apolipoprotein B-100 (apoB-100), which is the carrier protein on OxLDL. We successfully created Protein Data Bank (PDB) structure files for each antibody using AlphaFold. However, because of the size and complexity of apoB-100 due to the lipid composition of LDL, we were unable to model the complete structure of the biomarker. This meant we were unable to utilize docking softwares to predict the binding of the biomarker with our lateral flow assay components. </p>
+          <p>We first generated the structures of the three antibodies and apolipoprotein B-100 (apoB-100), which is the carrier protein on OxLDL. We successfully created Protein Data Bank (PDB) structure files for each antibody using AlphaFold. However, because of the size and complexity of apoB-100 due to the lipid composition of LDL, we were unable to model the complete structure of the biomarker. This meant we were unable to utilize docking softwares to predict the binding of the biomarker with our lateral flow assay components.</p>
 
           <p>However, with further reading and meeting with researchers in the field, the modeling team was able to determine an ideal sequence for our scFv. The protein models of the lateral flow assay components were ultimately utilized in determining which strain of <span class="italic-text">E. coli</span> to synthesize the scFv and nanobody in. Since each of the selected scFv fragments and the nanobody contained disulfide bonds, the fragments must be expressed in SHuffle <span class="italic-text">E. coli</span> cells instead of another strain of <span class="italic-text">E. coli.</span></p>
         </div>
       </div>
 
 
-      <!-- MCPC603 -->
-      <div class="pdb-struct mcpc603-scFv d-flex flex-row flex-lg-nowrap flex-wrap align-items-center justify-content-evenly">
+      <!-- McPC603603 -->
+      <div class="pdb-struct McPC603603-scFv d-flex flex-row flex-lg-nowrap flex-wrap align-items-center justify-content-evenly">
         <div class="container">
           <div class="wrapper">
-            <h4>MCPC-603 scFv Ribbon and Surface Model</h4>
+            <h4>McPC603-603 scFv Ribbon and Surface Model</h4>
             <div class="text-wrapper">
-              <p>This is a model generated from AlphaFold of the MCPC-603 antibody fragment. [Info about its active site, etc]</p>
+              <p>This is a model generated from AlphaFold of the McPC603-603 antibody fragment. [Info about its active site, etc]</p>
             </div>
           </div>
         </div>
@@ -86,30 +86,30 @@
         <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Create NGL Stage object
-        var stage = new NGL.Stage( "mcpc603-VP", {
+        var stage = new NGL.Stage( "McPC603603-VP", {
           // NEED TO CHANGE THIS LATER if we change page color
           backgroundColor: 'white',
         });
 
         // Load PDB
-        stage.loadFile("{{ url_for('static', filename = 'pdb/mcpc603-scFv.pdb') }}").then(function (oMCPC) {
-          oMCPC.addRepresentation("surface", {
+        stage.loadFile("{{ url_for('static', filename = 'pdb/McPC603603-scFv.pdb') }}").then(function (oMcPC603) {
+          oMcPC603.addRepresentation("surface", {
               colorScheme: "bfactor",
               contour: "true",
               colorScale: "spectral",
           });
-          oMCPC.addRepresentation("cartoon", {
+          oMcPC603.addRepresentation("cartoon", {
 
           });
           stage.setSpin(true);
-          oMCPC.autoView();
+          oMcPC603.autoView();
           
         });
         });
         </script>
         <!-- Initialize the Viewport -->
         <div class="pdb">
-          <div id="mcpc603-VP" style="width: 400px; height: 500px;"></div>
+          <div id="McPC603603-VP" style="width: 400px; height: 500px;"></div>
         </div>
       </div>
 
