@@ -384,8 +384,20 @@
   }
 
   .heart-image-stat img {
-    max-width: 10rem;
-}
+    max-width: 20rem;
+    transform: translateX(-23px);
+  }
+  .heart-image-stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -12px -12px 30px 5px rgb(230 178 195 / 50%),
+  inset 12px 12px 30px 5px rgb(190 130 149);
+    border-radius: 500rem;
+    width:25rem;
+    height: 25rem
+  }
 
   /* GRAPH SECTION */
   
@@ -437,6 +449,10 @@
 
   .wrapper.problem-statement {
     max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   img.artery.index {
