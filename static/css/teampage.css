@@ -57,8 +57,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 5rem;
-    padding-block: 10rem;
+    padding-bottom: 10rem;
 }
 
 .card-pic{
@@ -193,5 +192,42 @@
     width:20%;
     height: auto;
     border-radius: 10px;
+}
+
+.koz-container{
+    background-color:#454f82;
+    color: white;
+}
+
+.contentBx.koz.text-wrapper {
+    max-width: 46rem;
+}
+
+.contentBx.img-wrapper-koz {
+    box-shadow:   inset -12px -12px 30px 5px rgb(79 91 144 / 90%),
+  inset 12px 12px 30px 5px rgb(33 50 84 / 66%);
+    border-radius: 3rem;
+    margin-right: 5rem;
+}
+
+.koz-divider{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.koz-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 142px;
+    transform: translateY(2px) rotateY(180deg);
+}
+
+.koz-divider .shape-fill {
+    fill: #454F82;
 }
 
