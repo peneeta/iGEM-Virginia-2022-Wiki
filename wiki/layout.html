@@ -11,17 +11,6 @@
     <!-- fontawesome CSS -->
     <link href="{{ url_for('static', filename = 'fontawesome/all.min.css') }}" rel="stylesheet">
 
-    <!-- JQuery  -->
-    <script src="{{ url_for('static', filename = 'jquery-3.6.0.min.js') }}"></script>
-
-    <!-- CAROUSEL -->
-    <script language="JavaScript" type="text/javascript">
-      $(document).ready(function(){
-        $('.carousel').carousel({
-          interval: 2000
-        })
-      });    
-    </script> 
 
     <!-- Bootstrap CSS -->
     <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
@@ -40,6 +29,10 @@
 
     <!-- Lottie JS -->
     <script src="{{ url_for('static', filename = 'lottie/lottie.js') }}"></script>
+
+    <!-- OWLCarousel -->
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'owlcarousel/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'owlcarousel/owl.theme.default.min.css')}}">
     
 
     {% block extraStyles %}
@@ -57,29 +50,58 @@
   <!-- Navigation -->
   {% include 'menu.html' %}
 
-  <script>
-    $(window).scroll(function(){
-	    $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
-    });
-  </script>
 
   <!-- Page Content -->
   {% block page_content %}{% endblock %}
 
   <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
   {% include 'footer.html' %}
-
-
-  <script>
-    $(document).ready(function() {
-        $("body").tooltip({ selector: '[data-bs-toggle=tooltip]' });
-    });
-  </script>
-
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script> 
   
+
+    <!-- JQuery  -->
+    <script src="{{ url_for('static', filename = 'jquery-3.6.0.min.js') }}"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+    
+    <!-- OWL CAROUSEL -->
+    <script src="{{ url_for('static', filename = 'owlcarousel/owl.carousel.min.js')}}"></script>
+
+    <script>
+      $(document).ready(function() {
+          $("body").tooltip({ selector: '[data-bs-toggle=tooltip]' });
+      });
+    
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+      })
+    </script>
+    
+    <!-- CAROUSEL -->
+    <script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+    </script>
+
 </body>
+
+
 
 <script src="{{ url_for('static', filename = 'components/scrollspyforindex.js') }}"></script>
 </html>
