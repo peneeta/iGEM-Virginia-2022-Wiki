@@ -72,6 +72,8 @@
             <div class="indented index-item" role="button" scrollTo="head9" onclick="scrollToSection(this)">Why Use Synthetic Biology?</div>
   
             <div class="index-item" role="button" scrollTo="head10" onclick="scrollToSection(this)">Inspiration Behind our Project</div>
+
+            <div class="index-item" role="button" scrollTo="head11" onclick="scrollToSection(this)">Future Directions</div>
         </div>
       </div>
     </div>
@@ -232,12 +234,14 @@
           </div>
         </div>
 
-        <div class="body-section">
-          <h2>Future Directions</h2>
-          <p>
-            To further our project, our focus is to integrate these test results with healthcare providers by developing a helper app to help log results and develop a plan to improve health alongside doctors’ recommendations. Read more about our app design here.
-            Another area of improvement is to increase antibody yields through optimizing <span class="italic-text">E. coli</span> SHuffle. This will enable more test strips to be produced at a faster rate, since more antibodies will be available for use. As a result, the cost of the strip will decrease, increasing its accessibility.
-            While our test strip is predictive of atherosclerosis, we also want to improve its specificity for atherosclerosis by adding more antibodies that detect different biomarkers associated with atherosclerosis.  More information about our proposed implementation is available here.</p>
+        <div class="body-section" id="head11">
+          <div class="text-wrapper">
+            <h2>Future Directions</h2>
+            <p>
+              To further our project, our focus is to integrate these test results with healthcare providers by developing a helper app to help log results and develop a plan to improve health alongside doctors’ recommendations. Read more about our app design here.
+              Another area of improvement is to increase antibody yields through optimizing <span class="italic-text">E. coli</span> SHuffle. This will enable more test strips to be produced at a faster rate, since more antibodies will be available for use. As a result, the cost of the strip will decrease, increasing its accessibility.
+              While our test strip is predictive of atherosclerosis, we also want to improve its specificity for atherosclerosis by adding more antibodies that detect different biomarkers associated with atherosclerosis.  More information about our proposed implementation is available here.</p>
+          </div>
         </div>
         <div class="btn-wrapper d-flex justify-content-center align-items-center">
           <a class="btn shadow-none read-next-button" type="button" href="{{ url_for('pages', page='design') }}">Read next: Project Design</a>

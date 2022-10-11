@@ -36,15 +36,45 @@
 
 <div class="body-padding d-flex flex-row justify-content-center">
   <div class="index-padding">
-    <div class="fixed-index" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-      <p>Index</p>
+    <div class="fixed-index d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+      <div class="wrapper mx-4">
+        <div class="index heading d-flex flex-row align-items-center justify-content-start py-4">
+          <div class="top-select active" id="toc" role="button" onclick="selectTop(this)">Index</div>
+        </div>
+
+        <div class="tab index" id="index">
+          <div class="index content d-flex flex-column" id="scrollspy-index-list">
+            <div class="index-item active" role="button" scrollTo="head1" onclick="scrollToSection(this)">Creating a Mission Statement</div>
+            
+            <div class="index-item" role="button" scrollTo="head2" onclick="scrollToSection(this)">Our Values and Goals</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head3" onclick="scrollToSection(this)">Integrity</div>
+
+            <div class="indented index-item" role="button" scrollTo="head4" onclick="scrollToSection(this)">Novel</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head5" onclick="scrollToSection(this)">Teamwork</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head6" onclick="scrollToSection(this)">Environment</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head7" onclick="scrollToSection(this)">Global Engagement</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head8" onclick="scrollToSection(this)">Responsiveness</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head9" onclick="scrollToSection(this)">Accessibility</div>
+
+            <div class="indented index-item" role="button" scrollTo="head10" onclick="scrollToSection(this)">Transparency</div>
+
+            <div class="indented index-item" role="button" scrollTo="head11" onclick="scrollToSection(this)">Ethics</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="d-flex flex-column justify-content-center align-items-center">
     <div class="body-container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
       <div class="container">
-        <div class="body-section top-page">
+        <div class="body-section top-page" id="head1">
           <h2>Creating a Mission Statement</h2>
           <div class="text-wrapper">
             <h4>"AtheroSHuffle represents a collaboration between science and society…"</h4>
@@ -58,10 +88,10 @@
       </div>
     
       <div class="container">
-        <div class="body-section">
+        <div class="body-section" id="head2">
           <h2>Our Values and Goals</h2>
         </div>
-        <div class="acro-section">
+        <div class="body-section acro-section" id="head3">
           <div class="acro">
             <p>I</p>
           </div>
@@ -72,7 +102,7 @@
         </div>
           
     
-        <div class="acro-section">
+        <div class="body-section acro-section" id="head4">
       
           <div class="text-wrapper">
             <h4>Novel</h4>
@@ -84,7 +114,7 @@
           </div>
         </div>
           
-        <div class="acro-section">
+        <div class="body-section acro-section" id="head5">
           <div class="acro">
             <p>T</p>
           </div>
@@ -96,7 +126,7 @@
           </div>
         </div>
     
-        <div class="acro-section">
+        <div class="body-section acro-section" id="head6">
           <div class="text-wrapper">
             <h4>Environment</h4>
             <p>With the rising use in single-use plastics and medical waste, our team wanted to lessen our impact on the environment. Although our current test strip has been prototyped in plastic, we have researched and planned to implement biodegradable materials for the cassette of our test strip. In addition, our LFA optimization works to include the minimal amount of materials and antibodies needed to still provide reliable results. Future projects would include creating a device similar to a diabetes digital reader that allows this test to be reusable. This project, however, can only be done once the research done in our current research is analyzed.</p>
@@ -106,7 +136,7 @@
           </div>
         </div>
     
-        <div class="acro-section">
+        <div class="body-section acro-section" id="head7">
           <div class="acro">
             <p>G</p>
           </div>
@@ -120,7 +150,7 @@
           </div>
         </div>
     
-        <div class="acro-section">
+        <div class="acro-section body-section" id="head8">
           <div class="text-wrapper">
             <h4>Responsiveness</h4>
             <p>
@@ -132,7 +162,7 @@
           </div>
         </div>
     
-        <div class="acro-section">
+        <div class="acro-section body-section" id="head9">
           <div class="acro">
             <p>A</p>
           </div>
@@ -147,7 +177,7 @@
           </div>
         </div>
     
-        <div class="acro-section">
+        <div class="acro-section body-section" id="head10">
           <div class="text-wrapper">
             <h4>Transparency</h4>
             <p>
@@ -163,7 +193,7 @@
           </div>
         </div>
     
-        <div class="acro-section">
+        <div class="acro-section body-section bottom-page" id="head11">
           <div class="acro">
             <p>E</p>
           </div>
@@ -175,32 +205,60 @@
         </div>
       </div>
     </div>
-  
-    <div class="d-flex flex-column justify-content-center align-items-center">
-      <div class="body-container wave-div narrow">
-          <div class="container">
-            <div class="about-section d-flex flex-row justify-content-center align-items-center">
-              <div class="wrapper">
-                <h2>Standing on the Shoulders of Giants</h2>
-                <p>As a student-led research team, knowledge of the area in which we are researching is crucial. Many of us come from intellectual backgrounds rooted in STEM, so while these concepts of genetics, engineering, diagnostics, mathematical modeling, and biology are not new to us, much help is needed for us to properly execute and better inform our project design. As students at a university renowned for research, we have endless resources and experts in applicable fields very close by. We have taken advantage of the connections we have with our PI, Dr. Keith Kozminski, and other UVA faculty members, as well as the ability to grow connections with other experts, and intend to continue this practice throughout the aftermath of AtheroSHuffle. It is through these connections with those who have dedicated their career to being just as curious as the community of iGEM, that we are able to go into this project not only with ambition to detect early signs of arterial plaque build-up, but with the tools to do so.</p>
-              </div>
-              <div class="img-wrapper bunch-of-lfas">
-                <img style="max-height: 30rem; padding: 2rem;"src="https://static.igem.wiki/teams/4477/wiki/giant-scientist-01-artboard-1-1-1.svg" alt="lfa bunch">
-              </div>
-            </div>
-          </div>
-      </div>
   </div>
+  <!-- SPACING -->
+  <div class="spacer-div"></div>
+</div> 
 
+<div class="d-flex flex-column align-items-center justify-content-center">
+  <div class="body-container wave-div narrow">
+    <div class="container">
+      <div class="about-section d-flex flex-row justify-content-center align-items-center">
+        <div class="wrapper">
+          <h2>Standing on the Shoulders of Giants</h2>
+          <p>As a student-led research team, knowledge of the area in which we are researching is crucial. Many of us come from intellectual backgrounds rooted in STEM, so while these concepts of genetics, engineering, diagnostics, mathematical modeling, and biology are not new to us, much help is needed for us to properly execute and better inform our project design. As students at a university renowned for research, we have endless resources and experts in applicable fields very close by. We have taken advantage of the connections we have with our PI, Dr. Keith Kozminski, and other UVA faculty members, as well as the ability to grow connections with other experts, and intend to continue this practice throughout the aftermath of AtheroSHuffle. It is through these connections with those who have dedicated their career to being just as curious as the community of iGEM, that we are able to go into this project not only with ambition to detect early signs of arterial plaque build-up, but with the tools to do so.</p>
+        </div>
+        <div class="img-wrapper bunch-of-lfas">
+          <img style="max-height: 30rem; padding: 2rem;"src="https://static.igem.wiki/teams/4477/wiki/giant-scientist-01-artboard-1-1-1.svg" alt="lfa bunch">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex flex-row justify-content-center">
+  <div class="index-padding">
+    <div class="fixed-index d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+      <div class="wrapper mx-4">
+        <div class="index heading d-flex flex-row align-items-center justify-content-start py-4">
+          <div class="top-select active" id="toc" role="button" onclick="selectTop(this)">Index</div>
+        </div>
+
+        <div class="tab index" id="index">
+          <div class="index content d-flex flex-column" id="scrollspy-index-list">
+            <div class="index-item active" role="button" scrollTo="head01" onclick="scrollToSection(this)">Dr. Bindu Kalesan</div>
+            
+            <div class="index-item" role="button" scrollTo="head02" onclick="scrollToSection(this)">Dr. Jay Brown</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head03" onclick="scrollToSection(this)">Ieva Lingyte</div>
+
+            <div class="indented index-item" role="button" scrollTo="head04" onclick="scrollToSection(this)">Dr. Norbert Leitinger</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head05" onclick="scrollToSection(this)">Ms. Jennifer Kershner</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex flex-column justify-content-center align-items-center">
     <div class="body-container">
       <div class="container">
-        <div class="body-section top-page">
+        <div class="body-section top-page" id="head01">
           <h2>Dr. Bindu Kalesan</h2>
           <div class="text-wrapper">
             <p>
               We approached Dr. Bindu Kalesan, CEO of Tury Health, to gain the perspective of a biotechnologist from a company with many of the same goals and values as ours. She praised our use of synthetic biology to solve this issue of atherosclerosis detection and saw huge potential for the device as a proactive measure.
             </p>
-            
           </div>
 
           <div class="text-wrapper ihp-status">
@@ -225,7 +283,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="body-section">
+        <div class="body-section" id="head02">
           <div class="text-wrapper">
             <h2>Dr. Jay Brown</h2>
             <p>At the very beginning of our AtheroSHuffle journey, we spoke with Dr. Jay Brown, a professor of microbiology and immunology at the University of Virginia. We spoke with him around the same time that we spoke with Dr. Kalesan.</p>
@@ -249,7 +307,7 @@
       </div>
 
       <div class="container">
-        <div class="body-section">
+        <div class="body-section" id="head03">
           <div class="text-wrapper">
             <h2>Ieva Lingyte</h2>
             <p>The Vilnius-Lithuania 2020 iGEM team constructed a lateral flow assay (LFA) to detect bacteria infection in recirculating aquaculture systems. Therefore, we reached out to their team lead, Ieva Lingytė to learn more about how they constructed their LFA.</p>
@@ -273,7 +331,7 @@
       </div>
 
       <div class="container">
-        <div class="body-section">
+        <div class="body-section" id="head04">
           <div class="text-wrapper">
             <h2>Dr. Norbert Leitinger</h2>
             <p>Dr. Norbert Leitinger is a professor in the Department of Pharmacology at the University of Virginia whose research interests are in the role of lipid oxidation products in inflammation and vascular immunology in various diseases, such as fatty liver disease and atherosclerosis. </p>
@@ -323,7 +381,7 @@
       </div>
 
       <div class="container">
-        <div class="body-section">
+        <div class="body-section" id="head05">
           <div class="text-wrapper">
             <h2>Ms. Jennifer Kershner</h2>
             <p>Biosafety is a crucial keystone consideration in any synthetic biology research. Hence, we spoke with Ms. Jennifer Kershner, a biosafety officer at the University of Virginia, to discuss the safety of our device and specifically, the employment of a kill switch. </p>
@@ -344,14 +402,12 @@
             <p>We decided to leave out the kill switch per Ms. Kershner’s recommendation.</p>
           </div>
 
-          <div class="text-wrapper ihp-status">
+          <div class="text-wrapper ihp-status bottom-page">
             <h4>Additional Notes</h4>
             <p>To read about the full interaction, read the Biodafety section in the Project Design page (include link).</p>
           </div>
         </div>
       </div>
-
-  
     </div>
   </div>
   
