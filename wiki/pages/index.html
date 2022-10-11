@@ -59,7 +59,7 @@
       <div class="container d-flex justify-content-center align-items-center">
         <div class="globe-section-wrapper" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out-sine">
           <h2 class="pb-3">A Worldwide Health Crisis</h2>
-          <h3>Atherosclerosis is characterized by plaque buildup in the inner arterial walls. This disease affects <span class="bold-text">27.62% of the global population. </span> Atherosclerosis is the dominant cause of cardiovascular events such as heart attack and stroke.</h3>
+          <h3>Atherosclerosis is characterized by plaque buildup in the inner arterial walls. This disease affects <span class="bold-text">27.62% of the global population.</span><span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Song P, Fang Z, Wang H, Cai Y, Rahimi K, Zhu Y, et al. Global and regional prevalence, burden, and risk factors for carotid atherosclerosis: a systematic review, meta-analysis, and modelling study. Lancet Glob Health [Internet]. 2020 [cited 2022 Oct 2];8(5):e721–9. Available from: https://pubmed.ncbi.nlm.nih.gov/32353319/</p>"><sup>1</sup></span> Atherosclerosis is the dominant cause of cardiovascular events such as heart attack and stroke.</h3>
           <br>
           <p class="italic-text">Click and drag the globe to view heart disease statistics by country!</p>
         </div>
@@ -73,27 +73,50 @@
         </div>
       </div>
 
+      <script>
+        function closebtn(x){
+          x.parentNode.parentNode.classList.add("hidden");
+        }
+      </script>
+
       <div class="popUp hidden" id="india">
         <div class="wrapper">
           <h2>India</h2>
-          <p>Approximately 40% of people in the poorest quintile were diagnosed with prehypertension. This foreshadows that the next wave of cardiovascular related deaths are likely to come from impoverished populations.</p>
+          <p>Approximately 40% of people in the poorest quintile were diagnosed with prehypertension. This foreshadows that the next wave of cardiovascular related deaths are likely to come from impoverished populations.<span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Bhatia, M. et al. (2021) Impending epidemic of cardiovascular diseases among lower socioeconomic groups in India, The Lancet Healthy Longevity. Elsevier. Available at: https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(21)00080-5/fulltext (Accessed: October 10, 2022).</p>"><sup>2</sup></span></p>
+          <button type="button" class="btn popup-btn btn-dark" onclick="closebtn(this)">Close</button>
         </div>
       </div>
 
       <div class="popUp hidden" id="china">
         <div class="wrapper">
           <h2>China</h2>
-          <p>The highest risk of cardiovascular disease was found in north and northeast China, while the lowest was found to be in south China. Variations in this are likely due to regional, evironmental, and socioeconomic differences between these regions.</p>
+          <p>The highest risk of cardiovascular disease was found in north and northeast China, while the lowest was found to be in south China. Variations in this are likely due to regional, evironmental, and socioeconomic differences between these regions.<span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Li, X. et al. (2020) Cardiovascular risk factors in China: A nationwide population-based Cohort Study, The Lancet Public Health. Elsevier. Available at: https://www.thelancet.com/journals/lanpub/article/PIIS2468-2667(20)30191-2/fulltext#seccestitle130 (Accessed: October 10, 2022).</p>"><sup>3</sup></span></p>
+          <button type="button" class="btn popup-btn btn-dark" onclick="closebtn(this)">Close</button>
         </div>
-        
       </div>
 
-      <div class="popUp hidden" id="america">
+      <div class="popUp hidden" id="us">
         <div class="wrapper">
           <h2>United States</h2>
-          <p>A person in the United States dies every 34 seconds from heart disease, and a person has a heart attack every 40 seconds. One in five of these heart attack occurrences are silent, meaning the individual does not experience symptoms but the damage is done.</p>
+          <p>A person in the United States dies every 34 seconds from heart disease, and a person has a heart attack every 40 seconds. One in five of these heart attack occurrences are silent, meaning the individual does not experience symptoms but the damage is done.<span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Heart disease facts (2022) Centers for Disease Control and Prevention. Centers for Disease Control and Prevention. Available at: https://www.cdc.gov/heartdisease/facts.htm (Accessed: October 10, 2022).</p>"><sup>4</sup></span></p>
+          <button type="button" class="btn popup-btn btn-dark" onclick="closebtn(this)">Close</button>
         </div>
-        
+      </div>
+
+      <div class="popUp hidden" id="france">
+        <div class="wrapper">
+          <h2>France</h2>
+          <p>Mortality from ischaemic heart disease in France is low compared to other countries, for example, it is a quarter of that than in Britain. This is referred to as the 'French Paradox', and researchers are unclear as to why this is.<span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Ferrières, J. (2004) The French paradox: Lessons for other countries, Heart (British Cardiac Society). Copyright 2004 by Heart. Available at: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1768013/ (Accessed: October 10, 2022).</p>"><sup>5</sup></span></p>
+          <button type="button" class="btn popup-btn btn-dark" onclick="closebtn(this)">Close</button>
+        </div>
+      </div> 
+
+      <div class="popUp hidden" id="#">
+        <div class="wrapper">
+          <h2>Brazil</h2>
+          <p>In a study analyzing the cost of different cardiovascular diseases in Brazil, myocardial infarction is the greatest financial burden, followed by hypertension, and atrial fibrilation.<span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Stevens, B. et al. (2018) The economic burden of heart conditions in Brazil, Arquivos brasileiros de cardiologia. Sociedade Brasileira de Cardiologia - SBC. Available at: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6078379/ (Accessed: October 10, 2022). </p>"><sup>6</sup></span></p>
+          <button type="button" class="btn popup-btn btn-dark" onclick="closebtn(this)">Close</button>
+        </div>
       </div>
 
     </div>
@@ -143,7 +166,7 @@
                 <div class="subtitle-wrapper">
                   <p> global deaths attributed to CVD annually
                   
-                    <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Cardiovascular diseases (CVDs) [Internet]. Who.int. [cited 2022 Oct 3]. Available from: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)</p>"><sup>2</sup></span>
+                    <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Cardiovascular diseases (CVDs) [Internet]. Who.int. [cited 2022 Oct 3]. Available from: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)</p>"><sup>7</sup></span>
                   </p>
                 </div>
               </div>
@@ -163,10 +186,10 @@
   </div>
 
   <div class="light-background">
-    <div class="container stat-section d-flex flex-column align-items-center justify-content-center">
+    <div class="container stat-section d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1000">
       <div class="page stat-with-graph">
         <div class="stat-wrapper d-flex flex-column px-4">
-          <div data-aos="fade-up" data-aos-duration="1000">
+          <div class="wrapper-for-text">
             <h2 class="pb-3">Economic Burden</h2>
             <p>
               In addition to its health impacts, heart disease is <span class="bold-text">extremely costly</span>. In a technical report prepared for the American Heart Association, combined costs of detection tests and hospital visits are expected to reach <span class="bold-text">750 billion dollars</span> by 2035.
@@ -175,7 +198,7 @@
         </div>
   
         <div class="wrapper d-flex flex-column align-items-center justify-content-evenly">
-          <div class="wrapper graph" style="position: relative;" data-aos="fade-up" data-aos-duration="1000">
+          <div class="wrapper graph" style="position: relative;">
             <canvas id="myChart"></canvas>
             <!-- ChartJS Initialization -->
             <script src="{{ url_for('static', filename = '/chartjs/chart.min.js')}}"></script>
@@ -277,9 +300,9 @@
             </script>
           </div>
   
-          <div class="graph-subtitle-wrapper" data-aos="fade-up" data-aos-duration="1000">
+          <div class="graph-subtitle-wrapper">
             <p class="italic-text">Projected costs of cardiovascular diseases from 2015 to 2035. Data obtained from Research Triangle Institute (RTI) technical report. 
-              <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Khavjou, Olga, Phelps, Diana, & Leib, Alyssa. (2016). Projections of Cardiovascular Disease Prevalence and Costs: 2015–2035. https://www.heart.org/-/media/Files/Get-Involved/Advocacy/CVD-Predictions-Through-2035.pdf</p>"><sup>3</sup></span>
+              <span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Khavjou, Olga, Phelps, Diana, & Leib, Alyssa. (2016). Projections of Cardiovascular Disease Prevalence and Costs: 2015–2035. https://www.heart.org/-/media/Files/Get-Involved/Advocacy/CVD-Predictions-Through-2035.pdf</p>"><sup>8</sup></span>
             </p>
           </div>
         </div>
@@ -292,13 +315,34 @@
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
       </svg>
-  </div>
+    </div>
     <div class="container">
+      <div class="wbc-stack">
+        <div class="img-wrapper wbc wbc0">
+          <img src="https://static.igem.wiki/teams/4477/wiki/images/wbc.svg" alt="rbc">
+        </div>
+  
+        <div class="img-wrapper wbc wbc1">
+          <img src="https://static.igem.wiki/teams/4477/wiki/images/wbc.svg" alt="rbc">
+        </div>
+  
+        <div class="img-wrapper wbc wbc2">
+          <img src="https://static.igem.wiki/teams/4477/wiki/images/wbc.svg" alt="rbc">
+        </div>
+  
+        <div class="img-wrapper wbc wbc3">
+          <img src="https://static.igem.wiki/teams/4477/wiki/images/wbc.svg" alt="rbc">
+        </div>
+  
+        <div class="img-wrapper wbc wbc4">
+          <img src="https://static.igem.wiki/teams/4477/wiki/images/wbc.svg" alt="rbc">
+        </div>
+      </div>
       <div class="shock-section">
         <div class="wrapper problem-statement">
           <div class="heart-text-top-wrapper">
             <h2 class="mb-4">The Problem</h2>
-            <h2>An estimated <span class="super-bold">80% of cardiovascular diseases</span> can be prevented if they are detected earlier in life.<span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>AHA Editorial Staff (2018) CDC Prevention Programs, American Heart Association. American Heart Association. Available at: https://www.heart.org/en/get-involved/advocate/federal-priorities/cdc-prevention-programs (Accessed: October 10, 2022).</p>"><sup>4</sup></span></h2> 
+            <h2>An estimated <span class="super-bold">80% of cardiovascular diseases</span> can be prevented if they are detected earlier in life.<span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>AHA Editorial Staff (2018) CDC Prevention Programs, American Heart Association. American Heart Association. Available at: https://www.heart.org/en/get-involved/advocate/federal-priorities/cdc-prevention-programs (Accessed: October 10, 2022).</p>"><sup>9</sup></span></h2> 
           </div>
           <div class="heart-image-stat">
             <img src="https://static.igem.wiki/teams/4477/wiki/images/heart.png" alt="heart image">
@@ -314,37 +358,42 @@
           <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
       </svg>
   </div>
-  </div>
+</div>
 
   <!-- Abstract/How we're making a difference -->
   <div class="dark-section d-flex flex-row justify-content-evenly align-items-center">
     <div class="d-flex flex-column justify-content-evenly align-items-center">
       <div class="container">
         <div class="abstract-wrapper">
-          <h2 class="pb-3">Our Solution</h2>
+          <div class="solution-shadow">
+            <h2 class="pb-3">Our Solution</h2>
+            <p>
+              We designed AtheroSHuffle, a test strip that detects early signs of heart disease. Our device detects early stages of <span class="bold-text">atherosclerotic plaque buildup</span>, the precursor to irreversible cardiovascular diseases.
+            </p>
+  
+            <div class="img-wrapper content hand">
+              <img src="https://static.igem.wiki/teams/4477/wiki/images/filled-hand.png" alt="">
+            </div>
+          </div>
 
-          <p>
-            We designed AtheroSHuffle, a test strip that detects early signs of heart disease. Our device detects early stages of <span class="bold-text">atherosclerotic plaque buildup</span>, the precursor to irreversible cardiovascular diseases.
-          </p>
+          <div class="solution-shadow">
+            <p>
+              The strip detects oxidized LDL (oxLDL), a biomarker associated with early to middle stages of atherosclerosis development.
+              We used synthetic biology to engineer plasmids containing the sequences for oxLDL-specific antibodies. We utilized a stain of <span class="italic-text">E. coli</span> called SHuffle to produce these antibodies.
+            </p>
+            <div class="img-wrapper content vessel">
+              <img class="artery index" src="https://static.igem.wiki/teams/4477/wiki/images/blocked-artery.png" alt="blocked artery">
+            </div>
+          </div>
 
-          <img class="artery index" src="https://static.igem.wiki/teams/4477/wiki/images/blocked-artery.png" alt="blocked artery">
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="abstract-wrapper">
-          <p>
-            The strip detects oxidized LDL (oxLDL), a biomarker associated with early to middle stages of atherosclerosis development.
-            We used synthetic biology to engineer plasmids containing the sequences for oxLDL-specific antibodies. We utilized a stain of <span class="italic-text">E. coli</span> called SHuffle to produce these antibodies. 
-          </p>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="abstract-wrapper">
-          <p>
-            These antibodies, when adhered to the strip, allow oxLDL levels to be determined by the naked eye. Our device will provide a <span class="bold-text">sorely-needed low-cost, early detection method</span> for atherosclerosis, improving healthcare globally, especially for under-resourced communities.
-          </p>
+          <div class="solution-shadow">
+            <p>
+              These antibodies, when adhered to the strip, allow oxLDL levels to be determined by the naked eye. Our device will provide a <span class="bold-text">sorely-needed low-cost, early detection method</span> for atherosclerosis, improving healthcare globally, especially for under-resourced communities.
+            </p>
+            <div class="img-wrapper content lfa">
+              <img src="https://static.igem.wiki/teams/4477/wiki/images/lfasforindex.svg" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </div>

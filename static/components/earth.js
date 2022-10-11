@@ -24,7 +24,7 @@
       color: ['black']
     }), ({
       name: "United States",
-      id: "america",
+      countryID: "us",
       lat: 37.0902,
       lng: 360-95.7129,
       size: 20,
@@ -61,21 +61,18 @@
         mark.innerHTML = markerSvg;
         mark.style.color = d.color
         mark.style.width = `${d.size}px`;
+        mark.style.zIndex = -1;
         mark.style['pointerEvents'] = 'auto';
         mark.style.cursor = 'pointer';
         mark.onclick = () => {
           const popUps = document.getElementsByClassName("popUp");
-          console.log(popUps.length);
-
           for(i=0; i<popUps.length; i++){
-            console.log(popUps[i].id);
             if(popUps[i].id == `${d.countryID}`){
               popUps[i].classList.remove('hidden');
             }
             else
             popUps[i].classList.add('hidden');
           }
-
         }
         
         return mark;
