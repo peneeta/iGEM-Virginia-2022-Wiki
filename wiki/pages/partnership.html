@@ -14,7 +14,7 @@
  </div>
 </div>
 
-<div class="d-flex flex-column justify-content-center align-items-center">
+<div class="d-flex flex-column justify-content-center align-items-center curvy-divider">
   <div class="body-container wave-div narrow">
     <div class="container">
       <div class="about-section d-flex flex-row justify-content-center align-items-center">
@@ -28,21 +28,49 @@
       </div>
     </div>
   </div>
+  <div class="gray-divider">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+  </div>
 </div>
 
 <div class="gray d-flex flex-row justify-content-center">
+  <div class="index-padding">
+    <div class="fixed-index d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+      <div class="wrapper mx-4">
+        <div class="index heading d-flex flex-row align-items-center justify-content-start py-4">
+          <div class="top-select active" id="toc" role="button" onclick="selectTop(this)">Index</div>
+        </div>
+
+        <div class="tab index" id="index">
+          <div class="index content d-flex flex-column" id="scrollspy-index-list">
+            <div class="index-item active" role="button" scrollTo="head1" onclick="scrollToSection(this)">Wet Lab</div>
+            
+            <div class="index-item" role="button" scrollTo="head2" onclick="scrollToSection(this)">Modeling</div>
+  
+            <div class="index-item" role="button" scrollTo="head3" onclick="scrollToSection(this)">Wet Lab/Modeling DOE</div>
+
+            <div class="index-item" role="button" scrollTo="head4" onclick="scrollToSection(this)">Education</div>
+  
+            <div class="index-item" role="button" scrollTo="head5" onclick="scrollToSection(this)">Impact of our Parternship</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="body-container d-flex flex-column justify-content-center align-items-center">
     <div class="container">
-      <div class="body-section">
+      <div class="body-section top-page" id="head1">
         <div class="text-wrapper">
           <h2>Wet Lab</h2>
-          <p>The wet lab portion of our partnership with IISER Pune II started off as troubleshooting collaboration about our BioBrick assembly and protein induction processes. Since we both utilized the E. coli SHuffle strain to produce antibodies (specifically IgGs, IgYs, scFvs, and VHHs), we had similar experimental designs.  Hence, the natural step was to help each other troubleshoot protocols using this delicate strain. We found that it was difficult to locate proper documentation about many protocols for E. coli SHuffle as all the information was scattered across the internet. This, along with the increasing popularity of E. coli SHuffle for antibody production, led us to create a troubleshooting document on wet lab protocols specific for E. coli SHuffle for future iGEM teams to reference if they decide to use E. coli SHuffle. Our troubleshooting document can be found here.</p>
+          <p>The wet lab portion of our partnership with IISER Pune II started off as troubleshooting collaboration about our BioBrick assembly and protein induction processes. Since we both utilized the <span class="italic-text">E. coli</span> SHuffle strain to produce antibodies (specifically IgGs, IgYs, scFvs, and VHHs), we had similar experimental designs.  Hence, the natural step was to help each other troubleshoot protocols using this delicate strain. We found that it was difficult to locate proper documentation about many protocols for <span class="italic-text">E. coli</span> SHuffle as all the information was scattered across the internet. This, along with the increasing popularity of <span class="italic-text">E. coli</span> SHuffle for antibody production, led us to create a troubleshooting document on wet lab protocols specific for <span class="italic-text">E. coli</span> SHuffle for future iGEM teams to reference if they decide to use <span class="italic-text">E. coli</span> SHuffle. Our troubleshooting document can be found here.</p>
         </div>
       </div>
     </div>
 
     <div class="container">
-      <div class="body-section">
+      <div class="body-section" id="head2">
         <div class="text-wrapper">
           <h2>Modeling</h2>
           <p>Team Virginia and Team IISER Pune II shared the goal to synthesize antibodies and antibody fragments which bind to the biomarker of our respective diseases. Both of our teams planned to use protein modeling to determine which antibody had the strongest binding affinity to the biomarker. The parameters our teams considered included the orientation of each antibody/antibody fragment binding to the biomarker and the stability of the antibody/antibody fragments in different external conditions. In order to accomplish these more complex models, a structural model (i.e. a PDB file) of each antibody needed to be constructed. 
@@ -53,17 +81,17 @@
     </div>
 
     <div class="container">
-      <div class="body-section">
+      <div class="body-section" id="head3">
         <div class="text-wrapper">
           <h2>Wet Lab/Modeling Design of Experiments (DOE) Partnership</h2>
-          <p>After the initial introduction of the DOE modeling system, we both learned that this experiment can be expanded into a wet lab-modeling (Dry Lab as IISER Pune II refers to it as) DOE partnership. With their crucial expertise in DOE statistical analysis, we were able to evaluate the production of our antibodies and antibody fragments within the time and resources given to us. Specifically, it helps us determine optimal conditions such as incubation time and incubation temperature after induction so that our E. coli SHuffle can produce high yield of target protein. In exchange, we performed protein induction experiments with varying incubation times and temperatures with our McPC603 scFv. These inductions were verified with SDS-PAGE gels that specifically follow their protocol to avoid confounding variables in our experimental design. We provided this critical wet lab data to the IISER Pune II team so that they could expand their model to other antibodies other than their specific antibodies. This increases the accuracy and application of their model as the dataset is expanded. </p>
+          <p>After the initial introduction of the DOE modeling system, we both learned that this experiment can be expanded into a wet lab-modeling (Dry Lab as IISER Pune II refers to it as) DOE partnership. With their crucial expertise in DOE statistical analysis, we were able to evaluate the production of our antibodies and antibody fragments within the time and resources given to us. Specifically, it helps us determine optimal conditions such as incubation time and incubation temperature after induction so that our <span class="italic-text">E. coli</span> SHuffle can produce high yield of target protein. In exchange, we performed protein induction experiments with varying incubation times and temperatures with our McPC603 scFv. These inductions were verified with SDS-PAGE gels that specifically follow their protocol to avoid confounding variables in our experimental design. We provided this critical wet lab data to the IISER Pune II team so that they could expand their model to other antibodies other than their specific antibodies. This increases the accuracy and application of their model as the dataset is expanded. </p>
 
         </div>
       </div>
     </div>
 
     <div class="container">
-      <div class="body-section">
+      <div class="body-section" id="head4">
         <div class="text-wrapper">
           <h2>Education</h2>
           <p>Our Education partnership with the IISER Pune 2 team began with the idea of a joint blog partnership. We created blogs about our project, iGEM, synthetic biology, and applications of synthetic biology in iGEM. These articles highlighted important lab/scientific techniques and equipment that were used to reach conclusions about these phenomenons. Other articles explained the field of synthetic biology and looked at it in the context of iGEM. The audience of the blog was high school students interested in STEM and therefore, we aimed to give students an introduction to many lab techniques. As high schoolers, we often heard terms such as PCR and gel electrophoresis, but we did not know the exact definition. With this blog, we hope to expose high schoolers to synthetic biology terms and to foster a potential interest in synthetic biology. These blog articles are relevant to our project as it contributes to the education of high school students about synthetic biology especially through the context of our projects and other iGEM projects. For example, one of the posts we created explained all of the synthetic biology techniques we used in the development of our device, AtheroSHuffle. 
@@ -75,25 +103,23 @@
     </div>
 
     <div class="container">
-      <div class="body-section">
+      <div class="body-section bottom-page" id="head5">
         <div class="text-wrapper">
           <h2>Impact of our Partnership</h2>
-          <p>Our partnership with the IISER Pune II not only guided the direction, but also the impact of our project. The wet lab aspect of the partnership sought to aid future teams that decide to use E. coli SHuffle, which is becoming an increasingly popular method of antibody production. Our modeling and DOE partnership optimized the conditions of our project so that we both can create accurate and useful devices for our target audience. Our Education partnership broke down global barriers in an effort to educate our target audience in synthetic biology in the context of iGEM and our individual projects.</p>
+          <p>Our partnership with the IISER Pune II not only guided the direction, but also the impact of our project. The wet lab aspect of the partnership sought to aid future teams that decide to use <span class="italic-text">E. coli</span> SHuffle, which is becoming an increasingly popular method of antibody production. Our modeling and DOE partnership optimized the conditions of our project so that we both can create accurate and useful devices for our target audience. Our Education partnership broke down global barriers in an effort to educate our target audience in synthetic biology in the context of iGEM and our individual projects.</p>
         </div>
       </div>
     </div>
 
   </div>
+  <div class="spacer-div"></div>
 </div>
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Gold Medal Criterion #5</h4>
-      <p>Collaborate throughout the year with at least one other 2022 iGEM team on a set of shared objectives related to both of your projects. This partnership should go beyond a Silver medal collaboration.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2022 Medals Page</a> for more information.</p>
-    </div>
+<div class="footer-preface curvy-divider">
+  <div class="footer-divider">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
   </div>
 </div>
 
