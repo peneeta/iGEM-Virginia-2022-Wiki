@@ -21,6 +21,12 @@
   height: auto;
 }
 
+.subtitle-wrapper{
+  max-width: 30rem;
+  text-align: center;
+  padding-block: 1rem;
+}
+
 .blob-graphic img{
   width: clamp(200px, 20%, 300px);
 }
