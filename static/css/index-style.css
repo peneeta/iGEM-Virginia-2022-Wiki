@@ -138,7 +138,7 @@
     font-family: 'Open Sans';
     font-style: italic;
     font-weight: 300;
-    font-size: clamp(0.8rem, 0.8rem + 1vw, 1rem);
+    font-size: large;
     text-align: center;
     letter-spacing: 0.02rem;
     max-width: 25rem;
@@ -218,6 +218,10 @@
     max-width: 40rem;
     text-align: center;
     padding-inline: 2rem;
+  }
+
+  .globe-section-wrapper h3{
+    font-size: large!important;
   }
 
   .stat-section{
@@ -727,6 +731,7 @@
 
 .stat p{
   text-align: center;
+  font-size: large;
 }
 
 .solution-divider-top {
