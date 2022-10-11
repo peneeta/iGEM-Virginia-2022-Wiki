@@ -24,3 +24,9 @@
 .blob-graphic img{
   width: clamp(200px, 20%, 300px);
 }
+
+.img-pathogenesis{
+  max-width: 70%;
+  height: auto;
+  border-radius: 5%;
+}
