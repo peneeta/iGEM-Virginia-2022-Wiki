@@ -362,6 +362,9 @@
           <p>However, we could not find the appropriate rate constants for each binding reaction from literature. So, we used an approximation from which found the rate constants for antibodies with similar equilibrium constants as our antibodies/antibody fragments.4 So, we take the rate constant for the forward binding reactions to be 10<sup>5</sup> M/s and the rate constant for the backward dissociating reactions to be 10<sup>-5</sup> M/s. </p>
           <div class="img-wrapper d-flex flex-column justify-content-center align-items-center">
             <img src="https://static.igem.wiki/teams/4477/wiki/images/reactioneqs.png" alt="">
+            <div class="caption-wrapper">
+              <p></p>
+            </div>
           </div>
           <div class="markdown-wrapper">
             <p>The following chemical reaction equations are needed to describe the mass action kinetics equations. The forward/backward rate constants are also denoted by their respective equations.</p>
@@ -388,6 +391,9 @@
         </div>
         <div class="img-wrapper d-flex flex-column justify-content-evenly align-items-center">
           <img style="padding-block: 2rem;  width: 60%;" src="https://static.igem.wiki/teams/4477/wiki/images/123lfamodel.png" alt="">
+          <div class="caption-wrapper">
+            <p></p>
+          </div>
         </div>
       </div>
     </div>
@@ -400,6 +406,9 @@
           <p>The ADRE requires the diffusivity constant for the analyte (D<sub>A</sub>), detector unit (D<sub>D</sub>), and the analyte-detector-unit complex (D<sub>A</sub> +D<sub>D</sub>). We take these constants to be the same from Lui et al,.<sup>6</sup> This means <span class="bold-text">DA = 10<sup>-4</sup> mm/s<sup>2</sup></span> and <span class="bold-text">D<sub>D</sub> = 10<sup>-6</sup> mm/s<sup>2</sup></span>. Since we assumed the diffusivity of the analyte-detector-unit complex is the sum of their respective diffusivity constants, we let  <span class="bold-text">D<sub>A</sub>+D<sub>D</sub> = 10<sup>-4</sup> + 10<sup>-6</sup>mm/s<sup>2</sup></span>.</p>
           <div class="img-wrapper  d-flex flex-column  justify-content-center align-items-center">
             <img style="padding-block: 2rem; width: 60%;" src="https://static.igem.wiki/teams/4477/wiki/images/latex.png" alt="">
+            <div class="caption-wrapper">
+              <p></p>
+            </div>
 
           </div>
         </div>
@@ -440,6 +449,9 @@
           <p>We let <span class="bold-text">x<sub>o</sub> = 0 mm</span> denote the leftmost edge for each system and we let <span class="bold-text">x<sub>f</sub>= L mm</span> denote the rightmost edge for each system; L is the length of the corresponding pad of the LFA. Notice, we used the <p style="font-style: italic;">Dirichlet Boundary Conditions</p> for components with known concentrations at each boundary and the <p style="font-style: italic;">Neumann Boundary Conditions</p> for components with unknown concentrations at each boundary.<sup>7</sup>. We define the boundary conditions as follows. </p>
           <div class="img-wrapper d-flex flex-column align-items-center justify-content-center">
             <img style="width: 60%; padding-block: 2rem;" src="https://static.igem.wiki/teams/4477/wiki/images/boundarycondstable.png" alt="">
+            <div class="caption-wrapper">
+              <p></p>
+            </div>
           </div>
           <p>We set the boundary conditions of [AD] (the concentration of AD) to be 0 at the right edge of system 3 because we want to minimize the excess AD (i.e. unnecessary AD) that an LFA must be constructed with. Also, we consider the left edge boundary conditions of [A] = 0 and [D] = 0 for systems 2 and 3 as a simplifying assumption; instead of defining an interpolated function, we decided to assess the approximated reaction rates and determine that the decrease in concentration due to dissociation for the following complexes are negligible (too close to zero to significantly impact concentration): T1AD, T2AD, and CAD.</p>
           <p>Finally, since we placed the right edges of systems 2 and 3 at areas of the test strip that contain receptor antibodies, we can define the corresponding boundary functions: the concentrations of the respective antibodies is 10 nM (which was then converted to mg/L). For example, the right edge of system 3 is the control line. So, we know that the boundary condition for [C] in system 3 is the initial concentration of control line receptor antibodies we would place at the control line. </p>
@@ -480,6 +492,9 @@
           <p>In addition to predicting the minimum concentration of detector unit to generate a visible signal, the model is also informative of the behavior of each LFA component when 5.613575*10<sup>-4</sup> mg/L of the detector unit is used on the conjugate pad. For example, we can examine the behavior of the CAD complex at this optimal detector unit concentration.</p>
           <div class="img-wrapper d-flex flex-column justify-content-center align-items-center">
             <img style="padding-block: 2rem; width: 60%;" src="https://static.igem.wiki/teams/4477/wiki/images/result-modeling.png" alt="">
+            <div class="caption-wrapper">
+              <p></p>
+            </div>
 
           </div>
           <p><span class="bold-text">  Fig 2.  </span> This figure depicts the concentration of CAD or the complex-analyte-detector-unit complex as a function vs. time.</p>
