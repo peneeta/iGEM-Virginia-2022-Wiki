@@ -14,7 +14,7 @@
       </div>
 </div>
 
-<div class="d-flex flex-column justify-content-center align-items-center">
+<div class="d-flex flex-column justify-content-center align-items-center curvy-divider">
     <div class="body-container wave-div narrow">
         <div class="container">
             <div class="about-section d-flex flex-row justify-content-center align-items-center">
@@ -22,23 +22,67 @@
                     <h2>Judging Paragraphs</h2>
                     <p>Read this for an overview of the medal requirements we satisfied!</p>
                 </div>
-                <div class="img-wrapper">
-                    <img style="padding: 2rem;"src="https://static.igem.wiki/teams/4477/wiki/images/eng-des-cycl.svg" alt="lfa bunch">
-                </div>
-          </div>
+            </div>
         </div>
+    </div>
+    <div class="gray-divider">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
     </div>
 </div>
 
-<div class="d-flex flex-column justify-content-center align-items-center">
+<div class="gray d-flex flex-column justify-content-center align-items-center">
     <div class="body-container narrow">
         <div class="container">
             <div class="about-section d-flex flex-column justify-content-center align-items-center">
+                <div class="gold">
+                    <div class="body-section text-wrapper top-page">
+                        <h2>Gold</h2>
+                        <h4>Integrated Human Practices</h4>
+                        <p>We approached our Integrated Human Practices (IHP) efforts with the goal of ensuring AtheroSHuffle offers real value to those affected by atherosclerosis. We began our project with the idea of creating an easy to use and accessible detection method for atherosclerosis. Our early IHP efforts began with Dr. Bindu Kalesan (Tury Health), who encouraged us to first immerse ourselves in the field of cardiovascular health. Hence, we read both peer-reviewed journal articles and public blogs by patients to understand the science and a patient’s perspective respectively. We also met with professionals associated with the field to comprehensively understand the larger issues we are seeking to solve. We then began to design our solution but we ran into issues identifying a suitable test line antibody. Hence, we spoke to Dr. Norbert Leitinger (UVA) who guided us to two antibodies. Initially, we were going to only use one antibody, but he explained that having two antibodies may increase the accuracy and visibility of the test. With this understanding, we began to design our lateral flow assay, which we introduced to Ieva Lingyte (Vilnius-Lithuania iGEM 2020). We explained how we want to tackle the issue of detection with only our test strip, but she explained to us the importance of looking into the next steps once atherosclerosis is detected. Therefore, we designed a second prong to our solution, the AtheroSHuffle app, for users to record test results and promote a heart healthy lifestyle.
+                        </p>
+                    </div>
+                    <div class="body-section text-wrapper">
+                        <h4>Project Modeling</h4>
+                        <p>We utilized two models to inform our wet lab designs. The first model examined the structure of our protein components of the lateral flow assay. The goal of this model was to determine the presence of disulfide bonds in all protein components of the lateral flow assay. Each protein component is a piece or combination of pieces from a full antibody, which may or may not individually contain disulfide bonds. If disulfide bonds are present, protein expression must be conducted in E. coli SHuffle as opposed to a workhorse E. coli strain. Assuming that a model that does not account for any surrounding solution would provide the desired data, we employed AlphaFold, which predicted the polypeptide structures to contain disulfide bonds. Our wet lab team then designed experiments in SHuffle moving forward. Our second model leverages the Advection-Dispersion-Reaction-Equations to characterize the optimal physical design of the lateral flow assay. We assumed that the detector unit and oxLDL bind in a 1:1 ratio, that each component is uniformly distributed along the width and height of the test strip, and that the rate at which the components bind to each other is larger than the rate at which they move through the test. By examining various initial concentrations of oxLDL and receptor antibodies, our model provides an optimal initial concentration of the detector unit needed to produce a visible signal at both the test and control lines in a positive test.</p>
+                    </div>
+                    <div class="body-section text-wrapper">
+                        <h4>Proof of Concept</h4>
+                        <p>We successfully cloned the DNA sequences encoding our antibodies, verified by restriction digestion and sequencing. Upon induction, we observed, by SDS-PAGE gels, polypeptide bands at the predicted molecular weight of our antibodies. This indicates expression of the proteins of interest. We are also developing a lateral flow assay (LFA) pilot commercially-available antibodies that also detect commercially-available oxLDL and are testing various build configurations and pretreatments. We confirmed that gold-nanoparticle-conjugated oxLDL properly flows down a nitrocellulose membrane and is therefore a suitable analyte for the LFA; this is important as it ensures that one of the major components of the LFA properly functions. In addition, we designed and 3D printed a LFA cassette that takes less than 20 minutes to print and uses just over 0.5 m of material, proving that production is quick and cheap.</p>
+                    </div>
+                    <div class="body-section text-wrapper">
+                        <h4>Partnership</h4>
+                        <p>We collaborated with IISER Pune II throughout the year with the shared objective to find the optimal process for antibody production in E. coli SHuffle, a strain we are both using, and raise awareness about synthetic biology. This marked the beginning of a fruitful partnership in the wet lab, modeling, and integrated human practices (IHP) aspects of our projects. In wet lab, we regularly helped each other troubleshoot our BioBrick assembly and protein induction process. We quickly realized that we encountered similar problems and decided to generate a troubleshooting document specific to the SHuffle strain for future iGEM teams who decide to work with E. coli SHuffle. In modeling, we taught their dry lab team protein modeling softwares, which became central to their projects. Pune also provided crucial expertise in Design of Experiments (DOE) statistical analysis. Without them, we could not have evaluated the production of our respective antibodies/antibody fragments within our time and resource constraints. In exchange, we provided the wet lab data for our specific antibodies for their DOE model to allow the expansion of their model to other antibodies. Through IHP, our teams co-authored an accessible blog for high school students about synthetic biology in our projects and we hosted members of their team on our podcast to discuss previous iGEM projects we found interesting. </p>
+                    </div>
+                    <div class="body-section text-wrapper">
+                        <h4>Education and Communication</h4>
+                        <p>Education and communication was a focal point of our team’s iGEM experience, and we made five key deliverables centered around this goal: our podcast, online blog, story coloring book, an app demo, and an online survey. We met over zoom with cardiologists, researchers, and a nutritionist to understand where AtheroShuffle falls in the bigger picture of cardiovascular medicine and gained first-hand knowledge of current diagnosis processes. With this knowledge, we spread awareness of atherosclerosis by creating a podcast available on Spotify describing what the next steps should be for a recently diagnosed atherosclerosis patient as well as existing risk factors and detection methods. We also posted online blogs about the disease and created a printable coloring storybook on healthy habits for a younger audience with the ultimate goal of giving back to the cardiovascular community. To use in conjunction with our lateral flow assay, we developed an app demo to share what we learned from our IHP efforts and promote heart health through recipes and risk score evaluation for public use. In addition, we conducted an online survey exploring public opinion of health, nutrition, and our product design to communicate the gaps in health consciousness. We also educated peers on atherosclerosis at a UVA Engineering Symposium and iGEM Mid-Atlantic Meetup. </p>
+                    </div>
+                </div>
                 <div class="silver">
                     <div class="body-section text-wrapper">
                         <h2>Silver</h2>
                         <h4>Engineering Success</h4>
-                        <p></p>
+                        <p>Following the engineering design cycle, we successfully built our E. coli SHuffle strains and tested protein induction.
+                            After reading peer-reviewed articles and consulting experts, we designed our Biobrick constructs for expression in SHuffle to produce antibodies. We built our devices by cloning our designed antibody coding sequences into the pSB3K3 vector through traditional cloning (TC). We transformed SHuffle with our devices and proceeded to protein expression to test whether the devices encode for expression of our antibodies of interest. However, we observed low expression of the proteins of interest. We changed the parameters of protein induction greatly, but still did not see significant expression of our target antibodies. We learned that pSB3K3 is not suitable for protein expression – likely because pSB3K3 is a low copy number plasmid, and too few transcripts were created even with induction.
+                            We then moved to our second engineering cycle. We are currently re-designing our constructs so that they use the pET-21b(+) expression vector used by Robinson et al., which is a high copy number plasmid designed for use in T7 induction.</p>
+                    </div>
+                    <div class="body-section text-wrapper">
+                        <h4>Collaboration</h4>
+                        <p>Our team has actively collaborated with other iGEM teams throughout the year. 
+                            One of our first collaborations was with team URochester, which is also working with antibodies. We both encountered similar issues in DNA cloning and protein modeling, and  exchange of information was beneficial to both teams. We also exchanged crucial information about obtaining reagents through sponsorships and in-kind donations. Their guidance helped us acquire specialized equipment to create our test strip. 
+                            <br>
+                            In late August, we participated in a Midsummer MidAtlantic Meetup with iGEM teams from William and Mary, Johns Hopkins, the University of Maryland, and BioCrew. Each of the schools presented their own projects, which gave us an opportunity to practice our presentation skills. We also all worked together to solve many of the setbacks, such as unsuccessful cloning, that the teams were encountering in the lab. 
+                            </p>
+                    </div>
+                    <div class="body-section text-wrapper">
+                        <h4>Human Practices</h4>
+                        <p>We engaged in continuous discussion with healthcare professionals to ensure we approached our research responsibly and based our efforts on the most up-to-date medical knowledge. Conversations with Dr. Bindu Kalesan from Tury Health, a healthcare company focusing on preventative chronic disease care and reducing healthcare costs, and Dr. Jay Brown, a professor at the School of Medicine at the University of Virginia, informed us about the value of not only understanding atherosclerosis, but the entire cardiovascular and diagnostics space so that we were aware of existing technologies and were in a position to best meet AtheroSHuffle users’ needs. Dr. Bindu Kalesan emphasized the importance of an accessible test so people of low socioeconomic backgrounds could access our technology. Interviews with cardiologists and cardiovascular specialists furthered our comprehension of the field and provided us with a comprehensive understanding of the processes a diagnosed individual must endure currently.  We used advice from professionals and researched information to engage in informed decision-making throughout the AtheroSHuffle design and development processes. </p>
+                    </div>
+                    <div class="body-section text-wrapper">
+                        <h4>Proposed Implementation</h4>
+                        <p>AtheroSHuffle is designed to be an accessible and affordable diagnostic test for consumers from various socioeconomic backgrounds and regions across the world. The test strip will be available in pharmacies, clinics, or directly from primary healthcare providers for point-of-care (at home) usage. The test strip will be packaged in a kit that includes a sterile, disposable lancet, user instructions, an alcohol pad, and the test strip which is housed in a lateral flow assay cassette. The user will draw a small sample of blood using the lancet and place the blood drops onto the sample pad. After about 15 minutes, the test will display lines at the control and/or test line, giving users their results. All portions of the test are disposable after usage. The test kit also includes resources to download an online app for further information on prevention methods and local nutritionists.</p>
                     </div>
                 </div>
                 <div class="bronze">
@@ -56,12 +100,60 @@
                         <p>We chose this project because cardiovascular disease is the leading cause of death in the United States and worldwide, and atherosclerosis is one of the most prominent contributors to cardiovascular disease. This issue is exacerbated by the high cost of health services in the US. Atherosclerotic diagnosis and testing are costly and inaccessible, especially to those uninsured. Additionally, early detection of atherosclerosis is rare and current methods usually detect the disease when it has entered its later stages. The later stages at which atherosclerosis is currently detected are often too severe for the reversal of the disease. However, early detection would allow patients to seek out medical treatment, change their lifestyles before their symptoms become severe or lethal, and have the potential of reversing the disease. We were inspired to give people a chance to proactively monitor their health and the opportunity to change their lives. Therefore, we set to work on an affordable and accessible form of early diagnosis – AtheroSHuffle.</p>
                     </div>
     
-                    <div class="body-section text-wrapper">
+                    <div class="body-section text-wrapper bottom-page">
                         <h4>Contribution</h4>
+                        <p>We compiled protocols for the E. coli SHuffle strain and created a troubleshooting document to assist future teams who may choose to use this strain as a chassis. Our protocols include transformation, culturing, harvesting and sonication, and protein induction. This strain is relatively new to being used in experiments even though it has been widely cited since its literature debut. Because we know this strain is fragile and experimental procedures with this strain are not widely documented, we organized and refined many resources specific for this strain. We received insight from past protocols, such as those from BioLabs, as well as direction from fellow scientists, such as the original designer of SHuffle Dr. Mehmet Berkmen. This ensured the success of our experiments and optimizations for our strain. 
+                            We also designed and produced a 3D-printed LFA cassette file, as working with LFA design appears common to iGEM teams and a crucial component to the ever growing field of diagnostics. The STL file of our cassette is available for download off our wiki and can be used by future teams to easily 3D print their own LFA cassette. We have improved on past device cassettes, as ours is lightweight, easy to print, and low cost to make, and has an added feature to catch pooled liquid that may be left over within the device following use.
+                            </p>
+                    </div>
+                </div>
+                <div class="special-prizes">
+                    <div class="body-section text-wrapper">
+                        <h2>Special Awards</h2>
+                        <h4>Education</h4>
+                        <p>We deserve the special prize in Education because our education efforts reached an extremely wide array of age groups and demographics, spreading knowledge about our project and atherosclerosis to all facets of society. We were thoughtful in our education efforts to make them all engaging for their target population. We shared knowledge with the public through a variety of channels through information learned through our IHP and outreach efforts: cardiovascular-related conversations with medical professionals. We presented to other iGEM teams, at the Mid-Atlantic Meetup and a UVA Summer Research Symposium, to raise awareness about atherosclerosis amongst our peers. We also created our podcast as a credible resource for individuals recently diagnosed with atherosclerosis unsure of what their next steps should be. Our interactive story-coloring book was created as a resource promoting healthy habits in young children.
+                            <br>
+                            A major component of our collaboration with iGEM’s IISER Pune 2 team was also education-based, as we worked with their team to create a series of blog posts educating on Dengue and Atherosclerosis (the diseases targeted by each of our teams) as well as synthetic biology innovations to spread awareness of the field. Our blog promoted engaging discussion about the use of synthetic biology to solve local problems through feedback. The final podcast episode also focused on recognizing synthetic biology developments, encouraging listeners to gain interest in the field. </p>
+                    </div>
+                    <div class="body-section text-wrapper">
+                        <h4>Integrated Human Practices</h4>
+                        <p>In the design process, patients were at the forefront of our minds to ensure we were contributing something easy to use, accessible and accurate. We communicated with biotechnologists, cardiovascular experts, and consumers to answer questions about the ethics, design, and necessity of our device. When it came to ethics, our main concern was the perception of synthetic biology as a solution for atherosclerosis detection. Our conversations with Dr. Bindu Kalesan (Tury Health) and Dr. McNamara (UVA) assured us that we have come to a point where synthetic biology is needed to address the issues of socioeconomic disparity in medical practice by creating an accessible and proactive detection of atherosclerosis. Dr. McNamara stressed the importance of education in cardiovascular health, leading to the development of our educational app, AtheroSHuffle. When it came to design, our main goal was to create an accurate test that consumers can have full faith in, a consumer priority we identified through our public survey. Thus, we met with Dr. Norbert Leitinger (UVA), who guided us to our test line antibodies. We, then, focused on the necessity of our device by conducting a survey to gauge consumer’s attitudes towards cardiovascular health and our device. </p>
+                    </div>
+                    <div class="body-section text-wrapper">
+                        <h4>Inclusivity</h4>
+                        <p>Our team specifically focused on demonstrating inclusivity through the implementation of our device. To broaden the accessibility of our device to people of diverse socioeconomic and geographical backgrounds, we designed an inexpensive diagnostic made possible through the production of antibodies in E. coli. Additionally, the test strip is designed with a stark visual contrast of the test line, allowing for clear interpretation by those who are visually impaired. Finally, the app design includes a read-aloud feature to accommodate individuals with auditory processing disorders. Additionally, we raised awareness about synthetic biology and atherosclerosis to a variety of people by creating a storybook for children, a blog for teenagers, and a podcast series for adults, and presenting our project in public. Our blog is also available in multiple languages. Breaking down the barriers in science for people of different backgrounds is extremely important to our team. </p>
+                    </div>
+                    <div class="body-section text-wrapper">
+                        <h4>Inclusivity</h4>
+                        <p>Our team specifically focused on demonstrating inclusivity through the implementation of our device. To broaden the accessibility of our device to people of diverse socioeconomic and geographical backgrounds, we designed an inexpensive diagnostic made possible through the production of antibodies in E. coli. Additionally, the test strip is designed with a stark visual contrast of the test line, allowing for clear interpretation by those who are visually impaired. Finally, the app design includes a read-aloud feature to accommodate individuals with auditory processing disorders. Additionally, we raised awareness about synthetic biology and atherosclerosis to a variety of people by creating a storybook for children, a blog for teenagers, and a podcast series for adults, and presenting our project in public. Our blog is also available in multiple languages. Breaking down the barriers in science for people of different backgrounds is extremely important to our team. </p>
+                    </div>
+                    <div class="body-section text-wrapper">
+                        <h4>Best Part Collection</h4>
+                        <p>Team Virginia 2022 has created a part collection made up of 4 novel composite parts that can be produced in bacteria, assembled into a functional lateral flow assay, and have a modular design. Each of these composite parts contains a complete expression cassette for an
+                            IgG antibody or antibody fragment. 3 anti-oxLDL antibodies and 1 anti-mouse
+                            antibodies are encoded as parts of this collection.
+                            This part collection can be used for easy antibody expression in oxidizing bacterial
+                            strains, ideal for any iGEM team who is looking to perform immunoassays and
+                            other antibody-based tests for inflammatory diseases or any other disease in which
+                            oxLDL serves as a biomarker. Additionally, due to the
+                            convenient placement of restriction sites within these parts, the coding sequences
+                            can easily be exchanged for those of other antibodies, so this part collection can
+                            also serve as an expression cassette template for any team wishing to express
+                            antibodies. Parts in this collection can be found as Registry part
+                            BBa_K4477011-BBa_K4477014. 
+                            </p>
                     </div>
                 </div>
           </div>
         </div>
+    </div>
+</div>
+
+<div class="footer-preface curvy-divider">
+    <div class="footer-divider">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
     </div>
 </div>
 
