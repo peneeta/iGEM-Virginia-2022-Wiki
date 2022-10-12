@@ -1,4 +1,10 @@
 {% extends "layout.html" %}
+
+{% block extraStyles %}
+
+<link href="{{ url_for('static', filename = 'css/results.css') }}" rel="stylesheet">
+
+{% endblock %}
   
 {% block title %}Results{% endblock %}
 {% block lead %}You can describe the results of your project and your future plans here.{% endblock %}
@@ -13,107 +19,129 @@
   </div>
 </div>
 
-<div class="about-section d-flex flex-column justify-content-center align-items-center curvy-divider">
-  <div class="body-container wave-div narrow" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-    <div class="narrow-content d-flex flex-row align-items-center justify-content-center flex-wrap flex-lg-nowrap">
-      <div class="container">
-        <h2>Results</h2>
-        <p></p>
-      </div>
-      <div class="img-wrapper">
-        <p>ADD IMAGE</p>
-      </div>
-    </div>
-  </div>
-  <div class="gray-divider">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-    </svg>
-  </div>
-</div>
-
-<div class="d-flex flex-column justify-content-center align-items-center">
-  <div class="body-container">
-    <div class="container">
-      <div class="body-section top-page">
-        <h2>Protein Induction</h2>
-
-        <div class="table-wrapper">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Protein</th>
-                <th scope="col">Expected Molecular Weight (kD)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>mRFP</td>
-                <td>IK17</td>
-                <td>McPC603</td>
-                
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>25.43</td>
-                <td>28.69</td>
-                <td>28.71</td>
-                
-              </tr>
-            </tbody>
-          </table>
-
+<div class="d-flex flex-row justify-content-center">
+  <div class="index-padding">
+    <div class="fixed-index d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+      <div class="wrapper mx-4">
+        <div class="index heading d-flex flex-row align-items-center justify-content-start py-4">
+          <div class="top-select active" id="toc" role="button" onclick="selectTop(this)">Index</div>
         </div>
 
+        <div class="tab index" id="index">
+          <div class="index content d-flex flex-column" id="scrollspy-index-list">
+            <div class="index-item active" role="button" scrollTo="head1" onclick="scrollToSection(this)">Cloning</div>
+            
+            <div class="indented index-item" role="button" scrollTo="head2" onclick="scrollToSection(this)">McPC603</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head3" onclick="scrollToSection(this)">Integrity</div>
+
+            <div class="indented index-item" role="button" scrollTo="head4" onclick="scrollToSection(this)">Novel</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head5" onclick="scrollToSection(this)">Teamwork</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head6" onclick="scrollToSection(this)">Environment</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head7" onclick="scrollToSection(this)">Global Engagement</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head8" onclick="scrollToSection(this)">Responsiveness</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head9" onclick="scrollToSection(this)">Accessibility</div>
+
+            <div class="indented index-item" role="button" scrollTo="head10" onclick="scrollToSection(this)">Transparency</div>
+
+            <div class="indented index-item" role="button" scrollTo="head11" onclick="scrollToSection(this)">Ethics</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <div class="body-container">
+      <div class="container">
+        <div class="body-section top-page">
+          <div class="text-wrapper">
+            <h2>Cloning</h2>
+            <p>We cloned our inserts into the pSB3K3 vector using traditional restriction cloning. We separately digested pSB3K3+mRFP and the inserts with SpeI and EcoRI and ligated the digest products together in a way that excised mRFP from the final product. We then extracted and analyzed plasmid DNA from six resulting white (mRFP-lacking) transformant colonies. We also analyzed the DNA from one pink (mRFP-containing) transformant colony. We then verified the successful creation of the plasmid devices through restriction mapping and sequencing. In the below gel images, only those lanes with red asterisks will be discussed.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="body-section">
+          <div class="text-wrapper">
+            <h4>McPC603</h4>
+            <div class="img-wrapper gel-image">
+              <img src="https://static.igem.wiki/teams/4477/wiki/gelimgresults/mcpc603gels.png" alt="">
+              <div class="caption">
+                <p><span class="bold-text">Figure 1. Restriction Digest Verification of McPC603 Plasmid Construct.</span> (A) Virtual digest of pSB3K3 + McPC603 with HindIII and NotI on Benchling yields three bands of sizes 2.2 kb, 1 kb, and 0.4 kb. (B) L: Quickload Purple 1 kB Plus Ladder NEB. 5: McPC603 colony digested with HindIII and NotI, 2.2 kb and 1 kb. 7: pSB3K3+mRFP with NotI, 2.5 kb and 1.2 kb. 8: pSB3K3+mRFP cut with HindIII, 2.7 kb, 0.8 kb, 0.2 kb. 9: Pink McPC603 colony, 2.7 kb, 0.8 kb, 0.2 kb. (C) 5: McPC603 colony uncut, approx. 2 kb.</p>
+              </div>
+            </div>
+            <p>After transformation of the pSB3K3+McPC603 ligation product into DH5-alpha, plasmids were extracted from 6 white colonies (Lanes 1-6 (B and C)) and 1 pink colony (Lanes 9-10 (B)) for digestion analysis. The white McPC603 colony highlighted in Figure 1 (Lane 5) matched the virtual digest when cut with the same restriction enzymes. Note that although the 0.4 kb band did not appear on the gel, this was expected as fragments shorter than 0.5 kb do not show well on this percentage of gel. The uncut colony displays a single band occurring lower on the gel than the linearized plasmid, which is expected for an uncut plasmid and indicates the plasmid preparation occurred successfully. The enzyme cutter controls we ran on pSB3K3+mRFP in lanes 7, 8, and 9 also showed expected bands.</p>
+            <br>
+            <p>The successful results of the verification gel were further supported by sequencing data. The extracted plasmid was found to be 97.41% similar to the theoretical McPC603 plasmid, indicating successful creation of our McPC603-encoding device.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="body-section">
+          <div class="text-wrapper">
+            <h4>Anti-mouse VHH</h4>
+
+            <div class="img-wrapper gel-image">
+              <img src="https://static.igem.wiki/teams/4477/wiki/gelimgresults/vhhmousegels.png" alt="">
+              <div class="caption">
+                <p><span class="bold-text">Figure 2. Restriction Digest Verification of VHH Plasmid Construct.</span> (A) Virtual digest with PstI and XbaI on Benchling yields two bands of sizes 2.6 kb and 0.6 kb. (B) 2: VHH colony cut with PstI and XbaI, 2.6 kb and 0.6 kb. 7: pSB3K3+mRFP cut with PstI, 3.7 kb. 8: pSB3K3+mRFP cut with XbaI, 3.5 kb. (C) VHH colony uncut, approx. 1.8 kb. 7: pSB3K3+mRFP uncut, approx. 2 kb. </p>
+              </div>
+            </div>
+            <p>
+              After transformation of the pSB3K3+VHH ligation product into DH5-alpha, plasmids were extracted from 6 white colonies and 1 pink colony for digestion analysis. The white VHH colony highlighted in Figure 2 (B) and (C) exhibited the same bands as in the virtual digest when cut with the same enzymes. The uncut colony shows a band lower on the gel than the linearized plasmid, which is expected for an uncut plasmid and indicates the plasmid preparation occurred successfully. The enzyme cutter controls we ran on pSB3K3+mRFP in lanes 7(B), 8(B), and 7(C) linearized pSB3K3+mRFP as expected, indicating the enzymes were functioning properly. 
+              <br>
+              <br>
+              The successful results of the verification gel were further supported by sequencing data. The extracted VHH plasmid was found to be 97.47% similar to the theoretical VHH plasmid, indicating successful creation of our VHH-encoding device.
+              </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="body-section top-page">
+          <h2>Protein Induction</h2>
+  
+          <div class="table-wrapper">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Protein</th>
+                  <th scope="col">Expected Molecular Weight (kD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">mRFP</th>
+                  <td>25.43</td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row">IK17</th>
+                  <td>28.69</td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row">McPC603</th>
+                  <td>28.71</td>
+                </tr>
+              </tbody>
+            </table>
+  
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="spacer-div"></div>
 </div>
 
-<div class="row mt-4">
-  <div class="col-lg-5">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>Clearly and objectively describe the results of your work.</li>
-      <li>Future plans for the project.</li>
-      <li>Considerations for replicating the experiments.</li>
-    </ul>
-  </div>
-  <div class="col-lg-7">
-    <h2>Describe what your results mean</h2>
-    <hr>
-    <ul>
-      <li>Interpretation of the results obtained during your project. Don't just show a plot/figure/graph/other, tell us what you think the data means. This is an important part of your project that the judges will look for.</li>
-      <li>Show data, but remember <b>all measurement and characterization data must also be on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a>.</b> Otherwise these data will not be in consideration for any medals or part awards!</li>
-      <li>Consider including an analysis summary section to discuss what your results mean. Judges like to read what you think your data means, beyond all the data you have acquired during your project.</li>
-    </ul>
-  </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Project Achievements</h2>
-    <hr>
-    <p>You can also include a list of bullet points (and links) of the successes and failures you have had over your summer. It is a quick reference page for the judges to see what you achieved during your summer.</p>
-    <ul>
-      <li>A list of linked bullet points of the successful results during your project</li>
-      <li>A list of linked bullet points of the unsuccessful results during your project. This is about being scientifically honest. If you worked on an area for a long time with no success, tell us so we know where you put your effort.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:Newcastle/Results">2019 Newcastle</a></li>
-      <li><a href="https://2019.igem.org/Team:Munich/Results">2019 Munich</a></li>
-      <li><a href="https://2019.igem.org/Team:Tec-Chihuahua/Results">2019 Tec Chihuahua</a></li>
-      <li><a href="https://2020.igem.org/Team:Aalto-Helsinki/Results">2020 Aalto Helsinki</a></li>
-      <li><a href="https://2020.igem.org/Team:GreatBay_SCIE/Results">2020 GreatBay SCIE</a></li>
-      <li><a href="https://2020.igem.org/Team:Queens_Canada/Results">2020 Queens Canada</a></li>
-    </ul>
-  </div>
-</div>
 
 {% endblock %}

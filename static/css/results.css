@@ -1,0 +1,19 @@
+.img-wrapper.gel-image img {
+    width: 60%;
+}
+
+.img-wrapper.gel-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper.gel-image .caption{
+    max-width: 40rem;
+
+}
+
+.img-wrapper.gel-image{
+    padding:1rem;
+}
