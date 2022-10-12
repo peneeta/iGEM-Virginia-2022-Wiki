@@ -19,7 +19,7 @@
   </div>
 </div>
 
-<div class="modeling about d-flex flex-column align-items-center justify-content-center">
+<div class="modeling about d-flex flex-column align-items-center justify-content-center curvy-divider">
   <div class="body-container wave-div narrow">
     <div class="container">
       <div class="d-flex flex-row justify-content-center align-items-center">
@@ -27,8 +27,6 @@
           <h2>Solving Problems with Precision</h2>
           <div class="no-text-wrapper">
             <p>Modeling is a <span class="bold-text">vital part</span> of the design process for any project because it allows variables that cannot be feasibly tested in Wet Lab to be simulated. Project modeling is more than analyzing important variables; <span class="bold-text">it accelerates the engineering design cycle</span> and <span class="bold-text">saves resources.</span> 
-              
-  
             <br>
             For our project, modeling has provided a <span class="bold-text">streamlined process</span> for wet lab experiments by testing variables that are in question and optimizing the conditions. We used modeling to <span class="bold-text">predict the 3D structures of antibodies</span> that we are working with, which would normally take several months to determine experimentally. We also focused on <span class="bold-text">LFA optimization</span> to predetermine which parameters would produce the best results in the lab.</p>
           </div>
@@ -39,10 +37,15 @@
       </div>
     </div>
   </div>
+  <div class="gray-divider">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+  </div>
 </div>
 
 
-<div class="d-flex flex-row body-padding">
+<div class="gray d-flex flex-row body-padding">
   <div class="index-padding">
     <div class="fixed-index d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
       <div class="wrapper mx-4">
@@ -61,9 +64,9 @@
 
         <div class="tab index" id="index">
           <div class="index content d-flex flex-column" id="scrollspy-index-list">
-            <div class="index-item active" role="button" scrollTo="head1" onclick="scrollToSection(this)">How does an LFA Work?</div>
+            <div class="index-item active" role="button" scrollTo="head1" onclick="scrollToSection(this)">Protein Modeling</div>
             
-            <div class="index-item" role="button" scrollTo="head2" onclick="scrollToSection(this)">How Our LFA is Unique</div>
+            <div class="index-item" role="button" scrollTo="head2" onclick="scrollToSection(this)">Lateral Flow Assay Modeling: Introduction</div>
   
             <div class="indented index-item" role="button" scrollTo="head3" onclick="scrollToSection(this)">What is Unique to our Design</div>
   
@@ -92,7 +95,7 @@
 
   <div class="body-container d-flex flex-column" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
     <div class="container">
-      <div class="body-section top-page">
+      <div class="body-section top-page" id="head1">
         <h2>Protein Modeling</h2>
         <div class="text-wrapper">
           <p>The original aim for protein modeling was to model the <span class="bold-text">sandwich complex</span> between the labeled antibody and the test-line antibody, which indicates a positive test. The plan was to predict the epitopes on the biomarker OxLDL that our labeled full-length IgG antibody and single-chain variable fragments (scFv) would bind to. By knowing these epitopes, we could determine which scFv fragment out of the variety of candidates would not interfere with the binding of the labeled antibody.</p> 
@@ -107,12 +110,6 @@
       <!-- McPC603 -->
       <div class="pdb-struct McPC603-scFv d-flex flex-column flex-wrap align-items-center justify-content-evenly">
         <div class="container">
-          <div class="wrapper">
-            <h4>McPC603 scFv Ribbon and Surface Model</h4>
-            <div class="text-wrapper">
-              <p>This is a model generated from AlphaFold of the McPC603 antibody fragment. We generated models like these for our other antibodies to visualize them.</p>
-            </div>
-          </div>
         </div>
         <!-- HELPER SCRIPT -->
         <script>
@@ -143,11 +140,17 @@
         <div class="pdb">
           <div id="McPC603-VP" style="width: 400px; height: 500px;"></div>
         </div>
+        <div class="wrapper">
+          <h3>McPC603 scFv Ribbon and Surface Model</h3>
+          <div class="text-wrapper">
+            <p>This is a model generated from AlphaFold of the McPC603 antibody fragment. We generated models like these for our other antibodies to visualize them.</p>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="container">
-      <div class="body-section">
+      <div class="body-section" id="head2">
         <div class="text-wrapper">
           <h2>Lateral Flow Assay Modeling: Introduction</h2>
           <h4>The Goal</h4>
@@ -160,8 +163,90 @@
       <div class="body-section">
         <div class="text-wrapper">
           <h4>Constraints</h4>
-          <p></p>
+          <p> 1. The <span class="bold-text">test must produce a signal with 0.8 mg/dL of oxLDL in the blood sample</span>. We aim for our test to be sensitive to this stage of atherosclerotic development because it marks the stage at which users are at high risk for atherosclerosis but still have time to halt or even reverse the development process (through healthy diets, increased exercise, etc). 
+            <br>
+            <br>
+          2. We will focus on optimizing the amount of detector units we place onto the test strip. So, <span class="bold-text">the other parameters that are required to create a LFA are fixed as follows</span>:
+          <br>
+            a. The distance between the end of the conjugate pad and the test line is 20 mm
+            <br>
+            b. The distance between the test line and the control line is 10 mm
+            <br>
+            c. The concentration of receptor antibodies (the antibodies at the control line and the test line) are 10 nM
+            </p>
         </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h4>Components and Terms</h4>
+        </div>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Variable</th>
+              <th scope="col">Term</th>
+              <th scope="col">Molecule</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">A</th>
+              <td>Analyte</td>
+              <td>oxLDL (biomarker)</td>
+            </tr>
+            <tr>
+              <th scope="row">D</th>
+              <td>Detector Unit</td>
+              <td>Gold nanoparticles conjugated to full sized IgG antibodies</td>
+            </tr>
+            <tr>
+              <th scope="row">AD</th>
+              <td>analyte detector unit complex</td>
+              <td>oxLDL-conjugated-full-sized-IgG complex</td>
+            </tr>
+
+            <tr>
+              <th scope="row">T<sub>1</sub></th>
+              <td>IK17 scFv</td>
+              <td>test line receptor antibody</td>
+            </tr>
+<!-- fgfgfgfgfgf -->
+            <tr>
+              <th scope="row">T<sub>2</sub></th>
+              <td>McPC603 scFv</td>
+              <td>test line receptor antibody 2</td>
+            </tr>
+
+            <tr>
+              <th scope="row">T<sub>1</sub>AD</th>
+              <td>test line receptor antibody 1 analyte detector unit complex</td>
+              <td>IK17-detector-unit complex</td>
+            </tr>
+
+            <tr>
+              <th scope="row">T<sub>2</sub>AD</th>
+              <td>test line receptor antibody 2 analyte detector unit complex</td>
+              <td>McPC603-detector-unit complex</td>
+            </tr>
+
+            <tr>
+              <th scope="row">C</th>
+              <td>control line receptor antibody</td>
+              <td>V<sub>H</sub>H (nanobody)</td>
+            </tr>
+
+            <tr>
+              <th scope="row">CAD</th>
+              <td>control line receptor antibody analyte detector unit complex</td>
+              <td>V<sub>H</sub>H-oxLDL-detector unit complex</td>
+            </tr>
+
+            
+          </tbody>
+        </table>
       </div>
     </div>
 
@@ -285,6 +370,13 @@
       <div class="body-section">
         <div class="text-wrapper">
           <h4>Boundary Conditions</h4>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h4>Solving the PDE System</h4>
           <p></p>
         </div>
       </div>
