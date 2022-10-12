@@ -13,7 +13,7 @@
   </div>
 </div>
 
-<div class="d-flex flex-column justify-content-center align-items-center">
+<div class="d-flex flex-column justify-content-center align-items-center curvy-divider">
   <div class="body-container wave-div narrow">
       <div class="container">
         <div class="about-section d-flex flex-row justify-content-center align-items-center">
@@ -27,34 +27,90 @@
         </div>
       </div>
   </div>
+  <div class="gray-divider">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+  </div>
 </div>
 
 
-<div class="d-flex flex-column justify-content-center">
+<div class="gray d-flex flex-column justify-content-center">
   <div class="d-flex flex-row justify-content-center body-padding">
     <div class="index-padding">
       <div class="fixed-index">
-        <p>Fixed index</p>
       </div>
     </div>
 
     <div class="body-container d-flex flex-column align-items-center justify-content-center">
+      
       <div class="container">
         <div class="body-section top-page">
           <div class="text-wrapper">
             <h2>Lateral Flow Assay Cassette Design</h2>
-            <p>We have designed a sleek, safe, and cost-effective LFA cassette that other teams can print using the stl file attached below. We observed many different LFA cassette designs and decided on the three criteria listed above by noting the pros and cons of other cassette designs.
-              1) Sleek. Part of enticing consumers to use our product is to make the cassette as visually pleasing as possible. To this end, we designed our cassette to look streamlined and modern, taking inspiration from iHealth's rapid COVID test design. We made sure to base our cassette geometry off of rectangles for cleaner edges due to the capabilities of many 3D printers and kept the device as readable as possible.
-              2) Safe. The most critical design constraint of any LFA is to contain the patient sample and any running buffers within the device so they don't pose health concerns to the user. To ensure this, we designed our test strip to have a dual-locking system between the upper and lower halves of the cassette, preventing users from accidentally pulling the halves apart and making it harder for fluid to escape. We also included a collection well on the inside of the cassette to collect any leakage from the test strip and act as another line of defense.
-              3) Cost-effective. A primary goal of our device is to be a cheap detection option that people of any socioeconomic background can use. To meet this goal, we need to cut back on manufacturing expenses -- including those associated with the cost of 3D printing our cassette. We cut back on excess material and experimented with our cassette height and thickness to keep the cassette sturdy while reducing the amount of plastic and time needed to print the cassette.
+            <p>We have designed a sleek, safe, and cost-effective LFA cassette that other teams can print using the stl file attached below. We observed many different LFA cassette designs and decided on the three criteria listed above by noting the pros and cons of other cassette designs.</p>
+            <h4>1) Sleek</h4>
+            <p>Part of enticing consumers to use our product is to make the cassette as visually pleasing as possible. To this end, we designed our cassette to look streamlined and modern, taking inspiration from iHealth's rapid COVID test design. We made sure to base our cassette geometry off of rectangles for cleaner edges due to the capabilities of many 3D printers and kept the device as readable as possible.
+            </p>
+            <h4>2) Safe</h4>
+            <p>The most critical design constraint of any LFA is to contain the patient sample and any running buffers within the device so they don't pose health concerns to the user. To ensure this, we designed our test strip to have a dual-locking system between the upper and lower halves of the cassette, preventing users from accidentally pulling the halves apart and making it harder for fluid to escape. We also included a collection well on the inside of the cassette to collect any leakage from the test strip and act as another line of defense.</p>
+            <h4>3) Cost-Effective</h4>
+            <p> A primary goal of our device is to be an affordable detection option that people of any socioeconomic background can use. To meet this goal, we need to cut back on manufacturing expenses -- including those associated with the cost of 3D printing our cassette. We cut back on excess material and experimented with our cassette height and thickness to keep the cassette sturdy while reducing the amount of plastic and time needed to print the cassette. Our final cassette version can print in less than 20 minutes and only uses 0.5 meters of filament!
+              <br>
               For these reasons, our cassette design is optimized for use with an LFA test strip and will be an excellent hardware option for any future iGEM team looking to work with LFAs.
               </p>
           </div>
+        </div>
+      </div>
 
+      <div class="container">
+        <div class="body-section">
+          <div class="text-wrapper">
+            <a href="https://uploads.igem.org/teams/4477/wiki/stl/virginia-2022-lfa-cassette-top.stl">Download top part of cassette (.stl)</a>
+            <br>
+            <a href="https://uploads.igem.org/teams/4477/wiki/stl/virginia-2022-lfa-cassette-bottom.stl">Download bottom part of cassette (.stl)</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="body-section">
+          <div class="text-wrapper">
+            <h2>Protocols for <span class="italic-text">E. coli</span> SHuffle</h2>
+            <p>Throughout the course of our research, we had many difficulties with working with SHuffle. Altering the experimental conditions and protocols as we went was imperative to the success of our project. In order to best benefit future iGEM teams who also may work with the <span class="italic-text">E. coli</span> SHuffle strain, we decided to compile the protocols we have used to provide insight. Our protocols include transformation, culturing, harvesting and sonication, and protein induction. See our <a href="{{ url_for('pages', page='experiments') }}">experiments page</a> for more detail. 
+              <br>
+              <br>
+
+              This strain is relatively new to being used in experiments even though it has been widely cited since its literature debut. Because we know this strain is fragile and experimental procedures with this strain are not widely documented, we organized and refined many resources specific for this strain. We received insight from past protocols, such as those from BioLabs, as well as direction from fellow scientists, such as the original designer of SHuffle Dr. Mehmet Berkmen. This ensured the success of our experiments and optimizations for our strain. 
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="body-section bottom-page">
+          <div class="text-wrapper">
+            <h2>Troubleshooting Documents</h2>
+            <p>Here is the troubleshooting document for SHuffle we wrote with our partner team, IISER Pune II.</p>
+            <div class="container">
+              <object style="height: 50rem;" data="https://static.igem.wiki/teams/4477/wiki/pdf/wetlab-collab-virginia-pune.pdf" type="application/pdf" width="100%" height="100%">
+                <iframe style="height: 50rem;" src="https://static.igem.wiki/teams/4477/wiki/pdf/wetlab-collab-virginia-pune.pdf" width="100%" height="100%" style="border: none;">
+                This browser does not support PDFs. Please download the PDF to view it: 
+                <a href="https://static.igem.wiki/teams/4477/wiki/pdf/wetlab-collab-virginia-pune.pdf">Download PDF</a>
+                </iframe>
+              </object>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="spacer-div"></div>
+  </div>
+</div>
+
+<div class="footer-preface curvy-divider">
+  <div class="footer-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+          </svg>
   </div>
 </div>
 
