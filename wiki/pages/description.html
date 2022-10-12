@@ -173,7 +173,8 @@
         <h2>Heart Disease: A Global Killer</h2>
         <div class="text-wrapper">
           <p>
-            Cardiovascular disease (CVD) is a broad category of conditions that affect the structure and function of the heart and its surrounding vasculature. Common cardiovascular diseases include heart disease, heart attack, stroke, heart failure, arrhythmia, and heart valve problems.<sup>1</sup> According to the Center for Disease Control and Prevention, heart disease is the leading cause of death in men, women, and people of the majority of racial and ethnic groups in the US. 
+            <span class="bold-text">Cardiovascular disease (CVD)</span> is a broad category of conditions that affect the structure and function of the heart and its surrounding vasculature. Common cardiovascular diseases include <span class="bold-text">heart disease, heart attack, stroke, heart failure, arrhythmia,</span> and <span class="bold-text">heart valve problems</span>.<sup>1</sup> According to the Center for Disease Control and Prevention, heart disease is the leading cause of death in men, women, and people of the majority of racial and ethnic groups in the US. 
+            <br>
             <br>
             To put this into numbers, a person dies of cardiovascular disease in America every 34 seconds. Furthermore, 1 in every 5 deaths in 2020, a year notoriously known for the COVID pandemic, was attributed to cardiovascular disease.<sup>2</sup> 
           </p>
@@ -224,6 +225,7 @@
           <p> 
             Coronary heart disease (CAD) occurs when the arteries cannot deliver enough oxygen-rich blood to the heart.<sup>6</sup> It is the most common type of heart disease, and has varying causes depending on the type. The root cause of CAD is atherosclerosis, or cholesterol buildup in the artery walls leading to plaque formation. Over time, this plaque can block blood flow in the large arteries. CAD is “silent” in most cases, meaning the first sign of illness is extreme, indicating a heart attack or stroke.<sup>6</sup>
             <br> 
+            <br>
             Treatment, if detected early, involves lifestyle changes such as managing stress, eating heart-healthy foods, and being physically active. After a cardiac event, patients are given statins to lower cholesterol or aspirin to lower the chance of a blood clot. 
             Atherosclerosis is a chronic inflammatory disease of the large arteries that is the main cause of coronary artery disease complications. It is characterized by plaque buildup within the inner arterial walls.<sup>7</sup></p>
         </div>
@@ -237,7 +239,9 @@
           <p>
             Atherosclerotic lesions begin with endothelial cell damage, allowing low density lipoproteins (LDL) to enter the intima, also known as the inner vessel space.<sup>8</sup> LDL is very prone to oxidation, and  oxidized-LDL particles (oxLDL) are toxic and cause inflammation, which then activates the body’s immune response.<sup>9,10</sup>
             <br>
+            <br>
             Monocytes, commonly known as white blood cells, are attracted to the lesion and migrate into the intima under the influence of chemokines.<sup>11</sup> As monocytes enter the intima, they differentiate into macrophages and engulf oxLDL. Macrophages uptake oxLDL to the point of saturation, becoming foam cells. The foam cells undergo apoptosis and release lipid necrotic cores.<sup>12</sup> 
+            <br>
             <br>
             A fibrous cap of collagen and elastin, produced by smooth muscle cells (SMCs), forms over the necrotic core, attempting to heal the lesion.<sup>13</sup> Lesions with a thin cap are more likely to rupture and thus less stable, leading to blockage in the blood vessel. After rupture, a thrombus, or blood clot, forms, which can dislodge and cause a blockage restricting blood flow, ultimately leading to fatal heart attacks and strokes.<sup>14</sup>
           </p>
@@ -248,7 +252,6 @@
             <p class="italic-text">Diagram of atherosclerotic pathogenesis</p>
           </div>
         </div>
-        
       </div>
     </div>
 
@@ -260,7 +263,7 @@
           <p>
             The specific problem we seeked to tackle stems from the detection of atherosclerosis. As seen in the flowchart below, current detection methods are costly, time-consuming, and associated with late stage atherosclerosis. Expensive costs and time-consuming doctors appointments are not accessible to many people, contributing to the rising statistics of undetected and unchecked atherosclerosis. Late detection of atherosclerosis eliminates the possibility to reverse the course of atherosclerosis and it increases the risk for further development into other cardiovascular diseases. A proactive, cost-effective, and easy-to-use detection method is needed to combat these issues.   
           </p>
-          <img class="diagnostic-diagram img-diagnostic-diagram" src="https://static.igem.wiki/teams/4477/wiki/path2diag.svg"/>
+          <img style="max-width: 80%;" class="diagnostic-diagram img-diagnostic-diagram" src="https://static.igem.wiki/teams/4477/wiki/path2diag.svg"/>
         </div>
       </div>
     </div>
@@ -272,6 +275,7 @@
           <div class="text-wrapper">
             <p>
               To combat these problems, we developed a method of early and accessible atherosclerosis detection: an easy-to-read test strip that detects oxidized low-density lipoprotein (oxLDL) based on a lateral flow assay (LFA). Our device provides a rapid, proactive, and point-of-care approach to evaluating atherosclerosis risk, allowing early treatment and potential reversal of disease. This method will significantly reduce the cost of current detection methods and provide a method of early atherosclerosis detection, improving healthcare globally, especially for underserved communities.
+              <br>
               <br>
               An LFA is a low-cost, convenient, and portable test constructed to produce results promptly without a doctor’s visit.<sup>21</sup> Typically, LFAs are a diagnostic method for pathogens, diseases, and other lingering health problems. They detect biomarkers of diseases present in a liquid sample that is deposited on one end of the strip. The strip shows vertical lines after completion of the test, with one line indicating a negative test and two lines indicating a positive result. Getting results happens within a matter of five to thirty minutes, and LFAs can be rapidly produced for widespread accessibility. More about our specific design is available on our <a href="{{ url_for('pages', page='design') }}">design page</a>.
             </p>
@@ -304,7 +308,9 @@
               <p>
                 Synthetic biology plays a pertinent role in the development of our solution. It offers a tool set of techniques that detect early atherosclerosis, reduce cost, and allows for ethical considerations.
                 <br>
+                <br>
                 Current diagnostic methods are costly and cater towards general cardiovascular disease, not atherosclerosis specifically. They also detect atherosclerosis during its late stages of development, at which point is largely irreversible. This is because they rely on the formation of the plaque that can be imaged. Synthetic biology, on the other hand, allows us to produce antibodies specific to early stage antigens that are present earlier than physical plaque formation.
+                <br>
                 <br>
                 Furthermore, pharmaceutical antibody production requires inoculating animals with antigens. The animal is selected, bred, then antibodies are collected by isolating antibody-producing B-cells to create hybridoma cells.<sup>26</sup> It is also extremely time-consuming and costly. A synthetic biology approach circumvents animal interaction, making it cruelty-free. Additionally, it takes less time to produce antibodies in bacteria or yeast, thus lowering the overall cost of antibody production. This is an important consideration to make in terms of mass-scale production as the ultimate goal for this device is to mass produce LFAs for consumer use.  The specially genetically-engineered strain <span class="italic-text">E. coli</span> SHuffle circumvents these concerns.
               </p>
@@ -322,6 +328,7 @@
             <p> 
               200,000 of the deaths caused by heart disease each year can be prevented with changes in health habits, such as diet, and help from proper healthcare<sup>27</sup>, but these changes are not accessible to everyone. As of 2021, 9.6% of the United States population did not have healthcare, which translates to 31.1 million people.<sup>28</sup> Atherosclerosis and cardiovascular disease detection is possible in yearly medical check-ups, however, doctor’s visits for these individuals are not feasible options. The urgency of these issues is enhanced by the abundance of asymptomatic risk factors that go undetected until it is too late. 
               <br>
+              <br>
 	            Even those who have healthcare and are able to proceed with diagnostic testing are presented with problems surrounding cost. Numerous expensive tests with a high threshold for detection are required before a diagnosis is confidently provided. Healthcare is also becoming more complex as deductibles, copays, and coinsurance increase. Around 3.9 million families, making up 45% of those with atherosclerosis, reported a large difficulty in paying for these bills, and 1.6 million families were unable to do so.<sup>29</sup> Knowing that cardiovascular diseases are preventable yet affect so many people worldwide, we wanted to design a device was affordable and preventative.
             </p>
           </div>
@@ -333,7 +340,9 @@
             <p>
               To further our project, our focus is to integrate these test results with healthcare providers by developing a helper app to quantify and log results, and develop a plan to improve health alongside doctors’ recommendations. Read more about our app design here.
               <br>
+              <br>
               Another area of improvement is to increase antibody yields through optimizing <span class="italic-text">E. coli</span> SHuffle. This will enable more test strips to be produced at a faster rate, since more antibodies will be available for use. As a result, the cost of the strip will decrease, increasing its accessibility.
+              <br>
               <br>
               While our test strip is predictive of atherosclerosis, we also want to improve its specificity for atherosclerosis by adding more antibodies that detect different biomarkers associated with atherosclerosis.  More information about future directions is available on our <a href="{{ url_for('pages', page='implementation') }}">implementation page</a>.</p>
           </div>

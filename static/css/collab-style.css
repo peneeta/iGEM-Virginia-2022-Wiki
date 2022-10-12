@@ -5,6 +5,7 @@
 }
 
 .zoom-img{
-    max-width: 400px;
+    max-width: 25rem;
     align-self: center;
+    padding: 1rem;
   }

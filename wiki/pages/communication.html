@@ -35,6 +35,29 @@
 
 <div class="gray d-flex flex-column justify-content-center">
   <div class="d-flex flex-row justify-content-center body-padding">
+    <div class="index-padding">
+      <div class="fixed-index d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+        <div class="wrapper mx-4">
+          <div class="index heading d-flex flex-row align-items-center justify-content-start py-4">
+            <div class="top-select active" id="toc" role="button" onclick="selectTop(this)">Index</div>
+          </div>
+  
+          <div class="tab index" id="index">
+            <div class="index content d-flex flex-column" id="scrollspy-index-list">
+              <div class="index-item active" role="button" scrollTo="head01" onclick="scrollToSection(this)">Podcast</div>
+              
+              <div class="index-item" role="button" scrollTo="head02" onclick="scrollToSection(this)">Meetups</div>
+    
+              <div class="indented index-item" role="button" scrollTo="head03" onclick="scrollToSection(this)">UVA Summer Research Symposium</div>
+  
+              <div class="index-item" role="button" scrollTo="head04" onclick="scrollToSection(this)">App</div>
+    
+              <div class="indented index-item" role="button" scrollTo="head05" onclick="scrollToSection(this)">Ms. Jennifer Kershner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="body-container d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
       <div class="container">
         <div class="body-section top-page">
@@ -89,6 +112,34 @@
       <div class="container">
         <div class="body-section">
           <div class="text-wrapper">
+            <h2>Meetups</h2>
+            <p>
+              Through this summer and fall, our team had presented at two different conferences: Mid-Atlantic Meetup hosted by University of Maryland and University of Virginia's Summer Research Symposium. Public presentations are important to our team because they require us to formally present scientific information in an engaging way. 
+              <br>
+              The Mid-Atlantic meeting allowed us to communicate our project to other iGEM teams and learn about theirs. These types of meetings are important since the premise of iGEM allows us to understand the processes of these projects and only focus on exploring the synthetic biology aspect. At the meetup, five iGEM teams presented and learnt from each other. Our presentation allowed us to educate our peers about atherosclerosis and the importance of cardiovascular health. Through mutual interests in synthetic biology, we fostered a community and established contacts for further opportunities. More information on the Mid-Atlantic Meetup is explained on the collaborations page.
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="body-section">
+          <div class="text-wrapper">
+            <h4>UVA Summer Research Symposium</h4>
+            <p>The University of Virginia's Summer Research Symposium was a research exhibition for our peers and graduate students. Our team presented a poster about our project and the synthetic biology behind it. As we interacted with other researchers, we explained the importance of atherosclerosis and the relevance of synthetic biology. We explained how atherosclerosis development is heavily dependent on the habits we make in our early years. Therefore, it is critical that we build heart healthy habits as college students to create a lifelong commitment to heart health. We raised awareness about our project and synthetic biology at our university because it is important that we get feedback from peers in research-based communities. </p>
+          </div>
+          <div class="img-wrapper shadow-wrapper">
+            <img style="max-width: 30rem;" src="https://static.igem.wiki/teams/4477/wiki/postersandpizza.jpg" alt="">
+            <div class="subtitle-wrapper">
+              <p class="italic-text">Virginia iGEM members presenting at the UVA Summer Research Symposium. (From left to right: Yilun Zhou, Miranda Khoury, Ivory Tang, Isha Patel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="body-section">
+          <div class="text-wrapper">
             <h2>App</h2>
             <p>
               To use the information gained from our human practices efforts, we created an app demo that can be later extended into a fully released app, which will promote awareness on atherosclerosis. The app demo and further details can be found on the implementation page. 
@@ -98,7 +149,7 @@
         </div>
       </div>
     </div>
-    
+    <div class="spacer-div"></div>
   </div>
 </div>
 
