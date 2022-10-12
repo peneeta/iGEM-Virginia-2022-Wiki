@@ -196,78 +196,6 @@
     <div class="container">
       <div class="body-section">
         <div class="text-wrapper">
-          <h4>Components and Terms</h4>
-        </div>
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Variable</th>
-              <th scope="col">Term</th>
-              <th scope="col">Molecule</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">A</th>
-              <td>Analyte</td>
-              <td>oxLDL (biomarker)</td>
-            </tr>
-            <tr>
-              <th scope="row">D</th>
-              <td>Detector Unit</td>
-              <td>Gold nanoparticles conjugated to full sized IgG antibodies</td>
-            </tr>
-            <tr>
-              <th scope="row">AD</th>
-              <td>analyte detector unit complex</td>
-              <td>oxLDL-conjugated-full-sized-IgG complex</td>
-            </tr>
-
-            <tr>
-              <th scope="row">T<sub>1</sub></th>
-              <td>IK17 scFv</td>
-              <td>test line receptor antibody</td>
-            </tr>
-<!-- fgfgfgfgfgf -->
-            <tr>
-              <th scope="row">T<sub>2</sub></th>
-              <td>McPC603 scFv</td>
-              <td>test line receptor antibody 2</td>
-            </tr>
-
-            <tr>
-              <th scope="row">T<sub>1</sub>AD</th>
-              <td>test line receptor antibody 1 analyte detector unit complex</td>
-              <td>IK17-detector-unit complex</td>
-            </tr>
-
-            <tr>
-              <th scope="row">T<sub>2</sub>AD</th>
-              <td>test line receptor antibody 2 analyte detector unit complex</td>
-              <td>McPC603-detector-unit complex</td>
-            </tr>
-
-            <tr>
-              <th scope="row">C</th>
-              <td>control line receptor antibody</td>
-              <td>V<sub>H</sub>H (nanobody)</td>
-            </tr>
-
-            <tr>
-              <th scope="row">CAD</th>
-              <td>control line receptor antibody analyte detector unit complex</td>
-              <td>V<sub>H</sub>H-oxLDL-detector unit complex</td>
-            </tr>
-
-            
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="body-section">
-        <div class="text-wrapper">
           <h4>Remarks</h4>
           <p><span class="bold-text">We will consider all concentrations in terms of mg/L.</span> This is due to the unknown molar mass of oxLDL. Currently, the concentration of oxLDL in the blood which correlates to a high risk of developing atherosclerosis is only reported in terms of mg/dL. Thus, we are unable to convert this threshold into molar concentrations. So, we used an online protein calculator to calculate the weight of each component (listed below) of the LFA.<sup>2</sup></p>
         </div>
@@ -293,7 +221,8 @@
       <div class="body-section">
         <div class="text-wrapper">
           <h3>Scenario 1: At least 0.8 mg/dL of oxLDL is present in the sample</h3>
-          <p></p>
+          <p>oxLDL  will bind to the gold-conjugated full-sized IgG on the conjugate pad. Then, the oxLDL-IgG-gold nanoparticle complex will diffuse and advect from the conjugate pad onto the nitrocellulose membrane. The complexes will diffuse resulting in a net movement from an area of high concentration to an area of low concentration. As these particles move in a net direction during diffusion, the liquid sample will further be transported by the momentum of  the fluid’s bulk motion, also known as advection, thereby moving the complexes over the test strip. These complexes will bind at both the test and control lines. Specifically, oxLDL will bind to both types of single chain variable fragments (scFv) present at the test line. The gold-conjugated full-sized IgG, also known as the detector unit, will bind to the control line receptor nanobody. This results in a visible line at both the test and control lines (i.e. a positive test).
+          </p>
         </div>
       </div>
     </div>
@@ -302,7 +231,7 @@
       <div class="body-section">
         <div class="text-wrapper">
           <h3>Scenario 2: Less than 0.8 mg/dL of oxLDL is present in the sample</h3>
-          <p></p>
+          <p>The sample will diffuse into the conjugate pad but the gold-conjugated full sized IgGs will not form a new complex with the sample. Then, these gold-conjugated full sized IgGs, the detector unit, will both diffuse and advect onto the nitrocellulose membrane. These detector units will not bind to test line receptor scFvs. The detector units will instead continue to move to the control line, where the constant region of the full length IgG of the detector unit will bind to the control line receptor nanobody. </p>
 
         </div>
       </div>
@@ -312,7 +241,70 @@
       <div class="body-section">
         <div class="text-wrapper">
           <h2>Components and terms</h2>
-          <p>Do we need a tbl here</p>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Variable</th>
+                <th scope="col">Term</th>
+                <th scope="col">Molecule</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">A</th>
+                <td>Analyte</td>
+                <td>oxLDL (biomarker)</td>
+              </tr>
+              <tr>
+                <th scope="row">D</th>
+                <td>Detector Unit</td>
+                <td>Gold nanoparticles conjugated to full sized IgG antibodies</td>
+              </tr>
+              <tr>
+                <th scope="row">AD</th>
+                <td>analyte detector unit complex</td>
+                <td>oxLDL-conjugated-full-sized-IgG complex</td>
+              </tr>
+  
+              <tr>
+                <th scope="row">T<sub>1</sub></th>
+                <td>IK17 scFv</td>
+                <td>test line receptor antibody</td>
+              </tr>
+  <!-- fgfgfgfgfgf -->
+              <tr>
+                <th scope="row">T<sub>2</sub></th>
+                <td>McPC603 scFv</td>
+                <td>test line receptor antibody 2</td>
+              </tr>
+  
+              <tr>
+                <th scope="row">T<sub>1</sub>AD</th>
+                <td>test line receptor antibody 1 analyte detector unit complex</td>
+                <td>IK17-detector-unit complex</td>
+              </tr>
+  
+              <tr>
+                <th scope="row">T<sub>2</sub>AD</th>
+                <td>test line receptor antibody 2 analyte detector unit complex</td>
+                <td>McPC603-detector-unit complex</td>
+              </tr>
+  
+              <tr>
+                <th scope="row">C</th>
+                <td>control line receptor antibody</td>
+                <td>V<sub>H</sub>H (nanobody)</td>
+              </tr>
+  
+              <tr>
+                <th scope="row">CAD</th>
+                <td>control line receptor antibody analyte detector unit complex</td>
+                <td>V<sub>H</sub>H-oxLDL-detector unit complex</td>
+              </tr>
+  
+              
+            </tbody>
+          </table>
           
         </div>
       </div>
