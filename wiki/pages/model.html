@@ -388,7 +388,13 @@
       <div class="body-section">
         <div class="text-wrapper">
           <h2>Solving the Systems of Equations (Using MatLab)</h2>
-          <p></p>
+          <h4>Initial Conditions</h4>
+          <p>
+            Initial conditions are the solution functions defined at time zero. Conceptually, these conditions are <span class="bold-text">known concentrations at all positions of the system starting at time t<sub>o</sub> or t = 0 sec</span>. We define t<sub>o</sub> to be the moment the sample of blood reaches the conjugate pad from the sample pad. An example of an initial condition is the concentration of D in system 1; our objective is to find concentration of D, which will be uniformly distributed in the conjugate pad. We defined the initial condition of every component of every system to be <span class="bold-text"> 0 nM = 0 mg/dL</span>.
+            <br>
+            <br>
+            We define the initial conditions of every component in every system to be 0 mg/mL except for [D] in system 1 because no component except for [D] in system 1 is uniformly distributed throughout the entire length of the system. For example, the receptor antibodies only occupy a line within their respective systems, not the entire portion of the nitrocellulose membrane.
+          </p>
         </div>
       </div>
       <div class="body-section">
@@ -401,7 +407,18 @@
       <div class="body-section">
         <div class="text-wrapper">
           <h4>Solving the PDE System</h4>
-          <p></p>
+          <p>
+            We employed MatLab’s pdepe function to solve the three systems. Based on the results of the Rochester 2020 iGEM team model, we chose <span class="bold-text">6.4 nM to be the minimum concentration of gold nanoparticles that needs to bind at the control line to produce a visible signal.8 </span>By using stoichiometric conversions, we found this minimum concentration to be equivalent to 1.2606<sup>(-3)</sup> mg/L. Using this threshold, we implemented our MatLab model to iteratively solve System 3 using different starting concentrations of the AD until the concentration of CAD met the threshold. In other words, we solved for AD<sub>c</sub> or the concentration of AD that needed to reach the control line in order to produce a visible signal. 
+            <br>
+            <br>
+            Then, we used this solved value AD<sub>c</sub> as the right edge boundary condition for system 2. This means we needed a concentration of AD<sub>c</sub> to be left after the complexes T1AD and T2AD formed at the test line. In MatLab, we iteratively solved for the initial concentration of AD of system 2, or AD<sub>T</sub>, that produced a solution satisfying the right boundary condition. So, AD<sub>T</sub> is the concentration of AD needed at the start of the nitrocellulose membrane in order to produce a signal at both the test and control lines. We ensured the solver found the solution that produces a visible solution at the test line by setting the right boundary conditions of T1AD and T2AD to be 6.4 nM, or the concentration of gold nanoparticles that needs to bind at the test line to produce a visible signal. 
+            <br>
+            <br>
+            Finally, we assigned AD<sub>T</sub> to be the right boundary condition of AD<sub>i</sub> or the concentration of AD that must be present after A and D bind on the conjugate pad. We also specified the right boundary conditions of A and D to be zero (once the complexes run to the absorbent pad), in order to find the optimal initial concentrations of A and D at the start of the test. We then used these boundary conditions to iteratively solve for the initial concentration of D; we fix the initial concentration of A to be 8 mg/L or the minimum concentration of oxLDL we expect to be on the test and produce a visible signal. 
+            <br>
+            <br>
+            By solving the three systems of PDE in this way, we are able to mathematically find the initial concentration of D to produce visible signals at the test and control lines if the expected minimum threshold of oxLDL is present in the initial blood sample. 
+            </p>
         </div>
       </div>
     </div>
