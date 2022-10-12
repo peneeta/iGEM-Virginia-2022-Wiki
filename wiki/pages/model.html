@@ -43,19 +43,52 @@
 
 
 <div class="d-flex flex-row body-padding">
-  <div class="fixed-index flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-    <div class="index heading d-flex flex-row align-items-start py-4">
-      <div class="pe-3" role="button">Sections</div>
-      <div class="ps-3" role="button">References</div>
-    </div>
+  <div class="index-padding">
+    <div class="fixed-index d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+      <div class="wrapper mx-4">
+        <div class="index heading d-flex flex-row align-items-center justify-content-start py-4">
+          <div class="top-select active" id="toc" role="button" onclick="selectTop(this)">Index</div>
+          <div class="top-select" id="refs" role="button" onclick="selectTop(this)">References</div>
+        </div>
 
-    <div class="index content">
-      <div class="index-item active" role="button" id="introduction-desc">Solving Problems with Precision</div>
-      <div class="index-item" role="button" id="atherosclerosis-desc">Protein Modeling</div> 
-      <div class="indented index-item" role="button" id="problems-desc">McPC603</div>
-      <div class="indented index-item" role="button" id="lfa-desc">Nanobody</div>
+        <div class="tab references content d-flex flex-column hidden" id="references">
+            <div class="wrapper">
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+
+        <div class="tab index" id="index">
+          <div class="index content d-flex flex-column" id="scrollspy-index-list">
+            <div class="index-item active" role="button" scrollTo="head1" onclick="scrollToSection(this)">How does an LFA Work?</div>
+            
+            <div class="index-item" role="button" scrollTo="head2" onclick="scrollToSection(this)">How Our LFA is Unique</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head3" onclick="scrollToSection(this)">What is Unique to our Design</div>
+  
+            <div class="index-item" role="button" scrollTo="head4" onclick="scrollToSection(this)">Choosing a Chassis</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head5" onclick="scrollToSection(this)">How SHuffle Works</div>
+  
+            <div class="index-item" role="button" scrollTo="head6" onclick="scrollToSection(this)">Plasmid Design</div>
+  
+            <div class="index-item" role="button" scrollTo="head7" onclick="scrollToSection(this)">Designing Our Antibodies</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head8" onclick="scrollToSection(this)">Labelled Anti-ApoBMDA Design</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head9" onclick="scrollToSection(this)">Anti-OxLDL Design</div>
+
+            <div class="indented index-item" role="button" scrollTo="head10" onclick="scrollToSection(this)">Anti-IgG Design</div>
+
+            <div class="index-item" role="button" scrollTo="head11" onclick="scrollToSection(this)">Biosafety</div>
+
+            <div class="index-item" role="button" scrollTo="head12" onclick="scrollToSection(this)">Hardware</div>
+        </div>
+      </div>
     </div>
   </div>
+</div>
 
   <div class="body-container d-flex flex-column" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
     <div class="container">
