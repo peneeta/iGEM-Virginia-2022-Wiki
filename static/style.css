@@ -804,3 +804,7 @@ li {
 .contact-wrapper p {
   margin-top: 2rem;
 }
+
+.body-container.no-index {
+  max-width: 85vw!important;
+}
