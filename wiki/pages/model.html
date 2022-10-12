@@ -50,10 +50,8 @@
     <div class="fixed-index d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
       <div class="wrapper mx-4">
         <div class="index heading d-flex flex-row align-items-center justify-content-start py-4">
-          <div class="top-select active" id="toc" role="button" onclick="selectTop(this)">Index</div>
-          <div class="top-select" id="refs" role="button" onclick="selectTop(this)">References</div>
+          <div class="top-select active" id="refs" role="button" onclick="selectTop(this)">References</div>
         </div>
-
         <div class="tab references content d-flex flex-column hidden" id="references">
             <div class="wrapper">
                 <p>
@@ -76,34 +74,6 @@
                 </p>
             </div>
         </div>
-
-        <div class="tab index" id="index">
-          <div class="index content d-flex flex-column" id="scrollspy-index-list">
-            <div class="index-item active" role="button" scrollTo="head1" onclick="scrollToSection(this)">Protein Modeling</div>
-            
-            <div class="index-item" role="button" scrollTo="head2" onclick="scrollToSection(this)">Lateral Flow Assay Modeling: Introduction</div>
-  
-            <div class="indented index-item" role="button" scrollTo="head3" onclick="scrollToSection(this)">What is Unique to our Design</div>
-  
-            <div class="index-item" role="button" scrollTo="head4" onclick="scrollToSection(this)">Choosing a Chassis</div>
-  
-            <div class="indented index-item" role="button" scrollTo="head5" onclick="scrollToSection(this)">How SHuffle Works</div>
-  
-            <div class="index-item" role="button" scrollTo="head6" onclick="scrollToSection(this)">Plasmid Design</div>
-  
-            <div class="index-item" role="button" scrollTo="head7" onclick="scrollToSection(this)">Designing Our Antibodies</div>
-  
-            <div class="indented index-item" role="button" scrollTo="head8" onclick="scrollToSection(this)">Labelled Anti-ApoBMDA Design</div>
-  
-            <div class="indented index-item" role="button" scrollTo="head9" onclick="scrollToSection(this)">Anti-OxLDL Design</div>
-
-            <div class="indented index-item" role="button" scrollTo="head10" onclick="scrollToSection(this)">Anti-IgG Design</div>
-
-            <div class="index-item" role="button" scrollTo="head11" onclick="scrollToSection(this)">Biosafety</div>
-
-            <div class="index-item" role="button" scrollTo="head12" onclick="scrollToSection(this)">Hardware</div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -360,13 +330,16 @@
           <h4>Reaction Chemical Equations</h4>
           <p>Assumptions 1 and 3 allow us to use <span class="bold-text">mass action kinetics</span> to define the concentration of the “fixed” components of our test. This means we have equations to describe the concentrations of the receptor antibodies anchored at the test and control lines over time. Additionally, we observe that these concentrations over time vary only due to the association and dissociation of the receptors and their respective targets.3 Furthermore, we accounted for the association and dissociation of AD as the complex moves along the test strip. That is, the concentration of AD varies over the length of the test strip not only due to the advection of the bulk fluid and the diffusion/dispersion of the complex molecules, but also because AD has a possibility of dissociating into A and D, or A and D in the solution associating to form AD. We accounted for this cause of AD concentration fluctuation by adding/subtracting appropriate expressions derived from mass action kinetics equations in the ADRE. </p>
           <p>However, we could not find the appropriate rate constants for each binding reaction from literature. So, we used an approximation from which found the rate constants for antibodies with similar equilibrium constants as our antibodies/antibody fragments.4 So, we take the rate constant for the forward binding reactions to be 10<sup>5</sup> M/s and the rate constant for the backward dissociating reactions to be 10<sup>-5</sup> M/s. </p>
+          <div class="img-wrapper d-flex flex-column justify-content-center align-items-center">
+            <img src="https://static.igem.wiki/teams/4477/wiki/images/reactioneqs.png" alt="">
+          </div>
           <div class="markdown-wrapper">
             <p>The following chemical reaction equations are needed to describe the mass action kinetics equations. The forward/backward rate constants are also denoted by their respective equations.</p>
-            <p>k<sub>fAD</sub> denotes the forward rate constant and k<sub>bAD</sub> denotes the backwards rate constant for this reaction.
-k<sub>fT1AD</sub> denotes the forward rate constant and k<sub>bT1AD</sub> denotes the backwards rate constant for this reaction.
-k<sub>fT2AD</sub> denotes the forward rate constant and k<sub>bT2AD</sub> denotes the backwards rate constant for this reaction.
-k<sub>fCAD</sub> denotes the forward rate constant and k<sub>bCAD</sub> denotes the backwards rate constant for this reaction.
-</p>
+            <p>
+              k<sub>fAD</sub> denotes the forward rate constant and k<sub>bAD</sub>denotes the backwards rate constant for this reaction.k<sub>fT1AD</sub> denotes the forward rate constant and k<sub>bT1AD</sub> denotes the backwards rate constant for this reaction.
+              k<sub>fT2AD</sub> denotes the forward rate constant and k<sub>bT2AD</sub> denotes the backwards rate constant for this reaction.
+              k<sub>fCAD</sub> denotes the forward rate constant and k<sub>bCAD</sub> denotes the backwards rate constant for this reaction.
+            </p>
           </div>
         </div>
       </div>
@@ -378,11 +351,14 @@ k<sub>fCAD</sub> denotes the forward rate constant and k<sub>bCAD</sub> denotes 
           <h4>Breaking the Lateral Flow Assay (LFA) into Three Systems</h4>
           <p>We chose to separate the LFA into three discrete systems of partial differential equations. We separated these systems based on the placement of the conjugate pad, the test line, and the control line (shown in the figure below). In doing so, we can define the behavior at the <span class="bold-text">boundary conditions</span>, which contains variables we wanted to solve for, more easily. We could also characterize the sudden decrease in AD concentration after AD passes over the test lines this way. Specifically, we break the LFA into the following three parts:</p>
           <ul>
-       <li>Leftmost edge of the conjugate pad to the rightmost edge of the conjugate pad</li>
-      <li>Rightmost edge of the conjugate pad to the test line</li>
-      <li>The test line to the control line</li>
-      <p>there's a graphic to insert! should be lfa with 1,2, 3 on it</p>
-</ul>
+            <li>Leftmost edge of the conjugate pad to the rightmost edge of the conjugate pad</li>
+            <li>Rightmost edge of the conjugate pad to the test line</li>
+            <li>The test line to the control line</li>
+            <p>there's a graphic to insert! should be lfa with 1,2, 3 on it</p>
+          </ul>
+        </div>
+        <div class="img-wrapper d-flex flex-column justify-content-center align-items-center">
+          <img style="width: 60%;" src="https://static.igem.wiki/teams/4477/wiki/images/123lfamodel.png" alt="">
         </div>
       </div>
     </div>
@@ -411,35 +387,20 @@ k<sub>fCAD</sub> denotes the forward rate constant and k<sub>bCAD</sub> denotes 
       <div class="body-section">
         <div class="text-wrapper">
           <h2>Solving the Systems of Equations (Using MatLab)</h2>
-          <p>To solve partial differential equations, two important conditions are needed for every equation. 
-</p>
-        </div>
-      </div>
-      <div class="body-section">
-        <div class="text-wrapper">
-          <h4>Initial Conditions</h4>
-          <p>Initial conditions are the solution functions defined at time zero. Conceptually, these conditions are <span class="bold-text">known concentrations at all positions of the system starting at time t<sub>o</sub> or t = 0 sec</span>. We define t<sub>o</sub> to be the moment the sample of blood reaches the conjugate pad from the sample pad. An example of an initial condition is the concentration of D in system 1; our objective is to find concentration of D, which will be uniformly distributed in the conjugate pad. We defined the initial condition of every component of every system to be <span class="bold-text"> 0 nM = 0 mg/dL</span>.</p>
-          <p>We define the initial conditions of every component in every system to be 0 mg/mL except for [D] in system 1 because no component except for [D] in system 1 is uniformly distributed throughout the entire length of the system. For example, the receptor antibodies only occupy a line within their respective systems, not the entire portion of the nitrocellulose membrane. </p>
+          <p></p>
         </div>
       </div>
       <div class="body-section">
         <div class="text-wrapper">
           <h4>Boundary Conditions</h4>
-          <p>Boundary conditions are the <span class="bold-text">system’s behavior at edge points at any given time t</span>. In this case, the boundary conditions are the known concentrations (or known behavior of concentrations) of specific components defined at the leftmost and rightmost edges of each system. For example, the <p style="font-style: italic;">left edge boundary condition</p> for A of system 1 would be the concentration of oxLDL at the leftmost edge of the conjugate pad at any given time.</p>
-          <p>We let <span class="bold-text">x<sub>o</sub> = 0 mm</span> denote the leftmost edge for each system and we let <span class="bold-text">x<sub>f</sub>= L mm</span> denote the rightmost edge for each system; L is the length of the corresponding pad of the LFA. Notice, we used the <p style="font-style: italic;">Dirichlet Boundary Conditions</p> for components with known concentrations at each boundary and the <p style="font-style: italic;">Neumann Boundary Conditions</p> for components with unknown concentrations at each boundary.<sup>7</sup>. We define the boundary conditions as follows. </p>
-          <p>Insert another table here</p>
-          <p>We set the boundary conditions of [AD] (the concentration of AD) to be 0 at the right edge of system 3 because we want to minimize the excess AD (i.e. unnecessary AD) that an LFA must be constructed with. Also, we consider the left edge boundary conditions of [A] = 0 and [D] = 0 for systems 2 and 3 as a simplifying assumption; instead of defining an interpolated function, we decided to assess the approximated reaction rates and determine that the decrease in concentration due to dissociation for the following complexes are negligible (too close to zero to significantly impact concentration): T1AD, T2AD, and CAD.</p>
-          <p>Finally, since we placed the right edges of systems 2 and 3 at areas of the test strip that contain receptor antibodies, we can define the corresponding boundary functions: the concentrations of the respective antibodies is 10 nM (which was then converted to mg/L). For example, the right edge of system 3 is the control line. So, we know that the boundary condition for [C] in system 3 is the initial concentration of control line receptor antibodies we would place at the control line. </p>
+          <p></p>
         </div>
       </div>
 
       <div class="body-section">
         <div class="text-wrapper">
           <h4>Solving the PDE System</h4>
-          <p>We employed MatLab’s pdepe function to solve the three systems. See “additional resources” for pdepe documentation. Based on the results of the Rochester 2020 iGEM team model, we chose <span class="bold-text">6.4 nM to be the minimum concentration of gold nanoparticles that needs to bind at the control line to produce a visible signal.8 </span>By using stoichiometric conversions, we found this minimum concentration to be equivalent to 1.2606<sup>(-3)</sup> mg/L. Using this threshold, we implemented our MatLab model to iteratively solve System 3 using different starting concentrations of the AD until the concentration of CAD met the threshold. In other words, we solved for AD<sub>c</sub> or the concentration of AD that needed to reach the control line in order to produce a visible signal. </p>
-          <p>Then, we used this solved value AD<sub>c</sub> as the right edge boundary condition for system 2. This means we needed a concentration of AD<sub>c</sub> to be left after the complexes T1AD and T2AD formed at the test line. In MatLab, we iteratively solved for the initial concentration of AD of system 2, or AD<sub>T</sub>, that produced a solution satisfying the right boundary condition. So, AD<sub>T</sub> is the concentration of AD needed at the start of the nitrocellulose membrane in order to produce a signal at both the test and control lines. We ensured the solver found the solution that produces a visible solution at the test line by setting the right boundary conditions of T1AD and T2AD to be 6.4 nM, or the concentration of gold nanoparticles that needs to bind at the test line to produce a visible signal. </p>
-          <p>Finally, we assigned AD<sub>T</sub> to be the right boundary condition of AD<sub>i</sub> or the concentration of AD that must be present after A and D bind on the conjugate pad. We also specified the right boundary conditions of A and D to be zero (once the complexes run to the absorbent pad), in order to find the optimal initial concentrations of A and D at the start of the test. We then used these boundary conditions to iteratively solve for the initial concentration of D; we fix the initial concentration of A to be 8 mg/L or the minimum concentration of oxLDL we expect to be on the test and produce a visible signal. </p>
-          <p>By solving the three systems of PDE in this way, we are able to mathematically find the initial concentration of D to produce visible signals at the test and control lines if the expected minimum threshold of oxLDL is present in the initial blood sample. </p>
+          <p></p>
         </div>
       </div>
     </div>
