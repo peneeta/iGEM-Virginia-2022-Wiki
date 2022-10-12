@@ -927,3 +927,10 @@
   width: 20rem;
   padding: 1rem;
 }
+
+.h2.promo-border-text {
+  border-bottom-style: solid;
+  border-width: medium;
+  border-color: #bcbbed;
+
+}
