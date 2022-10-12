@@ -58,7 +58,6 @@
   </div>
 
   <div class="body-container d-flex flex-column" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-
     <div class="container">
       <div class="body-section top-page">
         <h2>Protein Modeling</h2>
@@ -73,12 +72,12 @@
 
 
       <!-- McPC603 -->
-      <div class="pdb-struct McPC603-scFv d-flex flex-row flex-lg-nowrap flex-wrap align-items-center justify-content-evenly">
+      <div class="pdb-struct McPC603-scFv d-flex flex-column flex-wrap align-items-center justify-content-evenly">
         <div class="container">
           <div class="wrapper">
             <h4>McPC603 scFv Ribbon and Surface Model</h4>
             <div class="text-wrapper">
-              <p>This is a model generated from AlphaFold of the McPC603 antibody fragment. [Info about its active site, etc]</p>
+              <p>This is a model generated from AlphaFold of the McPC603 antibody fragment. We generated models like these for our other antibodies to visualize them.</p>
             </div>
           </div>
         </div>
@@ -112,42 +111,158 @@
           <div id="McPC603-VP" style="width: 400px; height: 500px;"></div>
         </div>
       </div>
+    </div>
 
-      <!-- NANOBODY -->
-      <div class="pdb-struct nanobody d-flex flex-row flex-lg-nowrap flex-wrap-reverse align-items-center justify-content-center">
-        
-        
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h2>Lateral Flow Assay Modeling: Introduction</h2>
+          <h4>The Goal</h4>
+          <p> Modeling works closely with wet lab to make major design decisions in the construction of the lateral flow assay (LFA). In this project, the goal for modeling is to determine the optimal (i.e. the minimum) concentration of detector units (full length IgG antibodies conjugated to a gold nanoparticle) that need to be placed on the sample pad in order to produce a visible signal at the test and control lines when at least 0.8 mg/dL (or 8 mg/L) of oxLDL is present in the blood sample. This is the threshold for oxLDL circulating in the bloodstream that indicates early development of atherosclerosis. Our team determined that the optimum concentration of the detector units is the minimum possible concentration because gold nanoparticles are the most costly portion in building our LFA pilots. Thus, the work in modeling <span class="bold-text">necessarily reduced the time and cost of producing the physical test strip</span>. 
+          </p>
+        </div>
+      </div>
+    </div>  
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h4>Constraints</h4>
+          <p></p>
+        </div>
+      </div>
+    </div>
 
-        <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var stage = new NGL.Stage("nanobody-VP", { backgroundColor: "white"});
-            
-            stage.loadFile("{{ url_for('static', filename = 'pdb/nanobody.pdb') }}").then(function(oNano){
-          //     oNano.addRepresentation("surface", {
-          //     colorScheme: "bfactor",
-          //     contour: "true",
-          //     colorScale: "spectral",
-          // });
-          oNano.addRepresentation("cartoon", {
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h4>The Problem Setup<h4>
+          <p>  
+            A standard LFA, including our design, is composed of four different pads: the sample pad, the conjugate pad, the nitrocellulose membrane, and the absorbent pad. 
+          </p>
+        </div>
 
-          });
-          stage.setSpin(true);
-          oNano.autoView();
+        <div class="img-wrapper lfa">
+          <img style="width: 60%;" src="https://static.igem.wiki/teams/4477/wiki/labeled-lfa-01-artboard-1-1-2.svg" alt="">
+        </div>
+      </div>
+    </div>
 
-        })
-        });
-        </script>
-        <!-- Initialize the viewport -->
-        <div id="nanobody-VP" style="width:400px; height:300px;"></div>
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h3>Scenario 1: At least 0.8 mg/dL of oxLDL is present in the sample</h3>
+          <p></p>
+        </div>
+      </div>
+    </div>
 
-        <div class="container">
-          <div class="wrapper">
-            <h4>Nanobody</h4>
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h3>Scenario 2: Less than 0.8 mg/dL of oxLDL is present in the sample</h3>
+          <p></p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h2>Components and terms</h2>
+          <p>Do we need a tbl here</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h2>The Problem Set-Up: Developing and Using Differential Equations and Systems of Equations</h2>
+          <h4>Assumptions</h4>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h4>Using the Advection Dispersion Reaction Equation (ADRE)</h4>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h4>Using Mass Action Kinetics Equations</h4>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h4>Reaction Chemical Equations</h4>
+          <p></p>
+          <div class="markdown-wrapper">
+            <p>idkhowto addthis, maybe js screenshot</p>
           </div>
         </div>
       </div>
-
     </div>
+
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h4>Breaking the Lateral Flow Assay (LFA) into Three Systems</h4>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h4>Partial Differential Equation (PDE) System</h4>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h2>Solving the Systems of Equations (Using MatLab)</h2>
+          <p></p>
+        </div>
+      </div>
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h4>Boundary Conditions</h4>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+          
+
   </div>
 
   <!-- EMPTY DIV FOR SPACING -->
