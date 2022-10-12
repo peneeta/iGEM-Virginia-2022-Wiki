@@ -818,6 +818,25 @@
   border-radius: 4rem;
 }
 
+.vid-wrapper.team.index {
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+            -7px -7px 20px rgba(255, 255, 255, 1),
+            0px 0px 4px rgba(255, 255, 255, .2);
+  -webkit-box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+  -7px -7px 20px rgba(255, 255, 255, 1),
+  0px 0px 4px rgba(255, 255, 255, .2);
+  -moz-box-shaodow: 7px 7px 15px rgba(55, 84, 170, .15),
+  -7px -7px 20px rgba(255, 255, 255, 1),
+  0px 0px 4px rgba(255, 255, 255, .2);
+  border-radius: 4rem;
+}
+
+.vid-wrapper.team.index img {
+  width: 60rem;
+  padding: 2rem;
+  border-radius: 4rem;
+}
+
 .abt-us-divider svg {
   position: relative;
   display: block;
