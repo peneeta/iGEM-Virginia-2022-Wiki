@@ -36,26 +36,7 @@
 <div class="gray d-flex flex-column justify-content-center">
   <div class="d-flex flex-row justify-content-center body-padding">
     <div class="index-padding">
-      <div class="fixed-index d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-        <div class="wrapper mx-4">
-          <div class="index heading d-flex flex-row align-items-center justify-content-start py-4">
-            <div class="top-select active" id="toc" role="button" onclick="selectTop(this)">Index</div>
-          </div>
-  
-          <div class="tab index" id="index">
-            <div class="index content d-flex flex-column" id="scrollspy-index-list">
-              <div class="index-item active" role="button" scrollTo="head01" onclick="scrollToSection(this)">Podcast</div>
-              
-              <div class="index-item" role="button" scrollTo="head02" onclick="scrollToSection(this)">Meetups</div>
-    
-              <div class="indented index-item" role="button" scrollTo="head03" onclick="scrollToSection(this)">UVA Summer Research Symposium</div>
-  
-              <div class="index-item" role="button" scrollTo="head04" onclick="scrollToSection(this)">App</div>
-    
-              <div class="indented index-item" role="button" scrollTo="head05" onclick="scrollToSection(this)">Ms. Jennifer Kershner</div>
-            </div>
-          </div>
-        </div>
+      <div class="fixed-index d-flex flex-column align-self-start">
       </div>
     </div>
     <div class="body-container d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
@@ -65,7 +46,9 @@
             <h2>Podcast</h2>
             <p>One of the major issues with atherosclerosis and heart disease is the lack of clarity on the severity of these diseases and how one can prevent them. In order to emphasize prevention-based healthcare as a solution to the rising deaths from cardiovascular disease, our team created a podcast to explain the development, risk factors, current treatments, and prevention methods. Each episode has us interviewing an expert who works with atherosclerosis, and focuses on a specific topic. To keep the podcast engaging, we themed the podcast with a true-crime narrative. Our podcast is released on Spotify Podcasts and Google Podcasts.</p>
 
-            <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy9hNzg0NWFlYy9wb2RjYXN0L3Jzcw">Google Podcast</a>
+            <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy9hNzg0NWFlYy9wb2RjYXN0L3Jzcw">Google Podcast Link</a>
+            <br>
+            <a href="https://open.spotify.com/show/7rZw1YqpWR9RiNDloQcW5D">Spotify Podcast Link</a>
           </div>
         </div>
       </div>
@@ -77,7 +60,6 @@
             <h4>[Episode 1] Define the Killer: What is Atherosclerosis?</h4>
             <p>
               Dr. Swapnil Sonkusare goes over the basics of atherosclerosis, and its connection with other diseases including diabetes. 
-              *Audio file for episode 1* 
             </p>
           </div>
         </div> 
@@ -133,7 +115,7 @@
           <div class="img-wrapper shadow-wrapper">
             <img style="max-width: 30rem;" src="https://static.igem.wiki/teams/4477/wiki/postersandpizza.jpg" alt="">
             <div class="subtitle-wrapper">
-              <p class="italic-text">Virginia iGEM members presenting at the UVA Summer Research Symposium. (From left to right: Yilun Zhou, Miranda Khoury, Ivory Tang, Isha Patel</p>
+              <p class="italic-text">Virginia iGEM members presenting at the UVA Summer Research Symposium. (From left to right: Yilun Zhou, Miranda Khoury, Ivory Tang, Isha Patel)</p>
             </div>
           </div>
         </div>
@@ -144,9 +126,24 @@
           <div class="text-wrapper">
             <h2>App</h2>
             <p>
-              To use the information gained from our human practices efforts, we created an app demo that can be later extended into a fully released app, which will promote awareness on atherosclerosis. The app demo and further details can be found on the implementation page. 
+              To use the information gained from our human practices efforts, we created an app demo that can be later extended into a fully released app, which will promote awareness on atherosclerosis. The app demo and further details can be found on the <a href="{{ url_for('pages', page='implementation') }}">implementation page</a>. 
+              <br>
+              <br>
               This app allows us to interact with the general public by providing resources for them to decrease their risk factors, such as heart-healthy recipes in a cookbook and locating physicians and nutritionists in their area so they can seek guidance for their cardiovascular health. General information on the regular risk factors, detection methods, and current treatments were also explained in the app, influenced by interviews we conducted from the podcast. 
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="body-section">
+          <div class="text-wrapper">
+            <h2>Blog</h2>
+            <p>Part of our collaboration with the Pune IISER 2 team included the creation of a blog on Wix.  Our Let’s Science blog was created as a resource targeting high school students with the ultimate goal of raising awareness and excitement for the field of synthetic biology. As high school students interested in STEM, we often encountered scientific terms of which we would not know the definition. Our Let’s Science blog article aims to explain synthetic biology techniques while defining many common synthetic biology terms to encourage high school students to foster their interest in science. Our Let’s Science posts cover atherosclerosis, neglected tropical diseases (NGTs) with a focus on Dengue (IISER Pune II’s target disease), recent synthetic biology developments, information on the iGEM community, and creative projects that have come out of the competition. We tie this into our project as a synthetic biology educational tool in the context of our projects. We recognize that science is a community and therefore, we plan to create a feedback and discussion forum on the blog site for students to communicate with us and each other about these blogs. 
+            </p>
+          </div>
+          <div class="img-wrapper">
+            <img style="width: 60%" src="https://static.igem.wiki/teams/4477/wiki/images/blogaccess.png" alt="">
           </div>
         </div>
       </div>
