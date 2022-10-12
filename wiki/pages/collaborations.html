@@ -19,28 +19,7 @@
  </div>
 </div>
 
-<div class="d-flex flex-column justify-content-center align-items-center curvy-divider">
-   <div class="body-container wave-div narrow">
-       <div class="container">
-         <div class="about-section d-flex flex-row justify-content-center align-items-center">
-           <div class="wrapper">
-             <h2>About</h2>
-             <p></p>
-           </div>
-           <div class="img-wrapper bunch-of-lfas">
-             <img style="max-height: 15rem; padding: 2rem;"src="https://static.igem.wiki/teams/4477/wiki/images/lfa-group.svg" alt="lfa bunch">
-           </div>
-         </div>
-       </div>
-   </div>
-   <div class="gray-divider">
-       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-           <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-       </svg>
-   </div>
-</div>
-
-<div class="gray d-flex flex-row justify-content-center body-padding">
+<div class="d-flex flex-row justify-content-center body-padding">
    <div class="spacer-div"></div>
 
    <div class="body-container d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine"">
@@ -59,7 +38,7 @@
             <div class="collab-section d-flex flex-row justify-content-center align-items-center">
                <div class="text-wrapper">
                   <h2>Team IISER Pune 2022</h2>
-                  <p> We partnered with the IISER Pune 2 team in our wet lab, modeling, and IHP efforts. To read a full description of this partnership, read about under the Partnership tab. (include link)</p>
+                  <p> We partnered with the IISER Pune 2 team in our wet lab, modeling, and IHP efforts. To read a full description of this partnership, <a href="{{ url_for('pages', page='partnership') }}">read more on the partnership page</a>.</p>
                </div>
                <div class="img-wrapper shadow-wrapper">
                   <img class="zoom-img" src = "https://static.igem.wiki/teams/4477/wiki/iiser-virginia-meeting.png" alt = "Team Photo with IISER 2 2022 iGEM 2"/>
@@ -85,6 +64,12 @@
 
 
    
+<div class="footer-preface curvy-divider">
+   <div class="footer-divider">
+       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+           <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+           </svg>
+   </div>
 </div>
 {% endblock %}
 

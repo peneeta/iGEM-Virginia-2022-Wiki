@@ -1,4 +1,10 @@
 {% extends "layout.html" %}
+
+{% block extraStyles %}
+
+<link href="{{ url_for('static', filename = 'css/results.css') }}" rel="stylesheet">
+
+{% endblock %}
   
 {% block title %}Results{% endblock %}
 {% block lead %}You can describe the results of your project and your future plans here.{% endblock %}
@@ -13,106 +19,210 @@
   </div>
 </div>
 
-<div class="about-section d-flex flex-column justify-content-center align-items-center curvy-divider">
-  <div class="body-container wave-div narrow" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
-    <div class="narrow-content d-flex flex-row align-items-center justify-content-center flex-wrap flex-lg-nowrap">
-      <div class="container">
-        <h2>Results</h2>
-        <p></p>
-      </div>
-      <div class="img-wrapper">
-        <p>ADD IMAGE</p>
-      </div>
-    </div>
-  </div>
-  <div class="gray-divider">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-    </svg>
-  </div>
-</div>
-
-<div class="d-flex flex-column justify-content-center align-items-center">
-  <div class="body-container">
-    <div class="container">
-      <div class="body-section top-page">
-        <h2>Protein Induction</h2>
-
-        <div class="table-wrapper">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Protein</th>
-                <th scope="col">Expected Molecular Weight (kD)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>mRFP</td>
-                <td>IK17</td>
-                <td>McPC603</td>
-                
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>25.43</td>
-                <td>28.69</td>
-                <td>28.71</td>
-                
-              </tr>
-            </tbody>
-          </table>
-
+<div class="d-flex flex-row justify-content-center">
+  <div class="index-padding">
+    <div class="fixed-index d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+      <div class="wrapper mx-4">
+        <div class="index heading d-flex flex-row align-items-center justify-content-start py-4">
+          <div class="top-select active" id="toc" role="button" onclick="selectTop(this)">Index</div>
         </div>
 
+        <div class="tab index" id="index">
+          <div class="index content d-flex flex-column" id="scrollspy-index-list">
+            <div class="index-item active" role="button" scrollTo="head1" onclick="scrollToSection(this)">Cloning</div>
+            
+            <div class="indented index-item" role="button" scrollTo="head2" onclick="scrollToSection(this)">McPC603</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head3" onclick="scrollToSection(this)">Anti-mouse VHH</div>
+
+            <div class="indented index-item" role="button" scrollTo="head4" onclick="scrollToSection(this)">Labeled Anti-oxLDL IgG</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head5" onclick="scrollToSection(this)">IK17</div>
+  
+            <div class="index-item" role="button" scrollTo="head6" onclick="scrollToSection(this)">Protein Induction</div>
+  
+            <div class="index-item" role="button" scrollTo="head7" onclick="scrollToSection(this)">Lateral Flow Assay</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head8" onclick="scrollToSection(this)">Half-Stick Assay</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <div class="body-container">
+      <div class="container">
+        <div class="body-section top-page" id="head1">
+          <div class="text-wrapper">
+            <h2>Cloning</h2>
+            <p>We cloned our inserts into the pSB3K3 vector using traditional restriction cloning. We separately digested pSB3K3+mRFP and the inserts with SpeI and EcoRI and ligated the digest products together in a way that excised mRFP from the final product. We then extracted and analyzed plasmid DNA from six resulting white (mRFP-lacking) transformant colonies. We also analyzed the DNA from one pink (mRFP-containing) transformant colony. We then verified the successful creation of the plasmid devices through restriction mapping and sequencing. In the below gel images, only those lanes with red asterisks will be discussed.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="body-section" id="head2">
+          <div class="text-wrapper">
+            <h4>McPC603</h4>
+            <div class="img-wrapper gel-image">
+              <img src="https://static.igem.wiki/teams/4477/wiki/gelimgresults/mcpc603gels.png" alt="">
+              <div class="caption">
+                <p><span class="bold-text">Figure 1. Restriction Digest Verification of McPC603 Plasmid Construct.</span> (A) Virtual digest of pSB3K3 + McPC603 with HindIII and NotI on Benchling yields three bands of sizes 2.2 kb, 1 kb, and 0.4 kb. (B) L: Quickload Purple 1 kB Plus Ladder NEB. 5: McPC603 colony digested with HindIII and NotI, 2.2 kb and 1 kb. 7: pSB3K3+mRFP with NotI, 2.5 kb and 1.2 kb. 8: pSB3K3+mRFP cut with HindIII, 2.7 kb, 0.8 kb, 0.2 kb. 9: Pink McPC603 colony, 2.7 kb, 0.8 kb, 0.2 kb. (C) 5: McPC603 colony uncut, approx. 2 kb.</p>
+              </div>
+            </div>
+            <p>After transformation of the pSB3K3+McPC603 ligation product into DH5-alpha, plasmids were extracted from 6 white colonies (Lanes 1-6 (B and C)) and 1 pink colony (Lanes 9-10 (B)) for digestion analysis. The white McPC603 colony highlighted in Figure 1 (Lane 5) matched the virtual digest when cut with the same restriction enzymes. Note that although the 0.4 kb band did not appear on the gel, this was expected as fragments shorter than 0.5 kb do not show well on this percentage of gel. The uncut colony displays a single band occurring lower on the gel than the linearized plasmid, which is expected for an uncut plasmid and indicates the plasmid preparation occurred successfully. The enzyme cutter controls we ran on pSB3K3+mRFP in lanes 7, 8, and 9 also showed expected bands.</p>
+            <br>
+            <p>The successful results of the verification gel were further supported by sequencing data. The extracted plasmid was found to be 97.41% similar to the theoretical McPC603 plasmid, indicating successful creation of our McPC603-encoding device.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="body-section" id="head3">
+          <div class="text-wrapper">
+            <h4>Anti-mouse VHH</h4>
+
+            <div class="img-wrapper gel-image">
+              <img src="https://static.igem.wiki/teams/4477/wiki/gelimgresults/vhhmousegels.png" alt="">
+              <div class="caption">
+                <p><span class="bold-text">Figure 2. Restriction Digest Verification of VHH Plasmid Construct.</span> (A) Virtual digest with PstI and XbaI on Benchling yields two bands of sizes 2.6 kb and 0.6 kb. (B) 2: VHH colony cut with PstI and XbaI, 2.6 kb and 0.6 kb. 7: pSB3K3+mRFP cut with PstI, 3.7 kb. 8: pSB3K3+mRFP cut with XbaI, 3.5 kb. (C) VHH colony uncut, approx. 1.8 kb. 7: pSB3K3+mRFP uncut, approx. 2 kb. </p>
+              </div>
+            </div>
+            <p>
+              After transformation of the pSB3K3+VHH ligation product into DH5-alpha, plasmids were extracted from 6 white colonies and 1 pink colony for digestion analysis. The white VHH colony highlighted in Figure 2 (B) and (C) exhibited the same bands as in the virtual digest when cut with the same enzymes. The uncut colony shows a band lower on the gel than the linearized plasmid, which is expected for an uncut plasmid and indicates the plasmid preparation occurred successfully. The enzyme cutter controls we ran on pSB3K3+mRFP in lanes 7(B), 8(B), and 7(C) linearized pSB3K3+mRFP as expected, indicating the enzymes were functioning properly. 
+              <br>
+              <br>
+              The successful results of the verification gel were further supported by sequencing data. The extracted VHH plasmid was found to be 97.47% similar to the theoretical VHH plasmid, indicating successful creation of our VHH-encoding device.
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="body-section" id="head4">
+          <div class="text-wrapper">
+            <h4>Labeled Anti-oxLDL IgG</h4>
+            <div class="img-wrapper gel-image">
+              <img src="https://static.igem.wiki/teams/4477/wiki/gelimgresults/antioxldlgelsigg.png" alt="">
+              <div class="caption">
+                <p><span class="bold-text">Figure 3. Restriction Digest Verification of Anti-oxLDL Plasmid Construct.</span> (A) Virtual digests with BamHI and HindIII on Benchling yield one and two bands at 4.9 kb and 3 kb and 1.9 kb respectively. (B) 1: Anti-oxLDL colony uncut, 1 band below 4.9 kb. 3: Anti-oxLDL cut with HindIII, 3kb, 1.9 kb. 6: Anti-oxLDL cut with BamHI, 1 band at 4.9 kb.</p>
+              </div>
+            </div>
+            <p>After transformation of the pSB3K3+Labeled anti-oxLDL ligation product into DH5-alpha, plasmids were extracted from 6 white colonies and 1 pink colony for digestion analysis. In Figure 3, uncut colonies (such as that in lane 1) showed one band lower on the gel than the molecular weight we would expect to see when the plasmid is linearized, indicating the plasmids are high quality and not contaminated with restriction enzymes. Colonies cut with HindIII show two bands at 3 kb and 1.9 kb, as predicted in the virtual digest. Colonies cut with BamHI show one band just under 5 kb, also as predicted.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="body-section" id="head5">
+          <div class="text-wrapper">
+            <h4>IK17</h4>
+            <div class="img-wrapper gel-image">
+              <img src="https://static.igem.wiki/teams/4477/wiki/gelimgresults/ik17gels.png" alt="">
+              <div class="caption">
+                <p><span class="bold-text">Figure 4. Restriction Digest Verification of IK17 Plasmid Construct.</span> (A) Virtual digest with PstI, XbaI, and HindIII on Benchling yields three bands at 2.2 kb, 1 kb, and 0.4 kb. (B) L: Quickload Purple 1 kB Plus Ladder From NEB. 1: IK17 uncut, 2 kb. 2: IK17 cut with XbaI, PstI, HindIII, 2.2kb and 1kb. 8: pSB3K3+mRFP cut with HindIII, 10 kb, 6 kb, and 4 kb. 9: pSB3K3+mRFP cut with PstI, 6 kb. 10: pSB3K3+mRFP cut with XbaI, 5 kb and 2.5 kb.</p>
+              </div>
+            </div>
+            <p>
+              After transformation of the pSB3K3+IK17 ligation product into DH5-alpha, plasmids were extracted from 6 white colonies and 1 pink colony for digestion analysis. As seen in Figure 4, the uncut and cut IK17 colony plasmids seen in lanes 1 and 2 respectively produced expected results. The uncut IK17 plasmid lane showed one band below the molecular weight predicted for the plasmid if the plasmid were linearized, while the cut IK17 plasmid showed bands at 2.2 kb and 1 kb as predicted (the 0.4 kb band was not expected to appear on the gel). However, the cutter controls in lanes 8, 9, and 10 showed bands at much higher molecular weights than predicted, indicating potential incomplete digesting activity by these enzymes.
+              <br>
+              <br>
+              The results of the verification gel were further supported by sequencing data. The extracted plasmid was found to be 97.60% similar to the theoretical VHH plasmid, indicating successful creation of our IK17-encoding device.
+              <br>
+              <br>
+              Note that the NEB Quickload Purple 1 kB Plus ladder used in the above gels has historically run faster through gels than the DNA samples for Team Virginia, leading all bands to appear slightly larger than they truly are. All band sizes reported were adjusted to normalize for this.
+              </p>
+          </div>
+        </div>
+      </div>
+  
+      
+      <div class="container">
+        <div class="body-section" id="head6">
+          <div class="text-wrapper">
+            <h2>Protein Induction</h2>
+            <p>McPC603 and IK17 scFvs were successfully produced. We induced protein expression in SHuffle at different induction temperatures, IPTG concentrations, and parameters based on common practices and team PUNE’s Design of Experiment model (see more on our <a href="{{ url_for('pages', page='partnership') }}">partnership page</a>).</p>
+          </div>
+
+          <div class="table-wrapper">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Protein</th>
+                  <th scope="col">Expected Molecular Weight (kD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">mRFP</th>
+                  <td>25.43</td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row">IK17</th>
+                  <td>28.69</td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row">McPC603</th>
+                  <td>28.71</td>
+                </tr>
+              </tbody>
+            </table>
+  
+          </div>
+  
+          <div class="img-wrapper gel-image">
+            <img src="https://static.igem.wiki/teams/4477/wiki/gelimgresults/sdspagescfvs.png" alt="">
+            <div class="caption">
+              <p><span class="bold-text">Figure 5. SDS-PAGE analysis of IK17 and McPC603 induction.</span>T represents total lysate, S represents soluble fraction, control represents pSB1K3 + mRFP. (A) L: Bio-Rad Kaleidoscope Precision Ladder; 1: IK17 T; 2: McPC603 T; 3: control T; 4: IK17 S; 5: McPC603 S; 6: control S. (B) L: Bio-Rad Kaleidoscope Precision Ladder; 1: IK17 T; 2: McPC603 T; 3: control T; 4: IK17 S; 5: McPC603 S; 6:  S. </p>
+            </div>
+          </div>
+          <p>IK17 (28.69 kDa) and McPC603 (28.71 kDa) expressions in SHuffle were observed as seen by the highlighted bands in lanes 1, 2, 4, and 5 in Figure 5A. All protein samples were induced at a temperature of 30 degrees with 0.5 mM of IPTG for 6 hours. After induction, each sample was harvested and lysed. The following portions of the lysate were loaded onto this gel: total lysate and soluble portion of the lysate. No significant protein expression was observed as expected from non induced samples in Figure 5B.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="body-section" id="head7">
+          <div class="text-wrapper">
+            <h2>Lateral Flow Assay</h2>
+            <p>We ran pilot lateral flow assay tests using commercially-available antibodies that target oxLDL to test the logistics of using oxLDL as an analyte. A commercial orticumab biosimilar was conjugated to 40 nm gold nanoparticles. This commercial orticumab biosimilar was also dispensed on the test line, and an anti-human commercial antibody was dispensed on the control line.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="body-section bottom-page" id="head8">
+          <div class="text-wrapper">
+            <h4>Half-Stick Assay to Determine Optimal Pretreatment of Membrane</h4>
+            <p>
+              We blocked the membranes with 2 mg/ml BSA after dispensing antibodies at the test and control lines. We dispensed test and control antibodies with capillary tubes. oxLDL concentrations of 0 and 1.6 mg/dL were mixed with the gold nanoparticle complexes and the solutions were dispensed on the end of the nitrocellulose membrane.
+              <br>
+              <br>
+              Shortly before the assay was conducted, the membranes were pretreated in one of three ways: left dry, pre-wetted in chase buffer (20 mM TBS with 0.05% Tween 20 at pH 7.4), or left dry but being washed with a drop of chase buffer once the labeled antibody and oxLDL mixture was applied. As shown in Figure 7, the blocking was successful and the gold nanoparticle complexes flowed down the test strip away from their application site. The complexes did not flow all the way down the dry membranes. The pre-wetted membranes became very fragile and sustained damage simply from being removed from the chase buffer container in which they were dipped. The dry membrane followed by chase buffer, however, allowed the gold nanoparticle complexes to flow down the entire length of the membranes without jeopardizing the integrity of the membrane.
+              </p>
+          </div>
+
+          <div class="img-wrapper gel-image">
+            <img src="https://static.igem.wiki/teams/4477/wiki/gelimgresults/halfstickassay.png" alt="">
+            <div class="caption">
+              <p><span class="bold-text">Figure 7. Half-Stick Assay to Determine Optimal Pretreatment of Nitrocellulose Membrane.</span> Gold nanoparticle complexes flowed down the membrane in all 6 levels, with varying success. Neither a test or control line were visible even in the 1.6 mg/dL oxLDL trials. The capillary tubes failed to release the entire test and control antibody aliquots, so significantly less ng of antibodies were dispensed than planned.
+                </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="spacer-div"></div>
 </div>
 
-<div class="row mt-4">
-  <div class="col-lg-5">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>Clearly and objectively describe the results of your work.</li>
-      <li>Future plans for the project.</li>
-      <li>Considerations for replicating the experiments.</li>
-    </ul>
-  </div>
-  <div class="col-lg-7">
-    <h2>Describe what your results mean</h2>
-    <hr>
-    <ul>
-      <li>Interpretation of the results obtained during your project. Don't just show a plot/figure/graph/other, tell us what you think the data means. This is an important part of your project that the judges will look for.</li>
-      <li>Show data, but remember <b>all measurement and characterization data must also be on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a>.</b> Otherwise these data will not be in consideration for any medals or part awards!</li>
-      <li>Consider including an analysis summary section to discuss what your results mean. Judges like to read what you think your data means, beyond all the data you have acquired during your project.</li>
-    </ul>
-  </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Project Achievements</h2>
-    <hr>
-    <p>You can also include a list of bullet points (and links) of the successes and failures you have had over your summer. It is a quick reference page for the judges to see what you achieved during your summer.</p>
-    <ul>
-      <li>A list of linked bullet points of the successful results during your project</li>
-      <li>A list of linked bullet points of the unsuccessful results during your project. This is about being scientifically honest. If you worked on an area for a long time with no success, tell us so we know where you put your effort.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:Newcastle/Results">2019 Newcastle</a></li>
-      <li><a href="https://2019.igem.org/Team:Munich/Results">2019 Munich</a></li>
-      <li><a href="https://2019.igem.org/Team:Tec-Chihuahua/Results">2019 Tec Chihuahua</a></li>
-      <li><a href="https://2020.igem.org/Team:Aalto-Helsinki/Results">2020 Aalto Helsinki</a></li>
-      <li><a href="https://2020.igem.org/Team:GreatBay_SCIE/Results">2020 GreatBay SCIE</a></li>
-      <li><a href="https://2020.igem.org/Team:Queens_Canada/Results">2020 Queens Canada</a></li>
-    </ul>
+<div class="footer-preface curvy-divider">
+  <div class="footer-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+          </svg>
   </div>
 </div>
 

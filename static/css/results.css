@@ -1,0 +1,46 @@
+.img-wrapper.gel-image img {
+    width: 60%;
+}
+
+.img-wrapper.gel-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper.gel-image .caption{
+    max-width: 40rem;
+    padding-top: 2rem;
+
+}
+
+.img-wrapper.gel-image{
+    padding:1rem;
+}
+
+.table-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-wrapper table{
+    width: 20rem;
+}
+
+th,tr {
+    text-align: center;
+}
+
+.img-wrapper.dipstick img {
+    height: 26rem;
+}
+
+.img-wrapper.dipstick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
