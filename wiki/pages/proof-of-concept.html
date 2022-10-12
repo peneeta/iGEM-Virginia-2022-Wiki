@@ -13,14 +13,116 @@
   </div>
 </div>
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Gold Medal Criterion #4</h4>
-      <p>Expand upon your Silver medal work for Proposed Implementation and develop a proof of concept for your project.<p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2022 Medals Page</a> for more information.</p>
+<div class="d-flex flex-column justify-content-center align-items-center curvy-divider">
+  <div class="body-container wave-div narrow">
+    <div class="container">
+      <div class="about-section d-flex flex-row justify-content-center align-items-center">
+        <div class="wrapper">
+          <h2>About</h2>
+          <p>To bring AtheroSHuffle to life, two main components are needed. First, the antibodies that will be used in test strip construction must be successfully produced in <span class="italic-text">E. coli</span> SHuffle. Second, the LFA test strip must be able to use oxLDL specifically as the antigen of interest. Team Virginia has made strides on both components.</p>
+        </div>
+        <div class="img-wrapper">
+          <img style="padding: 2rem; height: 15rem;" src="https://static.igem.wiki/teams/4477/wiki/images/blanklfadoodle.svg" alt="">
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="gray-divider">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+  </div>
+</div>
+
+<div class="gray d-flex flex-row justify-content-center">
+  <div class="index-padding">
+    <div class="fixed-index d-flex flex-column align-self-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
+      <div class="wrapper mx-4">
+        <div class="index heading d-flex flex-row align-items-center justify-content-start py-4">
+          <div class="top-select active" id="toc" role="button" onclick="selectTop(this)">Index</div>
+        </div>
+
+        <div class="tab index" id="index">
+          <div class="index content d-flex flex-column" id="scrollspy-index-list">
+            <div class="index-item active" role="button" scrollTo="head1" onclick="scrollToSection(this)">Restriction Verification and Sequencing of Expression Plasmids</div>
+            
+            <div class="index-item" role="button" scrollTo="head2" onclick="scrollToSection(this)">Antibody Production</div>
+  
+            <div class="index-item" role="button" scrollTo="head3" onclick="scrollToSection(this)">OxLDL is a Suitable Analyte for the LFA</div>
+
+            <div class="index-item" role="button" scrollTo="head4" onclick="scrollToSection(this)">LFA Cassette</div>
+  
+            <div class="index-item" role="button" scrollTo="head5" onclick="scrollToSection(this)">Conclusion</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body-container d-flex flex-column justify-content-center align-items-center">
+    <div class="container">
+      <div class="body-section top-page" id="head1">
+        <div class="text-wrapper">
+          <h2>Restriction Verification and Sequencing of Expression Plasmids</h2>
+          <p>Restriction digest verifications for all cloned plasmids matched expected results acquired from virtual digests conducted on the Benchling software. Therefore, all expression plasmids have been successfully cloned into the pSB3K3 backbone. This is further supported by consistent sequencing results. See <a href="{{ url_for('pages', page='results') }}">Results Page</a> for more information and in-depth analysis.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section" id="head2">
+        <div class="text-wrapper">
+          <h2>Antibody Production</h2>
+          <p>
+            Results from SDS-PAGE gels indicate successful production of our desired antibodies by SHuffle. See <a href="{{ url_for('pages', page='results') }}">Results Page</a> for more information.
+            <br>
+            <br>
+            Moving forward, Western blots and ELISA’s will be conducted to confirm that the antibodies are produced with functional structures and that the sandwich complex can truly form.
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section" id="head3">
+        <div class="text-wrapper">
+          <h2>OxLDL is a Suitable Analyte for the LFA</h2>
+          <p>
+            We are developing a lateral flow assay (LFA) pilot using commercially-available antibodies able to detect commercially-available oxLDL. The purpose of the pilot is, among other things, to test the feasibility of oxLDL as an analyte. oxLDL’s large size has the potential to prevent it from flowing down a nitrocellulose membrane. We observed the solution diffuses up the membrane, and the solution appears red due to the presence of gold nanoparticles, which conjugates with the commercially available antibodies that bind to oxLDL epitopes. The red solution’s diffusion confirms that oxLDL fails to remain immobile and can be used as an analyte. (See <a href="{{ url_for('pages', page='results') }}">Results Page</a> for more information).
+            <br>
+            <br>
+            Once all antibodies are confirmed to be correctly produced in SHuffle, we will construct the entire LFA and run more pilots to verify that each component, especially those involved in sandwich complexes, functions properly on a LFA. Blood samples will be tested to confirm that the entire device can be used by patients.
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section" id="head4">
+        <div class="text-wrapper">
+          <h2>LFA Cassette</h2>
+          <p>We designed and 3D printed an LFA cassette that takes less than 20 minutes to print and uses just over 0.5 meters of material, proving that a suitable cassette can be printed quickly and cheaply - the two major requirements for making the production of an accessible test strip feasible. See <a href="{{ url_for('pages', page='results') }}">Results Page</a> for more information.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section bottom-page" id="head5">
+        <div class="text-wrapper">
+          <h2>Conclusion</h2>
+          <p>We are confident that a successful LFA using our own antibodies is just around the corner, especially since we have already tackled the cloning process and optimizing the physical build of the LFA cassette and test strip itself. With more tests to confirm valid antibody production and LFA functions, our complete device can be realized.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="spacer-div"></div>
+</div>
+
+<div class="footer-preface curvy-divider">
+  <div class="footer-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+          </svg>
   </div>
 </div>
 
