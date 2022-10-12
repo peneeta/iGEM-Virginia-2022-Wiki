@@ -398,7 +398,10 @@
           <h4>Partial Differential Equation (PDE) System</h4>
           <p>We will write one partial differential equation for each component of the test strip for each system of differential equations. Conceptually, our goal is to define the concentration over each of the three sections of the LFA. These equations allow us to <span class="bold-text">characterize the concentration</span> as a function of both position on the test strip and time passed since loading the sample onto the sample pad. We can also begin to identify the phenomena that affect the concentration of each component. </p>
           <p>The ADRE requires the diffusivity constant for the analyte (D<sub>A</sub>), detector unit (D<sub>D</sub>), and the analyte-detector-unit complex (D<sub>A</sub> +D<sub>D</sub>). We take these constants to be the same from Lui et al,.<sup>6</sup> This means <span class="bold-text">DA = 10<sup>-4</sup> mm/s<sup>2</sup></span> and <span class="bold-text">D<sub>D</sub> = 10<sup>-6</sup> mm/s<sup>2</sup></span>. Since we assumed the diffusivity of the analyte-detector-unit complex is the sum of their respective diffusivity constants, we let  <span class="bold-text">D<sub>A</sub>+D<sub>D</sub> = 10<sup>-4</sup> + 10<sup>-6</sup>mm/s<sup>2</sup></span>.</p>
-          <p>insert three images of latex</p>
+          <div class="img-wrapper  d-flex flex-column  justify-content-center align-items-center">
+            <img style="padding-block: 2rem; width: 60%;" src="https://static.igem.wiki/teams/4477/wiki/images/latex.png" alt="">
+
+          </div>
         </div>
       </div>
     </div>
@@ -475,7 +478,10 @@
         <div class="text-wrapper">
           <h4>Model Applications</h4>
           <p>In addition to predicting the minimum concentration of detector unit to generate a visible signal, the model is also informative of the behavior of each LFA component when 5.613575*10<sup>-4</sup> mg/L of the detector unit is used on the conjugate pad. For example, we can examine the behavior of the CAD complex at this optimal detector unit concentration.</p>
-          <p>there's a graph here!</p>
+          <div class="img-wrapper d-flex flex-column justify-content-center align-items-center">
+            <img style="padding-block: 2rem; width: 60%;" src="https://static.igem.wiki/teams/4477/wiki/images/result-modeling.png" alt="">
+
+          </div>
           <p><span class="bold-text">  Fig 2.  </span> This figure depicts the concentration of CAD or the complex-analyte-detector-unit complex as a function vs. time.</p>
           <p>As shown in the figure above, we observe that the CAD concentration will rapidly begin to increase at around 30 seconds. Then, due to mass action kinetics, the concentration will peak at over 1.2 * 10<sup>-3</sup> mg/L, which means a visible signal will be produced. Furthermore, we can see that this concentration will last a very short amount of time. So, the model determines that the concentration of CAD will indeed reach the minimum concentration of gold nanoparticles bound to the control line in order to produce a visible signal but will not remain at that minimum concentration for more than one second. <span class="bold-text"> So, one model improvement would be to find the minimum concentration of D such that the concentration of CAD remains above the minimum threshold for at least 10 seconds.</span> </p>
         </div>
