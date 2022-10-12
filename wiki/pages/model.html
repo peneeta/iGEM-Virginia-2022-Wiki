@@ -52,7 +52,8 @@
         <div class="index heading d-flex flex-row align-items-center justify-content-start py-4">
           <div class="top-select active" id="refs" role="button" onclick="selectTop(this)">References</div>
         </div>
-        <div class="tab references content d-flex flex-column hidden" id="references">
+
+        <div class="tab references content d-flex flex-column" id="references">
             <div class="wrapper">
                 <p>
                   1.	Holvoet, P. et al. Circulating Oxidized LDL Is a Useful Marker for Identifying Patients With Coronary Artery Disease. Arteriosclerosis, Thrombosis, and Vascular Biology 21, 844–848 (2001).
@@ -74,6 +75,34 @@
                 </p>
             </div>
         </div>
+
+        <div class="tab index hidden" id="index">
+          <div class="index content d-flex flex-column" id="scrollspy-index-list">
+            <div class="index-item active" role="button" scrollTo="head1" onclick="scrollToSection(this)">Protein Modeling</div>
+            
+            <div class="index-item" role="button" scrollTo="head2" onclick="scrollToSection(this)">Lateral Flow Assay Modeling: Introduction</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head3" onclick="scrollToSection(this)">What is Unique to our Design</div>
+  
+            <div class="index-item" role="button" scrollTo="head4" onclick="scrollToSection(this)">Choosing a Chassis</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head5" onclick="scrollToSection(this)">How SHuffle Works</div>
+  
+            <div class="index-item" role="button" scrollTo="head6" onclick="scrollToSection(this)">Plasmid Design</div>
+  
+            <div class="index-item" role="button" scrollTo="head7" onclick="scrollToSection(this)">Designing Our Antibodies</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head8" onclick="scrollToSection(this)">Labelled Anti-ApoBMDA Design</div>
+  
+            <div class="indented index-item" role="button" scrollTo="head9" onclick="scrollToSection(this)">Anti-OxLDL Design</div>
+
+            <div class="indented index-item" role="button" scrollTo="head10" onclick="scrollToSection(this)">Anti-IgG Design</div>
+
+            <div class="index-item" role="button" scrollTo="head11" onclick="scrollToSection(this)">Biosafety</div>
+
+            <div class="index-item" role="button" scrollTo="head12" onclick="scrollToSection(this)">Hardware</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -283,7 +312,8 @@
     <div class="container">
       <div class="body-section">
         <div class="text-wrapper">
-          
+          <h4>Remarks</h4>
+          <span class="bold-text">We will consider all concentrations in terms of mg/L.</span> This is due to the unknown molar mass of oxLDL. Currently, the concentration of oxLDL in the blood which correlates to a high risk of developing atherosclerosis is only reported in terms of mg/dL. Thus, we are unable to convert this threshold into molar concentrations. So, we used an online protein calculator to calculate the weight of each component (listed below) of the LFA.<sup>2</sup>
         </div>
       </div>
     </div>
@@ -354,11 +384,10 @@
             <li>Leftmost edge of the conjugate pad to the rightmost edge of the conjugate pad</li>
             <li>Rightmost edge of the conjugate pad to the test line</li>
             <li>The test line to the control line</li>
-            <p>there's a graphic to insert! should be lfa with 1,2, 3 on it</p>
           </ul>
         </div>
-        <div class="img-wrapper d-flex flex-column justify-content-center align-items-center">
-          <img style="width: 60%;" src="https://static.igem.wiki/teams/4477/wiki/images/123lfamodel.png" alt="">
+        <div class="img-wrapper d-flex flex-column justify-content-evenly align-items-center">
+          <img style="padding-block: 2rem;  width: 60%;" src="https://static.igem.wiki/teams/4477/wiki/images/123lfamodel.png" alt="">
         </div>
       </div>
     </div>
@@ -368,7 +397,7 @@
         <div class="text-wrapper">
           <h4>Partial Differential Equation (PDE) System</h4>
           <p>We will write one partial differential equation for each component of the test strip for each system of differential equations. Conceptually, our goal is to define the concentration over each of the three sections of the LFA. These equations allow us to <span class="bold-text">characterize the concentration</span> as a function of both position on the test strip and time passed since loading the sample onto the sample pad. We can also begin to identify the phenomena that affect the concentration of each component. </p>
-          <p>The ADRE requires the diffusivity constant for the analyte (DA), detector unit (DD), and the analyte-detector-unit complex (DA +D). We take these constants to be the same from Lui et al,.6 This means <span class="bold-text">DA = 10<sup>-4</sup> mm/s<sup>2</sup></span> and <span class="bold-text">DD = 10<sup>-6</sup> mm/s<sup>2</sup></span>. Since we assumed the diffusivity of the analyte-detector-unit complex is the sum of their respective diffusivity constants, we let  <span class="bold-text">DA+D = 10<sup>-4</sup> + 10<sup>-6</sup>mm/s<sup>2</sup></span>.</p>
+          <p>The ADRE requires the diffusivity constant for the analyte (D<sub>A</sub>), detector unit (D<sub>D</sub>), and the analyte-detector-unit complex (D<sub>A</sub> +D<sub>D</sub>). We take these constants to be the same from Lui et al,.<sup>6</sup> This means <span class="bold-text">DA = 10<sup>-4</sup> mm/s<sup>2</sup></span> and <span class="bold-text">D<sub>D</sub> = 10<sup>-6</sup> mm/s<sup>2</sup></span>. Since we assumed the diffusivity of the analyte-detector-unit complex is the sum of their respective diffusivity constants, we let  <span class="bold-text">D<sub>A</sub>+D<sub>D</sub> = 10<sup>-4</sup> + 10<sup>-6</sup>mm/s<sup>2</sup></span>.</p>
           <p>insert three images of latex</p>
         </div>
       </div>
@@ -387,6 +416,11 @@
       <div class="body-section">
         <div class="text-wrapper">
           <h2>Solving the Systems of Equations (Using MatLab)</h2>
+          <p>To solve partial differential equations, two important conditions are needed for every equation.</p>
+        </div>
+      </div>
+      <div class="body-section">
+        <div class="text-wrapper">
           <h4>Initial Conditions</h4>
           <p>
             Initial conditions are the solution functions defined at time zero. Conceptually, these conditions are <span class="bold-text">known concentrations at all positions of the system starting at time t<sub>o</sub> or t = 0 sec</span>. We define t<sub>o</sub> to be the moment the sample of blood reaches the conjugate pad from the sample pad. An example of an initial condition is the concentration of D in system 1; our objective is to find concentration of D, which will be uniformly distributed in the conjugate pad. We defined the initial condition of every component of every system to be <span class="bold-text"> 0 nM = 0 mg/dL</span>.
@@ -399,7 +433,13 @@
       <div class="body-section">
         <div class="text-wrapper">
           <h4>Boundary Conditions</h4>
-          <p></p>
+          <p>Boundary conditions are the <span class="bold-text">system’s behavior at edge points at any given time t</span>. In this case, the boundary conditions are the known concentrations (or known behavior of concentrations) of specific components defined at the leftmost and rightmost edges of each system. For example, the <p style="font-style: italic;">left edge boundary condition</p> for A of system 1 would be the concentration of oxLDL at the leftmost edge of the conjugate pad at any given time.</p>
+          <p>We let <span class="bold-text">x<sub>o</sub> = 0 mm</span> denote the leftmost edge for each system and we let <span class="bold-text">x<sub>f</sub>= L mm</span> denote the rightmost edge for each system; L is the length of the corresponding pad of the LFA. Notice, we used the <p style="font-style: italic;">Dirichlet Boundary Conditions</p> for components with known concentrations at each boundary and the <p style="font-style: italic;">Neumann Boundary Conditions</p> for components with unknown concentrations at each boundary.<sup>7</sup>. We define the boundary conditions as follows. </p>
+          <div class="img-wrapper d-flex flex-column align-items-center justify-content-center">
+            <img style="width: 60%; padding-block: 2rem;" src="https://static.igem.wiki/teams/4477/wiki/images/boundarycondstable.png" alt="">
+          </div>
+          <p>We set the boundary conditions of [AD] (the concentration of AD) to be 0 at the right edge of system 3 because we want to minimize the excess AD (i.e. unnecessary AD) that an LFA must be constructed with. Also, we consider the left edge boundary conditions of [A] = 0 and [D] = 0 for systems 2 and 3 as a simplifying assumption; instead of defining an interpolated function, we decided to assess the approximated reaction rates and determine that the decrease in concentration due to dissociation for the following complexes are negligible (too close to zero to significantly impact concentration): T1AD, T2AD, and CAD.</p>
+          <p>Finally, since we placed the right edges of systems 2 and 3 at areas of the test strip that contain receptor antibodies, we can define the corresponding boundary functions: the concentrations of the respective antibodies is 10 nM (which was then converted to mg/L). For example, the right edge of system 3 is the control line. So, we know that the boundary condition for [C] in system 3 is the initial concentration of control line receptor antibodies we would place at the control line. </p>
         </div>
       </div>
 
