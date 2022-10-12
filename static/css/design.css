@@ -120,3 +120,15 @@
     font-size: large;
     font-family: 'Open Sans';
 }
+
+.plasmids-wrapper img {
+    width: 70%;
+    padding: 1rem;
+}
+
+.plasmids-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
