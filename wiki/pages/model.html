@@ -57,7 +57,22 @@
         <div class="tab references content d-flex flex-column hidden" id="references">
             <div class="wrapper">
                 <p>
-                    
+                  1.	Holvoet, P. et al. Circulating Oxidized LDL Is a Useful Marker for Identifying Patients With Coronary Artery Disease. Arteriosclerosis, Thrombosis, and Vascular Biology 21, 844–848 (2001).
+                  <br>
+                  2.	Protein Molecular Weight. https://www.bioinformatics.org/sms/prot_mw.html.
+                  <br>
+                  3.	Gasperino, D. Improving Lateral Flow Assay Performance Using Computational Modeling | Annual Review of Analytical Chemistry. https://www.annualreviews.org/doi/10.1146/annurev-anchem-061417-125737 (2018).
+                  <br>
+                  4.	Mass action kinetics - Mathematics of Reaction Networks. https://reaction-networks.net/wiki/Mass_action_kinetics.
+                  <br>
+                  5.	Landry, J. P., Ke, Y., Yu, G.-L. & Zhu, X. D. Measuring Affinity Constants of 1,450 Monoclonal Antibodies to Peptide Targets with a Microarray-based Label-Free Assay Platform. J Immunol Methods 417, 86–96 (2015).
+                  <br>
+                  6.	Liu, Z. et al. The effect of report particle properties on lateral flow assays: A mathematical model. Sensors and Actuators B: Chemical 248, 699–707 (2017).
+                  <br>
+                  7.	Glinowiecka-Cox, M. Analytic Solution of 1D Diffusion-Convection Equation with Varying Boundary Conditions. (Portland State University, 2022). doi:10.15760/honors.1224.
+                  <br>
+                  8.	T--Rochester--lfam.pdf.
+                  <br>
                 </p>
             </div>
         </div>
@@ -154,7 +169,7 @@
         <div class="text-wrapper">
           <h2>Lateral Flow Assay Modeling: Introduction</h2>
           <h4>The Goal</h4>
-          <p> Modeling works closely with wet lab to make major design decisions in the construction of the lateral flow assay (LFA). In this project, the goal for modeling is to determine the optimal (i.e. the minimum) concentration of detector units (full length IgG antibodies conjugated to a gold nanoparticle) that need to be placed on the sample pad in order to produce a visible signal at the test and control lines when at least 0.8 mg/dL (or 8 mg/L) of oxLDL is present in the blood sample. This is the threshold for oxLDL circulating in the bloodstream that indicates early development of atherosclerosis. Our team determined that the optimum concentration of the detector units is the minimum possible concentration because gold nanoparticles are the most costly portion in building our LFA pilots. Thus, the work in modeling <span class="bold-text">necessarily reduced the time and cost of producing the physical test strip</span>. 
+          <p> Modeling works closely with wet lab to make major design decisions in the construction of the lateral flow assay (LFA). In this project, the goal for modeling is to determine the optimal (i.e. the minimum) concentration of detector units (full length IgG antibodies conjugated to a gold nanoparticle) that need to be placed on the sample pad in order to produce a visible signal at the test and control lines when at least 0.8 mg/dL (or 8 mg/L) of oxLDL is present in the blood sample.<sup>1</sup> This is the threshold for oxLDL circulating in the bloodstream that indicates early development of atherosclerosis. Our team determined that the optimum concentration of the detector units is the minimum possible concentration because gold nanoparticles are the most costly portion in building our LFA pilots. Thus, the work in modeling <span class="bold-text">necessarily reduced the time and cost of producing the physical test strip</span>. 
           </p>
         </div>
       </div>
@@ -247,6 +262,15 @@
             
           </tbody>
         </table>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h4>Remarks</h4>
+          <p><span class="bold-text">We will consider all concentrations in terms of mg/L.</span> This is due to the unknown molar mass of oxLDL. Currently, the concentration of oxLDL in the blood which correlates to a high risk of developing atherosclerosis is only reported in terms of mg/dL. Thus, we are unable to convert this threshold into molar concentrations. So, we used an online protein calculator to calculate the weight of each component (listed below) of the LFA.<sup>2</sup></p>
+        </div>
       </div>
     </div>
 
