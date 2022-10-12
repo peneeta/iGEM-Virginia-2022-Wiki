@@ -331,7 +331,15 @@
         <div class="text-wrapper">
           <h2>The Problem Set-Up: Developing and Using Differential Equations and Systems of Equations</h2>
           <h4>Assumptions</h4>
-          <p></p>
+          <p>Before using useful equations to model the concentration of each component, we need to make a few assumptions that both simplify the problem and allow us to combine certain equations. 
+            <ul>
+       <li>The analyte, the detector antibody, and the receptor antibodies are dissolved in a well mixed solution formed by the sample wetting the test strip.
+</li>
+      <li>There is negligible absorption of the analyte, detector, and the analyte-detector complex into the nitrocellulose membrane pores (i.e. no loss in concentration in A, D, nor AD due to the nitrocellulose). </li>
+      <li>Each component reacts with their target at a constant rate (i.e. kinetic rate constants are constant with respect to concentration). </li>
+      <li>All concentrations are monotonic (i.e. the concentrations only increase or they only decrease over time and space). We assumed before that each reaction’s rate is constant, which means the rate is monotonic until equilibrium. After equilibrium is reached, the concentrations of all products and reactants remain constant. </li>
+</ul>
+          </p>
         </div>
       </div>
     </div>
@@ -340,7 +348,7 @@
       <div class="body-section">
         <div class="text-wrapper">
           <h4>Using the Advection Dispersion Reaction Equation (ADRE)</h4>
-          <p></p>
+          <p>Our primary interest for this project is to examine the behavior of the concentration of each component (listed in the above table) over the length of the test strip and over time. These relationships can be described using the <span class="bold-text">the Advection Dispersion Reaction Equation</span>. These equations have been cited by other researchers as innovative methods to optimize the performance and design of an LFA.  These articles, as well as our team, are interested in how the transport of the detector unit AD to the test and control lines affect the concentrations of AD bound at the test and control lines.2,2  The ADRE is derived from the conservation of mass for a transported chemical, which means these equations provide the insight needed to analyze the transport of AD over the test strip. For example, a question we could consider using the ADRE is if the reaction between A and D occurs before they reach the test line; if this reaction happens too slowly, the test could result in a false negative. </p>
         </div>
       </div>
     </div>
@@ -358,9 +366,15 @@
       <div class="body-section">
         <div class="text-wrapper">
           <h4>Reaction Chemical Equations</h4>
-          <p></p>
+          <p>Assumptions 1 and 3 allow us to use <span class="bold-text">mass action kinetics</span> to define the concentration of the “fixed” components of our test. This means we have equations to describe the concentrations of the receptor antibodies anchored at the test and control lines over time. Additionally, we observe that these concentrations over time vary only due to the association and dissociation of the receptors and their respective targets.3 Furthermore, we accounted for the association and dissociation of AD as the complex moves along the test strip. That is, the concentration of AD varies over the length of the test strip not only due to the advection of the bulk fluid and the diffusion/dispersion of the complex molecules, but also because AD has a possibility of dissociating into A and D, or A and D in the solution associating to form AD. We accounted for this cause of AD concentration fluctuation by adding/subtracting appropriate expressions derived from mass action kinetics equations in the ADRE. </p>
+          <p>However, we could not find the appropriate rate constants for each binding reaction from literature. So, we used an approximation from which found the rate constants for antibodies with similar equilibrium constants as our antibodies/antibody fragments.4 So, we take the rate constant for the forward binding reactions to be 10<sup>5</sup> M/s and the rate constant for the backward dissociating reactions to be 10<sup>-5</sup> M/s. </p>
           <div class="markdown-wrapper">
-            <p>idkhowto addthis, maybe js screenshot</p>
+            <p>The following chemical reaction equations are needed to describe the mass action kinetics equations. The forward/backward rate constants are also denoted by their respective equations.</p>
+            <p>k<sub>fAD</sub> denotes the forward rate constant and k<sub>bAD</sub> denotes the backwards rate constant for this reaction.
+k<sub>fT1AD</sub> denotes the forward rate constant and k<sub>bT1AD</sub> denotes the backwards rate constant for this reaction.
+k<sub>fT2AD</sub> denotes the forward rate constant and k<sub>bT2AD</sub> denotes the backwards rate constant for this reaction.
+k<sub>fCAD</sub> denotes the forward rate constant and k<sub>bCAD</sub> denotes the backwards rate constant for this reaction.
+</p>
           </div>
         </div>
       </div>
@@ -370,7 +384,13 @@
       <div class="body-section">
         <div class="text-wrapper">
           <h4>Breaking the Lateral Flow Assay (LFA) into Three Systems</h4>
-          <p></p>
+          <p>We chose to separate the LFA into three discrete systems of partial differential equations. We separated these systems based on the placement of the conjugate pad, the test line, and the control line (shown in the figure below). In doing so, we can define the behavior at the <span class="bold-text">boundary conditions</span>, which contains variables we wanted to solve for, more easily. We could also characterize the sudden decrease in AD concentration after AD passes over the test lines this way. Specifically, we break the LFA into the following three parts:</p>
+          <ul>
+       <li>Leftmost edge of the conjugate pad to the rightmost edge of the conjugate pad</li>
+      <li>Rightmost edge of the conjugate pad to the test line</li>
+      <li>The test line to the control line</li>
+      <p>there's a graphic to insert! should be lfa with 1,2, 3 on it</p>
+</ul>
         </div>
       </div>
     </div>
@@ -379,7 +399,18 @@
       <div class="body-section">
         <div class="text-wrapper">
           <h4>Partial Differential Equation (PDE) System</h4>
-          <p></p>
+          <p>We will write one partial differential equation for each component of the test strip for each system of differential equations. Conceptually, our goal is to define the concentration over each of the three sections of the LFA. These equations allow us to <span class="bold-text">characterize the concentration</span> as a function of both position on the test strip and time passed since loading the sample onto the sample pad. We can also begin to identify the phenomena that affect the concentration of each component. </p>
+          <p>The ADRE requires the diffusivity constant for the analyte (DA), detector unit (DD), and the analyte-detector-unit complex (DA +D). We take these constants to be the same from Lui et al,.6 This means <span class="bold-text">DA = 10<sup>-4</sup> mm/s<sup>2</sup></span> and <span class="bold-text">DD = 10<sup>-6</sup> mm/s<sup>2</sup></span>. Since we assumed the diffusivity of the analyte-detector-unit complex is the sum of their respective diffusivity constants, we let  <span class="bold-text">DA+D = 10<sup>-4</sup> + 10<sup>-6</sup>mm/s<sup>2</sup></span>.</p>
+          <p>insert three images of latex</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h4>The Role of Mass Action Kinetics and Rate Constants</h4>
+          <p>As shown above, mass action kinetics are leveraged to predict the concentrations of the components fixed to the LFA (i.e. the receptor antibodies). For example, take equation 1 System 1. This equation considers the concentration of the analyte as it moves into the conjugate pad from the sample pad. While the concentration differs over time, as well as over the pad, due to the movement of the analyte, the concentration must also differ due to the analyte reacting with the detector unit. The rate of decrease in analyte concentration due to the analyte reacting with the detector unit is exactly the forward reaction rate constant multiplied by the concentration of the analyte multiplied by the concentration of the detector unit due to mass action kinetics. Similarly, the rate of increase in analyte concentration due to the analyte dissociating with the detector unit is also governed by mass action kinetics. By taking these reactions into account for each equation, we are able to more accurately determine the behavior of concentration over space and time for each component.</p>
         </div>
       </div>
     </div>
