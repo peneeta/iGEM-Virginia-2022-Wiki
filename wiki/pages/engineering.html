@@ -13,13 +13,13 @@
   </div>
 </div>
 
-<div class="d-flex flex-column justify-content-center align-items-center">
+<div class="d-flex flex-column justify-content-center align-items-center curvy-divider">
   <div class="body-container wave-div narrow">
       <div class="container">
         <div class="about-section d-flex flex-row justify-content-center align-items-center">
           <div class="wrapper">
             <h2>The Engineering Design Cycle</h2>
-            <p>Throughout the course of our project, we faced many challenges and setbacks we needed to overcome. We also talked to stakeholders and researchers to gain knowledge we otherwise would not have had. These warranted repeated changes to our design and tweaks to aspects of our project. Below, we show our iterations through the engineering design cycle, both due to integrated human practices and experimental discoveries.</p>
+            <p>Throughout the course of our project, we faced many challenges and setbacks we needed to overcome. We also talked to stakeholders and researchers to gain knowledge we otherwise would not have obtained. These warranted repeated changes to our design and tweaks to aspects of our project. Below, we show our iterations through the engineering design cycle, both due to integrated human practices and experimental discoveries. </p>
           </div>
           <div class="img-wrapper">
             <img style="padding: 2rem;"src="https://static.igem.wiki/teams/4477/wiki/images/eng-des-cycl.svg" alt="lfa bunch">
@@ -27,119 +27,81 @@
         </div>
       </div>
   </div>
+  <div class="gray-divider">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+  </div>
 </div>
 
-<div class="d-flex flex-row justify-content-center body-padding">
-  <div class="index-padding">
-    <div class="fixed-index">
-      <p>Fixed index here</p>
-    </div>
-  </div>
+<div class="gray d-flex flex-row justify-content-center body-padding">
+  <div class="spacer-div"></div>
 
   <div class="body-container d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-sine">
     <div class="container">
       <div class="body-section top-page">
         <div class="text-wrapper">
           <div class="engr-cycle">
-            <h2>Cycle 1: IK17 scFv</h2>
+            <h2>Cycle 1</h2>
             <div class="cyc">
-              <p>Design</p>
-              <p>Our design is based around producing three different antibodies for our test strip: the first to bind to oxLDL, the second to bind to oxLDL on a different location than the first to form a sandwich complex, and a third to bind to our first antibody as a control. In order to increase efficiency and simplicity we decided to produce our second antibody as just the scFv fragment that detects our biomarker. Through extensive research we chose the IK17 antibody, known to bind to oxLDL, as our scFv (see Design page)</p>
+              <h4>Design</h4>
+              <p>To design the four antibodies required for our project, we BrioBricked four inserts as a composite part. Each composite part has a strong T7 inducible promoter, enabling IPTG induction, an <span class="italic-text">E. coli</span> codon-optimized ribosomal binding site (RBS), the antibody coding sequence, and a terminator. The RBS and antibody coding sequence were designed to serve a different purpose for each antibody. Legal restriction enzymes were also placed between each subcomponent. Next, we decided to use pSB3K3 for our vector, a low-copy number plasmid, which is important to reduce the metabolic burden on our cells.<span class="tt" data-bs-toggle="tooltip" data-bs-html="true" data-bs-placement="top" title="<p class='italic-text'>Karim, A. S., Curran, K. A. & Alper, H. S. Characterization of plasmid burden and copy number in Saccharomyces cerevisiae for optimization of metabolic engineering applications. FEMS Yeast Res. 13, 107–116 (2013).</p>"><sup>1</sup></span></p>
             </div>
 
             <div class="cyc">
-              <p>Build</p>
-              <p>In order for IK17 to work as our scFv, we needed it to bind to a different epitope on oxLDL than our first antibody (orticumab). So we used AlphaFold to produce 3D structures of the IK17 scFv, orticumab, and the ApoB protein on oxLDL. 
-                </p>
+              <h4>Build</h4>
+              <p>We used traditional cloning (TC) to incorporate our insert into the pSB3K3 vector in <span class="italic-text">E. coli</span> DH5-alpha cells, however, we received low transformation efficiency.  We modified our TC by mixing the digested insert and vector directly in a tube for ligation without performing gel electrophoresis. Recognizing the possibility of our original mRFP gene fragment being re-ligated back into the vector after being digested with restriction enzymes, we screened transformants based on the colonies’ color. Colonies with our insert would appear white, while those with the re-ligated mRFP gene will appear red.  After cloning our antibody sequences into DH5-alpha cells and selecting only for white colonies, we utilized restriction mapping and sequencing to verify that the DH5-alpha cells contained our antibody inserts. We then transformed <span class="italic-text">E. coli</span> SHuffle and utilized restriction mapping and sequencing to verify SHuffle contained the correct insert.</p>
             </div>
 
             <div class="cyc">
-              <p>Test</p>
-              <p>We then used several protein docking softwares to test if our scFv bound ApoB at a different location than orticumab, but none of the docking softwares we tried had the capability to predict the specific binding sites of our proteins.</p>
+              <h4>Test</h4>
+              <p>To test if our devices expressed our antibodies of interest, we induced SHuffle cells to produce protein and then conducted SDS-PAGE to verify if protein bands were present at the correct molecular weight. However, we observed low expression. Based on this, we changed various parameters of protein induction (incubation time, IPTG concentration, and temperature), but we still did not see significant expression of our target antibodies.</p>
             </div>
 
             <div class="cyc">
-              <p>Learn</p>
-              <p>After meeting with Dr. Norbert Leitinger, a professor in the UVA Department of Pharmacology (see IHP), we learned what kind of antibodies are being used today in the field of oxidized phospholipids. He recommended that we use the E06 antibody that binds to the oxidized phospholipids on oxLDL rather than the ApoB protein.</p>
-            </div>
-
-            <div class="cyc">
-              <p>Conclusion</p>
-              <p>We decided to use the scFv of the McPC603 antibody, an antibody similar to E06 that also binds to oxidized phospholipids, in addition to IK17 to serve as our immobilized antibody at the test line. Having two antibodies that bind to different epitopes on oxLDL increases the chance of oxLDL binding to the test line and signal detection: specifically, having one antibody bind to the ApoB protein and one bind to the oxidized phospholipids on oxLDL provides the greatest variability in forming a sandwich complex with the first antibody. This confers significant advantage in the detection of oxLDL, offering both specificity and reducing the false positive rates of detecting other potential biomolecules that may have only either MDA-modified-apoB or OxPL.</p>
+              <h4>Learn</h4>
+              <p>Based on our testing results, review of academic articles, and expert opinions, we learned that other vectors can allow for higher protein expression.  Since our pSB3K3 vector is a low copy number plasmid, it may have resulted in too few transcripts being created despite induction.  </p>
             </div>
           </div>
-          
         </div>
       </div>
       <div class="body-section">
         <div class="text-wrapper">
-          <h2>Device Assembly</h2>
           <div class="engr-cycle">
+            <h2>Cycle 2</h2>
             <div class="cyc">
-              <h4>Cycle 1</h4>
-              <p>Design</p>
-              <p>
-                By reading peer-journal articles, we designed our device to use antibodies produced by the <em>E. coli</em> SHuffle strain and designed the construct of our antibody gene sequence. We designed four plasmids all using the same vector, pSB3K3, and one gene fragment each encoding one of our antibodies or antibody fragments.
-              </p>
-            </div>
-            <div class="cyc">
-              <p>
-                Build:
-                Since the assembly of our functional plasmids only involved inserting one gene fragment into a vector, we decided to proceed with traditional cloning (TC) the fragments into <em>E. coli</em> DH5-alpha cells. At first, we followed the standard TC protocol - digesting DNA fragments with restriction enzymes, separating the fragments through gel electrophoresis, ligating the fragments extracted from the gel, and transforming the cells with the ligated products.
-              </p>
-            </div>
-
-            <div class="cyc">
-              <p>Learn:
-                Our transformation had very low yields as few positive colonies were observed to grow, so we decided to look towards other cloning methods for increasing the transformation efficiency and yield.
-              </p>
+              <h4>Design</h4>
+              <p>We are currently re-designing our constructs so that they use the pET-21b(+) expression vector used by Robinson et al., a high copy number plasmid designed for use in T7 induction.</p>
             </div>
           </div>
-
-          <div class="engr-cycle">
-            <div class="cyc">
-              <h4>Cycle 2</h4>
-              <p>Design</p>
-              <p>We decided to design a modified version of traditional cloning by mixing the digested insert and vector directly in a tube for ligation without performing gel electrophoresis. Here arises the possibility that the original gene fragment cut out from the vector will re-ligate back into the vector. However, since our undigested vector, pSB3K3, contains a mRFP gene that will be cut out through digestion, transformed cells containing the original mRFP gene instead of the insert will be red, and white colonies on the kanamycin plates should be transformed cells containing our gene of interest.</p>
-            </div>
-            <div class="cyc">
-              <p>Build</p>
-              <p>Using our new modified traditional cloning, we cloned our antibody sequences into DH5-alpha cells. After transforming, both red and white colonies appeared as we expected, so we only selected the white colonies that were predicted to contain our gene of interest. Both restriction mapping and sequencing our transformed products verified that the DH5-alpha cells contained our antibody sequences in the pSB3K3 vector. Since our products were verified, we then cloned the plasmid into the <em>E. coli</em> SHuffle strain for protein production. Restriction mapping and sequencing verified SHuffle contained the correct construct.
-              </p>
-            </div>
-            <div class="cyc">
-              <p>Test</p>
-              <p>We induced SHuffle cells to produce our antibodies. Protein bands at the correct molecular weight were observed on SDS-PAGE gels, however, the expression level of protein was rather low. 
-              </p>
-            </div>
-            <div class="cyc">
-              <p>Learn</p>
-              <p>We learned through academic articles and experts that change in the times of induction and the temperature can influence protein yields, and we modified these parameters in our next iteration.</p>
-            </div>
-          </div>
-          
-
-          
-
         </div>
       </div>
 
       <div class="body-section">
         <div class="text-wrapper">
           <h2>Future Iterations</h2>
-          <p>If changing these variables does not increase our protein yields, we will redesign our BioBrick construct. We will switch the pSB3K3 vector we are currently using into the standard pET vector used for protein expression, design our RBS to have maximum translational efficiency rather than 75% efficiency, and use Robinson promoters to increase protein expression. </p>
+            <p>If modifying these variables does not increase protein yields, we will redesign our BioBrick construct. We will design our RBS to have maximum translational efficiency rather than 75% efficiency and use Robinson promoters to increase protein expression. </p>
         </div>
       </div>
 
-      <div class="body-section conclusion">
-        <h4>Conclusion: We were successfully able to build our SHuffle cells and test protein induction.
-        </h4>
+      <div class="body-section">
+        <div class="text-wrapper">
+          <h2>Conclusion</h2>
+          <p>Following the Engineering Design Cycle, we were successfully able to build our SHuffle cells and test protein induction.</p>
+        </div>
       </div>
-
     </div>
   </div>
     <!-- SPACING -->
   <div class="spacer-div"></div>
+</div>
+
+<div class="footer-preface curvy-divider">
+  <div class="footer-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+          </svg>
+  </div>
 </div>
 
 {% endblock %}
