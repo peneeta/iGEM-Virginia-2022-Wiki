@@ -325,12 +325,11 @@
           <h4>Assumptions</h4>
           <p>Before using useful equations to model the concentration of each component, we need to make a few assumptions that both simplify the problem and allow us to combine certain equations. 
             <ul>
-       <li>The analyte, the detector antibody, and the receptor antibodies are dissolved in a well mixed solution formed by the sample wetting the test strip.
-</li>
-      <li>There is negligible absorption of the analyte, detector, and the analyte-detector complex into the nitrocellulose membrane pores (i.e. no loss in concentration in A, D, nor AD due to the nitrocellulose). </li>
-      <li>Each component reacts with their target at a constant rate (i.e. kinetic rate constants are constant with respect to concentration). </li>
-      <li>All concentrations are monotonic (i.e. the concentrations only increase or they only decrease over time and space). We assumed before that each reaction’s rate is constant, which means the rate is monotonic until equilibrium. After equilibrium is reached, the concentrations of all products and reactants remain constant. </li>
-</ul>
+              <li>The analyte, the detector antibody, and the receptor antibodies are dissolved in a well mixed solution formed by the sample wetting the test strip.</li>
+              <li>There is negligible absorption of the analyte, detector, and the analyte-detector complex into the nitrocellulose membrane pores (i.e. no loss in concentration in A, D, nor AD due to the nitrocellulose). </li>
+              <li>Each component reacts with their target at a constant rate (i.e. kinetic rate constants are constant with respect to concentration). </li>
+              <li>All concentrations are monotonic (i.e. the concentrations only increase or they only decrease over time and space). We assumed before that each reaction’s rate is constant, which means the rate is monotonic until equilibrium. After equilibrium is reached, the concentrations of all products and reactants remain constant. </li>
+            </ul>
           </p>
         </div>
       </div>
@@ -361,13 +360,16 @@
           <h4>Reaction Chemical Equations</h4>
           <p>Assumptions 1 and 3 allow us to use <span class="bold-text">mass action kinetics</span> to define the concentration of the “fixed” components of our test. This means we have equations to describe the concentrations of the receptor antibodies anchored at the test and control lines over time. Additionally, we observe that these concentrations over time vary only due to the association and dissociation of the receptors and their respective targets.3 Furthermore, we accounted for the association and dissociation of AD as the complex moves along the test strip. That is, the concentration of AD varies over the length of the test strip not only due to the advection of the bulk fluid and the diffusion/dispersion of the complex molecules, but also because AD has a possibility of dissociating into A and D, or A and D in the solution associating to form AD. We accounted for this cause of AD concentration fluctuation by adding/subtracting appropriate expressions derived from mass action kinetics equations in the ADRE. </p>
           <p>However, we could not find the appropriate rate constants for each binding reaction from literature. So, we used an approximation from which found the rate constants for antibodies with similar equilibrium constants as our antibodies/antibody fragments.4 So, we take the rate constant for the forward binding reactions to be 10<sup>5</sup> M/s and the rate constant for the backward dissociating reactions to be 10<sup>-5</sup> M/s. </p>
+          <div class="img-wrapper d-flex flex-column justify-content-center align-items-center">
+            <img src="https://static.igem.wiki/teams/4477/wiki/images/reactioneqs.png" alt="">
+          </div>
           <div class="markdown-wrapper">
             <p>The following chemical reaction equations are needed to describe the mass action kinetics equations. The forward/backward rate constants are also denoted by their respective equations.</p>
-            <p>k<sub>fAD</sub> denotes the forward rate constant and k<sub>bAD</sub> denotes the backwards rate constant for this reaction.
-k<sub>fT1AD</sub> denotes the forward rate constant and k<sub>bT1AD</sub> denotes the backwards rate constant for this reaction.
-k<sub>fT2AD</sub> denotes the forward rate constant and k<sub>bT2AD</sub> denotes the backwards rate constant for this reaction.
-k<sub>fCAD</sub> denotes the forward rate constant and k<sub>bCAD</sub> denotes the backwards rate constant for this reaction.
-</p>
+            <p>
+              k<sub>fAD</sub> denotes the forward rate constant and k<sub>bAD</sub>denotes the backwards rate constant for this reaction.k<sub>fT1AD</sub> denotes the forward rate constant and k<sub>bT1AD</sub> denotes the backwards rate constant for this reaction.
+              k<sub>fT2AD</sub> denotes the forward rate constant and k<sub>bT2AD</sub> denotes the backwards rate constant for this reaction.
+              k<sub>fCAD</sub> denotes the forward rate constant and k<sub>bCAD</sub> denotes the backwards rate constant for this reaction.
+            </p>
           </div>
         </div>
       </div>
@@ -420,8 +422,12 @@ k<sub>fCAD</sub> denotes the forward rate constant and k<sub>bCAD</sub> denotes 
       <div class="body-section">
         <div class="text-wrapper">
           <h4>Initial Conditions</h4>
-          <p>Initial conditions are the solution functions defined at time zero. Conceptually, these conditions are <span class="bold-text">known concentrations at all positions of the system starting at time t<sub>o</sub> or t = 0 sec</span>. We define t<sub>o</sub> to be the moment the sample of blood reaches the conjugate pad from the sample pad. An example of an initial condition is the concentration of D in system 1; our objective is to find concentration of D, which will be uniformly distributed in the conjugate pad. We defined the initial condition of every component of every system to be <span class="bold-text"> 0 nM = 0 mg/dL</span>.</p>
-          <p>We define the initial conditions of every component in every system to be 0 mg/mL except for [D] in system 1 because no component except for [D] in system 1 is uniformly distributed throughout the entire length of the system. For example, the receptor antibodies only occupy a line within their respective systems, not the entire portion of the nitrocellulose membrane. </p>
+          <p>
+            Initial conditions are the solution functions defined at time zero. Conceptually, these conditions are <span class="bold-text">known concentrations at all positions of the system starting at time t<sub>o</sub> or t = 0 sec</span>. We define t<sub>o</sub> to be the moment the sample of blood reaches the conjugate pad from the sample pad. An example of an initial condition is the concentration of D in system 1; our objective is to find concentration of D, which will be uniformly distributed in the conjugate pad. We defined the initial condition of every component of every system to be <span class="bold-text"> 0 nM = 0 mg/dL</span>.
+            <br>
+            <br>
+            We define the initial conditions of every component in every system to be 0 mg/mL except for [D] in system 1 because no component except for [D] in system 1 is uniformly distributed throughout the entire length of the system. For example, the receptor antibodies only occupy a line within their respective systems, not the entire portion of the nitrocellulose membrane.
+          </p>
         </div>
       </div>
       <div class="body-section">
@@ -440,10 +446,18 @@ k<sub>fCAD</sub> denotes the forward rate constant and k<sub>bCAD</sub> denotes 
       <div class="body-section">
         <div class="text-wrapper">
           <h4>Solving the PDE System</h4>
-          <p>We employed MatLab’s pdepe function to solve the three systems. See “additional resources” for pdepe documentation. Based on the results of the Rochester 2020 iGEM team model, we chose <span class="bold-text">6.4 nM to be the minimum concentration of gold nanoparticles that needs to bind at the control line to produce a visible signal.8 </span>By using stoichiometric conversions, we found this minimum concentration to be equivalent to 1.2606<sup>(-3)</sup> mg/L. Using this threshold, we implemented our MatLab model to iteratively solve System 3 using different starting concentrations of the AD until the concentration of CAD met the threshold. In other words, we solved for AD<sub>c</sub> or the concentration of AD that needed to reach the control line in order to produce a visible signal. </p>
-          <p>Then, we used this solved value AD<sub>c</sub> as the right edge boundary condition for system 2. This means we needed a concentration of AD<sub>c</sub> to be left after the complexes T1AD and T2AD formed at the test line. In MatLab, we iteratively solved for the initial concentration of AD of system 2, or AD<sub>T</sub>, that produced a solution satisfying the right boundary condition. So, AD<sub>T</sub> is the concentration of AD needed at the start of the nitrocellulose membrane in order to produce a signal at both the test and control lines. We ensured the solver found the solution that produces a visible solution at the test line by setting the right boundary conditions of T1AD and T2AD to be 6.4 nM, or the concentration of gold nanoparticles that needs to bind at the test line to produce a visible signal. </p>
-          <p>Finally, we assigned AD<sub>T</sub> to be the right boundary condition of AD<sub>i</sub> or the concentration of AD that must be present after A and D bind on the conjugate pad. We also specified the right boundary conditions of A and D to be zero (once the complexes run to the absorbent pad), in order to find the optimal initial concentrations of A and D at the start of the test. We then used these boundary conditions to iteratively solve for the initial concentration of D; we fix the initial concentration of A to be 8 mg/L or the minimum concentration of oxLDL we expect to be on the test and produce a visible signal. </p>
-          <p>By solving the three systems of PDE in this way, we are able to mathematically find the initial concentration of D to produce visible signals at the test and control lines if the expected minimum threshold of oxLDL is present in the initial blood sample. </p>
+          <p>
+            We employed MatLab’s pdepe function to solve the three systems. Based on the results of the Rochester 2020 iGEM team model, we chose <span class="bold-text">6.4 nM to be the minimum concentration of gold nanoparticles that needs to bind at the control line to produce a visible signal.8 </span>By using stoichiometric conversions, we found this minimum concentration to be equivalent to 1.2606<sup>(-3)</sup> mg/L. Using this threshold, we implemented our MatLab model to iteratively solve System 3 using different starting concentrations of the AD until the concentration of CAD met the threshold. In other words, we solved for AD<sub>c</sub> or the concentration of AD that needed to reach the control line in order to produce a visible signal. 
+            <br>
+            <br>
+            Then, we used this solved value AD<sub>c</sub> as the right edge boundary condition for system 2. This means we needed a concentration of AD<sub>c</sub> to be left after the complexes T1AD and T2AD formed at the test line. In MatLab, we iteratively solved for the initial concentration of AD of system 2, or AD<sub>T</sub>, that produced a solution satisfying the right boundary condition. So, AD<sub>T</sub> is the concentration of AD needed at the start of the nitrocellulose membrane in order to produce a signal at both the test and control lines. We ensured the solver found the solution that produces a visible solution at the test line by setting the right boundary conditions of T1AD and T2AD to be 6.4 nM, or the concentration of gold nanoparticles that needs to bind at the test line to produce a visible signal. 
+            <br>
+            <br>
+            Finally, we assigned AD<sub>T</sub> to be the right boundary condition of AD<sub>i</sub> or the concentration of AD that must be present after A and D bind on the conjugate pad. We also specified the right boundary conditions of A and D to be zero (once the complexes run to the absorbent pad), in order to find the optimal initial concentrations of A and D at the start of the test. We then used these boundary conditions to iteratively solve for the initial concentration of D; we fix the initial concentration of A to be 8 mg/L or the minimum concentration of oxLDL we expect to be on the test and produce a visible signal. 
+            <br>
+            <br>
+            By solving the three systems of PDE in this way, we are able to mathematically find the initial concentration of D to produce visible signals at the test and control lines if the expected minimum threshold of oxLDL is present in the initial blood sample. 
+            </p>
         </div>
       </div>
     </div>
