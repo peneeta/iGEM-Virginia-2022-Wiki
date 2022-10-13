@@ -877,6 +877,18 @@ li {
   border-radius: 20px;
 }
 
+.instapasta img {
+  height: 20rem;
+}
+
+.wrapper-frame{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
 /* ENGR */
 
 .cyc {
