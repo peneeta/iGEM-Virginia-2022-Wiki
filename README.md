@@ -1,12 +1,11 @@
 # Team Virginia 2022 Wiki
 
-This repository **MUST** contain all coding assets to generate your team's wiki (HTML, CSS, JavaScript, TypeScript, Python, etc).
+Source code for the Virginia 2022 iGEM wiki. The original repository is found here: https://gitlab.igem.org/2022/virginia
 
-Images, photos, icons and fonts **MUST** be stored on `static.igem.wiki` using [uploads.igem.org](https://uploads.igem.org), and Videos **must** be embedded from [iGEM Video Universe](https://video.igem.org).
+## View the website here: https://2022.igem.wiki/virginia/index.html
 
-For up-to-date requirements, resources, help and guidance, visit [competition.igem.org/deliverables/team-wiki](https://competition.igem.org/deliverables/team-wiki).
 
-## Getting started
+## From iGEM: Getting started
 
 You should probably only edit the files inside folders `static`, `wiki` and `wiki > pages`.
 1. Open the Web IDE
