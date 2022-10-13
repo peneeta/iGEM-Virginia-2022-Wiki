@@ -875,3 +875,23 @@ li {
 .links-wrapper img{
   width: 20rem;
 }
+
+/* ENGR */
+
+.cyc {
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.doodle-wrapper img {
+  padding: 2rem;
+  width: 10rem;
+}
+
+.doodle-wrapper {
+  margin: 1rem;
+}
