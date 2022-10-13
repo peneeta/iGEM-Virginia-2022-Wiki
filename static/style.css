@@ -843,3 +843,35 @@ li {
 .promo-vid-wrapper iframe{
   margin: 3rem;
 }
+
+.body-section.pod-episode-wrapper {
+  max-width: 30rem;
+}
+
+.container.podcasts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-wrapper-pod {
+  padding-inline: 5rem;
+  padding-block: 2rem;
+  box-shadow: -10px -10px 30px #fff,
+  10px 10px 30px #aeaec040,
+  inset -10px -10px 10px #aeaec025,
+  inset 10px 10px 10px #fff;
+}
+
+
+.links-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-wrapper img{
+  width: 20rem;
+}
