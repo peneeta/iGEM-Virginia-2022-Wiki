@@ -29,6 +29,13 @@
       lng: 360-95.7129,
       size: 20,
       color: ['black']
+    }),  ({
+      name: "Brazil",
+      countryID: "brazil",
+      lat: 360-14.2350,
+      lng: 360-51.9253,
+      size: 20,
+      color: ['black']
     })];
 
     const globeDOM = document.querySelector("[data-js-globe]");
