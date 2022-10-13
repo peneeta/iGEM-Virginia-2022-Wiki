@@ -549,10 +549,12 @@
 }
 
 .heart-text-bottom-wrapper {
-  margin-top: 6rem;
+  margin-top: 3rem;
+  padding: 3rem;
 }
 .heart-text-top-wrapper {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  padding: 3rem;
 }
 
 /* CARDS */
