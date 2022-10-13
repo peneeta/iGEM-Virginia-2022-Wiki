@@ -830,3 +830,16 @@ li {
 .body-container.no-index {
   max-width: 85vw!important;
 }
+
+.promo-vid-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+}
+
+.promo-vid-wrapper iframe{
+  margin: 3rem;
+}
