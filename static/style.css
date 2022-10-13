@@ -801,6 +801,27 @@ li {
   max-width: 20rem;
 }
 
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.img-wrapper.shadow-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper p {
+  max-width: 30rem;
+  text-align: center;
+  padding-block: 2rem;
+}
+
 .contact-wrapper p {
   margin-top: 2rem;
 }
